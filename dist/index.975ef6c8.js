@@ -29108,7 +29108,14 @@ const Title = (props)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("tr", {
                 columnNumber: 4
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
-                children: props.title.url
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                    href: props.title.url,
+                    children: props.title.url
+                }, void 0, false, {
+                    fileName: "src/components/titleList.js",
+                    lineNumber: 7,
+                    columnNumber: 8
+                }, undefined)
             }, void 0, false, {
                 fileName: "src/components/titleList.js",
                 lineNumber: 7,

@@ -4,7 +4,7 @@ const Title = (props) => (
  <tr>
    <td>{props.title.title}</td>
    <td>{props.title.century}</td>
-   <td>{props.title.url}</td>
+   <td><a href={props.title.url}>{props.title.url}</a></td>
  </tr>
 );
 

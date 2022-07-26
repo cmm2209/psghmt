@@ -29140,7 +29140,7 @@ _c = Title;
 function TitleList() {
     _s();
     const [titles1, setTitles] = (0, _react.useState)([]);
-    //  const [hits, setHits] = useState([]);
+    const [hits, setHits] = (0, _react.useState)([]);
     (0, _react.useEffect)(()=>{
         getTitles();
         return;
@@ -29152,17 +29152,16 @@ function TitleList() {
         const titles = await response.json();
         setTitles(titles);
     }
-    /**
-  function filterHits() {
-    filterer();
-  }
-
-  async function filterer() {
-    const res = await fetch("/get?tongue=" + encodeURIComponent("Latin"));
-    const titles = await res.json();
-    setTitles(titles);
-  }
- */ // This method will map out the records on the table
+    //  useState(() => {
+    //    filterer();
+    //    return;
+    //  }, [titles.length]);
+    async function filterer() {
+        const res = await fetch(`/get?tongue=Latin`);
+        const titles = await res.json();
+        setHits(hits);
+    }
+    // This method will map out the records on the table
     function titleList() {
         return titles1.map((title)=>{
             return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Title, {
@@ -29207,6 +29206,7 @@ function TitleList() {
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
                 id: "Latin",
+                onClick: filterer,
                 children: "Latin"
             }, void 0, false, {
                 fileName: "src/components/titleList.js",
@@ -29226,45 +29226,45 @@ function TitleList() {
                                     children: "Title"
                                 }, void 0, false, {
                                     fileName: "src/components/titleList.js",
-                                    lineNumber: 68,
+                                    lineNumber: 65,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
                                     children: "Century"
                                 }, void 0, false, {
                                     fileName: "src/components/titleList.js",
-                                    lineNumber: 69,
+                                    lineNumber: 66,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
                                     children: "URL"
                                 }, void 0, false, {
                                     fileName: "src/components/titleList.js",
-                                    lineNumber: 70,
+                                    lineNumber: 67,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "src/components/titleList.js",
-                            lineNumber: 67,
+                            lineNumber: 64,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "src/components/titleList.js",
-                        lineNumber: 66,
+                        lineNumber: 63,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("tbody", {
                         children: titleList()
                     }, void 0, false, {
                         fileName: "src/components/titleList.js",
-                        lineNumber: 73,
+                        lineNumber: 70,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "src/components/titleList.js",
-                lineNumber: 65,
+                lineNumber: 62,
                 columnNumber: 7
             }, this)
         ]
@@ -29275,7 +29275,7 @@ function TitleList() {
     }, this);
 }
 exports.default = TitleList;
-_s(TitleList, "Bd3zm9HgMFhT6qecl6C5XUZJrlI=");
+_s(TitleList, "CvTYr4xvB87XmjhppDX9M3EcQHk=");
 _c1 = TitleList;
 var _c, _c1;
 $RefreshReg$(_c, "Title");

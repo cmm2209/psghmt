@@ -15,7 +15,7 @@ const Title = (props) => (
 
 export default function TitleList() {
   const [titles, setTitles] = useState([]);
-  //  const [hits, setHits] = useState([]);
+  const [hits, setHits] = useState([]);
 
   useEffect(() => {
     getTitles();
@@ -27,17 +27,17 @@ export default function TitleList() {
     const titles = await response.json();
     setTitles(titles);
   }
-  /**
-  function filterHits() {
-    filterer();
-  }
+
+  //  useState(() => {
+  //    filterer();
+  //    return;
+  //  }, [titles.length]);
 
   async function filterer() {
-    const res = await fetch("/get?tongue=" + encodeURIComponent("Latin"));
+    const res = await fetch(`/get?tongue=Latin`);
     const titles = await res.json();
-    setTitles(titles);
+    setHits(hits);
   }
- */
 
   // This method will map out the records on the table
   function titleList() {
@@ -56,10 +56,7 @@ export default function TitleList() {
       </h2>
       <h3>Treatises</h3>
       <h4>Filter by</h4>
-      <button
-        id="Latin"
-        //onClick={filterHits()}
-      >
+      <button id="Latin" onClick={filterer}>
         Latin
       </button>
       <table className="table table-striped" style={{ marginTop: 20 }}>

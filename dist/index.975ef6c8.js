@@ -27124,7 +27124,7 @@ const App = ()=>{
                 }, void 0, false, {
                     fileName: "src/App.js",
                     lineNumber: 15,
-                    columnNumber: 8
+                    columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
                     path: "/browse",
@@ -27132,26 +27132,26 @@ const App = ()=>{
                 }, void 0, false, {
                     fileName: "src/App.js",
                     lineNumber: 16,
-                    columnNumber: 8
+                    columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
-                    path: "/get",
+                    path: "/Latin",
                     element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _titleListDefault.default), {}, void 0, false, void 0, void 0)
                 }, void 0, false, {
                     fileName: "src/App.js",
                     lineNumber: 17,
-                    columnNumber: 8
+                    columnNumber: 9
                 }, undefined)
             ]
         }, void 0, true, {
             fileName: "src/App.js",
             lineNumber: 14,
-            columnNumber: 6
+            columnNumber: 7
         }, undefined)
     }, void 0, false, {
         fileName: "src/App.js",
         lineNumber: 13,
-        columnNumber: 4
+        columnNumber: 5
     }, undefined);
 };
 _c = App;
@@ -29140,26 +29140,19 @@ _c = Title;
 function TitleList() {
     _s();
     const [titles1, setTitles] = (0, _react.useState)([]);
-    const [hits, setHits] = (0, _react.useState)([]);
     (0, _react.useEffect)(()=>{
         getTitles();
         return;
-    }, [
-        titles1.length
-    ]); // eslint-disable-line react-hooks/exhaustive-deps
+    }, []); // eslint-disable-line react-hooks/exhaustive-deps
     async function getTitles() {
         const response = await fetch(`http://localhost:5000/browse/`);
         const titles = await response.json();
         setTitles(titles);
     }
-    //  useState(() => {
-    //    filterer();
-    //    return;
-    //  }, [titles.length]);
     async function filterer() {
-        const res = await fetch(`/get?tongue=Latin`);
+        const res = await fetch(`http://localhost:5000/Latin/`);
         const titles = await res.json();
-        setHits(hits);
+        setTitles(titles);
     }
     // This method will map out the records on the table
     function titleList() {
@@ -29168,7 +29161,7 @@ function TitleList() {
                 title: title
             }, title._id, false, {
                 fileName: "src/components/titleList.js",
-                lineNumber: 45,
+                lineNumber: 39,
                 columnNumber: 14
             }, this);
         });
@@ -29182,26 +29175,26 @@ function TitleList() {
                     children: "The Center for the History of Music Theory and Literature"
                 }, void 0, false, {
                     fileName: "src/components/titleList.js",
-                    lineNumber: 53,
+                    lineNumber: 47,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "src/components/titleList.js",
-                lineNumber: 52,
+                lineNumber: 46,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
                 children: "Treatises"
             }, void 0, false, {
                 fileName: "src/components/titleList.js",
-                lineNumber: 57,
+                lineNumber: 51,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
                 children: "Filter by"
             }, void 0, false, {
                 fileName: "src/components/titleList.js",
-                lineNumber: 58,
+                lineNumber: 52,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -29210,7 +29203,7 @@ function TitleList() {
                 children: "Latin"
             }, void 0, false, {
                 fileName: "src/components/titleList.js",
-                lineNumber: 59,
+                lineNumber: 53,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("table", {
@@ -29226,56 +29219,56 @@ function TitleList() {
                                     children: "Title"
                                 }, void 0, false, {
                                     fileName: "src/components/titleList.js",
-                                    lineNumber: 65,
+                                    lineNumber: 59,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
                                     children: "Century"
                                 }, void 0, false, {
                                     fileName: "src/components/titleList.js",
-                                    lineNumber: 66,
+                                    lineNumber: 60,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
                                     children: "URL"
                                 }, void 0, false, {
                                     fileName: "src/components/titleList.js",
-                                    lineNumber: 67,
+                                    lineNumber: 61,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "src/components/titleList.js",
-                            lineNumber: 64,
+                            lineNumber: 58,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "src/components/titleList.js",
-                        lineNumber: 63,
+                        lineNumber: 57,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("tbody", {
                         children: titleList()
                     }, void 0, false, {
                         fileName: "src/components/titleList.js",
-                        lineNumber: 70,
+                        lineNumber: 64,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "src/components/titleList.js",
-                lineNumber: 62,
+                lineNumber: 56,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "src/components/titleList.js",
-        lineNumber: 51,
+        lineNumber: 45,
         columnNumber: 5
     }, this);
 }
 exports.default = TitleList;
-_s(TitleList, "CvTYr4xvB87XmjhppDX9M3EcQHk=");
+_s(TitleList, "Bd3zm9HgMFhT6qecl6C5XUZJrlI=");
 _c1 = TitleList;
 var _c, _c1;
 $RefreshReg$(_c, "Title");

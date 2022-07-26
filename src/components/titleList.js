@@ -15,12 +15,11 @@ const Title = (props) => (
 
 export default function TitleList() {
   const [titles, setTitles] = useState([]);
-  const [hits, setHits] = useState([]);
 
   useEffect(() => {
     getTitles();
     return;
-  }, [titles.length]); // eslint-disable-line react-hooks/exhaustive-deps
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   async function getTitles() {
     const response = await fetch(`http://localhost:5000/browse/`);
@@ -28,15 +27,10 @@ export default function TitleList() {
     setTitles(titles);
   }
 
-  //  useState(() => {
-  //    filterer();
-  //    return;
-  //  }, [titles.length]);
-
   async function filterer() {
-    const res = await fetch(`/get?tongue=Latin`);
+    const res = await fetch(`http://localhost:5000/Latin/`);
     const titles = await res.json();
-    setHits(hits);
+    setTitles(titles);
   }
 
   // This method will map out the records on the table

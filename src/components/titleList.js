@@ -1,62 +1,77 @@
-import React, { useEffect, useState } from "react";
- 
+import { React, useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+
+const Latin = document.getElementById("Latin");
+
 const Title = (props) => (
- <tr>
-   <td>{props.title.title}</td>
-   <td>{props.title.century}</td>
-   <td><a href={props.title.url}>{props.title.url}</a></td>
- </tr>
+  <tr>
+    <td>{props.title.title}</td>
+    <td>{props.title.century}</td>
+    <td>
+      <a href={props.title.url}>{props.title.url}</a>
+    </td>
+  </tr>
 );
 
 export default function TitleList() {
- const [titles, setTitles] = useState([]);
- 
- // This method fetches the records from the database.
- useEffect(() => {
-   async function getTitles() {
-     const response = await fetch(`http://localhost:5000/browse/`);
- 
-     if (!response.ok) {
-       const message = `An error occurred: ${response.statusText}`;
-       window.alert(message);
-       return;
-     }
- 
-     const titles = await response.json();
-     setTitles(titles);
-   }
- 
-   getTitles();
- 
-   return;
- }, [titles.length]);
-  
- // This method will map out the records on the table
- function titleList() {
-   return titles.map((title) => {
-     return (
-       <Title
-         title={title}
-         key={title._id}
-       />
-     );
-   });
- }
- 
- // This following section will display the table with the records of individuals.
- return (
-   <div>
-     <h3>Treatises</h3>
-     <table className="table table-striped" style={{ marginTop: 20 }}>
-       <thead>
-         <tr>
-           <th>Title</th>
-           <th>Century</th>
-           <th>URL</th>
-         </tr>
-       </thead>
-       <tbody>{titleList()}</tbody>
-     </table>
-   </div>
- );
+  const [titles, setTitles] = useState([]);
+  //  const [hits, setHits] = useState([]);
+
+  useEffect(() => {
+    getTitles();
+    return;
+  }, [titles.length]); // eslint-disable-line react-hooks/exhaustive-deps
+
+  async function getTitles() {
+    const response = await fetch(`http://localhost:5000/browse/`);
+    const titles = await response.json();
+    setTitles(titles);
+  }
+  /**
+  function filterHits() {
+    filterer();
+  }
+
+  async function filterer() {
+    const res = await fetch("/get?tongue=" + encodeURIComponent("Latin"));
+    const titles = await res.json();
+    setTitles(titles);
+  }
+ */
+
+  // This method will map out the records on the table
+  function titleList() {
+    return titles.map((title) => {
+      return <Title title={title} key={title._id} />;
+    });
+  }
+
+  // This following section will display the table with the records of individuals.
+  return (
+    <div>
+      <h2>
+        <Link to="/">
+          The Center for the History of Music Theory and Literature
+        </Link>
+      </h2>
+      <h3>Treatises</h3>
+      <h4>Filter by</h4>
+      <button
+        id="Latin"
+        //onClick={filterHits()}
+      >
+        Latin
+      </button>
+      <table className="table table-striped" style={{ marginTop: 20 }}>
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Century</th>
+            <th>URL</th>
+          </tr>
+        </thead>
+        <tbody>{titleList()}</tbody>
+      </table>
+    </div>
+  );
 }

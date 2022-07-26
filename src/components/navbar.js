@@ -1,20 +1,23 @@
 import React from "react";
- 
+
 // We import NavLink to utilize the react router.
 import { NavLink } from "react-router-dom";
- 
+
 // Here, we display our Navbar
 export default function Navbar() {
- return (
-   <div>
-     <nav className="navbar navbar-expand-lg navbar-light bg-light">
-       <NavLink className="navbar-brand" to="/">
-       <img style={{"width" : 50 + '%'}} alt="bkdg" src="http://chmtl.indiana.edu/images/scriptorium10011101-1024x512k.jpg"></img>
-      </NavLink>
-
-     </nav>
-   </div>
- );
+  return (
+    <div>
+      <nav className="navbar navbar-expand-lg navbar-light bg-light">
+        <NavLink className="navbar-brand" to="/">
+          <img
+            style={{ width: 50 + "%" }}
+            alt="bkdg"
+            src="http://chmtl.indiana.edu/images/scriptorium10011101-1024x512k.jpg"
+          ></img>
+        </NavLink>
+      </nav>
+    </div>
+  );
 }
 
 /**

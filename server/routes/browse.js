@@ -23,5 +23,17 @@ browseRoutes.route("/browse").get(function (req, res) {
      res.json(result);
    });
 });
+
+// This section will help you get a single record by id
+browseRoutes.route("/get").get(function (req, res) {
+  let db_connect = dbo.getDb();
+  let myquery = { tongue: req.query.tongue };
+  db_connect
+      .collection("titles")
+      .find(myquery, function (err, result) {
+        if (err) throw err;
+        res.json(result);
+      });
+ });
  
 module.exports = browseRoutes;

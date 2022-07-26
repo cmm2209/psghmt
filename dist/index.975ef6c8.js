@@ -27133,6 +27133,14 @@ const App = ()=>{
                     fileName: "src/App.js",
                     lineNumber: 16,
                     columnNumber: 8
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
+                    path: "/get",
+                    element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _titleListDefault.default), {}, void 0, false, void 0, void 0)
+                }, void 0, false, {
+                    fileName: "src/App.js",
+                    lineNumber: 17,
+                    columnNumber: 8
                 }, undefined)
             ]
         }, void 0, true, {
@@ -29089,23 +29097,24 @@ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
+var _reactRouterDom = require("react-router-dom");
 var _s = $RefreshSig$();
+const Latin = document.getElementById("Latin");
 const Title = (props)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("tr", {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
                 children: props.title.title
             }, void 0, false, {
                 fileName: "src/components/titleList.js",
-                lineNumber: 5,
-                columnNumber: 4
+                lineNumber: 8,
+                columnNumber: 5
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
                 children: props.title.century
             }, void 0, false, {
                 fileName: "src/components/titleList.js",
-                lineNumber: 6,
-                columnNumber: 4
+                lineNumber: 9,
+                columnNumber: 5
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
@@ -29113,62 +29122,96 @@ const Title = (props)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("tr", {
                     children: props.title.url
                 }, void 0, false, {
                     fileName: "src/components/titleList.js",
-                    lineNumber: 7,
-                    columnNumber: 8
+                    lineNumber: 11,
+                    columnNumber: 7
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/components/titleList.js",
-                lineNumber: 7,
-                columnNumber: 4
+                lineNumber: 10,
+                columnNumber: 5
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/titleList.js",
-        lineNumber: 4,
-        columnNumber: 2
+        lineNumber: 7,
+        columnNumber: 3
     }, undefined);
 _c = Title;
 function TitleList() {
     _s();
     const [titles1, setTitles] = (0, _react.useState)([]);
-    // This method fetches the records from the database.
+    //  const [hits, setHits] = useState([]);
     (0, _react.useEffect)(()=>{
-        async function getTitles() {
-            const response = await fetch(`http://localhost:5000/browse/`);
-            if (!response.ok) {
-                const message = `An error occurred: ${response.statusText}`;
-                window.alert(message);
-                return;
-            }
-            const titles = await response.json();
-            setTitles(titles);
-        }
         getTitles();
         return;
     }, [
         titles1.length
-    ]);
-    // This method will map out the records on the table
+    ]); // eslint-disable-line react-hooks/exhaustive-deps
+    async function getTitles() {
+        const response = await fetch(`http://localhost:5000/browse/`);
+        const titles = await response.json();
+        setTitles(titles);
+    }
+    /**
+  function filterHits() {
+    filterer();
+  }
+
+  async function filterer() {
+    const res = await fetch("/get?tongue=" + encodeURIComponent("Latin"));
+    const titles = await res.json();
+    setTitles(titles);
+  }
+ */ // This method will map out the records on the table
     function titleList() {
         return titles1.map((title)=>{
             return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Title, {
                 title: title
             }, title._id, false, {
                 fileName: "src/components/titleList.js",
-                lineNumber: 38,
-                columnNumber: 8
+                lineNumber: 45,
+                columnNumber: 14
             }, this);
         });
     }
     // This following section will display the table with the records of individuals.
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                    to: "/",
+                    children: "The Center for the History of Music Theory and Literature"
+                }, void 0, false, {
+                    fileName: "src/components/titleList.js",
+                    lineNumber: 53,
+                    columnNumber: 9
+                }, this)
+            }, void 0, false, {
+                fileName: "src/components/titleList.js",
+                lineNumber: 52,
+                columnNumber: 7
+            }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
                 children: "Treatises"
             }, void 0, false, {
                 fileName: "src/components/titleList.js",
-                lineNumber: 49,
-                columnNumber: 6
+                lineNumber: 57,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                children: "Filter by"
+            }, void 0, false, {
+                fileName: "src/components/titleList.js",
+                lineNumber: 58,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                id: "Latin",
+                children: "Latin"
+            }, void 0, false, {
+                fileName: "src/components/titleList.js",
+                lineNumber: 59,
+                columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("table", {
                 className: "table table-striped",
@@ -29183,52 +29226,52 @@ function TitleList() {
                                     children: "Title"
                                 }, void 0, false, {
                                     fileName: "src/components/titleList.js",
-                                    lineNumber: 53,
-                                    columnNumber: 12
+                                    lineNumber: 68,
+                                    columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
                                     children: "Century"
                                 }, void 0, false, {
                                     fileName: "src/components/titleList.js",
-                                    lineNumber: 54,
-                                    columnNumber: 12
+                                    lineNumber: 69,
+                                    columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
                                     children: "URL"
                                 }, void 0, false, {
                                     fileName: "src/components/titleList.js",
-                                    lineNumber: 55,
-                                    columnNumber: 12
+                                    lineNumber: 70,
+                                    columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "src/components/titleList.js",
-                            lineNumber: 52,
-                            columnNumber: 10
+                            lineNumber: 67,
+                            columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "src/components/titleList.js",
-                        lineNumber: 51,
-                        columnNumber: 8
+                        lineNumber: 66,
+                        columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("tbody", {
                         children: titleList()
                     }, void 0, false, {
                         fileName: "src/components/titleList.js",
-                        lineNumber: 58,
-                        columnNumber: 8
+                        lineNumber: 73,
+                        columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "src/components/titleList.js",
-                lineNumber: 50,
-                columnNumber: 6
+                lineNumber: 65,
+                columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "src/components/titleList.js",
-        lineNumber: 48,
-        columnNumber: 4
+        lineNumber: 51,
+        columnNumber: 5
     }, this);
 }
 exports.default = TitleList;
@@ -29243,6 +29286,6 @@ $RefreshReg$(_c1, "TitleList");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["1xC6H","ShInH","8lqZg"], "8lqZg", "parcelRequire94c2")
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"fdOAw","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["1xC6H","ShInH","8lqZg"], "8lqZg", "parcelRequire94c2")
 
 //# sourceMappingURL=index.975ef6c8.js.map

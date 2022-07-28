@@ -5,10 +5,8 @@ const Latin = document.getElementById("Latin");
 
 const Title = (props) => (
   <tr>
-    <td>{props.title.title}</td>
-    <td>{props.title.century}</td>
     <td>
-      <a href={props.title.url}>{props.title.url}</a>
+      <a href={props.title.url}>{props.title.title}</a>
     </td>
   </tr>
 );
@@ -27,8 +25,14 @@ export default function TitleList() {
     setTitles(titles);
   }
 
-  async function filterer() {
-    const res = await fetch(`http://localhost:5000/Latin/`);
+  async function tfilterer(tquery) {
+    const res = await fetch(`http://localhost:5000/${tquery}`);
+    const titles = await res.json();
+    setTitles(titles);
+  }
+
+  async function cfilterer(cquery) {
+    const res = await fetch(`http://localhost:5000/${cquery}`);
     const titles = await res.json();
     setTitles(titles);
   }
@@ -50,15 +54,27 @@ export default function TitleList() {
       </h2>
       <h3>Treatises</h3>
       <h4>Filter by</h4>
-      <button id="Latin" onClick={filterer}>
+      <button
+        id="Latin"
+        value="latin"
+        onClick={(e) => tfilterer(e.target.value)}
+      >
         Latin
+      </button>
+      <button
+        id="sixteenthc"
+        value="sixteenthc"
+        onClick={(e) => cfilterer(e.target.value)}
+      >
+        1500-1599 CE
+      </button>
+      <button id="reset" onClick={getTitles}>
+        Reset
       </button>
       <table className="table table-striped" style={{ marginTop: 20 }}>
         <thead>
           <tr>
-            <th>Title</th>
-            <th>Century</th>
-            <th>URL</th>
+            <th>Results</th>
           </tr>
         </thead>
         <tbody>{titleList()}</tbody>

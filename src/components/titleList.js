@@ -26,13 +26,13 @@ export default function TitleList() {
   }
 
   async function tfilterer(tquery) {
-    const res = await fetch(`http://localhost:5000/${tquery}`);
+    const res = await fetch(`http://localhost:5000/tongue?tongue=${tquery}`);
     const titles = await res.json();
     setTitles(titles);
   }
 
   async function cfilterer(cquery) {
-    const res = await fetch(`http://localhost:5000/${cquery}`);
+    const res = await fetch(`http://localhost:5000/century?century=${cquery}`);
     const titles = await res.json();
     setTitles(titles);
   }
@@ -56,14 +56,28 @@ export default function TitleList() {
       <h4>Filter by</h4>
       <button
         id="Latin"
-        value="latin"
+        value="Latin"
         onClick={(e) => tfilterer(e.target.value)}
       >
         Latin
       </button>
       <button
+        id="Italian"
+        value="Italian"
+        onClick={(e) => tfilterer(e.target.value)}
+      >
+        Italian
+      </button>
+      <button
+        id="fifteenthc"
+        value="14"
+        onClick={(e) => cfilterer(e.target.value)}
+      >
+        1400-1499 CE
+      </button>
+      <button
         id="sixteenthc"
-        value="sixteenthc"
+        value="15"
         onClick={(e) => cfilterer(e.target.value)}
       >
         1500-1599 CE

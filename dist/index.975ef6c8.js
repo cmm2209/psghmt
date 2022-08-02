@@ -27135,7 +27135,7 @@ const App = ()=>{
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
-                    path: "/Latin",
+                    path: "/tongue",
                     element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _titleListDefault.default), {}, void 0, false, void 0, void 0)
                 }, void 0, false, {
                     fileName: "src/App.js",
@@ -27143,7 +27143,7 @@ const App = ()=>{
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
-                    path: "/Sixteenthc",
+                    path: "/century",
                     element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _titleListDefault.default), {}, void 0, false, void 0, void 0)
                 }, void 0, false, {
                     fileName: "src/App.js",
@@ -29142,12 +29142,12 @@ function TitleList() {
         setTitles(titles);
     }
     async function tfilterer(tquery) {
-        const res = await fetch(`http://localhost:5000/${tquery}`);
+        const res = await fetch(`http://localhost:5000/tongue?tongue=${tquery}`);
         const titles = await res.json();
         setTitles(titles);
     }
     async function cfilterer(cquery) {
-        const res = await fetch(`http://localhost:5000/${cquery}`);
+        const res = await fetch(`http://localhost:5000/century?century=${cquery}`);
         const titles = await res.json();
         setTitles(titles);
     }
@@ -29196,7 +29196,7 @@ function TitleList() {
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
                 id: "Latin",
-                value: "latin",
+                value: "Latin",
                 onClick: (e)=>tfilterer(e.target.value),
                 children: "Latin"
             }, void 0, false, {
@@ -29205,13 +29205,33 @@ function TitleList() {
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                id: "Italian",
+                value: "Italian",
+                onClick: (e)=>tfilterer(e.target.value),
+                children: "Italian"
+            }, void 0, false, {
+                fileName: "src/components/titleList.js",
+                lineNumber: 64,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                id: "fifteenthc",
+                value: "14",
+                onClick: (e)=>cfilterer(e.target.value),
+                children: "1400-1499 CE"
+            }, void 0, false, {
+                fileName: "src/components/titleList.js",
+                lineNumber: 71,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
                 id: "sixteenthc",
-                value: "sixteenthc",
+                value: "15",
                 onClick: (e)=>cfilterer(e.target.value),
                 children: "1500-1599 CE"
             }, void 0, false, {
                 fileName: "src/components/titleList.js",
-                lineNumber: 64,
+                lineNumber: 78,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -29220,7 +29240,7 @@ function TitleList() {
                 children: "Reset"
             }, void 0, false, {
                 fileName: "src/components/titleList.js",
-                lineNumber: 71,
+                lineNumber: 85,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("table", {
@@ -29235,30 +29255,30 @@ function TitleList() {
                                 children: "Results"
                             }, void 0, false, {
                                 fileName: "src/components/titleList.js",
-                                lineNumber: 77,
+                                lineNumber: 91,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "src/components/titleList.js",
-                            lineNumber: 76,
+                            lineNumber: 90,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "src/components/titleList.js",
-                        lineNumber: 75,
+                        lineNumber: 89,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("tbody", {
                         children: titleList()
                     }, void 0, false, {
                         fileName: "src/components/titleList.js",
-                        lineNumber: 80,
+                        lineNumber: 94,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "src/components/titleList.js",
-                lineNumber: 74,
+                lineNumber: 88,
                 columnNumber: 7
             }, this)
         ]

@@ -14,8 +14,8 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Landing />} />
         <Route path="/browse" element={<TitleList />} />
-        <Route path="/Latin" element={<TitleList />} />
-        <Route path="/Sixteenthc" element={<TitleList />} />
+        <Route path="/tongue" element={<TitleList />} />
+        <Route path="/century" element={<TitleList />} />
       </Routes>
     </div>
   );

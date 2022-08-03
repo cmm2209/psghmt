@@ -27135,27 +27135,11 @@ const App = ()=>{
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
-                    path: "/tongue",
+                    path: "/tfilters",
                     element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _titleListDefault.default), {}, void 0, false, void 0, void 0)
                 }, void 0, false, {
                     fileName: "src/App.js",
                     lineNumber: 17,
-                    columnNumber: 9
-                }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
-                    path: "/author",
-                    element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _titleListDefault.default), {}, void 0, false, void 0, void 0)
-                }, void 0, false, {
-                    fileName: "src/App.js",
-                    lineNumber: 18,
-                    columnNumber: 9
-                }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
-                    path: "/century",
-                    element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _titleListDefault.default), {}, void 0, false, void 0, void 0)
-                }, void 0, false, {
-                    fileName: "src/App.js",
-                    lineNumber: 19,
                     columnNumber: 9
                 }, undefined)
             ]
@@ -29150,17 +29134,17 @@ function TitleList() {
         setTitles(titles);
     }
     async function afilterer(aquery) {
-        const res = await fetch(`http://localhost:5000/author?author=${aquery}`);
+        const res = await fetch(`http://localhost:5000/tfilters?author=${aquery}`);
         const titles = await res.json();
         setTitles(titles);
     }
     async function tfilterer(tquery) {
-        const res = await fetch(`http://localhost:5000/tongue?tongue=${tquery}`);
+        const res = await fetch(`http://localhost:5000/tfilters?tongue=${tquery}`);
         const titles = await res.json();
         setTitles(titles);
     }
     async function cfilterer(cquery) {
-        const res = await fetch(`http://localhost:5000/century?century=${cquery}`);
+        const res = await fetch(`http://localhost:5000/tfilters?century=${cquery}`);
         const titles = await res.json();
         setTitles(titles);
     }

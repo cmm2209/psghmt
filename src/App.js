@@ -14,9 +14,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Landing />} />
         <Route path="/browse" element={<TitleList />} />
-        <Route path="/tongue" element={<TitleList />} />
-        <Route path="/author" element={<TitleList />} />
-        <Route path="/century" element={<TitleList />} />
+        <Route path="/tfilters" element={<TitleList />} />
       </Routes>
     </div>
   );

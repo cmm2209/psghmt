@@ -26,19 +26,19 @@ export default function TitleList() {
   }
 
   async function afilterer(aquery) {
-    const res = await fetch(`http://localhost:5000/author?author=${aquery}`);
+    const res = await fetch(`http://localhost:5000/tfilters?author=${aquery}`);
     const titles = await res.json();
     setTitles(titles);
   }
 
   async function tfilterer(tquery) {
-    const res = await fetch(`http://localhost:5000/tongue?tongue=${tquery}`);
+    const res = await fetch(`http://localhost:5000/tfilters?tongue=${tquery}`);
     const titles = await res.json();
     setTitles(titles);
   }
 
   async function cfilterer(cquery) {
-    const res = await fetch(`http://localhost:5000/century?century=${cquery}`);
+    const res = await fetch(`http://localhost:5000/tfilters?century=${cquery}`);
     const titles = await res.json();
     setTitles(titles);
   }

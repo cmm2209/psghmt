@@ -25,6 +25,12 @@ export default function TitleList() {
     setTitles(titles);
   }
 
+  async function afilterer(aquery) {
+    const res = await fetch(`http://localhost:5000/author?author=${aquery}`);
+    const titles = await res.json();
+    setTitles(titles);
+  }
+
   async function tfilterer(tquery) {
     const res = await fetch(`http://localhost:5000/tongue?tongue=${tquery}`);
     const titles = await res.json();
@@ -54,6 +60,23 @@ export default function TitleList() {
       </h2>
       <h3>Treatises</h3>
       <h4>Filter by</h4>
+      <h5>Author</h5>
+      <button
+        id="Boethius"
+        value="628ebb193f253638f89b518e"
+        onClick={(e) => afilterer(e.target.value)}
+      >
+        Boethius, -524
+      </button>
+      <br />
+      <button
+        id="Gaffurius"
+        value="628fc6e73f253638f89b5198"
+        onClick={(e) => afilterer(e.target.value)}
+      >
+        Gaffurius, Franchinus, 1451-1522
+      </button>
+      <h5>Language</h5>
       <button
         id="Latin"
         value="Latin"
@@ -61,6 +84,7 @@ export default function TitleList() {
       >
         Latin
       </button>
+      <br />
       <button
         id="Italian"
         value="Italian"
@@ -68,6 +92,7 @@ export default function TitleList() {
       >
         Italian
       </button>
+      <h5>Century</h5>
       <button
         id="fifteenthc"
         value="14"
@@ -75,6 +100,7 @@ export default function TitleList() {
       >
         1400-1499 CE
       </button>
+      <br />
       <button
         id="sixteenthc"
         value="15"
@@ -82,9 +108,11 @@ export default function TitleList() {
       >
         1500-1599 CE
       </button>
-      <button id="reset" onClick={getTitles}>
-        Reset
-      </button>
+      <p>
+        <button id="reset" onClick={getTitles}>
+          Reset
+        </button>
+      </p>
       <table className="table table-striped" style={{ marginTop: 20 }}>
         <thead>
           <tr>

@@ -1,8 +1,6 @@
 import { React, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
-const Latin = document.getElementById("Latin");
-
 const Title = (props) => (
   <tr>
     <td>
@@ -23,24 +21,25 @@ export default function TitleList() {
     const response = await fetch(`http://localhost:5000/browse/`);
     const titles = await response.json();
     setTitles(titles);
+    const cblist = document.getElementsByClassName("cb");
+    for (const el of cblist) {
+      el.checked = false;
+    }
   }
 
-  async function afilterer(aquery) {
-    const res = await fetch(`http://localhost:5000/tfilters?author=${aquery}`);
-    const titles = await res.json();
-    setTitles(titles);
-  }
-
-  async function tfilterer(tquery) {
-    const res = await fetch(`http://localhost:5000/tfilters?tongue=${tquery}`);
-    const titles = await res.json();
-    setTitles(titles);
-  }
-
-  async function cfilterer(cquery) {
-    const res = await fetch(`http://localhost:5000/tfilters?century=${cquery}`);
-    const titles = await res.json();
-    setTitles(titles);
+  async function submission() {
+    var markedCheckbox = document.querySelectorAll(
+      'input[type="checkbox"]:checked'
+    );
+    var cbsum = [];
+    for (var checkbox of markedCheckbox) {
+      cbsum.push(checkbox.name + "=" + checkbox.value);
+      var cbsum1 = cbsum.toString();
+      var cbsumWoC = cbsum1.replace(",", "&");
+      const res = await fetch(`http://localhost:5000/tfilters?${cbsumWoC}`);
+      const titles = await res.json();
+      setTitles(titles);
+    }
   }
 
   // This method will map out the records on the table
@@ -60,59 +59,50 @@ export default function TitleList() {
       </h2>
       <h3>Treatises</h3>
       <h4>Filter by</h4>
-      <h5>Author</h5>
-      <button
-        id="Boethius"
-        value="628ebb193f253638f89b518e"
-        onClick={(e) => afilterer(e.target.value)}
-      >
-        Boethius, -524
+      <form id="filterMenu" onChange={submission}>
+        <h5>Language</h5>
+        <input
+          type="checkbox"
+          id="Latin"
+          name="tongue"
+          className="cb"
+          value="Latin"
+        />
+        <label htmlFor="Latin">Latin</label>
+        <br />
+        <input
+          type="checkbox"
+          id="Italian"
+          name="tongue"
+          className="cb"
+          value="Italian"
+        />
+        <label htmlFor="Italian">Italian</label>
+        <h5>Century</h5>
+        <input
+          type="checkbox"
+          id="fifteenthc"
+          name="century"
+          className="cb"
+          value="14"
+        />
+        <label htmlFor="fifteenthc">1400-1499</label>
+        <br />
+        <input
+          type="checkbox"
+          id="sixteenthc"
+          name="century"
+          className="cb"
+          value="15"
+        />
+        <label htmlFor="sixteenthc">1500-1599</label>
+        <br />
+        <br />
+      </form>
+      <button id="reset" onClick={getTitles}>
+        Reset
       </button>
-      <br />
-      <button
-        id="Gaffurius"
-        value="628fc6e73f253638f89b5198"
-        onClick={(e) => afilterer(e.target.value)}
-      >
-        Gaffurius, Franchinus, 1451-1522
-      </button>
-      <h5>Language</h5>
-      <button
-        id="Latin"
-        value="Latin"
-        onClick={(e) => tfilterer(e.target.value)}
-      >
-        Latin
-      </button>
-      <br />
-      <button
-        id="Italian"
-        value="Italian"
-        onClick={(e) => tfilterer(e.target.value)}
-      >
-        Italian
-      </button>
-      <h5>Century</h5>
-      <button
-        id="fifteenthc"
-        value="14"
-        onClick={(e) => cfilterer(e.target.value)}
-      >
-        1400-1499 CE
-      </button>
-      <br />
-      <button
-        id="sixteenthc"
-        value="15"
-        onClick={(e) => cfilterer(e.target.value)}
-      >
-        1500-1599 CE
-      </button>
-      <p>
-        <button id="reset" onClick={getTitles}>
-          Reset
-        </button>
-      </p>
+      <h3 id="result"></h3>
       <table className="table table-striped" style={{ marginTop: 20 }}>
         <thead>
           <tr>

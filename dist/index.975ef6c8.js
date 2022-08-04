@@ -29099,7 +29099,6 @@ var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactRouterDom = require("react-router-dom");
 var _s = $RefreshSig$();
-const Latin = document.getElementById("Latin");
 const Title = (props)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("tr", {
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
             children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
@@ -29107,17 +29106,17 @@ const Title = (props)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("tr", {
                 children: props.title.title
             }, void 0, false, {
                 fileName: "src/components/titleList.js",
-                lineNumber: 9,
+                lineNumber: 7,
                 columnNumber: 7
             }, undefined)
         }, void 0, false, {
             fileName: "src/components/titleList.js",
-            lineNumber: 8,
+            lineNumber: 6,
             columnNumber: 5
         }, undefined)
     }, void 0, false, {
         fileName: "src/components/titleList.js",
-        lineNumber: 7,
+        lineNumber: 5,
         columnNumber: 3
     }, undefined);
 _c = Title;
@@ -29132,21 +29131,20 @@ function TitleList() {
         const response = await fetch(`http://localhost:5000/browse/`);
         const titles = await response.json();
         setTitles(titles);
+        const cblist = document.getElementsByClassName("cb");
+        for (const el of cblist)el.checked = false;
     }
-    async function afilterer(aquery) {
-        const res = await fetch(`http://localhost:5000/tfilters?author=${aquery}`);
-        const titles = await res.json();
-        setTitles(titles);
-    }
-    async function tfilterer(tquery) {
-        const res = await fetch(`http://localhost:5000/tfilters?tongue=${tquery}`);
-        const titles = await res.json();
-        setTitles(titles);
-    }
-    async function cfilterer(cquery) {
-        const res = await fetch(`http://localhost:5000/tfilters?century=${cquery}`);
-        const titles = await res.json();
-        setTitles(titles);
+    async function submission() {
+        var markedCheckbox = document.querySelectorAll('input[type="checkbox"]:checked');
+        var cbsum = [];
+        for (var checkbox of markedCheckbox){
+            cbsum.push(checkbox.name + "=" + checkbox.value);
+            var cbsum1 = cbsum.toString();
+            var cbsumWoC = cbsum1.replace(",", "&");
+            const res = await fetch(`http://localhost:5000/tfilters?${cbsumWoC}`);
+            const titles = await res.json();
+            setTitles(titles);
+        }
     }
     // This method will map out the records on the table
     function titleList() {
@@ -29155,7 +29153,7 @@ function TitleList() {
                 title: title
             }, title._id, false, {
                 fileName: "src/components/titleList.js",
-                lineNumber: 49,
+                lineNumber: 48,
                 columnNumber: 14
             }, this);
         });
@@ -29169,137 +29167,162 @@ function TitleList() {
                     children: "The Center for the History of Music Theory and Literature"
                 }, void 0, false, {
                     fileName: "src/components/titleList.js",
-                    lineNumber: 57,
+                    lineNumber: 56,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "src/components/titleList.js",
-                lineNumber: 56,
+                lineNumber: 55,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
                 children: "Treatises"
             }, void 0, false, {
                 fileName: "src/components/titleList.js",
-                lineNumber: 61,
+                lineNumber: 60,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
                 children: "Filter by"
             }, void 0, false, {
                 fileName: "src/components/titleList.js",
+                lineNumber: 61,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("form", {
+                id: "filterMenu",
+                onChange: submission,
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h5", {
+                        children: "Language"
+                    }, void 0, false, {
+                        fileName: "src/components/titleList.js",
+                        lineNumber: 63,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                        type: "checkbox",
+                        id: "Latin",
+                        name: "tongue",
+                        className: "cb",
+                        value: "Latin"
+                    }, void 0, false, {
+                        fileName: "src/components/titleList.js",
+                        lineNumber: 64,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                        htmlFor: "Latin",
+                        children: "Latin"
+                    }, void 0, false, {
+                        fileName: "src/components/titleList.js",
+                        lineNumber: 71,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                        fileName: "src/components/titleList.js",
+                        lineNumber: 72,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                        type: "checkbox",
+                        id: "Italian",
+                        name: "tongue",
+                        className: "cb",
+                        value: "Italian"
+                    }, void 0, false, {
+                        fileName: "src/components/titleList.js",
+                        lineNumber: 73,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                        htmlFor: "Italian",
+                        children: "Italian"
+                    }, void 0, false, {
+                        fileName: "src/components/titleList.js",
+                        lineNumber: 80,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h5", {
+                        children: "Century"
+                    }, void 0, false, {
+                        fileName: "src/components/titleList.js",
+                        lineNumber: 81,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                        type: "checkbox",
+                        id: "fifteenthc",
+                        name: "century",
+                        className: "cb",
+                        value: "14"
+                    }, void 0, false, {
+                        fileName: "src/components/titleList.js",
+                        lineNumber: 82,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                        htmlFor: "fifteenthc",
+                        children: "1400-1499"
+                    }, void 0, false, {
+                        fileName: "src/components/titleList.js",
+                        lineNumber: 89,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                        fileName: "src/components/titleList.js",
+                        lineNumber: 90,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                        type: "checkbox",
+                        id: "sixteenthc",
+                        name: "century",
+                        className: "cb",
+                        value: "15"
+                    }, void 0, false, {
+                        fileName: "src/components/titleList.js",
+                        lineNumber: 91,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                        htmlFor: "sixteenthc",
+                        children: "1500-1599"
+                    }, void 0, false, {
+                        fileName: "src/components/titleList.js",
+                        lineNumber: 98,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                        fileName: "src/components/titleList.js",
+                        lineNumber: 99,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                        fileName: "src/components/titleList.js",
+                        lineNumber: 100,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "src/components/titleList.js",
                 lineNumber: 62,
                 columnNumber: 7
             }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h5", {
-                children: "Author"
-            }, void 0, false, {
-                fileName: "src/components/titleList.js",
-                lineNumber: 63,
-                columnNumber: 7
-            }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                id: "Boethius",
-                value: "628ebb193f253638f89b518e",
-                onClick: (e)=>afilterer(e.target.value),
-                children: "Boethius, -524"
+                id: "reset",
+                onClick: getTitles,
+                children: "Reset"
             }, void 0, false, {
                 fileName: "src/components/titleList.js",
-                lineNumber: 64,
+                lineNumber: 102,
                 columnNumber: 7
             }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
-                fileName: "src/components/titleList.js",
-                lineNumber: 71,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                id: "Gaffurius",
-                value: "628fc6e73f253638f89b5198",
-                onClick: (e)=>afilterer(e.target.value),
-                children: "Gaffurius, Franchinus, 1451-1522"
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                id: "result"
             }, void 0, false, {
                 fileName: "src/components/titleList.js",
-                lineNumber: 72,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h5", {
-                children: "Language"
-            }, void 0, false, {
-                fileName: "src/components/titleList.js",
-                lineNumber: 79,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                id: "Latin",
-                value: "Latin",
-                onClick: (e)=>tfilterer(e.target.value),
-                children: "Latin"
-            }, void 0, false, {
-                fileName: "src/components/titleList.js",
-                lineNumber: 80,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
-                fileName: "src/components/titleList.js",
-                lineNumber: 87,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                id: "Italian",
-                value: "Italian",
-                onClick: (e)=>tfilterer(e.target.value),
-                children: "Italian"
-            }, void 0, false, {
-                fileName: "src/components/titleList.js",
-                lineNumber: 88,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h5", {
-                children: "Century"
-            }, void 0, false, {
-                fileName: "src/components/titleList.js",
-                lineNumber: 95,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                id: "fifteenthc",
-                value: "14",
-                onClick: (e)=>cfilterer(e.target.value),
-                children: "1400-1499 CE"
-            }, void 0, false, {
-                fileName: "src/components/titleList.js",
-                lineNumber: 96,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
-                fileName: "src/components/titleList.js",
-                lineNumber: 103,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                id: "sixteenthc",
-                value: "15",
-                onClick: (e)=>cfilterer(e.target.value),
-                children: "1500-1599 CE"
-            }, void 0, false, {
-                fileName: "src/components/titleList.js",
-                lineNumber: 104,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                    id: "reset",
-                    onClick: getTitles,
-                    children: "Reset"
-                }, void 0, false, {
-                    fileName: "src/components/titleList.js",
-                    lineNumber: 112,
-                    columnNumber: 9
-                }, this)
-            }, void 0, false, {
-                fileName: "src/components/titleList.js",
-                lineNumber: 111,
+                lineNumber: 105,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("table", {
@@ -29314,36 +29337,36 @@ function TitleList() {
                                 children: "Results"
                             }, void 0, false, {
                                 fileName: "src/components/titleList.js",
-                                lineNumber: 119,
+                                lineNumber: 109,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "src/components/titleList.js",
-                            lineNumber: 118,
+                            lineNumber: 108,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "src/components/titleList.js",
-                        lineNumber: 117,
+                        lineNumber: 107,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("tbody", {
                         children: titleList()
                     }, void 0, false, {
                         fileName: "src/components/titleList.js",
-                        lineNumber: 122,
+                        lineNumber: 112,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "src/components/titleList.js",
-                lineNumber: 116,
+                lineNumber: 106,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "src/components/titleList.js",
-        lineNumber: 55,
+        lineNumber: 54,
         columnNumber: 5
     }, this);
 }

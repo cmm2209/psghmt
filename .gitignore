@@ -8,6 +8,12 @@
 
 # testing
 /coverage
+/server/routes/testing.js
+/server/testserver.js
+/src/components/Testing.js
+/src/components/navbar.js
+/src/components/oldtitleList.js
+
 
 # production
 /build

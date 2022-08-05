@@ -31,6 +31,9 @@ export default function TitleList() {
     var markedCheckbox = document.querySelectorAll(
       'input[type="checkbox"]:checked'
     );
+    var empty = [].filter.call(markedCheckbox, function (el) {
+      return !el.checked;
+    });
     var cbsum = [];
     for (var checkbox of markedCheckbox) {
       cbsum.push(checkbox.name + "=" + checkbox.value);
@@ -38,6 +41,11 @@ export default function TitleList() {
       var cbsumWoC = cbsum1.replace(",", "&");
       const res = await fetch(`http://localhost:5000/tfilters?${cbsumWoC}`);
       const titles = await res.json();
+      setTitles(titles);
+    }
+    if (markedCheckbox.length == empty.length) {
+      const response = await fetch(`http://localhost:5000/browse/`);
+      const titles = await response.json();
       setTitles(titles);
     }
   }

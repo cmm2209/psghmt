@@ -9,7 +9,7 @@ const Title = (props) => (
   </tr>
 );
 
-export default function TitleList() {
+export default function Testing() {
   const [titles, setTitles] = useState([]);
 
   useEffect(() => {
@@ -39,7 +39,7 @@ export default function TitleList() {
       cbsum.push(checkbox.name + "=" + checkbox.value);
       var cbsum1 = cbsum.toString();
       var cbsumWoC = cbsum1.replace(",", "&");
-      const res = await fetch(`http://localhost:5000/tfilters?${cbsumWoC}`);
+      const res = await fetch(`http://localhost:5000/testing?${cbsumWoC}`);
       const titles = await res.json();
       setTitles(titles);
     }
@@ -95,35 +95,15 @@ export default function TitleList() {
           value="French"
         />
         <label htmlFor="French">French</label>
-        <h5>Century</h5>
-        <input
-          type="checkbox"
-          id="fifteenthc"
-          name="century"
-          className="cb"
-          value="14"
-        />
-        <label htmlFor="fifteenthc">1400-1499</label>
         <br />
         <input
           type="checkbox"
-          id="sixteenthc"
-          name="century"
+          id="other"
+          name="tongue"
           className="cb"
-          value="15"
+          value="&"
         />
-        <label htmlFor="sixteenthc">1500-1599</label>
-        <br />
-        <input
-          type="checkbox"
-          id="eighteenthc"
-          name="century"
-          className="cb"
-          value="17"
-        />
-        <label htmlFor="eighteenthc">1700-1799</label>
-        <br />
-        <br />
+        <label htmlFor="other">Other</label>
       </form>
       <button id="reset" onClick={getTitles}>
         Reset

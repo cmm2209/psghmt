@@ -38,7 +38,7 @@ export default function Testing() {
     for (var checkbox of markedCheckbox) {
       cbsum.push(checkbox.name + "=" + checkbox.value);
       var cbsum1 = cbsum.toString();
-      var cbsumWoC = cbsum1.replace(",", "&");
+      var cbsumWoC = cbsum1.replace(/,/g, "&");
       const res = await fetch(`http://localhost:5000/testing?${cbsumWoC}`);
       const titles = await res.json();
       setTitles(titles);
@@ -68,42 +68,44 @@ export default function Testing() {
       <h3>Treatises</h3>
       <h4>Filter by</h4>
       <form id="filterMenu" onChange={submission}>
-        <h5>Language</h5>
+        <h5>Century</h5>
         <input
           type="checkbox"
-          id="Latin"
-          name="tongue"
+          id="fifteenthc"
+          name="century"
           className="cb"
-          value="Latin"
+          value="14"
         />
-        <label htmlFor="Latin">Latin</label>
+        <label htmlFor="fifteenthc">1400-1499</label>
         <br />
         <input
           type="checkbox"
-          id="Italian"
-          name="tongue"
+          id="sixteenthc"
+          name="century"
           className="cb"
-          value="Italian"
+          value="15"
         />
-        <label htmlFor="Italian">Italian</label>
+        <label htmlFor="sixteenthc">1500-1599</label>
         <br />
         <input
           type="checkbox"
-          id="French"
-          name="tongue"
+          id="seventeenthc"
+          name="century"
           className="cb"
-          value="French"
+          value="16"
         />
-        <label htmlFor="French">French</label>
+        <label htmlFor="seventeenthc">1600-1699</label>
         <br />
         <input
           type="checkbox"
-          id="other"
-          name="tongue"
+          id="eighteenthc"
+          name="century"
           className="cb"
-          value="&"
+          value="17"
         />
-        <label htmlFor="other">Other</label>
+        <label htmlFor="eighteenthc">1700-1799</label>
+        <br />
+        <br />
       </form>
       <button id="reset" onClick={getTitles}>
         Reset

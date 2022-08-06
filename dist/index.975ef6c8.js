@@ -29153,7 +29153,7 @@ function TitleList() {
         for (var checkbox of markedCheckbox){
             cbsum.push(checkbox.name + "=" + checkbox.value);
             var cbsum1 = cbsum.toString();
-            var cbsumWoC = cbsum1.replace(",", "&");
+            var cbsumWoC = cbsum1.replace(/,/g, "&");
             const res = await fetch(`http://localhost:5000/tfilters?${cbsumWoC}`);
             const titles = await res.json();
             setTitles(titles);
@@ -29285,11 +29285,35 @@ function TitleList() {
                         lineNumber: 97,
                         columnNumber: 9
                     }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                        fileName: "src/components/titleList.js",
+                        lineNumber: 98,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                        type: "checkbox",
+                        id: "English",
+                        name: "tongue",
+                        className: "cb",
+                        value: "English"
+                    }, void 0, false, {
+                        fileName: "src/components/titleList.js",
+                        lineNumber: 99,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                        htmlFor: "English",
+                        children: "English"
+                    }, void 0, false, {
+                        fileName: "src/components/titleList.js",
+                        lineNumber: 106,
+                        columnNumber: 9
+                    }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h5", {
                         children: "Century"
                     }, void 0, false, {
                         fileName: "src/components/titleList.js",
-                        lineNumber: 98,
+                        lineNumber: 107,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
@@ -29300,36 +29324,12 @@ function TitleList() {
                         value: "14"
                     }, void 0, false, {
                         fileName: "src/components/titleList.js",
-                        lineNumber: 99,
+                        lineNumber: 108,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
                         htmlFor: "fifteenthc",
                         children: "1400-1499"
-                    }, void 0, false, {
-                        fileName: "src/components/titleList.js",
-                        lineNumber: 106,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
-                        fileName: "src/components/titleList.js",
-                        lineNumber: 107,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                        type: "checkbox",
-                        id: "sixteenthc",
-                        name: "century",
-                        className: "cb",
-                        value: "15"
-                    }, void 0, false, {
-                        fileName: "src/components/titleList.js",
-                        lineNumber: 108,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
-                        htmlFor: "sixteenthc",
-                        children: "1500-1599"
                     }, void 0, false, {
                         fileName: "src/components/titleList.js",
                         lineNumber: 115,
@@ -29342,18 +29342,18 @@ function TitleList() {
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
                         type: "checkbox",
-                        id: "eighteenthc",
+                        id: "sixteenthc",
                         name: "century",
                         className: "cb",
-                        value: "17"
+                        value: "15"
                     }, void 0, false, {
                         fileName: "src/components/titleList.js",
                         lineNumber: 117,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
-                        htmlFor: "eighteenthc",
-                        children: "1700-1799"
+                        htmlFor: "sixteenthc",
+                        children: "1500-1599"
                     }, void 0, false, {
                         fileName: "src/components/titleList.js",
                         lineNumber: 124,
@@ -29364,9 +29364,57 @@ function TitleList() {
                         lineNumber: 125,
                         columnNumber: 9
                     }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                        type: "checkbox",
+                        id: "seventeenthc",
+                        name: "century",
+                        className: "cb",
+                        value: "16"
+                    }, void 0, false, {
                         fileName: "src/components/titleList.js",
                         lineNumber: 126,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                        htmlFor: "seventeenthc",
+                        children: "1600-1699"
+                    }, void 0, false, {
+                        fileName: "src/components/titleList.js",
+                        lineNumber: 133,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                        fileName: "src/components/titleList.js",
+                        lineNumber: 134,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                        type: "checkbox",
+                        id: "eighteenthc",
+                        name: "century",
+                        className: "cb",
+                        value: "17"
+                    }, void 0, false, {
+                        fileName: "src/components/titleList.js",
+                        lineNumber: 135,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                        htmlFor: "eighteenthc",
+                        children: "1700-1799"
+                    }, void 0, false, {
+                        fileName: "src/components/titleList.js",
+                        lineNumber: 142,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                        fileName: "src/components/titleList.js",
+                        lineNumber: 143,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                        fileName: "src/components/titleList.js",
+                        lineNumber: 144,
                         columnNumber: 9
                     }, this)
                 ]
@@ -29381,14 +29429,14 @@ function TitleList() {
                 children: "Reset"
             }, void 0, false, {
                 fileName: "src/components/titleList.js",
-                lineNumber: 128,
+                lineNumber: 146,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
                 id: "result"
             }, void 0, false, {
                 fileName: "src/components/titleList.js",
-                lineNumber: 131,
+                lineNumber: 149,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("table", {
@@ -29403,30 +29451,30 @@ function TitleList() {
                                 children: "Results"
                             }, void 0, false, {
                                 fileName: "src/components/titleList.js",
-                                lineNumber: 135,
+                                lineNumber: 153,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "src/components/titleList.js",
-                            lineNumber: 134,
+                            lineNumber: 152,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "src/components/titleList.js",
-                        lineNumber: 133,
+                        lineNumber: 151,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("tbody", {
                         children: titleList()
                     }, void 0, false, {
                         fileName: "src/components/titleList.js",
-                        lineNumber: 138,
+                        lineNumber: 156,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "src/components/titleList.js",
-                lineNumber: 132,
+                lineNumber: 150,
                 columnNumber: 7
             }, this)
         ]
@@ -29505,7 +29553,7 @@ function Testing() {
         for (var checkbox of markedCheckbox){
             cbsum.push(checkbox.name + "=" + checkbox.value);
             var cbsum1 = cbsum.toString();
-            var cbsumWoC = cbsum1.replace(",", "&");
+            var cbsumWoC = cbsum1.replace(/,/g, "&");
             const res = await fetch(`http://localhost:5000/testing?${cbsumWoC}`);
             const titles = await res.json();
             setTitles(titles);
@@ -29564,7 +29612,7 @@ function Testing() {
                 onChange: submission,
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h5", {
-                        children: "Language"
+                        children: "Century"
                     }, void 0, false, {
                         fileName: "src/components/Testing.js",
                         lineNumber: 71,
@@ -29572,18 +29620,18 @@ function Testing() {
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
                         type: "checkbox",
-                        id: "Latin",
-                        name: "tongue",
+                        id: "fifteenthc",
+                        name: "century",
                         className: "cb",
-                        value: "Latin"
+                        value: "14"
                     }, void 0, false, {
                         fileName: "src/components/Testing.js",
                         lineNumber: 72,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
-                        htmlFor: "Latin",
-                        children: "Latin"
+                        htmlFor: "fifteenthc",
+                        children: "1400-1499"
                     }, void 0, false, {
                         fileName: "src/components/Testing.js",
                         lineNumber: 79,
@@ -29596,18 +29644,18 @@ function Testing() {
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
                         type: "checkbox",
-                        id: "Italian",
-                        name: "tongue",
+                        id: "sixteenthc",
+                        name: "century",
                         className: "cb",
-                        value: "Italian"
+                        value: "15"
                     }, void 0, false, {
                         fileName: "src/components/Testing.js",
                         lineNumber: 81,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
-                        htmlFor: "Italian",
-                        children: "Italian"
+                        htmlFor: "sixteenthc",
+                        children: "1500-1599"
                     }, void 0, false, {
                         fileName: "src/components/Testing.js",
                         lineNumber: 88,
@@ -29620,18 +29668,18 @@ function Testing() {
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
                         type: "checkbox",
-                        id: "French",
-                        name: "tongue",
+                        id: "seventeenthc",
+                        name: "century",
                         className: "cb",
-                        value: "French"
+                        value: "16"
                     }, void 0, false, {
                         fileName: "src/components/Testing.js",
                         lineNumber: 90,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
-                        htmlFor: "French",
-                        children: "French"
+                        htmlFor: "seventeenthc",
+                        children: "1600-1699"
                     }, void 0, false, {
                         fileName: "src/components/Testing.js",
                         lineNumber: 97,
@@ -29644,21 +29692,31 @@ function Testing() {
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
                         type: "checkbox",
-                        id: "other",
-                        name: "tongue",
+                        id: "eighteenthc",
+                        name: "century",
                         className: "cb",
-                        value: "&"
+                        value: "17"
                     }, void 0, false, {
                         fileName: "src/components/Testing.js",
                         lineNumber: 99,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
-                        htmlFor: "other",
-                        children: "Other"
+                        htmlFor: "eighteenthc",
+                        children: "1700-1799"
                     }, void 0, false, {
                         fileName: "src/components/Testing.js",
                         lineNumber: 106,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                        fileName: "src/components/Testing.js",
+                        lineNumber: 107,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                        fileName: "src/components/Testing.js",
+                        lineNumber: 108,
                         columnNumber: 9
                     }, this)
                 ]
@@ -29673,14 +29731,14 @@ function Testing() {
                 children: "Reset"
             }, void 0, false, {
                 fileName: "src/components/Testing.js",
-                lineNumber: 108,
+                lineNumber: 110,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
                 id: "result"
             }, void 0, false, {
                 fileName: "src/components/Testing.js",
-                lineNumber: 111,
+                lineNumber: 113,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("table", {
@@ -29695,30 +29753,30 @@ function Testing() {
                                 children: "Results"
                             }, void 0, false, {
                                 fileName: "src/components/Testing.js",
-                                lineNumber: 115,
+                                lineNumber: 117,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "src/components/Testing.js",
-                            lineNumber: 114,
+                            lineNumber: 116,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "src/components/Testing.js",
-                        lineNumber: 113,
+                        lineNumber: 115,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("tbody", {
                         children: titleList()
                     }, void 0, false, {
                         fileName: "src/components/Testing.js",
-                        lineNumber: 118,
+                        lineNumber: 120,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "src/components/Testing.js",
-                lineNumber: 112,
+                lineNumber: 114,
                 columnNumber: 7
             }, this)
         ]

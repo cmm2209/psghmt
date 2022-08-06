@@ -13,15 +13,26 @@ const dbo = require("../db/conn");
 
 AuthorRoutes.route("/testing").get(function (req, res) {
   let db_connect = dbo.getDb();
-  const qvalue = req.query.tongue;
-  for (const key in req.query) {
-    console.log(key, req.query[key]);
-  }
+  // for (const key in req.query) {
+  //   console.log(key, req.query[key], req.query.century);
+  // }
 
-  if (Array.isArray(qvalue)) {
+  if (Array.isArray(req.query.century)) {
+    let cquery1 = req.query.century;
+    var cquery2 = [],
+      obj,
+      temp = cquery1,
+      i;
+
+    for (i = 0; i < temp.length; i++) {
+      obj = {};
+      obj = parseInt(temp[i]);
+      cquery2.push(obj);
+    }
+
     db_connect
       .collection("titles")
-      .find({ $or: [{ tongue: qvalue[0] }, { tongue: qvalue[1] }] })
+      .find({ century: { $in: cquery2 } })
       .toArray(function (err, result) {
         if (err) throw err;
         res.json(result);
@@ -29,11 +40,12 @@ AuthorRoutes.route("/testing").get(function (req, res) {
   } else {
     db_connect
       .collection("titles")
-      .find({ tongue: qvalue })
+      .find({ century: parseInt(req.query.century) })
       .toArray(function (err, result) {
         if (err) throw err;
         res.json(result);
       });
+    //  console.log(parseInt(req.query.century));
   }
 });
 

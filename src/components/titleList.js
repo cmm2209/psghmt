@@ -38,7 +38,7 @@ export default function TitleList() {
     for (var checkbox of markedCheckbox) {
       cbsum.push(checkbox.name + "=" + checkbox.value);
       var cbsum1 = cbsum.toString();
-      var cbsumWoC = cbsum1.replace(",", "&");
+      var cbsumWoC = cbsum1.replace(/,/g, "&");
       const res = await fetch(`http://localhost:5000/tfilters?${cbsumWoC}`);
       const titles = await res.json();
       setTitles(titles);
@@ -95,6 +95,15 @@ export default function TitleList() {
           value="French"
         />
         <label htmlFor="French">French</label>
+        <br />
+        <input
+          type="checkbox"
+          id="English"
+          name="tongue"
+          className="cb"
+          value="English"
+        />
+        <label htmlFor="English">English</label>
         <h5>Century</h5>
         <input
           type="checkbox"
@@ -113,6 +122,15 @@ export default function TitleList() {
           value="15"
         />
         <label htmlFor="sixteenthc">1500-1599</label>
+        <br />
+        <input
+          type="checkbox"
+          id="seventeenthc"
+          name="century"
+          className="cb"
+          value="16"
+        />
+        <label htmlFor="seventeenthc">1600-1699</label>
         <br />
         <input
           type="checkbox"

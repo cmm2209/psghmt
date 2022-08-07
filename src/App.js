@@ -7,7 +7,6 @@ import { Route, Routes } from "react-router-dom";
 // import Navbar from "./components/navbar"; (include <Navbar /> above <Routes>)
 import Landing from "./components/landing";
 import TitleList from "./components/titleList";
-import Testing from "./components/Testing";
 
 const App = () => {
   return (

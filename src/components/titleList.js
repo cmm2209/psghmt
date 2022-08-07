@@ -39,10 +39,11 @@ export default function TitleList() {
       cbsum.push(checkbox.name + "=" + checkbox.value);
       var cbsum1 = cbsum.toString();
       var cbsumWoC = cbsum1.replace(/,/g, "&");
-      const res = await fetch(`http://localhost:5000/tfilters?${cbsumWoC}`);
-      const titles = await res.json();
-      setTitles(titles);
     }
+    const res = await fetch(`http://localhost:5000/tfilters?${cbsumWoC}`);
+    const titles = await res.json();
+    setTitles(titles);
+
     if (markedCheckbox.length == empty.length) {
       const response = await fetch(`http://localhost:5000/browse/`);
       const titles = await response.json();

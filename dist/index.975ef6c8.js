@@ -27141,14 +27141,6 @@ const App = ()=>{
                     fileName: "src/App.js",
                     lineNumber: 17,
                     columnNumber: 9
-                }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
-                    path: "/testing",
-                    element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Testing, {}, void 0, false, void 0, void 0)
-                }, void 0, false, {
-                    fileName: "src/App.js",
-                    lineNumber: 18,
-                    columnNumber: 9
                 }, undefined)
             ]
         }, void 0, true, {
@@ -28911,57 +28903,1141 @@ parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
+var _pythJpg = require("../Pyth.jpg");
+var _pythJpgDefault = parcelHelpers.interopDefault(_pythJpg);
+var _bellsJpg = require("../Bells.jpg");
+var _bellsJpgDefault = parcelHelpers.interopDefault(_bellsJpg);
+var _hucbaldJpg = require("../Hucbald.jpg");
+var _hucbaldJpgDefault = parcelHelpers.interopDefault(_hucbaldJpg);
+var _scriptoriumJpg = require("../scriptorium.jpg");
+var _scriptoriumJpgDefault = parcelHelpers.interopDefault(_scriptoriumJpg);
 // We use Route in order to define the different routes of our application
 var _reactRouterDom = require("react-router-dom");
 // We import all the components we need in our app
 // import TitleList from "./titleList.js";
+var _styleCss = require("../css/style.css");
+var _iconFontCss = require("../css/icon-font.css");
+var _iuFrameworkMinCss = require("../css/iu-framework.min.css");
+var _brandMinCss = require("../css/brand.min.css");
+var _searchMinCss = require("../css/search.min.css");
+var _siteCss = require("../css/site.css");
+var _modernizrMinJs = require("../css/modernizr.min.js");
 const Landing = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-            className: "landing",
-            children: [
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                    children: "The Center for the History of Music Theory and Literature"
-                }, void 0, false, {
-                    fileName: "src/components/landing.js",
-                    lineNumber: 13,
-                    columnNumber: 9
-                }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                    style: {
-                        "width": "50%"
-                    },
-                    alt: "bkdg",
-                    src: "http://chmtl.indiana.edu/images/scriptorium10011101-1024x512k.jpg"
-                }, void 0, false, {
-                    fileName: "src/components/landing.js",
-                    lineNumber: 14,
-                    columnNumber: 9
-                }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                        to: "/browse",
-                        children: "Browse all treatises"
+        className: "js flexbox flexboxlegacy no-touch no-iumobile webp js flexbox flexboxlegacy no-touch no-iumobile webp has-menu-toggle",
+        itemScope: "itemscope",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("link", {
+                as: "font",
+                crossOrigin: "",
+                href: "https://fonts.iu.edu/fonts/benton-sans-regular.woff",
+                rel: "preload",
+                type: "font/woff2"
+            }, void 0, false, {
+                fileName: "src/components/landing.js",
+                lineNumber: 27,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("link", {
+                as: "font",
+                crossOrigin: "",
+                href: "https://fonts.iu.edu/fonts/benton-sans-bold.woff",
+                rel: "preload",
+                type: "font/woff2"
+            }, void 0, false, {
+                fileName: "src/components/landing.js",
+                lineNumber: 34,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("link", {
+                rel: "preconnect",
+                href: "https://fonts.iu.edu",
+                crossOrigin: ""
+            }, void 0, false, {
+                fileName: "src/components/landing.js",
+                lineNumber: 41,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("link", {
+                rel: "dns-prefetch",
+                href: "https://fonts.iu.edu"
+            }, void 0, false, {
+                fileName: "src/components/landing.js",
+                lineNumber: 42,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "landing",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("header", {
+                        id: "header",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                id: "skipnav",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
+                                        children: [
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                                    href: "#content",
+                                                    children: "Skip to Content"
+                                                }, void 0, false, {
+                                                    fileName: "src/components/landing.js",
+                                                    lineNumber: 48,
+                                                    columnNumber: 17
+                                                }, undefined)
+                                            }, void 0, false, {
+                                                fileName: "src/components/landing.js",
+                                                lineNumber: 47,
+                                                columnNumber: 15
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                                    href: "#nav-main",
+                                                    children: "Skip to Main Navigation"
+                                                }, void 0, false, {
+                                                    fileName: "src/components/landing.js",
+                                                    lineNumber: 51,
+                                                    columnNumber: 17
+                                                }, undefined)
+                                            }, void 0, false, {
+                                                fileName: "src/components/landing.js",
+                                                lineNumber: 50,
+                                                columnNumber: 15
+                                            }, undefined)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/components/landing.js",
+                                        lineNumber: 46,
+                                        columnNumber: 13
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("hr", {}, void 0, false, {
+                                        fileName: "src/components/landing.js",
+                                        lineNumber: 54,
+                                        columnNumber: 13
+                                    }, undefined)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/components/landing.js",
+                                lineNumber: 45,
+                                columnNumber: 11
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                id: "offCanvas",
+                                className: "hide-for-large",
+                                role: "navigation",
+                                "aria-label": "Mobile",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                        className: "menu-toggle button hide-for-large",
+                                        "data-toggle": "iu-menu",
+                                        children: "Menu"
+                                    }, void 0, false, {
+                                        fileName: "src/components/landing.js",
+                                        lineNumber: 62,
+                                        columnNumber: 13
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        id: "iu-menu",
+                                        className: "off-canvas position-right off-canvas-items",
+                                        "data-off-canvas": "",
+                                        "data-position": "right",
+                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "mobile off-canvas-list",
+                                            itemScope: "itemScope",
+                                            itemType: "http://schema.org/SiteNavigationElement",
+                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
+                                                children: [
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                                        className: "has-children",
+                                                        children: [
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                                                href: "https://chmtl.indiana.edu/about/index.html",
+                                                                itemProp: "url",
+                                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                                    itemProp: "name",
+                                                                    children: "About"
+                                                                }, void 0, false, {
+                                                                    fileName: "src/components/landing.js",
+                                                                    lineNumber: 85,
+                                                                    columnNumber: 23
+                                                                }, undefined)
+                                                            }, void 0, false, {
+                                                                fileName: "src/components/landing.js",
+                                                                lineNumber: 81,
+                                                                columnNumber: 21
+                                                            }, undefined),
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
+                                                                className: "children",
+                                                                children: [
+                                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                                                            href: "https://chmtl.indiana.edu/about/mission.html",
+                                                                            itemProp: "url",
+                                                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                                                itemProp: "name",
+                                                                                children: "Mission"
+                                                                            }, void 0, false, {
+                                                                                fileName: "src/components/landing.js",
+                                                                                lineNumber: 93,
+                                                                                columnNumber: 27
+                                                                            }, undefined)
+                                                                        }, void 0, false, {
+                                                                            fileName: "src/components/landing.js",
+                                                                            lineNumber: 89,
+                                                                            columnNumber: 25
+                                                                        }, undefined)
+                                                                    }, void 0, false, {
+                                                                        fileName: "src/components/landing.js",
+                                                                        lineNumber: 88,
+                                                                        columnNumber: 23
+                                                                    }, undefined),
+                                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                                                            href: "https://chmtl.indiana.edu/about/history.html",
+                                                                            itemProp: "url",
+                                                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                                                itemProp: "name",
+                                                                                children: "History"
+                                                                            }, void 0, false, {
+                                                                                fileName: "src/components/landing.js",
+                                                                                lineNumber: 101,
+                                                                                columnNumber: 27
+                                                                            }, undefined)
+                                                                        }, void 0, false, {
+                                                                            fileName: "src/components/landing.js",
+                                                                            lineNumber: 97,
+                                                                            columnNumber: 25
+                                                                        }, undefined)
+                                                                    }, void 0, false, {
+                                                                        fileName: "src/components/landing.js",
+                                                                        lineNumber: 96,
+                                                                        columnNumber: 23
+                                                                    }, undefined)
+                                                                ]
+                                                            }, void 0, true, {
+                                                                fileName: "src/components/landing.js",
+                                                                lineNumber: 87,
+                                                                columnNumber: 21
+                                                            }, undefined)
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "src/components/landing.js",
+                                                        lineNumber: 80,
+                                                        columnNumber: 19
+                                                    }, undefined),
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                                            to: "/browse",
+                                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                                itemProp: "name",
+                                                                children: "The Database"
+                                                            }, void 0, false, {
+                                                                fileName: "src/components/landing.js",
+                                                                lineNumber: 108,
+                                                                columnNumber: 23
+                                                            }, undefined)
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/landing.js",
+                                                            lineNumber: 107,
+                                                            columnNumber: 21
+                                                        }, undefined)
+                                                    }, void 0, false, {
+                                                        fileName: "src/components/landing.js",
+                                                        lineNumber: 106,
+                                                        columnNumber: 19
+                                                    }, undefined),
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                                        className: "has-children",
+                                                        children: [
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                                                href: "https://chmtl.indiana.edu/projects/index.html",
+                                                                itemProp: "url",
+                                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                                    itemProp: "name",
+                                                                    children: "Other projects and resources"
+                                                                }, void 0, false, {
+                                                                    fileName: "src/components/landing.js",
+                                                                    lineNumber: 116,
+                                                                    columnNumber: 23
+                                                                }, undefined)
+                                                            }, void 0, false, {
+                                                                fileName: "src/components/landing.js",
+                                                                lineNumber: 112,
+                                                                columnNumber: 21
+                                                            }, undefined),
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
+                                                                className: "children",
+                                                                children: [
+                                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                                                            href: "https://chmtl.indiana.edu/projects/borrowing.html",
+                                                                            itemProp: "url",
+                                                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                                                itemProp: "name",
+                                                                                children: "Musical Borrowing"
+                                                                            }, void 0, false, {
+                                                                                fileName: "src/components/landing.js",
+                                                                                lineNumber: 124,
+                                                                                columnNumber: 27
+                                                                            }, undefined)
+                                                                        }, void 0, false, {
+                                                                            fileName: "src/components/landing.js",
+                                                                            lineNumber: 120,
+                                                                            columnNumber: 25
+                                                                        }, undefined)
+                                                                    }, void 0, false, {
+                                                                        fileName: "src/components/landing.js",
+                                                                        lineNumber: 119,
+                                                                        columnNumber: 23
+                                                                    }, undefined),
+                                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                                                            href: "https://chmtl.indiana.edu/hmt/thesauri/heinrich-isaac/index.html",
+                                                                            itemProp: "url",
+                                                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                                                itemProp: "name",
+                                                                                children: "Choralis Constantinus II"
+                                                                            }, void 0, false, {
+                                                                                fileName: "src/components/landing.js",
+                                                                                lineNumber: 132,
+                                                                                columnNumber: 27
+                                                                            }, undefined)
+                                                                        }, void 0, false, {
+                                                                            fileName: "src/components/landing.js",
+                                                                            lineNumber: 128,
+                                                                            columnNumber: 25
+                                                                        }, undefined)
+                                                                    }, void 0, false, {
+                                                                        fileName: "src/components/landing.js",
+                                                                        lineNumber: 127,
+                                                                        columnNumber: 23
+                                                                    }, undefined)
+                                                                ]
+                                                            }, void 0, true, {
+                                                                fileName: "src/components/landing.js",
+                                                                lineNumber: 118,
+                                                                columnNumber: 21
+                                                            }, undefined)
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "src/components/landing.js",
+                                                        lineNumber: 111,
+                                                        columnNumber: 19
+                                                    }, undefined),
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                                        className: "has-children",
+                                                        children: [
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                                                href: "https://chmtl.indiana.edu/projects/index.html",
+                                                                itemProp: "url",
+                                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                                    itemProp: "name",
+                                                                    children: "Archives"
+                                                                }, void 0, false, {
+                                                                    fileName: "src/components/landing.js",
+                                                                    lineNumber: 142,
+                                                                    columnNumber: 23
+                                                                }, undefined)
+                                                            }, void 0, false, {
+                                                                fileName: "src/components/landing.js",
+                                                                lineNumber: 138,
+                                                                columnNumber: 21
+                                                            }, undefined),
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
+                                                                className: "children",
+                                                                children: [
+                                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                                                            href: "https://chmtl.indiana.edu/hmt/publications.html",
+                                                                            itemProp: "url",
+                                                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                                                itemProp: "name",
+                                                                                children: "Past Publications"
+                                                                            }, void 0, false, {
+                                                                                fileName: "src/components/landing.js",
+                                                                                lineNumber: 150,
+                                                                                columnNumber: 27
+                                                                            }, undefined)
+                                                                        }, void 0, false, {
+                                                                            fileName: "src/components/landing.js",
+                                                                            lineNumber: 146,
+                                                                            columnNumber: 25
+                                                                        }, undefined)
+                                                                    }, void 0, false, {
+                                                                        fileName: "src/components/landing.js",
+                                                                        lineNumber: 145,
+                                                                        columnNumber: 23
+                                                                    }, undefined),
+                                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                                                            href: "https://chmtl.indiana.edu/projects/ddm-online.html",
+                                                                            itemProp: "url",
+                                                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                                                itemProp: "name",
+                                                                                children: "DDM-Online"
+                                                                            }, void 0, false, {
+                                                                                fileName: "src/components/landing.js",
+                                                                                lineNumber: 158,
+                                                                                columnNumber: 27
+                                                                            }, undefined)
+                                                                        }, void 0, false, {
+                                                                            fileName: "src/components/landing.js",
+                                                                            lineNumber: 154,
+                                                                            columnNumber: 25
+                                                                        }, undefined)
+                                                                    }, void 0, false, {
+                                                                        fileName: "src/components/landing.js",
+                                                                        lineNumber: 153,
+                                                                        columnNumber: 23
+                                                                    }, undefined),
+                                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                                                            href: "https://chmtl.indiana.edu/projects/collectorship.html",
+                                                                            itemProp: "url",
+                                                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                                                itemProp: "name",
+                                                                                children: "Music Collectorship"
+                                                                            }, void 0, false, {
+                                                                                fileName: "src/components/landing.js",
+                                                                                lineNumber: 166,
+                                                                                columnNumber: 27
+                                                                            }, undefined)
+                                                                        }, void 0, false, {
+                                                                            fileName: "src/components/landing.js",
+                                                                            lineNumber: 162,
+                                                                            columnNumber: 25
+                                                                        }, undefined)
+                                                                    }, void 0, false, {
+                                                                        fileName: "src/components/landing.js",
+                                                                        lineNumber: 161,
+                                                                        columnNumber: 23
+                                                                    }, undefined)
+                                                                ]
+                                                            }, void 0, true, {
+                                                                fileName: "src/components/landing.js",
+                                                                lineNumber: 144,
+                                                                columnNumber: 21
+                                                            }, undefined)
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "src/components/landing.js",
+                                                        lineNumber: 137,
+                                                        columnNumber: 19
+                                                    }, undefined)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "src/components/landing.js",
+                                                lineNumber: 79,
+                                                columnNumber: 17
+                                            }, undefined)
+                                        }, void 0, false, {
+                                            fileName: "src/components/landing.js",
+                                            lineNumber: 74,
+                                            columnNumber: 15
+                                        }, undefined)
+                                    }, void 0, false, {
+                                        fileName: "src/components/landing.js",
+                                        lineNumber: 68,
+                                        columnNumber: 13
+                                    }, undefined)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/components/landing.js",
+                                lineNumber: 56,
+                                columnNumber: 11
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "site-header",
+                                itemScope: "itemScope",
+                                itemType: "http://schema.org/CollegeOrUniversity",
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "row pad",
+                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                            to: "/",
+                                            className: "title",
+                                            itemProp: "department",
+                                            children: [
+                                                "The Center for the History",
+                                                " ",
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                    style: {
+                                                        display: "block"
+                                                    },
+                                                    children: "of Music Theory and Literature"
+                                                }, void 0, false, {
+                                                    fileName: "src/components/landing.js",
+                                                    lineNumber: 185,
+                                                    columnNumber: 19
+                                                }, undefined)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "src/components/landing.js",
+                                            lineNumber: 183,
+                                            columnNumber: 17
+                                        }, undefined)
+                                    }, void 0, false, {
+                                        fileName: "src/components/landing.js",
+                                        lineNumber: 182,
+                                        columnNumber: 15
+                                    }, undefined)
+                                }, void 0, false, {
+                                    fileName: "src/components/landing.js",
+                                    lineNumber: 181,
+                                    columnNumber: 13
+                                }, undefined)
+                            }, void 0, false, {
+                                fileName: "src/components/landing.js",
+                                lineNumber: 176,
+                                columnNumber: 11
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                id: "nav-main-sticky-wrapper",
+                                className: "sticky-nav is-sticky",
+                                style: {
+                                    height: "52px"
+                                },
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("nav", {
+                                    "aria-label": "Main",
+                                    id: "nav-main",
+                                    role: "navigation",
+                                    itemScope: "itemScope",
+                                    itemType: "http://schema.org/SiteNavigationElement",
+                                    className: "main show-for-large dropdown",
+                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
+                                        className: "row pad",
+                                        children: [
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                                className: "show-on-sticky home",
+                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                                    href: "/",
+                                                    "aria-label": "Home",
+                                                    children: "Home"
+                                                }, void 0, false, {
+                                                    fileName: "src/components/landing.js",
+                                                    lineNumber: 207,
+                                                    columnNumber: 19
+                                                }, undefined)
+                                            }, void 0, false, {
+                                                fileName: "src/components/landing.js",
+                                                lineNumber: 206,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                                className: "first",
+                                                children: [
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                                        href: "https://chmtl.indiana.edu/about/index.html",
+                                                        itemProp: "url",
+                                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                            itemProp: "name",
+                                                            children: "About"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/landing.js",
+                                                            lineNumber: 216,
+                                                            columnNumber: 21
+                                                        }, undefined)
+                                                    }, void 0, false, {
+                                                        fileName: "src/components/landing.js",
+                                                        lineNumber: 212,
+                                                        columnNumber: 19
+                                                    }, undefined),
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
+                                                        className: "children",
+                                                        children: [
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                                                    href: "https://chmtl.indiana.edu/about/mission.html",
+                                                                    itemProp: "url",
+                                                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                                        itemProp: "name",
+                                                                        children: "Mission"
+                                                                    }, void 0, false, {
+                                                                        fileName: "src/components/landing.js",
+                                                                        lineNumber: 224,
+                                                                        columnNumber: 25
+                                                                    }, undefined)
+                                                                }, void 0, false, {
+                                                                    fileName: "src/components/landing.js",
+                                                                    lineNumber: 220,
+                                                                    columnNumber: 23
+                                                                }, undefined)
+                                                            }, void 0, false, {
+                                                                fileName: "src/components/landing.js",
+                                                                lineNumber: 219,
+                                                                columnNumber: 21
+                                                            }, undefined),
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                                                    href: "https://chmtl.indiana.edu/about/history.html",
+                                                                    itemProp: "url",
+                                                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                                        itemProp: "name",
+                                                                        children: "History"
+                                                                    }, void 0, false, {
+                                                                        fileName: "src/components/landing.js",
+                                                                        lineNumber: 232,
+                                                                        columnNumber: 25
+                                                                    }, undefined)
+                                                                }, void 0, false, {
+                                                                    fileName: "src/components/landing.js",
+                                                                    lineNumber: 228,
+                                                                    columnNumber: 23
+                                                                }, undefined)
+                                                            }, void 0, false, {
+                                                                fileName: "src/components/landing.js",
+                                                                lineNumber: 227,
+                                                                columnNumber: 21
+                                                            }, undefined)
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "src/components/landing.js",
+                                                        lineNumber: 218,
+                                                        columnNumber: 19
+                                                    }, undefined)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "src/components/landing.js",
+                                                lineNumber: 211,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                                    to: "/browse",
+                                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        itemProp: "name",
+                                                        children: "The Database"
+                                                    }, void 0, false, {
+                                                        fileName: "src/components/landing.js",
+                                                        lineNumber: 239,
+                                                        columnNumber: 21
+                                                    }, undefined)
+                                                }, void 0, false, {
+                                                    fileName: "src/components/landing.js",
+                                                    lineNumber: 238,
+                                                    columnNumber: 19
+                                                }, undefined)
+                                            }, void 0, false, {
+                                                fileName: "src/components/landing.js",
+                                                lineNumber: 237,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                                children: [
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                                        href: "https://chmtl.indiana.edu/projects/index.html",
+                                                        itemProp: "url",
+                                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                            itemProp: "name",
+                                                            children: "Other projects and resources"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/landing.js",
+                                                            lineNumber: 247,
+                                                            columnNumber: 21
+                                                        }, undefined)
+                                                    }, void 0, false, {
+                                                        fileName: "src/components/landing.js",
+                                                        lineNumber: 243,
+                                                        columnNumber: 19
+                                                    }, undefined),
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
+                                                        className: "children",
+                                                        children: [
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                                                    href: "https://chmtl.indiana.edu/projects/borrowing.html",
+                                                                    itemProp: "url",
+                                                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                                        itemProp: "name",
+                                                                        children: "Musical Borrowing"
+                                                                    }, void 0, false, {
+                                                                        fileName: "src/components/landing.js",
+                                                                        lineNumber: 255,
+                                                                        columnNumber: 25
+                                                                    }, undefined)
+                                                                }, void 0, false, {
+                                                                    fileName: "src/components/landing.js",
+                                                                    lineNumber: 251,
+                                                                    columnNumber: 23
+                                                                }, undefined)
+                                                            }, void 0, false, {
+                                                                fileName: "src/components/landing.js",
+                                                                lineNumber: 250,
+                                                                columnNumber: 21
+                                                            }, undefined),
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                                                    href: "https://chmtl.indiana.edu/hmt/thesauri/heinrich-isaac/index.html",
+                                                                    itemProp: "url",
+                                                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                                        itemProp: "name",
+                                                                        children: "Choralis Constantinus II"
+                                                                    }, void 0, false, {
+                                                                        fileName: "src/components/landing.js",
+                                                                        lineNumber: 263,
+                                                                        columnNumber: 25
+                                                                    }, undefined)
+                                                                }, void 0, false, {
+                                                                    fileName: "src/components/landing.js",
+                                                                    lineNumber: 259,
+                                                                    columnNumber: 23
+                                                                }, undefined)
+                                                            }, void 0, false, {
+                                                                fileName: "src/components/landing.js",
+                                                                lineNumber: 258,
+                                                                columnNumber: 21
+                                                            }, undefined)
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "src/components/landing.js",
+                                                        lineNumber: 249,
+                                                        columnNumber: 19
+                                                    }, undefined)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "src/components/landing.js",
+                                                lineNumber: 242,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                                children: [
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                                        href: "https://chmtl.indiana.edu/projects/index.html",
+                                                        itemProp: "url",
+                                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                            itemProp: "name",
+                                                            children: "Archives"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/landing.js",
+                                                            lineNumber: 273,
+                                                            columnNumber: 21
+                                                        }, undefined)
+                                                    }, void 0, false, {
+                                                        fileName: "src/components/landing.js",
+                                                        lineNumber: 269,
+                                                        columnNumber: 19
+                                                    }, undefined),
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
+                                                        className: "children",
+                                                        children: [
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                                                    href: "https://chmtl.indiana.edu/hmt/publications.html",
+                                                                    itemProp: "url",
+                                                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                                        itemProp: "name",
+                                                                        children: "Past Publications"
+                                                                    }, void 0, false, {
+                                                                        fileName: "src/components/landing.js",
+                                                                        lineNumber: 281,
+                                                                        columnNumber: 25
+                                                                    }, undefined)
+                                                                }, void 0, false, {
+                                                                    fileName: "src/components/landing.js",
+                                                                    lineNumber: 277,
+                                                                    columnNumber: 23
+                                                                }, undefined)
+                                                            }, void 0, false, {
+                                                                fileName: "src/components/landing.js",
+                                                                lineNumber: 276,
+                                                                columnNumber: 21
+                                                            }, undefined),
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                                                    href: "https://chmtl.indiana.edu/projects/ddm-online.html",
+                                                                    itemProp: "url",
+                                                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                                        itemProp: "name",
+                                                                        children: "DDM-Online"
+                                                                    }, void 0, false, {
+                                                                        fileName: "src/components/landing.js",
+                                                                        lineNumber: 289,
+                                                                        columnNumber: 25
+                                                                    }, undefined)
+                                                                }, void 0, false, {
+                                                                    fileName: "src/components/landing.js",
+                                                                    lineNumber: 285,
+                                                                    columnNumber: 23
+                                                                }, undefined)
+                                                            }, void 0, false, {
+                                                                fileName: "src/components/landing.js",
+                                                                lineNumber: 284,
+                                                                columnNumber: 21
+                                                            }, undefined),
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                                                    href: "https://chmtl.indiana.edu/projects/collectorship.html",
+                                                                    itemProp: "url",
+                                                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                                        itemProp: "name",
+                                                                        children: "Music Collectorship"
+                                                                    }, void 0, false, {
+                                                                        fileName: "src/components/landing.js",
+                                                                        lineNumber: 297,
+                                                                        columnNumber: 25
+                                                                    }, undefined)
+                                                                }, void 0, false, {
+                                                                    fileName: "src/components/landing.js",
+                                                                    lineNumber: 293,
+                                                                    columnNumber: 23
+                                                                }, undefined)
+                                                            }, void 0, false, {
+                                                                fileName: "src/components/landing.js",
+                                                                lineNumber: 292,
+                                                                columnNumber: 21
+                                                            }, undefined)
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "src/components/landing.js",
+                                                        lineNumber: 275,
+                                                        columnNumber: 19
+                                                    }, undefined)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "src/components/landing.js",
+                                                lineNumber: 268,
+                                                columnNumber: 17
+                                            }, undefined)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/components/landing.js",
+                                        lineNumber: 205,
+                                        columnNumber: 15
+                                    }, undefined)
+                                }, void 0, false, {
+                                    fileName: "src/components/landing.js",
+                                    lineNumber: 197,
+                                    columnNumber: 13
+                                }, undefined)
+                            }, void 0, false, {
+                                fileName: "src/components/landing.js",
+                                lineNumber: 192,
+                                columnNumber: 11
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/components/landing.js",
+                        lineNumber: 44,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "section optometry-banner",
+                        id: "banner",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "row pad",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "one-half",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "bg-image bleed-left",
+                                            style: {
+                                                backgroundImage: `url(${(0, _scriptoriumJpgDefault.default)})`
+                                            }
+                                        }, void 0, false, {
+                                            fileName: "src/components/landing.js",
+                                            lineNumber: 310,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "optometry-banner--content",
+                                            children: [
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                                                    className: "title",
+                                                    style: {
+                                                        color: "#fff"
+                                                    },
+                                                    children: "Learn about the Center"
+                                                }, void 0, false, {
+                                                    fileName: "src/components/landing.js",
+                                                    lineNumber: 317,
+                                                    columnNumber: 17
+                                                }, undefined),
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                                    className: "button",
+                                                    href: "https://chmtl.indiana.edu/about/index.html",
+                                                    children: "About us"
+                                                }, void 0, false, {
+                                                    fileName: "src/components/landing.js",
+                                                    lineNumber: 320,
+                                                    columnNumber: 17
+                                                }, undefined)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "src/components/landing.js",
+                                            lineNumber: 316,
+                                            columnNumber: 15
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/components/landing.js",
+                                    lineNumber: 309,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "one-half",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "bg-image bleed-right",
+                                            style: {
+                                                backgroundImage: `url(${(0, _pythJpgDefault.default)})`
+                                            }
+                                        }, void 0, false, {
+                                            fileName: "src/components/landing.js",
+                                            lineNumber: 329,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "optometry-banner--content",
+                                            children: [
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                                                    className: "title",
+                                                    style: {
+                                                        color: "#fff"
+                                                    },
+                                                    children: "Music theory treatises"
+                                                }, void 0, false, {
+                                                    fileName: "src/components/landing.js",
+                                                    lineNumber: 336,
+                                                    columnNumber: 17
+                                                }, undefined),
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                                    className: "button",
+                                                    to: "/browse",
+                                                    children: "Browse the database"
+                                                }, void 0, false, {
+                                                    fileName: "src/components/landing.js",
+                                                    lineNumber: 339,
+                                                    columnNumber: 17
+                                                }, undefined)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "src/components/landing.js",
+                                            lineNumber: 335,
+                                            columnNumber: 15
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/components/landing.js",
+                                    lineNumber: 328,
+                                    columnNumber: 13
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/components/landing.js",
+                            lineNumber: 308,
+                            columnNumber: 11
+                        }, undefined)
                     }, void 0, false, {
                         fileName: "src/components/landing.js",
-                        lineNumber: 16,
-                        columnNumber: 8
+                        lineNumber: 307,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("main", {
+                        className: "wide no-section-nav",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "content-top"
+                            }, void 0, false, {
+                                fileName: "src/components/landing.js",
+                                lineNumber: 348,
+                                columnNumber: 11
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                id: "main-content",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "bg-gray section",
+                                        id: "content",
+                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "row",
+                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                className: "layout",
+                                                children: [
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                        className: "float-left two-thirds",
+                                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                            className: "text",
+                                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                                className: "text",
+                                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                                                    children: "The Center for the History of Music Theory and Literature (CHMTL) supports researchers and students studying the history of music theory and historical musicology."
+                                                                }, void 0, false, {
+                                                                    fileName: "src/components/landing.js",
+                                                                    lineNumber: 356,
+                                                                    columnNumber: 25
+                                                                }, undefined)
+                                                            }, void 0, false, {
+                                                                fileName: "src/components/landing.js",
+                                                                lineNumber: 355,
+                                                                columnNumber: 23
+                                                            }, undefined)
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/landing.js",
+                                                            lineNumber: 354,
+                                                            columnNumber: 21
+                                                        }, undefined)
+                                                    }, void 0, false, {
+                                                        fileName: "src/components/landing.js",
+                                                        lineNumber: 353,
+                                                        columnNumber: 19
+                                                    }, undefined),
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                        className: "float-right one-third",
+                                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("figure", {
+                                                            className: "media image",
+                                                            itemScope: "itemScope",
+                                                            itemType: "http://schema.org/ImageObject",
+                                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                                                src: (0, _bellsJpgDefault.default)
+                                                            }, void 0, false, {
+                                                                fileName: "src/components/landing.js",
+                                                                lineNumber: 371,
+                                                                columnNumber: 23
+                                                            }, undefined)
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/landing.js",
+                                                            lineNumber: 366,
+                                                            columnNumber: 21
+                                                        }, undefined)
+                                                    }, void 0, false, {
+                                                        fileName: "src/components/landing.js",
+                                                        lineNumber: 365,
+                                                        columnNumber: 19
+                                                    }, undefined)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "src/components/landing.js",
+                                                lineNumber: 352,
+                                                columnNumber: 17
+                                            }, undefined)
+                                        }, void 0, false, {
+                                            fileName: "src/components/landing.js",
+                                            lineNumber: 351,
+                                            columnNumber: 15
+                                        }, undefined)
+                                    }, void 0, false, {
+                                        fileName: "src/components/landing.js",
+                                        lineNumber: 350,
+                                        columnNumber: 13
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "bg-none section",
+                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "row",
+                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                className: "layout",
+                                                children: [
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                        className: "float-right two-thirds",
+                                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                            className: "text",
+                                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                                className: "text",
+                                                                style: {
+                                                                    paddingLeft: "20px"
+                                                                },
+                                                                children: [
+                                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                                                        children: "Since its foundation in 1998, the Center has focused on gathering and disseminating historical materials in digital format, for scholarly and pedagogical purposes."
+                                                                    }, void 0, false, {
+                                                                        fileName: "src/components/landing.js",
+                                                                        lineNumber: 383,
+                                                                        columnNumber: 25
+                                                                    }, undefined),
+                                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                                                        children: "Our earliest projects made pioneering use of technology by making music treatises in Latin freely available and searchable, as well as doctoral dissertations in musicology and writings exploring the practice of borrowing in music."
+                                                                    }, void 0, false, {
+                                                                        fileName: "src/components/landing.js",
+                                                                        lineNumber: 389,
+                                                                        columnNumber: 25
+                                                                    }, undefined),
+                                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                                                        children: "In the twenty-first century, the Center continues to support research on historical documents concerning music."
+                                                                    }, void 0, false, {
+                                                                        fileName: "src/components/landing.js",
+                                                                        lineNumber: 396,
+                                                                        columnNumber: 25
+                                                                    }, undefined)
+                                                                ]
+                                                            }, void 0, true, {
+                                                                fileName: "src/components/landing.js",
+                                                                lineNumber: 382,
+                                                                columnNumber: 23
+                                                            }, undefined)
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/landing.js",
+                                                            lineNumber: 381,
+                                                            columnNumber: 21
+                                                        }, undefined)
+                                                    }, void 0, false, {
+                                                        fileName: "src/components/landing.js",
+                                                        lineNumber: 380,
+                                                        columnNumber: 19
+                                                    }, undefined),
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                        className: "float-left one-third",
+                                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("figure", {
+                                                            className: "media image",
+                                                            itemScope: "itemScope",
+                                                            itemType: "http://schema.org/ImageObject",
+                                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                                                src: (0, _hucbaldJpgDefault.default)
+                                                            }, void 0, false, {
+                                                                fileName: "src/components/landing.js",
+                                                                lineNumber: 411,
+                                                                columnNumber: 23
+                                                            }, undefined)
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/landing.js",
+                                                            lineNumber: 406,
+                                                            columnNumber: 21
+                                                        }, undefined)
+                                                    }, void 0, false, {
+                                                        fileName: "src/components/landing.js",
+                                                        lineNumber: 405,
+                                                        columnNumber: 19
+                                                    }, undefined)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "src/components/landing.js",
+                                                lineNumber: 379,
+                                                columnNumber: 17
+                                            }, undefined)
+                                        }, void 0, false, {
+                                            fileName: "src/components/landing.js",
+                                            lineNumber: 378,
+                                            columnNumber: 15
+                                        }, undefined)
+                                    }, void 0, false, {
+                                        fileName: "src/components/landing.js",
+                                        lineNumber: 377,
+                                        columnNumber: 13
+                                    }, undefined)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/components/landing.js",
+                                lineNumber: 349,
+                                columnNumber: 11
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/components/landing.js",
+                        lineNumber: 347,
+                        columnNumber: 9
                     }, undefined)
-                }, void 0, false, {
-                    fileName: "src/components/landing.js",
-                    lineNumber: 15,
-                    columnNumber: 8
-                }, undefined)
-            ]
-        }, void 0, true, {
-            fileName: "src/components/landing.js",
-            lineNumber: 12,
-            columnNumber: 6
-        }, undefined)
-    }, void 0, false, {
+                ]
+            }, void 0, true, {
+                fileName: "src/components/landing.js",
+                lineNumber: 43,
+                columnNumber: 7
+            }, undefined)
+        ]
+    }, void 0, true, {
         fileName: "src/components/landing.js",
-        lineNumber: 11,
-        columnNumber: 4
+        lineNumber: 23,
+        columnNumber: 5
     }, undefined);
 };
 _c = Landing;
@@ -28974,7 +30050,358 @@ $RefreshReg$(_c, "Landing");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"fdOAw","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"km3Ru":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../Pyth.jpg":"lx4TH","../Bells.jpg":"ezdRV","../Hucbald.jpg":"9ULvo","react-router-dom":"fdOAw","../css/style.css":"6ZQyu","../css/icon-font.css":"iVzCz","../css/iu-framework.min.css":"aa9CO","../css/brand.min.css":"8Xz4f","../css/search.min.css":"01SHi","../css/site.css":"hT9aR","../css/modernizr.min.js":"8pm95","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../scriptorium.jpg":"istOd"}],"lx4TH":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "Pyth.b6bd8960.jpg" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}],"lgJ39":[function(require,module,exports) {
+"use strict";
+var bundleURL = {};
+function getBundleURLCached(id) {
+    var value = bundleURL[id];
+    if (!value) {
+        value = getBundleURL();
+        bundleURL[id] = value;
+    }
+    return value;
+}
+function getBundleURL() {
+    try {
+        throw new Error();
+    } catch (err) {
+        var matches = ("" + err.stack).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^)\n]+/g);
+        if (matches) // The first two stack frames will be this function and getBundleURLCached.
+        // Use the 3rd one, which will be a runtime in the original bundle.
+        return getBaseURL(matches[2]);
+    }
+    return "/";
+}
+function getBaseURL(url) {
+    return ("" + url).replace(/^((?:https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/.+)\/[^/]+$/, "$1") + "/";
+} // TODO: Replace uses with `new URL(url).origin` when ie11 is no longer supported.
+function getOrigin(url) {
+    var matches = ("" + url).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^/]+/);
+    if (!matches) throw new Error("Origin not found");
+    return matches[0];
+}
+exports.getBundleURL = getBundleURLCached;
+exports.getBaseURL = getBaseURL;
+exports.getOrigin = getOrigin;
+
+},{}],"ezdRV":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "Bells.b7bde3a5.jpg" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}],"9ULvo":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "Hucbald.5f809b86.jpg" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}],"6ZQyu":[function() {},{}],"iVzCz":[function() {},{}],"aa9CO":[function() {},{}],"8Xz4f":[function() {},{}],"01SHi":[function() {},{}],"hT9aR":[function() {},{}],"8pm95":[function(require,module,exports) {
+/*! modernizr 3.6.0 (Custom Build) | MIT *
+ * https://modernizr.com/download/?-flexbox-flexboxlegacy-webp-domprefixes-prefixes-setclasses-shiv-testallprops-testprop-teststyles !*/ !function(e1, t1, n1) {
+    function r1(e, t) {
+        return typeof e === t;
+    }
+    function o1() {
+        var e, t, n, o, i, a, s;
+        for(var l in w)if (w.hasOwnProperty(l)) {
+            if (e = [], t = w[l], t.name && (e.push(t.name.toLowerCase()), t.options && t.options.aliases && t.options.aliases.length)) for(n = 0; n < t.options.aliases.length; n++)e.push(t.options.aliases[n].toLowerCase());
+            for(o = r1(t.fn, "function") ? t.fn() : t.fn, i = 0; i < e.length; i++)a = e[i], s = a.split("."), 1 === s.length ? Modernizr[s[0]] = o : (!Modernizr[s[0]] || Modernizr[s[0]] instanceof Boolean || (Modernizr[s[0]] = new Boolean(Modernizr[s[0]])), Modernizr[s[0]][s[1]] = o), b.push((o ? "" : "no-") + s.join("-"));
+        }
+    }
+    function i1(e) {
+        var t = S.className, n = Modernizr._config.classPrefix || "";
+        if (B && (t = t.baseVal), Modernizr._config.enableJSClass) {
+            var r = new RegExp("(^|\\s)" + n + "no-js(\\s|$)");
+            t = t.replace(r, "$1" + n + "js$2");
+        }
+        Modernizr._config.enableClasses && (t += " " + n + e.join(" " + n), B ? S.className.baseVal = t : S.className = t);
+    }
+    function a1(e) {
+        return e.replace(/([a-z])-([a-z])/g, function(e, t, n) {
+            return t + n.toUpperCase();
+        }).replace(/^-/, "");
+    }
+    function s1() {
+        return "function" != typeof t1.createElement ? t1.createElement(arguments[0]) : B ? t1.createElementNS.call(t1, "http://www.w3.org/2000/svg", arguments[0]) : t1.createElement.apply(t1, arguments);
+    }
+    function l1(e, t) {
+        return !!~("" + e).indexOf(t);
+    }
+    function u1() {
+        var e = t1.body;
+        return e || (e = s1(B ? "svg" : "body"), e.fake = !0), e;
+    }
+    function c1(e, n, r, o) {
+        var i, a, l, c, f = "modernizr", d = s1("div"), A = u1();
+        if (parseInt(r, 10)) for(; r--;)l = s1("div"), l.id = o ? o[r] : f + (r + 1), d.appendChild(l);
+        return i = s1("style"), i.type = "text/css", i.id = "s" + f, (A.fake ? A : d).appendChild(i), A.appendChild(d), i.styleSheet ? i.styleSheet.cssText = e : i.appendChild(t1.createTextNode(e)), d.id = f, A.fake && (A.style.background = "", A.style.overflow = "hidden", c = S.style.overflow, S.style.overflow = "hidden", S.appendChild(A)), a = n(d, e), A.fake ? (A.parentNode.removeChild(A), S.style.overflow = c, S.offsetHeight) : d.parentNode.removeChild(d), !!a;
+    }
+    function f1(e, t) {
+        if ("object" == typeof e) for(var n in e)T(e, n) && f1(n, e[n]);
+        else {
+            e = e.toLowerCase();
+            var r = e.split("."), o = Modernizr[r[0]];
+            if (2 == r.length && (o = o[r[1]]), "undefined" != typeof o) return Modernizr;
+            t = "function" == typeof t ? t() : t, 1 == r.length ? Modernizr[r[0]] = t : (!Modernizr[r[0]] || Modernizr[r[0]] instanceof Boolean || (Modernizr[r[0]] = new Boolean(Modernizr[r[0]])), Modernizr[r[0]][r[1]] = t), i1([
+                (t && 0 != t ? "" : "no-") + r.join("-")
+            ]), Modernizr._trigger(e, t);
+        }
+        return Modernizr;
+    }
+    function d1(t, n, r) {
+        var o;
+        if ("getComputedStyle" in e1) {
+            o = getComputedStyle.call(e1, t, n);
+            var i = e1.console;
+            if (null !== o) r && (o = o.getPropertyValue(r));
+            else if (i) {
+                var a = i.error ? "error" : "log";
+                i[a].call(i, "getComputedStyle returning null, its possible modernizr test results are inaccurate");
+            }
+        } else o = !n && t.currentStyle && t.currentStyle[r];
+        return o;
+    }
+    function A1(e) {
+        return e.replace(/([A-Z])/g, function(e, t) {
+            return "-" + t.toLowerCase();
+        }).replace(/^ms-/, "-ms-");
+    }
+    function p1(t, r) {
+        var o = t.length;
+        if ("CSS" in e1 && "supports" in e1.CSS) {
+            for(; o--;)if (e1.CSS.supports(A1(t[o]), r)) return !0;
+            return !1;
+        }
+        if ("CSSSupportsRule" in e1) {
+            for(var i = []; o--;)i.push("(" + A1(t[o]) + ":" + r + ")");
+            return i = i.join(" or "), c1("@supports (" + i + ") { #modernizr { position: absolute; } }", function(e) {
+                return "absolute" == d1(e, null, "position");
+            });
+        }
+        return n1;
+    }
+    function m1(e, t, o, i) {
+        function u() {
+            f && (delete D.style, delete D.modElem);
+        }
+        if (i = r1(i, "undefined") ? !1 : i, !r1(o, "undefined")) {
+            var c = p1(e, o);
+            if (!r1(c, "undefined")) return c;
+        }
+        for(var f, d, A, m, h, g = [
+            "modernizr",
+            "tspan",
+            "samp"
+        ]; !D.style && g.length;)f = !0, D.modElem = s1(g.shift()), D.style = D.modElem.style;
+        for(A = e.length, d = 0; A > d; d++)if (m = e[d], h = D.style[m], l1(m, "-") && (m = a1(m)), D.style[m] !== n1) {
+            if (i || r1(o, "undefined")) return u(), "pfx" == t ? m : !0;
+            try {
+                D.style[m] = o;
+            } catch (v) {}
+            if (D.style[m] != h) return u(), "pfx" == t ? m : !0;
+        }
+        return u(), !1;
+    }
+    function h1(e, t) {
+        return function() {
+            return e.apply(t, arguments);
+        };
+    }
+    function g1(e, t, n) {
+        var o;
+        for(var i in e)if (e[i] in t) return n === !1 ? e[i] : (o = t[e[i]], r1(o, "function") ? h1(o, n || t) : o);
+        return !1;
+    }
+    function v1(e, t, n, o, i) {
+        var a = e.charAt(0).toUpperCase() + e.slice(1), s = (e + " " + Q.join(a + " ") + a).split(" ");
+        return r1(t, "string") || r1(t, "undefined") ? m1(s, t, o, i) : (s = (e + " " + _.join(a + " ") + a).split(" "), g1(s, t, n));
+    }
+    function y1(e, t, r) {
+        return v1(e, n1, n1, t, r);
+    }
+    var b = [], w = [], C = {
+        _version: "3.6.0",
+        _config: {
+            classPrefix: "",
+            enableClasses: !0,
+            enableJSClass: !0,
+            usePrefixes: !0
+        },
+        _q: [],
+        on: function(e, t) {
+            var n = this;
+            setTimeout(function() {
+                t(n[e]);
+            }, 0);
+        },
+        addTest: function(e, t, n) {
+            w.push({
+                name: e,
+                fn: t,
+                options: n
+            });
+        },
+        addAsyncTest: function(e) {
+            w.push({
+                name: null,
+                fn: e
+            });
+        }
+    }, Modernizr = function() {};
+    Modernizr.prototype = C, Modernizr = new Modernizr();
+    var E = C._config.usePrefixes ? " -webkit- -moz- -o- -ms- ".split(" ") : [
+        "",
+        ""
+    ];
+    C._prefixes = E;
+    var S = t1.documentElement, x = "Moz O ms Webkit", _ = C._config.usePrefixes ? x.toLowerCase().split(" ") : [];
+    C._domPrefixes = _;
+    var B = "svg" === S.nodeName.toLowerCase();
+    B || !function(e2, t2) {
+        function n2(e, t) {
+            var n = e.createElement("p"), r = e.getElementsByTagName("head")[0] || e.documentElement;
+            return n.innerHTML = "x<style>" + t + "</style>", r.insertBefore(n.lastChild, r.firstChild);
+        }
+        function r2() {
+            var e = y.elements;
+            return "string" == typeof e ? e.split(" ") : e;
+        }
+        function o2(e, t) {
+            var n = y.elements;
+            "string" != typeof n && (n = n.join(" ")), "string" != typeof e && (e = e.join(" ")), y.elements = n + " " + e, u(t);
+        }
+        function i(e) {
+            var t = v[e[h]];
+            return t || (t = {}, g++, e[h] = g, v[g] = t), t;
+        }
+        function a2(e, n, r) {
+            if (n || (n = t2), f) return n.createElement(e);
+            r || (r = i(n));
+            var o;
+            return o = r.cache[e] ? r.cache[e].cloneNode() : m.test(e) ? (r.cache[e] = r.createElem(e)).cloneNode() : r.createElem(e), !o.canHaveChildren || p.test(e) || o.tagUrn ? o : r.frag.appendChild(o);
+        }
+        function s2(e, n) {
+            if (e || (e = t2), f) return e.createDocumentFragment();
+            n = n || i(e);
+            for(var o = n.frag.cloneNode(), a = 0, s = r2(), l = s.length; l > a; a++)o.createElement(s[a]);
+            return o;
+        }
+        function l2(e3, t) {
+            t.cache || (t.cache = {}, t.createElem = e3.createElement, t.createFrag = e3.createDocumentFragment, t.frag = t.createFrag()), e3.createElement = function(n) {
+                return y.shivMethods ? a2(n, e3, t) : t.createElem(n);
+            }, e3.createDocumentFragment = Function("h,f", "return function(){var n=f.cloneNode(),c=n.createElement;h.shivMethods&&(" + r2().join().replace(/[\w\-:]+/g, function(e) {
+                return t.createElem(e), t.frag.createElement(e), 'c("' + e + '")';
+            }) + ");return n}")(y, t.frag);
+        }
+        function u(e) {
+            e || (e = t2);
+            var r = i(e);
+            return !y.shivCSS || c || r.hasCSS || (r.hasCSS = !!n2(e, "article,aside,dialog,figcaption,figure,footer,header,hgroup,main,nav,section{display:block}mark{background:#FF0;color:#000}template{display:none}")), f || l2(e, r), e;
+        }
+        var c, f, d = "3.7.3", A = e2.html5 || {}, p = /^<|^(?:button|map|select|textarea|object|iframe|option|optgroup)$/i, m = /^(?:a|b|code|div|fieldset|h1|h2|h3|h4|h5|h6|i|label|li|ol|p|q|span|strong|style|table|tbody|td|th|tr|ul)$/i, h = "_html5shiv", g = 0, v = {};
+        !function() {
+            try {
+                var e4 = t2.createElement("a");
+                e4.innerHTML = "<xyz></xyz>", c = "hidden" in e4, f = 1 == e4.childNodes.length || function() {
+                    t2.createElement("a");
+                    var e = t2.createDocumentFragment();
+                    return "undefined" == typeof e.cloneNode || "undefined" == typeof e.createDocumentFragment || "undefined" == typeof e.createElement;
+                }();
+            } catch (n) {
+                c = !0, f = !0;
+            }
+        }();
+        var y = {
+            elements: A.elements || "abbr article aside audio bdi canvas data datalist details dialog figcaption figure footer header hgroup main mark meter nav output picture progress section summary template time video",
+            version: d,
+            shivCSS: A.shivCSS !== !1,
+            supportsUnknownElements: f,
+            shivMethods: A.shivMethods !== !1,
+            type: "default",
+            shivDocument: u,
+            createElement: a2,
+            createDocumentFragment: s2,
+            addElements: o2
+        };
+        e2.html5 = y, u(t2), module.exports && (module.exports = y);
+    }("undefined" != typeof e1 ? e1 : this, t1);
+    var Q = C._config.usePrefixes ? x.split(" ") : [];
+    C._cssomPrefixes = Q;
+    var T;
+    C.testStyles = c1;
+    !function() {
+        var e6 = {}.hasOwnProperty;
+        T = r1(e6, "undefined") || r1(e6.call, "undefined") ? function(e, t) {
+            return t in e && r1(e.constructor.prototype[t], "undefined");
+        } : function(t, n) {
+            return e6.call(t, n);
+        };
+    }(), C._l = {}, C.on = function(e, t) {
+        this._l[e] || (this._l[e] = []), this._l[e].push(t), Modernizr.hasOwnProperty(e) && setTimeout(function() {
+            Modernizr._trigger(e, Modernizr[e]);
+        }, 0);
+    }, C._trigger = function(e7, t) {
+        if (this._l[e7]) {
+            var n = this._l[e7];
+            setTimeout(function() {
+                var e, r;
+                for(e = 0; e < n.length; e++)(r = n[e])(t);
+            }, 0), delete this._l[e7];
+        }
+    }, Modernizr._q.push(function() {
+        C.addTest = f1;
+    }), Modernizr.addAsyncTest(function() {
+        function e8(e, t4, n) {
+            function r3(t) {
+                var r = t && "load" === t.type ? 1 == o.width : !1, i = "webp" === e;
+                f1(e, i && r ? new Boolean(r) : r), n && n(t);
+            }
+            var o = new Image();
+            o.onerror = r3, o.onload = r3, o.src = t4;
+        }
+        var t3 = [
+            {
+                uri: "data:image/webp;base64,UklGRiQAAABXRUJQVlA4IBgAAAAwAQCdASoBAAEAAwA0JaQAA3AA/vuUAAA=",
+                name: "webp"
+            },
+            {
+                uri: "data:image/webp;base64,UklGRkoAAABXRUJQVlA4WAoAAAAQAAAAAAAAAAAAQUxQSAwAAAABBxAR/Q9ERP8DAABWUDggGAAAADABAJ0BKgEAAQADADQlpAADcAD++/1QAA==",
+                name: "webp.alpha"
+            },
+            {
+                uri: "data:image/webp;base64,UklGRlIAAABXRUJQVlA4WAoAAAASAAAAAAAAAAAAQU5JTQYAAAD/////AABBTk1GJgAAAAAAAAAAAAAAAAAAAGQAAABWUDhMDQAAAC8AAAAQBxAREYiI/gcA",
+                name: "webp.animation"
+            },
+            {
+                uri: "data:image/webp;base64,UklGRh4AAABXRUJQVlA4TBEAAAAvAAAAAAfQ//73v/+BiOh/AAA=",
+                name: "webp.lossless"
+            }, 
+        ], n3 = t3.shift();
+        e8(n3.name, n3.uri, function(n) {
+            if (n && "load" === n.type) for(var r = 0; r < t3.length; r++)e8(t3[r].name, t3[r].uri);
+        });
+    });
+    var k = {
+        elem: s1("modernizr")
+    };
+    Modernizr._q.push(function() {
+        delete k.elem;
+    });
+    var D = {
+        style: k.elem.style
+    };
+    Modernizr._q.unshift(function() {
+        delete D.style;
+    });
+    C.testProp = function(e, t, r) {
+        return m1([
+            e
+        ], n1, t, r);
+    };
+    C.testAllProps = v1, C.testAllProps = y1, Modernizr.addTest("flexbox", y1("flexBasis", "1px", !0)), Modernizr.addTest("flexboxlegacy", y1("boxDirection", "reverse", !0)), o1(), i1(b), delete C.addTest, delete C.addAsyncTest;
+    for(var U = 0; U < Modernizr._q.length; U++)Modernizr._q[U]();
+    e1.Modernizr = Modernizr;
+}(window, document);
+
+},{}],"km3Ru":[function(require,module,exports) {
 "use strict";
 var Refresh = require("react-refresh/runtime");
 function debounce(func, delay) {
@@ -29094,7 +30521,10 @@ function registerExportsForReactRefresh(module) {
     }
 }
 
-},{"react-refresh/runtime":"786KC"}],"58V10":[function(require,module,exports) {
+},{"react-refresh/runtime":"786KC"}],"istOd":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "scriptorium.9fee37ab.jpg" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}],"58V10":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$d93b = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -29177,10 +30607,32 @@ function TitleList() {
     // This following section will display the table with the records of individuals.
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                    to: "/",
-                    children: "The Center for the History of Music Theory and Literature"
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "site-header",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                        to: "/",
+                        className: "title",
+                        itemProp: "department",
+                        children: [
+                            "The Center for the History",
+                            " ",
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                style: {
+                                    display: "block"
+                                },
+                                children: "of Music Theory and Literature"
+                            }, void 0, false, {
+                                fileName: "src/components/titleList.js",
+                                lineNumber: 68,
+                                columnNumber: 13
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/components/titleList.js",
+                        lineNumber: 66,
+                        columnNumber: 11
+                    }, this)
                 }, void 0, false, {
                     fileName: "src/components/titleList.js",
                     lineNumber: 65,
@@ -29191,288 +30643,304 @@ function TitleList() {
                 lineNumber: 64,
                 columnNumber: 7
             }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                children: "Treatises"
-            }, void 0, false, {
-                fileName: "src/components/titleList.js",
-                lineNumber: 69,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
-                children: "Filter by"
-            }, void 0, false, {
-                fileName: "src/components/titleList.js",
-                lineNumber: 70,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("form", {
-                id: "filterMenu",
-                onChange: submission,
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h5", {
-                        children: "Language"
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                        children: "Treatises"
                     }, void 0, false, {
                         fileName: "src/components/titleList.js",
-                        lineNumber: 72,
+                        lineNumber: 75,
                         columnNumber: 9
                     }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                        type: "checkbox",
-                        id: "Latin",
-                        name: "tongue",
-                        className: "cb",
-                        value: "Latin"
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                        children: "Filter by"
                     }, void 0, false, {
                         fileName: "src/components/titleList.js",
-                        lineNumber: 73,
+                        lineNumber: 76,
                         columnNumber: 9
                     }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
-                        htmlFor: "Latin",
-                        children: "Latin"
-                    }, void 0, false, {
-                        fileName: "src/components/titleList.js",
-                        lineNumber: 80,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
-                        fileName: "src/components/titleList.js",
-                        lineNumber: 81,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                        type: "checkbox",
-                        id: "Italian",
-                        name: "tongue",
-                        className: "cb",
-                        value: "Italian"
-                    }, void 0, false, {
-                        fileName: "src/components/titleList.js",
-                        lineNumber: 82,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
-                        htmlFor: "Italian",
-                        children: "Italian"
-                    }, void 0, false, {
-                        fileName: "src/components/titleList.js",
-                        lineNumber: 89,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
-                        fileName: "src/components/titleList.js",
-                        lineNumber: 90,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                        type: "checkbox",
-                        id: "French",
-                        name: "tongue",
-                        className: "cb",
-                        value: "French"
-                    }, void 0, false, {
-                        fileName: "src/components/titleList.js",
-                        lineNumber: 91,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
-                        htmlFor: "French",
-                        children: "French"
-                    }, void 0, false, {
-                        fileName: "src/components/titleList.js",
-                        lineNumber: 98,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
-                        fileName: "src/components/titleList.js",
-                        lineNumber: 99,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                        type: "checkbox",
-                        id: "English",
-                        name: "tongue",
-                        className: "cb",
-                        value: "English"
-                    }, void 0, false, {
-                        fileName: "src/components/titleList.js",
-                        lineNumber: 100,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
-                        htmlFor: "English",
-                        children: "English"
-                    }, void 0, false, {
-                        fileName: "src/components/titleList.js",
-                        lineNumber: 107,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h5", {
-                        children: "Century"
-                    }, void 0, false, {
-                        fileName: "src/components/titleList.js",
-                        lineNumber: 108,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                        type: "checkbox",
-                        id: "fifteenthc",
-                        name: "century",
-                        className: "cb",
-                        value: "14"
-                    }, void 0, false, {
-                        fileName: "src/components/titleList.js",
-                        lineNumber: 109,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
-                        htmlFor: "fifteenthc",
-                        children: "1400-1499"
-                    }, void 0, false, {
-                        fileName: "src/components/titleList.js",
-                        lineNumber: 116,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
-                        fileName: "src/components/titleList.js",
-                        lineNumber: 117,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                        type: "checkbox",
-                        id: "sixteenthc",
-                        name: "century",
-                        className: "cb",
-                        value: "15"
-                    }, void 0, false, {
-                        fileName: "src/components/titleList.js",
-                        lineNumber: 118,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
-                        htmlFor: "sixteenthc",
-                        children: "1500-1599"
-                    }, void 0, false, {
-                        fileName: "src/components/titleList.js",
-                        lineNumber: 125,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
-                        fileName: "src/components/titleList.js",
-                        lineNumber: 126,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                        type: "checkbox",
-                        id: "seventeenthc",
-                        name: "century",
-                        className: "cb",
-                        value: "16"
-                    }, void 0, false, {
-                        fileName: "src/components/titleList.js",
-                        lineNumber: 127,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
-                        htmlFor: "seventeenthc",
-                        children: "1600-1699"
-                    }, void 0, false, {
-                        fileName: "src/components/titleList.js",
-                        lineNumber: 134,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
-                        fileName: "src/components/titleList.js",
-                        lineNumber: 135,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                        type: "checkbox",
-                        id: "eighteenthc",
-                        name: "century",
-                        className: "cb",
-                        value: "17"
-                    }, void 0, false, {
-                        fileName: "src/components/titleList.js",
-                        lineNumber: 136,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
-                        htmlFor: "eighteenthc",
-                        children: "1700-1799"
-                    }, void 0, false, {
-                        fileName: "src/components/titleList.js",
-                        lineNumber: 143,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
-                        fileName: "src/components/titleList.js",
-                        lineNumber: 144,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
-                        fileName: "src/components/titleList.js",
-                        lineNumber: 145,
-                        columnNumber: 9
-                    }, this)
-                ]
-            }, void 0, true, {
-                fileName: "src/components/titleList.js",
-                lineNumber: 71,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                id: "reset",
-                onClick: getTitles,
-                children: "Reset"
-            }, void 0, false, {
-                fileName: "src/components/titleList.js",
-                lineNumber: 147,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                id: "result"
-            }, void 0, false, {
-                fileName: "src/components/titleList.js",
-                lineNumber: 150,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("table", {
-                className: "table table-striped",
-                style: {
-                    marginTop: 20
-                },
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("thead", {
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("tr", {
-                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
-                                children: "Results"
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("form", {
+                        id: "filterMenu",
+                        onChange: submission,
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h5", {
+                                children: "Language"
                             }, void 0, false, {
                                 fileName: "src/components/titleList.js",
-                                lineNumber: 154,
-                                columnNumber: 13
+                                lineNumber: 78,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                type: "checkbox",
+                                id: "Latin",
+                                name: "tongue",
+                                className: "cb",
+                                value: "Latin"
+                            }, void 0, false, {
+                                fileName: "src/components/titleList.js",
+                                lineNumber: 79,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                                htmlFor: "Latin",
+                                children: "Latin"
+                            }, void 0, false, {
+                                fileName: "src/components/titleList.js",
+                                lineNumber: 86,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                fileName: "src/components/titleList.js",
+                                lineNumber: 87,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                type: "checkbox",
+                                id: "Italian",
+                                name: "tongue",
+                                className: "cb",
+                                value: "Italian"
+                            }, void 0, false, {
+                                fileName: "src/components/titleList.js",
+                                lineNumber: 88,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                                htmlFor: "Italian",
+                                children: "Italian"
+                            }, void 0, false, {
+                                fileName: "src/components/titleList.js",
+                                lineNumber: 95,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                fileName: "src/components/titleList.js",
+                                lineNumber: 96,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                type: "checkbox",
+                                id: "French",
+                                name: "tongue",
+                                className: "cb",
+                                value: "French"
+                            }, void 0, false, {
+                                fileName: "src/components/titleList.js",
+                                lineNumber: 97,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                                htmlFor: "French",
+                                children: "French"
+                            }, void 0, false, {
+                                fileName: "src/components/titleList.js",
+                                lineNumber: 104,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                fileName: "src/components/titleList.js",
+                                lineNumber: 105,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                type: "checkbox",
+                                id: "English",
+                                name: "tongue",
+                                className: "cb",
+                                value: "English"
+                            }, void 0, false, {
+                                fileName: "src/components/titleList.js",
+                                lineNumber: 106,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                                htmlFor: "English",
+                                children: "English"
+                            }, void 0, false, {
+                                fileName: "src/components/titleList.js",
+                                lineNumber: 113,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h5", {
+                                children: "Century"
+                            }, void 0, false, {
+                                fileName: "src/components/titleList.js",
+                                lineNumber: 114,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                type: "checkbox",
+                                id: "fifteenthc",
+                                name: "century",
+                                className: "cb",
+                                value: "14"
+                            }, void 0, false, {
+                                fileName: "src/components/titleList.js",
+                                lineNumber: 115,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                                htmlFor: "fifteenthc",
+                                children: "1400-1499"
+                            }, void 0, false, {
+                                fileName: "src/components/titleList.js",
+                                lineNumber: 122,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                fileName: "src/components/titleList.js",
+                                lineNumber: 123,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                type: "checkbox",
+                                id: "sixteenthc",
+                                name: "century",
+                                className: "cb",
+                                value: "15"
+                            }, void 0, false, {
+                                fileName: "src/components/titleList.js",
+                                lineNumber: 124,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                                htmlFor: "sixteenthc",
+                                children: "1500-1599"
+                            }, void 0, false, {
+                                fileName: "src/components/titleList.js",
+                                lineNumber: 131,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                fileName: "src/components/titleList.js",
+                                lineNumber: 132,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                type: "checkbox",
+                                id: "seventeenthc",
+                                name: "century",
+                                className: "cb",
+                                value: "16"
+                            }, void 0, false, {
+                                fileName: "src/components/titleList.js",
+                                lineNumber: 133,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                                htmlFor: "seventeenthc",
+                                children: "1600-1699"
+                            }, void 0, false, {
+                                fileName: "src/components/titleList.js",
+                                lineNumber: 140,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                fileName: "src/components/titleList.js",
+                                lineNumber: 141,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                type: "checkbox",
+                                id: "eighteenthc",
+                                name: "century",
+                                className: "cb",
+                                value: "17"
+                            }, void 0, false, {
+                                fileName: "src/components/titleList.js",
+                                lineNumber: 142,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                                htmlFor: "eighteenthc",
+                                children: "1700-1799"
+                            }, void 0, false, {
+                                fileName: "src/components/titleList.js",
+                                lineNumber: 149,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                fileName: "src/components/titleList.js",
+                                lineNumber: 150,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                fileName: "src/components/titleList.js",
+                                lineNumber: 151,
+                                columnNumber: 11
                             }, this)
-                        }, void 0, false, {
-                            fileName: "src/components/titleList.js",
-                            lineNumber: 153,
-                            columnNumber: 11
-                        }, this)
-                    }, void 0, false, {
+                        ]
+                    }, void 0, true, {
                         fileName: "src/components/titleList.js",
-                        lineNumber: 152,
+                        lineNumber: 77,
                         columnNumber: 9
                     }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("tbody", {
-                        children: titleList()
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                        id: "reset",
+                        onClick: getTitles,
+                        children: "Reset"
                     }, void 0, false, {
                         fileName: "src/components/titleList.js",
-                        lineNumber: 157,
+                        lineNumber: 153,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "src/components/titleList.js",
-                lineNumber: 151,
+                lineNumber: 74,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                        id: "result"
+                    }, void 0, false, {
+                        fileName: "src/components/titleList.js",
+                        lineNumber: 158,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("table", {
+                        className: "table table-striped",
+                        style: {
+                            marginTop: 20
+                        },
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("thead", {
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("tr", {
+                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
+                                        children: "Results"
+                                    }, void 0, false, {
+                                        fileName: "src/components/titleList.js",
+                                        lineNumber: 162,
+                                        columnNumber: 15
+                                    }, this)
+                                }, void 0, false, {
+                                    fileName: "src/components/titleList.js",
+                                    lineNumber: 161,
+                                    columnNumber: 13
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "src/components/titleList.js",
+                                lineNumber: 160,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("tbody", {
+                                children: titleList()
+                            }, void 0, false, {
+                                fileName: "src/components/titleList.js",
+                                lineNumber: 165,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/components/titleList.js",
+                        lineNumber: 159,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "src/components/titleList.js",
+                lineNumber: 157,
                 columnNumber: 7
             }, this)
         ]

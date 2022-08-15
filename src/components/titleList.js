@@ -61,101 +61,110 @@ export default function TitleList() {
   // This following section will display the table with the records of individuals.
   return (
     <div>
-      <h2>
-        <Link to="/">
-          The Center for the History of Music Theory and Literature
-        </Link>
-      </h2>
-      <h3>Treatises</h3>
-      <h4>Filter by</h4>
-      <form id="filterMenu" onChange={submission}>
-        <h5>Language</h5>
-        <input
-          type="checkbox"
-          id="Latin"
-          name="tongue"
-          className="cb"
-          value="Latin"
-        />
-        <label htmlFor="Latin">Latin</label>
-        <br />
-        <input
-          type="checkbox"
-          id="Italian"
-          name="tongue"
-          className="cb"
-          value="Italian"
-        />
-        <label htmlFor="Italian">Italian</label>
-        <br />
-        <input
-          type="checkbox"
-          id="French"
-          name="tongue"
-          className="cb"
-          value="French"
-        />
-        <label htmlFor="French">French</label>
-        <br />
-        <input
-          type="checkbox"
-          id="English"
-          name="tongue"
-          className="cb"
-          value="English"
-        />
-        <label htmlFor="English">English</label>
-        <h5>Century</h5>
-        <input
-          type="checkbox"
-          id="fifteenthc"
-          name="century"
-          className="cb"
-          value="14"
-        />
-        <label htmlFor="fifteenthc">1400-1499</label>
-        <br />
-        <input
-          type="checkbox"
-          id="sixteenthc"
-          name="century"
-          className="cb"
-          value="15"
-        />
-        <label htmlFor="sixteenthc">1500-1599</label>
-        <br />
-        <input
-          type="checkbox"
-          id="seventeenthc"
-          name="century"
-          className="cb"
-          value="16"
-        />
-        <label htmlFor="seventeenthc">1600-1699</label>
-        <br />
-        <input
-          type="checkbox"
-          id="eighteenthc"
-          name="century"
-          className="cb"
-          value="17"
-        />
-        <label htmlFor="eighteenthc">1700-1799</label>
-        <br />
-        <br />
-      </form>
-      <button id="reset" onClick={getTitles}>
-        Reset
-      </button>
-      <h3 id="result"></h3>
-      <table className="table table-striped" style={{ marginTop: 20 }}>
-        <thead>
-          <tr>
-            <th>Results</th>
-          </tr>
-        </thead>
-        <tbody>{titleList()}</tbody>
-      </table>
+      <div className="site-header">
+        <h1>
+          <Link to="/" className="title" itemProp="department">
+            The Center for the History{" "}
+            <span style={{ display: "block" }}>
+              of Music Theory and Literature
+            </span>
+          </Link>
+        </h1>
+      </div>
+      <div>
+        <h3>Treatises</h3>
+        <h4>Filter by</h4>
+        <form id="filterMenu" onChange={submission}>
+          <h5>Language</h5>
+          <input
+            type="checkbox"
+            id="Latin"
+            name="tongue"
+            className="cb"
+            value="Latin"
+          />
+          <label htmlFor="Latin">Latin</label>
+          <br />
+          <input
+            type="checkbox"
+            id="Italian"
+            name="tongue"
+            className="cb"
+            value="Italian"
+          />
+          <label htmlFor="Italian">Italian</label>
+          <br />
+          <input
+            type="checkbox"
+            id="French"
+            name="tongue"
+            className="cb"
+            value="French"
+          />
+          <label htmlFor="French">French</label>
+          <br />
+          <input
+            type="checkbox"
+            id="English"
+            name="tongue"
+            className="cb"
+            value="English"
+          />
+          <label htmlFor="English">English</label>
+          <h5>Century</h5>
+          <input
+            type="checkbox"
+            id="fifteenthc"
+            name="century"
+            className="cb"
+            value="14"
+          />
+          <label htmlFor="fifteenthc">1400-1499</label>
+          <br />
+          <input
+            type="checkbox"
+            id="sixteenthc"
+            name="century"
+            className="cb"
+            value="15"
+          />
+          <label htmlFor="sixteenthc">1500-1599</label>
+          <br />
+          <input
+            type="checkbox"
+            id="seventeenthc"
+            name="century"
+            className="cb"
+            value="16"
+          />
+          <label htmlFor="seventeenthc">1600-1699</label>
+          <br />
+          <input
+            type="checkbox"
+            id="eighteenthc"
+            name="century"
+            className="cb"
+            value="17"
+          />
+          <label htmlFor="eighteenthc">1700-1799</label>
+          <br />
+          <br />
+        </form>
+        <button id="reset" onClick={getTitles}>
+          Reset
+        </button>
+      </div>
+      <div>
+        <h3 id="result"></h3>
+        <table className="table table-striped" style={{ marginTop: 20 }}>
+          <thead>
+            <tr>
+              <th>Results</th>
+            </tr>
+          </thead>
+          <tbody>{titleList()}</tbody>
+        </table>
+      </div>
     </div>
   );
 }

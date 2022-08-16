@@ -1,5 +1,5 @@
 import { React, useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import Navbar from "./navbar.js";
 
 const Title = (props) => (
   <tr>
@@ -61,16 +61,7 @@ export default function TitleList() {
   // This following section will display the table with the records of individuals.
   return (
     <div>
-      <div className="site-header">
-        <h1>
-          <Link to="/" className="title" itemProp="department">
-            The Center for the History{" "}
-            <span style={{ display: "block" }}>
-              of Music Theory and Literature
-            </span>
-          </Link>
-        </h1>
-      </div>
+      <Navbar />
       <div>
         <h3>Treatises</h3>
         <h4>Filter by</h4>

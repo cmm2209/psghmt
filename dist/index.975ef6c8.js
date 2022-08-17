@@ -29263,7 +29263,7 @@ $RefreshReg$(_c, "Landing");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../Pyth.jpg":"lx4TH","../Bells.jpg":"ezdRV","../Hucbald.jpg":"9ULvo","react-router-dom":"fdOAw","../css/style.css":"6ZQyu","../css/icon-font.css":"iVzCz","../css/iu-framework.min.css":"aa9CO","../css/brand.min.css":"8Xz4f","../css/search.min.css":"01SHi","../css/site.css":"hT9aR","../css/modernizr.min.js":"8pm95","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../scriptorium.jpg":"istOd","./navbar.js":"dtZi7"}],"lx4TH":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../Pyth.jpg":"lx4TH","../Bells.jpg":"ezdRV","../Hucbald.jpg":"9ULvo","../scriptorium.jpg":"istOd","react-router-dom":"fdOAw","./navbar.js":"dtZi7","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../css/style.css":"6ZQyu","../css/icon-font.css":"iVzCz","../css/iu-framework.min.css":"aa9CO","../css/brand.min.css":"8Xz4f","../css/search.min.css":"01SHi","../css/site.css":"hT9aR","../css/modernizr.min.js":"8pm95"}],"lx4TH":[function(require,module,exports) {
 module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "Pyth.b6bd8960.jpg" + "?" + Date.now();
 
 },{"./helpers/bundle-url":"lgJ39"}],"lgJ39":[function(require,module,exports) {
@@ -29306,435 +29306,7 @@ module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "Bells.
 },{"./helpers/bundle-url":"lgJ39"}],"9ULvo":[function(require,module,exports) {
 module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "Hucbald.5f809b86.jpg" + "?" + Date.now();
 
-},{"./helpers/bundle-url":"lgJ39"}],"6ZQyu":[function() {},{}],"iVzCz":[function() {},{}],"aa9CO":[function() {},{}],"8Xz4f":[function() {},{}],"01SHi":[function() {},{}],"hT9aR":[function() {},{}],"8pm95":[function(require,module,exports) {
-/*! modernizr 3.6.0 (Custom Build) | MIT *
- * https://modernizr.com/download/?-flexbox-flexboxlegacy-webp-domprefixes-prefixes-setclasses-shiv-testallprops-testprop-teststyles !*/ !function(e1, t1, n1) {
-    function r1(e, t) {
-        return typeof e === t;
-    }
-    function o1() {
-        var e, t, n, o, i, a, s;
-        for(var l in w)if (w.hasOwnProperty(l)) {
-            if (e = [], t = w[l], t.name && (e.push(t.name.toLowerCase()), t.options && t.options.aliases && t.options.aliases.length)) for(n = 0; n < t.options.aliases.length; n++)e.push(t.options.aliases[n].toLowerCase());
-            for(o = r1(t.fn, "function") ? t.fn() : t.fn, i = 0; i < e.length; i++)a = e[i], s = a.split("."), 1 === s.length ? Modernizr[s[0]] = o : (!Modernizr[s[0]] || Modernizr[s[0]] instanceof Boolean || (Modernizr[s[0]] = new Boolean(Modernizr[s[0]])), Modernizr[s[0]][s[1]] = o), b.push((o ? "" : "no-") + s.join("-"));
-        }
-    }
-    function i1(e) {
-        var t = S.className, n = Modernizr._config.classPrefix || "";
-        if (B && (t = t.baseVal), Modernizr._config.enableJSClass) {
-            var r = new RegExp("(^|\\s)" + n + "no-js(\\s|$)");
-            t = t.replace(r, "$1" + n + "js$2");
-        }
-        Modernizr._config.enableClasses && (t += " " + n + e.join(" " + n), B ? S.className.baseVal = t : S.className = t);
-    }
-    function a1(e) {
-        return e.replace(/([a-z])-([a-z])/g, function(e, t, n) {
-            return t + n.toUpperCase();
-        }).replace(/^-/, "");
-    }
-    function s1() {
-        return "function" != typeof t1.createElement ? t1.createElement(arguments[0]) : B ? t1.createElementNS.call(t1, "http://www.w3.org/2000/svg", arguments[0]) : t1.createElement.apply(t1, arguments);
-    }
-    function l1(e, t) {
-        return !!~("" + e).indexOf(t);
-    }
-    function u1() {
-        var e = t1.body;
-        return e || (e = s1(B ? "svg" : "body"), e.fake = !0), e;
-    }
-    function c1(e, n, r, o) {
-        var i, a, l, c, f = "modernizr", d = s1("div"), A = u1();
-        if (parseInt(r, 10)) for(; r--;)l = s1("div"), l.id = o ? o[r] : f + (r + 1), d.appendChild(l);
-        return i = s1("style"), i.type = "text/css", i.id = "s" + f, (A.fake ? A : d).appendChild(i), A.appendChild(d), i.styleSheet ? i.styleSheet.cssText = e : i.appendChild(t1.createTextNode(e)), d.id = f, A.fake && (A.style.background = "", A.style.overflow = "hidden", c = S.style.overflow, S.style.overflow = "hidden", S.appendChild(A)), a = n(d, e), A.fake ? (A.parentNode.removeChild(A), S.style.overflow = c, S.offsetHeight) : d.parentNode.removeChild(d), !!a;
-    }
-    function f1(e, t) {
-        if ("object" == typeof e) for(var n in e)T(e, n) && f1(n, e[n]);
-        else {
-            e = e.toLowerCase();
-            var r = e.split("."), o = Modernizr[r[0]];
-            if (2 == r.length && (o = o[r[1]]), "undefined" != typeof o) return Modernizr;
-            t = "function" == typeof t ? t() : t, 1 == r.length ? Modernizr[r[0]] = t : (!Modernizr[r[0]] || Modernizr[r[0]] instanceof Boolean || (Modernizr[r[0]] = new Boolean(Modernizr[r[0]])), Modernizr[r[0]][r[1]] = t), i1([
-                (t && 0 != t ? "" : "no-") + r.join("-")
-            ]), Modernizr._trigger(e, t);
-        }
-        return Modernizr;
-    }
-    function d1(t, n, r) {
-        var o;
-        if ("getComputedStyle" in e1) {
-            o = getComputedStyle.call(e1, t, n);
-            var i = e1.console;
-            if (null !== o) r && (o = o.getPropertyValue(r));
-            else if (i) {
-                var a = i.error ? "error" : "log";
-                i[a].call(i, "getComputedStyle returning null, its possible modernizr test results are inaccurate");
-            }
-        } else o = !n && t.currentStyle && t.currentStyle[r];
-        return o;
-    }
-    function A1(e) {
-        return e.replace(/([A-Z])/g, function(e, t) {
-            return "-" + t.toLowerCase();
-        }).replace(/^ms-/, "-ms-");
-    }
-    function p1(t, r) {
-        var o = t.length;
-        if ("CSS" in e1 && "supports" in e1.CSS) {
-            for(; o--;)if (e1.CSS.supports(A1(t[o]), r)) return !0;
-            return !1;
-        }
-        if ("CSSSupportsRule" in e1) {
-            for(var i = []; o--;)i.push("(" + A1(t[o]) + ":" + r + ")");
-            return i = i.join(" or "), c1("@supports (" + i + ") { #modernizr { position: absolute; } }", function(e) {
-                return "absolute" == d1(e, null, "position");
-            });
-        }
-        return n1;
-    }
-    function m1(e, t, o, i) {
-        function u() {
-            f && (delete D.style, delete D.modElem);
-        }
-        if (i = r1(i, "undefined") ? !1 : i, !r1(o, "undefined")) {
-            var c = p1(e, o);
-            if (!r1(c, "undefined")) return c;
-        }
-        for(var f, d, A, m, h, g = [
-            "modernizr",
-            "tspan",
-            "samp"
-        ]; !D.style && g.length;)f = !0, D.modElem = s1(g.shift()), D.style = D.modElem.style;
-        for(A = e.length, d = 0; A > d; d++)if (m = e[d], h = D.style[m], l1(m, "-") && (m = a1(m)), D.style[m] !== n1) {
-            if (i || r1(o, "undefined")) return u(), "pfx" == t ? m : !0;
-            try {
-                D.style[m] = o;
-            } catch (v) {}
-            if (D.style[m] != h) return u(), "pfx" == t ? m : !0;
-        }
-        return u(), !1;
-    }
-    function h1(e, t) {
-        return function() {
-            return e.apply(t, arguments);
-        };
-    }
-    function g1(e, t, n) {
-        var o;
-        for(var i in e)if (e[i] in t) return n === !1 ? e[i] : (o = t[e[i]], r1(o, "function") ? h1(o, n || t) : o);
-        return !1;
-    }
-    function v1(e, t, n, o, i) {
-        var a = e.charAt(0).toUpperCase() + e.slice(1), s = (e + " " + Q.join(a + " ") + a).split(" ");
-        return r1(t, "string") || r1(t, "undefined") ? m1(s, t, o, i) : (s = (e + " " + _.join(a + " ") + a).split(" "), g1(s, t, n));
-    }
-    function y1(e, t, r) {
-        return v1(e, n1, n1, t, r);
-    }
-    var b = [], w = [], C = {
-        _version: "3.6.0",
-        _config: {
-            classPrefix: "",
-            enableClasses: !0,
-            enableJSClass: !0,
-            usePrefixes: !0
-        },
-        _q: [],
-        on: function(e, t) {
-            var n = this;
-            setTimeout(function() {
-                t(n[e]);
-            }, 0);
-        },
-        addTest: function(e, t, n) {
-            w.push({
-                name: e,
-                fn: t,
-                options: n
-            });
-        },
-        addAsyncTest: function(e) {
-            w.push({
-                name: null,
-                fn: e
-            });
-        }
-    }, Modernizr = function() {};
-    Modernizr.prototype = C, Modernizr = new Modernizr();
-    var E = C._config.usePrefixes ? " -webkit- -moz- -o- -ms- ".split(" ") : [
-        "",
-        ""
-    ];
-    C._prefixes = E;
-    var S = t1.documentElement, x = "Moz O ms Webkit", _ = C._config.usePrefixes ? x.toLowerCase().split(" ") : [];
-    C._domPrefixes = _;
-    var B = "svg" === S.nodeName.toLowerCase();
-    B || !function(e2, t2) {
-        function n2(e, t) {
-            var n = e.createElement("p"), r = e.getElementsByTagName("head")[0] || e.documentElement;
-            return n.innerHTML = "x<style>" + t + "</style>", r.insertBefore(n.lastChild, r.firstChild);
-        }
-        function r2() {
-            var e = y.elements;
-            return "string" == typeof e ? e.split(" ") : e;
-        }
-        function o2(e, t) {
-            var n = y.elements;
-            "string" != typeof n && (n = n.join(" ")), "string" != typeof e && (e = e.join(" ")), y.elements = n + " " + e, u(t);
-        }
-        function i(e) {
-            var t = v[e[h]];
-            return t || (t = {}, g++, e[h] = g, v[g] = t), t;
-        }
-        function a2(e, n, r) {
-            if (n || (n = t2), f) return n.createElement(e);
-            r || (r = i(n));
-            var o;
-            return o = r.cache[e] ? r.cache[e].cloneNode() : m.test(e) ? (r.cache[e] = r.createElem(e)).cloneNode() : r.createElem(e), !o.canHaveChildren || p.test(e) || o.tagUrn ? o : r.frag.appendChild(o);
-        }
-        function s2(e, n) {
-            if (e || (e = t2), f) return e.createDocumentFragment();
-            n = n || i(e);
-            for(var o = n.frag.cloneNode(), a = 0, s = r2(), l = s.length; l > a; a++)o.createElement(s[a]);
-            return o;
-        }
-        function l2(e3, t) {
-            t.cache || (t.cache = {}, t.createElem = e3.createElement, t.createFrag = e3.createDocumentFragment, t.frag = t.createFrag()), e3.createElement = function(n) {
-                return y.shivMethods ? a2(n, e3, t) : t.createElem(n);
-            }, e3.createDocumentFragment = Function("h,f", "return function(){var n=f.cloneNode(),c=n.createElement;h.shivMethods&&(" + r2().join().replace(/[\w\-:]+/g, function(e) {
-                return t.createElem(e), t.frag.createElement(e), 'c("' + e + '")';
-            }) + ");return n}")(y, t.frag);
-        }
-        function u(e) {
-            e || (e = t2);
-            var r = i(e);
-            return !y.shivCSS || c || r.hasCSS || (r.hasCSS = !!n2(e, "article,aside,dialog,figcaption,figure,footer,header,hgroup,main,nav,section{display:block}mark{background:#FF0;color:#000}template{display:none}")), f || l2(e, r), e;
-        }
-        var c, f, d = "3.7.3", A = e2.html5 || {}, p = /^<|^(?:button|map|select|textarea|object|iframe|option|optgroup)$/i, m = /^(?:a|b|code|div|fieldset|h1|h2|h3|h4|h5|h6|i|label|li|ol|p|q|span|strong|style|table|tbody|td|th|tr|ul)$/i, h = "_html5shiv", g = 0, v = {};
-        !function() {
-            try {
-                var e4 = t2.createElement("a");
-                e4.innerHTML = "<xyz></xyz>", c = "hidden" in e4, f = 1 == e4.childNodes.length || function() {
-                    t2.createElement("a");
-                    var e = t2.createDocumentFragment();
-                    return "undefined" == typeof e.cloneNode || "undefined" == typeof e.createDocumentFragment || "undefined" == typeof e.createElement;
-                }();
-            } catch (n) {
-                c = !0, f = !0;
-            }
-        }();
-        var y = {
-            elements: A.elements || "abbr article aside audio bdi canvas data datalist details dialog figcaption figure footer header hgroup main mark meter nav output picture progress section summary template time video",
-            version: d,
-            shivCSS: A.shivCSS !== !1,
-            supportsUnknownElements: f,
-            shivMethods: A.shivMethods !== !1,
-            type: "default",
-            shivDocument: u,
-            createElement: a2,
-            createDocumentFragment: s2,
-            addElements: o2
-        };
-        e2.html5 = y, u(t2), module.exports && (module.exports = y);
-    }("undefined" != typeof e1 ? e1 : this, t1);
-    var Q = C._config.usePrefixes ? x.split(" ") : [];
-    C._cssomPrefixes = Q;
-    var T;
-    C.testStyles = c1;
-    !function() {
-        var e6 = {}.hasOwnProperty;
-        T = r1(e6, "undefined") || r1(e6.call, "undefined") ? function(e, t) {
-            return t in e && r1(e.constructor.prototype[t], "undefined");
-        } : function(t, n) {
-            return e6.call(t, n);
-        };
-    }(), C._l = {}, C.on = function(e, t) {
-        this._l[e] || (this._l[e] = []), this._l[e].push(t), Modernizr.hasOwnProperty(e) && setTimeout(function() {
-            Modernizr._trigger(e, Modernizr[e]);
-        }, 0);
-    }, C._trigger = function(e7, t) {
-        if (this._l[e7]) {
-            var n = this._l[e7];
-            setTimeout(function() {
-                var e, r;
-                for(e = 0; e < n.length; e++)(r = n[e])(t);
-            }, 0), delete this._l[e7];
-        }
-    }, Modernizr._q.push(function() {
-        C.addTest = f1;
-    }), Modernizr.addAsyncTest(function() {
-        function e8(e, t4, n) {
-            function r3(t) {
-                var r = t && "load" === t.type ? 1 == o.width : !1, i = "webp" === e;
-                f1(e, i && r ? new Boolean(r) : r), n && n(t);
-            }
-            var o = new Image();
-            o.onerror = r3, o.onload = r3, o.src = t4;
-        }
-        var t3 = [
-            {
-                uri: "data:image/webp;base64,UklGRiQAAABXRUJQVlA4IBgAAAAwAQCdASoBAAEAAwA0JaQAA3AA/vuUAAA=",
-                name: "webp"
-            },
-            {
-                uri: "data:image/webp;base64,UklGRkoAAABXRUJQVlA4WAoAAAAQAAAAAAAAAAAAQUxQSAwAAAABBxAR/Q9ERP8DAABWUDggGAAAADABAJ0BKgEAAQADADQlpAADcAD++/1QAA==",
-                name: "webp.alpha"
-            },
-            {
-                uri: "data:image/webp;base64,UklGRlIAAABXRUJQVlA4WAoAAAASAAAAAAAAAAAAQU5JTQYAAAD/////AABBTk1GJgAAAAAAAAAAAAAAAAAAAGQAAABWUDhMDQAAAC8AAAAQBxAREYiI/gcA",
-                name: "webp.animation"
-            },
-            {
-                uri: "data:image/webp;base64,UklGRh4AAABXRUJQVlA4TBEAAAAvAAAAAAfQ//73v/+BiOh/AAA=",
-                name: "webp.lossless"
-            }, 
-        ], n3 = t3.shift();
-        e8(n3.name, n3.uri, function(n) {
-            if (n && "load" === n.type) for(var r = 0; r < t3.length; r++)e8(t3[r].name, t3[r].uri);
-        });
-    });
-    var k = {
-        elem: s1("modernizr")
-    };
-    Modernizr._q.push(function() {
-        delete k.elem;
-    });
-    var D = {
-        style: k.elem.style
-    };
-    Modernizr._q.unshift(function() {
-        delete D.style;
-    });
-    C.testProp = function(e, t, r) {
-        return m1([
-            e
-        ], n1, t, r);
-    };
-    C.testAllProps = v1, C.testAllProps = y1, Modernizr.addTest("flexbox", y1("flexBasis", "1px", !0)), Modernizr.addTest("flexboxlegacy", y1("boxDirection", "reverse", !0)), o1(), i1(b), delete C.addTest, delete C.addAsyncTest;
-    for(var U = 0; U < Modernizr._q.length; U++)Modernizr._q[U]();
-    e1.Modernizr = Modernizr;
-}(window, document);
-
-},{}],"km3Ru":[function(require,module,exports) {
-"use strict";
-var Refresh = require("react-refresh/runtime");
-function debounce(func, delay) {
-    var args1;
-    var timeout = undefined;
-    return function(args) {
-        clearTimeout(timeout);
-        timeout = setTimeout(function() {
-            timeout = undefined;
-            func.call(null, args);
-        }, delay);
-    };
-}
-var enqueueUpdate = debounce(function() {
-    Refresh.performReactRefresh();
-}, 30); // Everthing below is either adapted or copied from
-// https://github.com/facebook/metro/blob/61de16bd1edd7e738dd0311c89555a644023ab2d/packages/metro/src/lib/polyfills/require.js
-// MIT License - Copyright (c) Facebook, Inc. and its affiliates.
-module.exports.prelude = function(module) {
-    window.$RefreshReg$ = function(type, id) {
-        Refresh.register(type, module.id + " " + id);
-    };
-    window.$RefreshSig$ = Refresh.createSignatureFunctionForTransform;
-};
-module.exports.postlude = function(module) {
-    if (isReactRefreshBoundary(module.exports)) {
-        registerExportsForReactRefresh(module);
-        if (module.hot) {
-            module.hot.dispose(function(data) {
-                if (Refresh.hasUnrecoverableErrors()) window.location.reload();
-                data.prevExports = module.exports;
-            });
-            module.hot.accept(function(getParents) {
-                var prevExports = module.hot.data.prevExports;
-                var nextExports = module.exports; // Since we just executed the code for it, it's possible
-                // that the new exports make it ineligible for being a boundary.
-                var isNoLongerABoundary = !isReactRefreshBoundary(nextExports); // It can also become ineligible if its exports are incompatible
-                // with the previous exports.
-                // For example, if you add/remove/change exports, we'll want
-                // to re-execute the importing modules, and force those components
-                // to re-render. Similarly, if you convert a class component
-                // to a function, we want to invalidate the boundary.
-                var didInvalidate = shouldInvalidateReactRefreshBoundary(prevExports, nextExports);
-                if (isNoLongerABoundary || didInvalidate) {
-                    // We'll be conservative. The only case in which we won't do a full
-                    // reload is if all parent modules are also refresh boundaries.
-                    // In that case we'll add them to the current queue.
-                    var parents = getParents();
-                    if (parents.length === 0) {
-                        // Looks like we bubbled to the root. Can't recover from that.
-                        window.location.reload();
-                        return;
-                    }
-                    return parents;
-                }
-                enqueueUpdate();
-            });
-        }
-    }
-};
-function isReactRefreshBoundary(exports) {
-    if (Refresh.isLikelyComponentType(exports)) return true;
-    if (exports == null || typeof exports !== "object") // Exit if we can't iterate over exports.
-    return false;
-    var hasExports = false;
-    var areAllExportsComponents = true;
-    let isESM = "__esModule" in exports;
-    for(var key in exports){
-        hasExports = true;
-        if (key === "__esModule") continue;
-        var desc = Object.getOwnPropertyDescriptor(exports, key);
-        if (desc && desc.get && !isESM) // Don't invoke getters for CJS as they may have side effects.
-        return false;
-        var exportValue = exports[key];
-        if (!Refresh.isLikelyComponentType(exportValue)) areAllExportsComponents = false;
-    }
-    return hasExports && areAllExportsComponents;
-}
-function shouldInvalidateReactRefreshBoundary(prevExports, nextExports) {
-    var prevSignature = getRefreshBoundarySignature(prevExports);
-    var nextSignature = getRefreshBoundarySignature(nextExports);
-    if (prevSignature.length !== nextSignature.length) return true;
-    for(var i = 0; i < nextSignature.length; i++){
-        if (prevSignature[i] !== nextSignature[i]) return true;
-    }
-    return false;
-} // When this signature changes, it's unsafe to stop at this refresh boundary.
-function getRefreshBoundarySignature(exports) {
-    var signature = [];
-    signature.push(Refresh.getFamilyByType(exports));
-    if (exports == null || typeof exports !== "object") // Exit if we can't iterate over exports.
-    // (This is important for legacy environments.)
-    return signature;
-    let isESM = "__esModule" in exports;
-    for(var key in exports){
-        if (key === "__esModule") continue;
-        var desc = Object.getOwnPropertyDescriptor(exports, key);
-        if (desc && desc.get && !isESM) continue;
-        var exportValue = exports[key];
-        signature.push(key);
-        signature.push(Refresh.getFamilyByType(exportValue));
-    }
-    return signature;
-}
-function registerExportsForReactRefresh(module) {
-    var exports = module.exports, id = module.id;
-    Refresh.register(exports, id + " %exports%");
-    if (exports == null || typeof exports !== "object") // Exit if we can't iterate over exports.
-    // (This is important for legacy environments.)
-    return;
-    let isESM = "__esModule" in exports;
-    for(var key in exports){
-        var desc = Object.getOwnPropertyDescriptor(exports, key);
-        if (desc && desc.get && !isESM) continue;
-        var exportValue = exports[key];
-        Refresh.register(exportValue, id + " %exports% " + key);
-    }
-}
-
-},{"react-refresh/runtime":"786KC"}],"istOd":[function(require,module,exports) {
+},{"./helpers/bundle-url":"lgJ39"}],"istOd":[function(require,module,exports) {
 module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "scriptorium.9fee37ab.jpg" + "?" + Date.now();
 
 },{"./helpers/bundle-url":"lgJ39"}],"dtZi7":[function(require,module,exports) {
@@ -30498,7 +30070,435 @@ $RefreshReg$(_c, "Navbar");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"fdOAw","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"58V10":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"fdOAw","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"km3Ru":[function(require,module,exports) {
+"use strict";
+var Refresh = require("react-refresh/runtime");
+function debounce(func, delay) {
+    var args1;
+    var timeout = undefined;
+    return function(args) {
+        clearTimeout(timeout);
+        timeout = setTimeout(function() {
+            timeout = undefined;
+            func.call(null, args);
+        }, delay);
+    };
+}
+var enqueueUpdate = debounce(function() {
+    Refresh.performReactRefresh();
+}, 30); // Everthing below is either adapted or copied from
+// https://github.com/facebook/metro/blob/61de16bd1edd7e738dd0311c89555a644023ab2d/packages/metro/src/lib/polyfills/require.js
+// MIT License - Copyright (c) Facebook, Inc. and its affiliates.
+module.exports.prelude = function(module) {
+    window.$RefreshReg$ = function(type, id) {
+        Refresh.register(type, module.id + " " + id);
+    };
+    window.$RefreshSig$ = Refresh.createSignatureFunctionForTransform;
+};
+module.exports.postlude = function(module) {
+    if (isReactRefreshBoundary(module.exports)) {
+        registerExportsForReactRefresh(module);
+        if (module.hot) {
+            module.hot.dispose(function(data) {
+                if (Refresh.hasUnrecoverableErrors()) window.location.reload();
+                data.prevExports = module.exports;
+            });
+            module.hot.accept(function(getParents) {
+                var prevExports = module.hot.data.prevExports;
+                var nextExports = module.exports; // Since we just executed the code for it, it's possible
+                // that the new exports make it ineligible for being a boundary.
+                var isNoLongerABoundary = !isReactRefreshBoundary(nextExports); // It can also become ineligible if its exports are incompatible
+                // with the previous exports.
+                // For example, if you add/remove/change exports, we'll want
+                // to re-execute the importing modules, and force those components
+                // to re-render. Similarly, if you convert a class component
+                // to a function, we want to invalidate the boundary.
+                var didInvalidate = shouldInvalidateReactRefreshBoundary(prevExports, nextExports);
+                if (isNoLongerABoundary || didInvalidate) {
+                    // We'll be conservative. The only case in which we won't do a full
+                    // reload is if all parent modules are also refresh boundaries.
+                    // In that case we'll add them to the current queue.
+                    var parents = getParents();
+                    if (parents.length === 0) {
+                        // Looks like we bubbled to the root. Can't recover from that.
+                        window.location.reload();
+                        return;
+                    }
+                    return parents;
+                }
+                enqueueUpdate();
+            });
+        }
+    }
+};
+function isReactRefreshBoundary(exports) {
+    if (Refresh.isLikelyComponentType(exports)) return true;
+    if (exports == null || typeof exports !== "object") // Exit if we can't iterate over exports.
+    return false;
+    var hasExports = false;
+    var areAllExportsComponents = true;
+    let isESM = "__esModule" in exports;
+    for(var key in exports){
+        hasExports = true;
+        if (key === "__esModule") continue;
+        var desc = Object.getOwnPropertyDescriptor(exports, key);
+        if (desc && desc.get && !isESM) // Don't invoke getters for CJS as they may have side effects.
+        return false;
+        var exportValue = exports[key];
+        if (!Refresh.isLikelyComponentType(exportValue)) areAllExportsComponents = false;
+    }
+    return hasExports && areAllExportsComponents;
+}
+function shouldInvalidateReactRefreshBoundary(prevExports, nextExports) {
+    var prevSignature = getRefreshBoundarySignature(prevExports);
+    var nextSignature = getRefreshBoundarySignature(nextExports);
+    if (prevSignature.length !== nextSignature.length) return true;
+    for(var i = 0; i < nextSignature.length; i++){
+        if (prevSignature[i] !== nextSignature[i]) return true;
+    }
+    return false;
+} // When this signature changes, it's unsafe to stop at this refresh boundary.
+function getRefreshBoundarySignature(exports) {
+    var signature = [];
+    signature.push(Refresh.getFamilyByType(exports));
+    if (exports == null || typeof exports !== "object") // Exit if we can't iterate over exports.
+    // (This is important for legacy environments.)
+    return signature;
+    let isESM = "__esModule" in exports;
+    for(var key in exports){
+        if (key === "__esModule") continue;
+        var desc = Object.getOwnPropertyDescriptor(exports, key);
+        if (desc && desc.get && !isESM) continue;
+        var exportValue = exports[key];
+        signature.push(key);
+        signature.push(Refresh.getFamilyByType(exportValue));
+    }
+    return signature;
+}
+function registerExportsForReactRefresh(module) {
+    var exports = module.exports, id = module.id;
+    Refresh.register(exports, id + " %exports%");
+    if (exports == null || typeof exports !== "object") // Exit if we can't iterate over exports.
+    // (This is important for legacy environments.)
+    return;
+    let isESM = "__esModule" in exports;
+    for(var key in exports){
+        var desc = Object.getOwnPropertyDescriptor(exports, key);
+        if (desc && desc.get && !isESM) continue;
+        var exportValue = exports[key];
+        Refresh.register(exportValue, id + " %exports% " + key);
+    }
+}
+
+},{"react-refresh/runtime":"786KC"}],"6ZQyu":[function() {},{}],"iVzCz":[function() {},{}],"aa9CO":[function() {},{}],"8Xz4f":[function() {},{}],"01SHi":[function() {},{}],"hT9aR":[function() {},{}],"8pm95":[function(require,module,exports) {
+/*! modernizr 3.6.0 (Custom Build) | MIT *
+ * https://modernizr.com/download/?-flexbox-flexboxlegacy-webp-domprefixes-prefixes-setclasses-shiv-testallprops-testprop-teststyles !*/ !function(e1, t1, n1) {
+    function r1(e, t) {
+        return typeof e === t;
+    }
+    function o1() {
+        var e, t, n, o, i, a, s;
+        for(var l in w)if (w.hasOwnProperty(l)) {
+            if (e = [], t = w[l], t.name && (e.push(t.name.toLowerCase()), t.options && t.options.aliases && t.options.aliases.length)) for(n = 0; n < t.options.aliases.length; n++)e.push(t.options.aliases[n].toLowerCase());
+            for(o = r1(t.fn, "function") ? t.fn() : t.fn, i = 0; i < e.length; i++)a = e[i], s = a.split("."), 1 === s.length ? Modernizr[s[0]] = o : (!Modernizr[s[0]] || Modernizr[s[0]] instanceof Boolean || (Modernizr[s[0]] = new Boolean(Modernizr[s[0]])), Modernizr[s[0]][s[1]] = o), b.push((o ? "" : "no-") + s.join("-"));
+        }
+    }
+    function i1(e) {
+        var t = S.className, n = Modernizr._config.classPrefix || "";
+        if (B && (t = t.baseVal), Modernizr._config.enableJSClass) {
+            var r = new RegExp("(^|\\s)" + n + "no-js(\\s|$)");
+            t = t.replace(r, "$1" + n + "js$2");
+        }
+        Modernizr._config.enableClasses && (t += " " + n + e.join(" " + n), B ? S.className.baseVal = t : S.className = t);
+    }
+    function a1(e) {
+        return e.replace(/([a-z])-([a-z])/g, function(e, t, n) {
+            return t + n.toUpperCase();
+        }).replace(/^-/, "");
+    }
+    function s1() {
+        return "function" != typeof t1.createElement ? t1.createElement(arguments[0]) : B ? t1.createElementNS.call(t1, "http://www.w3.org/2000/svg", arguments[0]) : t1.createElement.apply(t1, arguments);
+    }
+    function l1(e, t) {
+        return !!~("" + e).indexOf(t);
+    }
+    function u1() {
+        var e = t1.body;
+        return e || (e = s1(B ? "svg" : "body"), e.fake = !0), e;
+    }
+    function c1(e, n, r, o) {
+        var i, a, l, c, f = "modernizr", d = s1("div"), A = u1();
+        if (parseInt(r, 10)) for(; r--;)l = s1("div"), l.id = o ? o[r] : f + (r + 1), d.appendChild(l);
+        return i = s1("style"), i.type = "text/css", i.id = "s" + f, (A.fake ? A : d).appendChild(i), A.appendChild(d), i.styleSheet ? i.styleSheet.cssText = e : i.appendChild(t1.createTextNode(e)), d.id = f, A.fake && (A.style.background = "", A.style.overflow = "hidden", c = S.style.overflow, S.style.overflow = "hidden", S.appendChild(A)), a = n(d, e), A.fake ? (A.parentNode.removeChild(A), S.style.overflow = c, S.offsetHeight) : d.parentNode.removeChild(d), !!a;
+    }
+    function f1(e, t) {
+        if ("object" == typeof e) for(var n in e)T(e, n) && f1(n, e[n]);
+        else {
+            e = e.toLowerCase();
+            var r = e.split("."), o = Modernizr[r[0]];
+            if (2 == r.length && (o = o[r[1]]), "undefined" != typeof o) return Modernizr;
+            t = "function" == typeof t ? t() : t, 1 == r.length ? Modernizr[r[0]] = t : (!Modernizr[r[0]] || Modernizr[r[0]] instanceof Boolean || (Modernizr[r[0]] = new Boolean(Modernizr[r[0]])), Modernizr[r[0]][r[1]] = t), i1([
+                (t && 0 != t ? "" : "no-") + r.join("-")
+            ]), Modernizr._trigger(e, t);
+        }
+        return Modernizr;
+    }
+    function d1(t, n, r) {
+        var o;
+        if ("getComputedStyle" in e1) {
+            o = getComputedStyle.call(e1, t, n);
+            var i = e1.console;
+            if (null !== o) r && (o = o.getPropertyValue(r));
+            else if (i) {
+                var a = i.error ? "error" : "log";
+                i[a].call(i, "getComputedStyle returning null, its possible modernizr test results are inaccurate");
+            }
+        } else o = !n && t.currentStyle && t.currentStyle[r];
+        return o;
+    }
+    function A1(e) {
+        return e.replace(/([A-Z])/g, function(e, t) {
+            return "-" + t.toLowerCase();
+        }).replace(/^ms-/, "-ms-");
+    }
+    function p1(t, r) {
+        var o = t.length;
+        if ("CSS" in e1 && "supports" in e1.CSS) {
+            for(; o--;)if (e1.CSS.supports(A1(t[o]), r)) return !0;
+            return !1;
+        }
+        if ("CSSSupportsRule" in e1) {
+            for(var i = []; o--;)i.push("(" + A1(t[o]) + ":" + r + ")");
+            return i = i.join(" or "), c1("@supports (" + i + ") { #modernizr { position: absolute; } }", function(e) {
+                return "absolute" == d1(e, null, "position");
+            });
+        }
+        return n1;
+    }
+    function m1(e, t, o, i) {
+        function u() {
+            f && (delete D.style, delete D.modElem);
+        }
+        if (i = r1(i, "undefined") ? !1 : i, !r1(o, "undefined")) {
+            var c = p1(e, o);
+            if (!r1(c, "undefined")) return c;
+        }
+        for(var f, d, A, m, h, g = [
+            "modernizr",
+            "tspan",
+            "samp"
+        ]; !D.style && g.length;)f = !0, D.modElem = s1(g.shift()), D.style = D.modElem.style;
+        for(A = e.length, d = 0; A > d; d++)if (m = e[d], h = D.style[m], l1(m, "-") && (m = a1(m)), D.style[m] !== n1) {
+            if (i || r1(o, "undefined")) return u(), "pfx" == t ? m : !0;
+            try {
+                D.style[m] = o;
+            } catch (v) {}
+            if (D.style[m] != h) return u(), "pfx" == t ? m : !0;
+        }
+        return u(), !1;
+    }
+    function h1(e, t) {
+        return function() {
+            return e.apply(t, arguments);
+        };
+    }
+    function g1(e, t, n) {
+        var o;
+        for(var i in e)if (e[i] in t) return n === !1 ? e[i] : (o = t[e[i]], r1(o, "function") ? h1(o, n || t) : o);
+        return !1;
+    }
+    function v1(e, t, n, o, i) {
+        var a = e.charAt(0).toUpperCase() + e.slice(1), s = (e + " " + Q.join(a + " ") + a).split(" ");
+        return r1(t, "string") || r1(t, "undefined") ? m1(s, t, o, i) : (s = (e + " " + _.join(a + " ") + a).split(" "), g1(s, t, n));
+    }
+    function y1(e, t, r) {
+        return v1(e, n1, n1, t, r);
+    }
+    var b = [], w = [], C = {
+        _version: "3.6.0",
+        _config: {
+            classPrefix: "",
+            enableClasses: !0,
+            enableJSClass: !0,
+            usePrefixes: !0
+        },
+        _q: [],
+        on: function(e, t) {
+            var n = this;
+            setTimeout(function() {
+                t(n[e]);
+            }, 0);
+        },
+        addTest: function(e, t, n) {
+            w.push({
+                name: e,
+                fn: t,
+                options: n
+            });
+        },
+        addAsyncTest: function(e) {
+            w.push({
+                name: null,
+                fn: e
+            });
+        }
+    }, Modernizr = function() {};
+    Modernizr.prototype = C, Modernizr = new Modernizr();
+    var E = C._config.usePrefixes ? " -webkit- -moz- -o- -ms- ".split(" ") : [
+        "",
+        ""
+    ];
+    C._prefixes = E;
+    var S = t1.documentElement, x = "Moz O ms Webkit", _ = C._config.usePrefixes ? x.toLowerCase().split(" ") : [];
+    C._domPrefixes = _;
+    var B = "svg" === S.nodeName.toLowerCase();
+    B || !function(e2, t2) {
+        function n2(e, t) {
+            var n = e.createElement("p"), r = e.getElementsByTagName("head")[0] || e.documentElement;
+            return n.innerHTML = "x<style>" + t + "</style>", r.insertBefore(n.lastChild, r.firstChild);
+        }
+        function r2() {
+            var e = y.elements;
+            return "string" == typeof e ? e.split(" ") : e;
+        }
+        function o2(e, t) {
+            var n = y.elements;
+            "string" != typeof n && (n = n.join(" ")), "string" != typeof e && (e = e.join(" ")), y.elements = n + " " + e, u(t);
+        }
+        function i(e) {
+            var t = v[e[h]];
+            return t || (t = {}, g++, e[h] = g, v[g] = t), t;
+        }
+        function a2(e, n, r) {
+            if (n || (n = t2), f) return n.createElement(e);
+            r || (r = i(n));
+            var o;
+            return o = r.cache[e] ? r.cache[e].cloneNode() : m.test(e) ? (r.cache[e] = r.createElem(e)).cloneNode() : r.createElem(e), !o.canHaveChildren || p.test(e) || o.tagUrn ? o : r.frag.appendChild(o);
+        }
+        function s2(e, n) {
+            if (e || (e = t2), f) return e.createDocumentFragment();
+            n = n || i(e);
+            for(var o = n.frag.cloneNode(), a = 0, s = r2(), l = s.length; l > a; a++)o.createElement(s[a]);
+            return o;
+        }
+        function l2(e3, t) {
+            t.cache || (t.cache = {}, t.createElem = e3.createElement, t.createFrag = e3.createDocumentFragment, t.frag = t.createFrag()), e3.createElement = function(n) {
+                return y.shivMethods ? a2(n, e3, t) : t.createElem(n);
+            }, e3.createDocumentFragment = Function("h,f", "return function(){var n=f.cloneNode(),c=n.createElement;h.shivMethods&&(" + r2().join().replace(/[\w\-:]+/g, function(e) {
+                return t.createElem(e), t.frag.createElement(e), 'c("' + e + '")';
+            }) + ");return n}")(y, t.frag);
+        }
+        function u(e) {
+            e || (e = t2);
+            var r = i(e);
+            return !y.shivCSS || c || r.hasCSS || (r.hasCSS = !!n2(e, "article,aside,dialog,figcaption,figure,footer,header,hgroup,main,nav,section{display:block}mark{background:#FF0;color:#000}template{display:none}")), f || l2(e, r), e;
+        }
+        var c, f, d = "3.7.3", A = e2.html5 || {}, p = /^<|^(?:button|map|select|textarea|object|iframe|option|optgroup)$/i, m = /^(?:a|b|code|div|fieldset|h1|h2|h3|h4|h5|h6|i|label|li|ol|p|q|span|strong|style|table|tbody|td|th|tr|ul)$/i, h = "_html5shiv", g = 0, v = {};
+        !function() {
+            try {
+                var e4 = t2.createElement("a");
+                e4.innerHTML = "<xyz></xyz>", c = "hidden" in e4, f = 1 == e4.childNodes.length || function() {
+                    t2.createElement("a");
+                    var e = t2.createDocumentFragment();
+                    return "undefined" == typeof e.cloneNode || "undefined" == typeof e.createDocumentFragment || "undefined" == typeof e.createElement;
+                }();
+            } catch (n) {
+                c = !0, f = !0;
+            }
+        }();
+        var y = {
+            elements: A.elements || "abbr article aside audio bdi canvas data datalist details dialog figcaption figure footer header hgroup main mark meter nav output picture progress section summary template time video",
+            version: d,
+            shivCSS: A.shivCSS !== !1,
+            supportsUnknownElements: f,
+            shivMethods: A.shivMethods !== !1,
+            type: "default",
+            shivDocument: u,
+            createElement: a2,
+            createDocumentFragment: s2,
+            addElements: o2
+        };
+        e2.html5 = y, u(t2), module.exports && (module.exports = y);
+    }("undefined" != typeof e1 ? e1 : this, t1);
+    var Q = C._config.usePrefixes ? x.split(" ") : [];
+    C._cssomPrefixes = Q;
+    var T;
+    C.testStyles = c1;
+    !function() {
+        var e6 = {}.hasOwnProperty;
+        T = r1(e6, "undefined") || r1(e6.call, "undefined") ? function(e, t) {
+            return t in e && r1(e.constructor.prototype[t], "undefined");
+        } : function(t, n) {
+            return e6.call(t, n);
+        };
+    }(), C._l = {}, C.on = function(e, t) {
+        this._l[e] || (this._l[e] = []), this._l[e].push(t), Modernizr.hasOwnProperty(e) && setTimeout(function() {
+            Modernizr._trigger(e, Modernizr[e]);
+        }, 0);
+    }, C._trigger = function(e7, t) {
+        if (this._l[e7]) {
+            var n = this._l[e7];
+            setTimeout(function() {
+                var e, r;
+                for(e = 0; e < n.length; e++)(r = n[e])(t);
+            }, 0), delete this._l[e7];
+        }
+    }, Modernizr._q.push(function() {
+        C.addTest = f1;
+    }), Modernizr.addAsyncTest(function() {
+        function e8(e, t4, n) {
+            function r3(t) {
+                var r = t && "load" === t.type ? 1 == o.width : !1, i = "webp" === e;
+                f1(e, i && r ? new Boolean(r) : r), n && n(t);
+            }
+            var o = new Image();
+            o.onerror = r3, o.onload = r3, o.src = t4;
+        }
+        var t3 = [
+            {
+                uri: "data:image/webp;base64,UklGRiQAAABXRUJQVlA4IBgAAAAwAQCdASoBAAEAAwA0JaQAA3AA/vuUAAA=",
+                name: "webp"
+            },
+            {
+                uri: "data:image/webp;base64,UklGRkoAAABXRUJQVlA4WAoAAAAQAAAAAAAAAAAAQUxQSAwAAAABBxAR/Q9ERP8DAABWUDggGAAAADABAJ0BKgEAAQADADQlpAADcAD++/1QAA==",
+                name: "webp.alpha"
+            },
+            {
+                uri: "data:image/webp;base64,UklGRlIAAABXRUJQVlA4WAoAAAASAAAAAAAAAAAAQU5JTQYAAAD/////AABBTk1GJgAAAAAAAAAAAAAAAAAAAGQAAABWUDhMDQAAAC8AAAAQBxAREYiI/gcA",
+                name: "webp.animation"
+            },
+            {
+                uri: "data:image/webp;base64,UklGRh4AAABXRUJQVlA4TBEAAAAvAAAAAAfQ//73v/+BiOh/AAA=",
+                name: "webp.lossless"
+            }, 
+        ], n3 = t3.shift();
+        e8(n3.name, n3.uri, function(n) {
+            if (n && "load" === n.type) for(var r = 0; r < t3.length; r++)e8(t3[r].name, t3[r].uri);
+        });
+    });
+    var k = {
+        elem: s1("modernizr")
+    };
+    Modernizr._q.push(function() {
+        delete k.elem;
+    });
+    var D = {
+        style: k.elem.style
+    };
+    Modernizr._q.unshift(function() {
+        delete D.style;
+    });
+    C.testProp = function(e, t, r) {
+        return m1([
+            e
+        ], n1, t, r);
+    };
+    C.testAllProps = v1, C.testAllProps = y1, Modernizr.addTest("flexbox", y1("flexBasis", "1px", !0)), Modernizr.addTest("flexboxlegacy", y1("boxDirection", "reverse", !0)), o1(), i1(b), delete C.addTest, delete C.addAsyncTest;
+    for(var U = 0; U < Modernizr._q.length; U++)Modernizr._q[U]();
+    e1.Modernizr = Modernizr;
+}(window, document);
+
+},{}],"58V10":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$d93b = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -30511,6 +30511,11 @@ var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _navbarJs = require("./navbar.js");
 var _navbarJsDefault = parcelHelpers.interopDefault(_navbarJs);
+var _browsebarJs = require("./browsebar.js");
+var _browsebarJsDefault = parcelHelpers.interopDefault(_browsebarJs);
+var _filtercolJs = require("./filtercol.js");
+var _filtercolJsDefault = parcelHelpers.interopDefault(_filtercolJs);
+var _browseStyleCss = require("../css/browse-style.css");
 var _s = $RefreshSig$();
 const Title = (props)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("tr", {
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
@@ -30519,17 +30524,17 @@ const Title = (props)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("tr", {
                 children: props.title.title
             }, void 0, false, {
                 fileName: "src/components/titleList.js",
-                lineNumber: 7,
+                lineNumber: 10,
                 columnNumber: 7
             }, undefined)
         }, void 0, false, {
             fileName: "src/components/titleList.js",
-            lineNumber: 6,
+            lineNumber: 9,
             columnNumber: 5
         }, undefined)
     }, void 0, false, {
         fileName: "src/components/titleList.js",
-        lineNumber: 5,
+        lineNumber: 8,
         columnNumber: 3
     }, undefined);
 _c = Title;
@@ -30552,6 +30557,11 @@ function TitleList() {
         var empty = [].filter.call(markedCheckbox, function(el) {
             return !el.checked;
         });
+        if (markedCheckbox.length == empty.length) {
+            const response = await fetch(`http://localhost:5000/browse/`);
+            const titles = await response.json();
+            setTitles(titles);
+        }
         var cbsum = [];
         for (var checkbox of markedCheckbox){
             cbsum.push(checkbox.name + "=" + checkbox.value);
@@ -30561,11 +30571,6 @@ function TitleList() {
         const res = await fetch(`http://localhost:5000/tfilters?${cbsumWoC}`);
         const titles = await res.json();
         setTitles(titles);
-        if (markedCheckbox.length == empty.length) {
-            const response = await fetch(`http://localhost:5000/browse/`);
-            const titles = await response.json();
-            setTitles(titles);
-        }
     }
     // This method will map out the records on the table
     function titleList() {
@@ -30574,7 +30579,7 @@ function TitleList() {
                 title: title
             }, title._id, false, {
                 fileName: "src/components/titleList.js",
-                lineNumber: 57,
+                lineNumber: 59,
                 columnNumber: 14
             }, this);
         });
@@ -30584,313 +30589,120 @@ function TitleList() {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _navbarJsDefault.default), {}, void 0, false, {
                 fileName: "src/components/titleList.js",
-                lineNumber: 64,
+                lineNumber: 66,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _browsebarJsDefault.default), {}, void 0, false, {
+                fileName: "src/components/titleList.js",
+                lineNumber: 67,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "filterNresults",
                 children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                        children: "Treatises"
-                    }, void 0, false, {
-                        fileName: "src/components/titleList.js",
-                        lineNumber: 66,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
-                        children: "Filter by"
-                    }, void 0, false, {
-                        fileName: "src/components/titleList.js",
-                        lineNumber: 67,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("form", {
-                        id: "filterMenu",
-                        onChange: submission,
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "filterbar",
                         children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h5", {
-                                children: "Language"
-                            }, void 0, false, {
-                                fileName: "src/components/titleList.js",
-                                lineNumber: 69,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                                type: "checkbox",
-                                id: "Latin",
-                                name: "tongue",
-                                className: "cb",
-                                value: "Latin"
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                                children: "Filter by:"
                             }, void 0, false, {
                                 fileName: "src/components/titleList.js",
                                 lineNumber: 70,
                                 columnNumber: 11
                             }, this),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
-                                htmlFor: "Latin",
-                                children: "Latin"
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("form", {
+                                id: "filterMenu",
+                                onChange: submission,
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _filtercolJsDefault.default), {}, void 0, false, {
+                                    fileName: "src/components/titleList.js",
+                                    lineNumber: 72,
+                                    columnNumber: 13
+                                }, this)
                             }, void 0, false, {
                                 fileName: "src/components/titleList.js",
-                                lineNumber: 77,
+                                lineNumber: 71,
                                 columnNumber: 11
                             }, this),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                className: "button",
+                                id: "reset",
+                                onClick: getTitles,
+                                children: "Reset"
+                            }, void 0, false, {
                                 fileName: "src/components/titleList.js",
-                                lineNumber: 78,
+                                lineNumber: 74,
                                 columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                                type: "checkbox",
-                                id: "Italian",
-                                name: "tongue",
-                                className: "cb",
-                                value: "Italian"
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/components/titleList.js",
+                        lineNumber: 69,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "results",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                                id: "result"
                             }, void 0, false, {
                                 fileName: "src/components/titleList.js",
                                 lineNumber: 79,
                                 columnNumber: 11
                             }, this),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
-                                htmlFor: "Italian",
-                                children: "Italian"
-                            }, void 0, false, {
-                                fileName: "src/components/titleList.js",
-                                lineNumber: 86,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
-                                fileName: "src/components/titleList.js",
-                                lineNumber: 87,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                                type: "checkbox",
-                                id: "French",
-                                name: "tongue",
-                                className: "cb",
-                                value: "French"
-                            }, void 0, false, {
-                                fileName: "src/components/titleList.js",
-                                lineNumber: 88,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
-                                htmlFor: "French",
-                                children: "French"
-                            }, void 0, false, {
-                                fileName: "src/components/titleList.js",
-                                lineNumber: 95,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
-                                fileName: "src/components/titleList.js",
-                                lineNumber: 96,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                                type: "checkbox",
-                                id: "English",
-                                name: "tongue",
-                                className: "cb",
-                                value: "English"
-                            }, void 0, false, {
-                                fileName: "src/components/titleList.js",
-                                lineNumber: 97,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
-                                htmlFor: "English",
-                                children: "English"
-                            }, void 0, false, {
-                                fileName: "src/components/titleList.js",
-                                lineNumber: 104,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h5", {
-                                children: "Century"
-                            }, void 0, false, {
-                                fileName: "src/components/titleList.js",
-                                lineNumber: 105,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                                type: "checkbox",
-                                id: "fifteenthc",
-                                name: "century",
-                                className: "cb",
-                                value: "14"
-                            }, void 0, false, {
-                                fileName: "src/components/titleList.js",
-                                lineNumber: 106,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
-                                htmlFor: "fifteenthc",
-                                children: "1400-1499"
-                            }, void 0, false, {
-                                fileName: "src/components/titleList.js",
-                                lineNumber: 113,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
-                                fileName: "src/components/titleList.js",
-                                lineNumber: 114,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                                type: "checkbox",
-                                id: "sixteenthc",
-                                name: "century",
-                                className: "cb",
-                                value: "15"
-                            }, void 0, false, {
-                                fileName: "src/components/titleList.js",
-                                lineNumber: 115,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
-                                htmlFor: "sixteenthc",
-                                children: "1500-1599"
-                            }, void 0, false, {
-                                fileName: "src/components/titleList.js",
-                                lineNumber: 122,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
-                                fileName: "src/components/titleList.js",
-                                lineNumber: 123,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                                type: "checkbox",
-                                id: "seventeenthc",
-                                name: "century",
-                                className: "cb",
-                                value: "16"
-                            }, void 0, false, {
-                                fileName: "src/components/titleList.js",
-                                lineNumber: 124,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
-                                htmlFor: "seventeenthc",
-                                children: "1600-1699"
-                            }, void 0, false, {
-                                fileName: "src/components/titleList.js",
-                                lineNumber: 131,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
-                                fileName: "src/components/titleList.js",
-                                lineNumber: 132,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                                type: "checkbox",
-                                id: "eighteenthc",
-                                name: "century",
-                                className: "cb",
-                                value: "17"
-                            }, void 0, false, {
-                                fileName: "src/components/titleList.js",
-                                lineNumber: 133,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
-                                htmlFor: "eighteenthc",
-                                children: "1700-1799"
-                            }, void 0, false, {
-                                fileName: "src/components/titleList.js",
-                                lineNumber: 140,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
-                                fileName: "src/components/titleList.js",
-                                lineNumber: 141,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
-                                fileName: "src/components/titleList.js",
-                                lineNumber: 142,
-                                columnNumber: 11
-                            }, this)
-                        ]
-                    }, void 0, true, {
-                        fileName: "src/components/titleList.js",
-                        lineNumber: 68,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                        id: "reset",
-                        onClick: getTitles,
-                        children: "Reset"
-                    }, void 0, false, {
-                        fileName: "src/components/titleList.js",
-                        lineNumber: 144,
-                        columnNumber: 9
-                    }, this)
-                ]
-            }, void 0, true, {
-                fileName: "src/components/titleList.js",
-                lineNumber: 65,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                        id: "result"
-                    }, void 0, false, {
-                        fileName: "src/components/titleList.js",
-                        lineNumber: 149,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("table", {
-                        className: "table table-striped",
-                        style: {
-                            marginTop: 20
-                        },
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("thead", {
-                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("tr", {
-                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
-                                        children: "Results"
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("table", {
+                                className: "table table-striped",
+                                style: {
+                                    marginTop: 20
+                                },
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("thead", {
+                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("tr", {
+                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
+                                                children: "Results"
+                                            }, void 0, false, {
+                                                fileName: "src/components/titleList.js",
+                                                lineNumber: 83,
+                                                columnNumber: 17
+                                            }, this)
+                                        }, void 0, false, {
+                                            fileName: "src/components/titleList.js",
+                                            lineNumber: 82,
+                                            columnNumber: 15
+                                        }, this)
                                     }, void 0, false, {
                                         fileName: "src/components/titleList.js",
-                                        lineNumber: 153,
-                                        columnNumber: 15
+                                        lineNumber: 81,
+                                        columnNumber: 13
+                                    }, this),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("tbody", {
+                                        children: titleList()
+                                    }, void 0, false, {
+                                        fileName: "src/components/titleList.js",
+                                        lineNumber: 86,
+                                        columnNumber: 13
                                     }, this)
-                                }, void 0, false, {
-                                    fileName: "src/components/titleList.js",
-                                    lineNumber: 152,
-                                    columnNumber: 13
-                                }, this)
-                            }, void 0, false, {
+                                ]
+                            }, void 0, true, {
                                 fileName: "src/components/titleList.js",
-                                lineNumber: 151,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("tbody", {
-                                children: titleList()
-                            }, void 0, false, {
-                                fileName: "src/components/titleList.js",
-                                lineNumber: 156,
+                                lineNumber: 80,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "src/components/titleList.js",
-                        lineNumber: 150,
+                        lineNumber: 78,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "src/components/titleList.js",
-                lineNumber: 148,
+                lineNumber: 68,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "src/components/titleList.js",
-        lineNumber: 63,
+        lineNumber: 65,
         columnNumber: 5
     }, this);
 }
@@ -30906,6 +30718,370 @@ $RefreshReg$(_c1, "TitleList");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./navbar.js":"dtZi7"}]},["1xC6H","ShInH","8lqZg"], "8lqZg", "parcelRequire94c2")
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./navbar.js":"dtZi7","./browsebar.js":"iry4m","../css/browse-style.css":"ck0Hv","./filtercol.js":"evHix"}],"iry4m":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$1b63 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$1b63.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _reactRouterDom = require("react-router-dom");
+var _siteCss = require("../css/site.css");
+const Browsebar = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "browsebar",
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                        to: "/browse",
+                        children: "Treatises"
+                    }, void 0, false, {
+                        fileName: "src/components/browsebar.js",
+                        lineNumber: 12,
+                        columnNumber: 11
+                    }, undefined)
+                }, void 0, false, {
+                    fileName: "src/components/browsebar.js",
+                    lineNumber: 11,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                        to: "/browse",
+                        children: "Authors"
+                    }, void 0, false, {
+                        fileName: "src/components/browsebar.js",
+                        lineNumber: 15,
+                        columnNumber: 11
+                    }, undefined)
+                }, void 0, false, {
+                    fileName: "src/components/browsebar.js",
+                    lineNumber: 14,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                        to: "/browse",
+                        children: "Incipits"
+                    }, void 0, false, {
+                        fileName: "src/components/browsebar.js",
+                        lineNumber: 18,
+                        columnNumber: 11
+                    }, undefined)
+                }, void 0, false, {
+                    fileName: "src/components/browsebar.js",
+                    lineNumber: 17,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                        to: "/browse",
+                        children: "Contributors"
+                    }, void 0, false, {
+                        fileName: "src/components/browsebar.js",
+                        lineNumber: 21,
+                        columnNumber: 11
+                    }, undefined)
+                }, void 0, false, {
+                    fileName: "src/components/browsebar.js",
+                    lineNumber: 20,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                        to: "/browse",
+                        children: "Concordances"
+                    }, void 0, false, {
+                        fileName: "src/components/browsebar.js",
+                        lineNumber: 24,
+                        columnNumber: 11
+                    }, undefined)
+                }, void 0, false, {
+                    fileName: "src/components/browsebar.js",
+                    lineNumber: 23,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                        href: "https://chmtl.indiana.edu/tml/quaero",
+                        itemProp: "url",
+                        children: "Search"
+                    }, void 0, false, {
+                        fileName: "src/components/browsebar.js",
+                        lineNumber: 27,
+                        columnNumber: 11
+                    }, undefined)
+                }, void 0, false, {
+                    fileName: "src/components/browsebar.js",
+                    lineNumber: 26,
+                    columnNumber: 9
+                }, undefined)
+            ]
+        }, void 0, true, {
+            fileName: "src/components/browsebar.js",
+            lineNumber: 10,
+            columnNumber: 7
+        }, undefined)
+    }, void 0, false, {
+        fileName: "src/components/browsebar.js",
+        lineNumber: 9,
+        columnNumber: 5
+    }, undefined);
+};
+_c = Browsebar;
+exports.default = Browsebar;
+var _c;
+$RefreshReg$(_c, "Browsebar");
+
+  $parcel$ReactRefreshHelpers$1b63.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"fdOAw","../css/site.css":"hT9aR","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"hT9aR":[function() {},{}],"ck0Hv":[function() {},{}],"evHix":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$215b = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$215b.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+const FilterCol = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                children: "Language"
+            }, void 0, false, {
+                fileName: "src/components/filtercol.js",
+                lineNumber: 6,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                type: "checkbox",
+                id: "Latin",
+                name: "tongue",
+                className: "cb",
+                value: "Latin"
+            }, void 0, false, {
+                fileName: "src/components/filtercol.js",
+                lineNumber: 7,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                htmlFor: "Latin",
+                children: "Latin"
+            }, void 0, false, {
+                fileName: "src/components/filtercol.js",
+                lineNumber: 14,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                fileName: "src/components/filtercol.js",
+                lineNumber: 15,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                type: "checkbox",
+                id: "Italian",
+                name: "tongue",
+                className: "cb",
+                value: "Italian"
+            }, void 0, false, {
+                fileName: "src/components/filtercol.js",
+                lineNumber: 16,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                htmlFor: "Italian",
+                children: "Italian"
+            }, void 0, false, {
+                fileName: "src/components/filtercol.js",
+                lineNumber: 23,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                fileName: "src/components/filtercol.js",
+                lineNumber: 24,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                type: "checkbox",
+                id: "French",
+                name: "tongue",
+                className: "cb",
+                value: "French"
+            }, void 0, false, {
+                fileName: "src/components/filtercol.js",
+                lineNumber: 25,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                htmlFor: "French",
+                children: "French"
+            }, void 0, false, {
+                fileName: "src/components/filtercol.js",
+                lineNumber: 32,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                fileName: "src/components/filtercol.js",
+                lineNumber: 33,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                type: "checkbox",
+                id: "English",
+                name: "tongue",
+                className: "cb",
+                value: "English"
+            }, void 0, false, {
+                fileName: "src/components/filtercol.js",
+                lineNumber: 34,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                htmlFor: "English",
+                children: "English"
+            }, void 0, false, {
+                fileName: "src/components/filtercol.js",
+                lineNumber: 41,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                children: "Century"
+            }, void 0, false, {
+                fileName: "src/components/filtercol.js",
+                lineNumber: 42,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                type: "checkbox",
+                id: "fifteenthc",
+                name: "century",
+                className: "cb",
+                value: "14"
+            }, void 0, false, {
+                fileName: "src/components/filtercol.js",
+                lineNumber: 43,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                htmlFor: "fifteenthc",
+                children: "1400-1499"
+            }, void 0, false, {
+                fileName: "src/components/filtercol.js",
+                lineNumber: 50,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                fileName: "src/components/filtercol.js",
+                lineNumber: 51,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                type: "checkbox",
+                id: "sixteenthc",
+                name: "century",
+                className: "cb",
+                value: "15"
+            }, void 0, false, {
+                fileName: "src/components/filtercol.js",
+                lineNumber: 52,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                htmlFor: "sixteenthc",
+                children: "1500-1599"
+            }, void 0, false, {
+                fileName: "src/components/filtercol.js",
+                lineNumber: 59,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                fileName: "src/components/filtercol.js",
+                lineNumber: 60,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                type: "checkbox",
+                id: "seventeenthc",
+                name: "century",
+                className: "cb",
+                value: "16"
+            }, void 0, false, {
+                fileName: "src/components/filtercol.js",
+                lineNumber: 61,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                htmlFor: "seventeenthc",
+                children: "1600-1699"
+            }, void 0, false, {
+                fileName: "src/components/filtercol.js",
+                lineNumber: 68,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                fileName: "src/components/filtercol.js",
+                lineNumber: 69,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                type: "checkbox",
+                id: "eighteenthc",
+                name: "century",
+                className: "cb",
+                value: "17"
+            }, void 0, false, {
+                fileName: "src/components/filtercol.js",
+                lineNumber: 70,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                htmlFor: "eighteenthc",
+                children: "1700-1799"
+            }, void 0, false, {
+                fileName: "src/components/filtercol.js",
+                lineNumber: 77,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                fileName: "src/components/filtercol.js",
+                lineNumber: 78,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                fileName: "src/components/filtercol.js",
+                lineNumber: 79,
+                columnNumber: 7
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/components/filtercol.js",
+        lineNumber: 5,
+        columnNumber: 5
+    }, undefined);
+};
+_c = FilterCol;
+exports.default = FilterCol;
+var _c;
+$RefreshReg$(_c, "FilterCol");
+
+  $parcel$ReactRefreshHelpers$215b.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["1xC6H","ShInH","8lqZg"], "8lqZg", "parcelRequire94c2")
 
 //# sourceMappingURL=index.975ef6c8.js.map

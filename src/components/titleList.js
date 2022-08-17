@@ -1,5 +1,8 @@
 import { React, useEffect, useState } from "react";
 import Navbar from "./navbar.js";
+import Browsebar from "./browsebar.js";
+import FilterCol from "./filtercol.js";
+import "../css/browse-style.css";
 
 const Title = (props) => (
   <tr>
@@ -34,6 +37,11 @@ export default function TitleList() {
     var empty = [].filter.call(markedCheckbox, function (el) {
       return !el.checked;
     });
+    if (markedCheckbox.length == empty.length) {
+      const response = await fetch(`http://localhost:5000/browse/`);
+      const titles = await response.json();
+      setTitles(titles);
+    }
     var cbsum = [];
     for (var checkbox of markedCheckbox) {
       cbsum.push(checkbox.name + "=" + checkbox.value);
@@ -43,12 +51,6 @@ export default function TitleList() {
     const res = await fetch(`http://localhost:5000/tfilters?${cbsumWoC}`);
     const titles = await res.json();
     setTitles(titles);
-
-    if (markedCheckbox.length == empty.length) {
-      const response = await fetch(`http://localhost:5000/browse/`);
-      const titles = await response.json();
-      setTitles(titles);
-    }
   }
 
   // This method will map out the records on the table
@@ -62,99 +64,28 @@ export default function TitleList() {
   return (
     <div>
       <Navbar />
-      <div>
-        <h3>Treatises</h3>
-        <h4>Filter by</h4>
-        <form id="filterMenu" onChange={submission}>
-          <h5>Language</h5>
-          <input
-            type="checkbox"
-            id="Latin"
-            name="tongue"
-            className="cb"
-            value="Latin"
-          />
-          <label htmlFor="Latin">Latin</label>
-          <br />
-          <input
-            type="checkbox"
-            id="Italian"
-            name="tongue"
-            className="cb"
-            value="Italian"
-          />
-          <label htmlFor="Italian">Italian</label>
-          <br />
-          <input
-            type="checkbox"
-            id="French"
-            name="tongue"
-            className="cb"
-            value="French"
-          />
-          <label htmlFor="French">French</label>
-          <br />
-          <input
-            type="checkbox"
-            id="English"
-            name="tongue"
-            className="cb"
-            value="English"
-          />
-          <label htmlFor="English">English</label>
-          <h5>Century</h5>
-          <input
-            type="checkbox"
-            id="fifteenthc"
-            name="century"
-            className="cb"
-            value="14"
-          />
-          <label htmlFor="fifteenthc">1400-1499</label>
-          <br />
-          <input
-            type="checkbox"
-            id="sixteenthc"
-            name="century"
-            className="cb"
-            value="15"
-          />
-          <label htmlFor="sixteenthc">1500-1599</label>
-          <br />
-          <input
-            type="checkbox"
-            id="seventeenthc"
-            name="century"
-            className="cb"
-            value="16"
-          />
-          <label htmlFor="seventeenthc">1600-1699</label>
-          <br />
-          <input
-            type="checkbox"
-            id="eighteenthc"
-            name="century"
-            className="cb"
-            value="17"
-          />
-          <label htmlFor="eighteenthc">1700-1799</label>
-          <br />
-          <br />
-        </form>
-        <button id="reset" onClick={getTitles}>
-          Reset
-        </button>
-      </div>
-      <div>
-        <h3 id="result"></h3>
-        <table className="table table-striped" style={{ marginTop: 20 }}>
-          <thead>
-            <tr>
-              <th>Results</th>
-            </tr>
-          </thead>
-          <tbody>{titleList()}</tbody>
-        </table>
+      <Browsebar />
+      <div className="filterNresults">
+        <div className="filterbar">
+          <h3>Filter by:</h3>
+          <form id="filterMenu" onChange={submission}>
+            <FilterCol />
+          </form>
+          <button className="button" id="reset" onClick={getTitles}>
+            Reset
+          </button>
+        </div>
+        <div className="results">
+          <h3 id="result"></h3>
+          <table className="table table-striped" style={{ marginTop: 20 }}>
+            <thead>
+              <tr>
+                <th>Results</th>
+              </tr>
+            </thead>
+            <tbody>{titleList()}</tbody>
+          </table>
+        </div>
       </div>
     </div>
   );

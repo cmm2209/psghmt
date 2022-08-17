@@ -15,7 +15,7 @@ const Browsebar = () => {
           <Link to="/browse">Authors</Link>
         </li>
         <li>
-          <Link to="/browse">Incipits</Link>
+          <Link to="/incipits">Incipits</Link>
         </li>
         <li>
           <Link to="/browse">Contributors</Link>

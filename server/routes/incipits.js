@@ -12,12 +12,12 @@ const dbo = require("../db/conn");
 const ObjectId = require("mongodb").ObjectId;
 
 // This section will help you get a list of all the records.
-browseRoutes.route("/browse").get(function (req, res) {
+browseRoutes.route("/incipits").get(function (req, res) {
   let db_connect = dbo.getDb("mtl_db");
   db_connect
     .collection("titles")
     .find({})
-    .sort({ title: 1 })
+    .sort({ incipit: 1 })
     .toArray(function (err, result) {
       if (err) throw err;
       res.json(result);

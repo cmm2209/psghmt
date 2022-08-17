@@ -11,7 +11,7 @@ const dbo = require("../db/conn");
 // This help convert the id from string to ObjectId for the _id.
 // const ObjectId = require("mongodb").ObjectId;
 
-TitleRoutes.route("/tfilters").get(function (req, res) {
+TitleRoutes.route("/incfilters").get(function (req, res) {
   let db_connect = dbo.getDb();
   var tquery = req.query.tongue;
   var cquery = req.query.century;
@@ -30,7 +30,7 @@ TitleRoutes.route("/tfilters").get(function (req, res) {
       db_connect
         .collection("titles")
         .find({ tongue: { $in: tquery }, century: { $in: cqueryIntArr } })
-        .sort({ title: 1 })
+        .sort({ incipit: 1 })
         .toArray(function (err, result) {
           if (err) throw err;
           res.json(result);
@@ -39,7 +39,7 @@ TitleRoutes.route("/tfilters").get(function (req, res) {
       db_connect
         .collection("titles")
         .find({ tongue: tquery, century: { $in: cqueryIntArr } })
-        .sort({ title: 1 })
+        .sort({ incipit: 1 })
         .toArray(function (err, result) {
           if (err) throw err;
           res.json(result);
@@ -48,7 +48,7 @@ TitleRoutes.route("/tfilters").get(function (req, res) {
       db_connect
         .collection("titles")
         .find({ century: { $in: cqueryIntArr } })
-        .sort({ title: 1 })
+        .sort({ incipit: 1 })
         .toArray(function (err, result) {
           if (err) throw err;
           res.json(result);
@@ -60,7 +60,7 @@ TitleRoutes.route("/tfilters").get(function (req, res) {
       db_connect
         .collection("titles")
         .find({ tongue: { $in: tquery }, century: cqueryInt })
-        .sort({ title: 1 })
+        .sort({ incipit: 1 })
         .toArray(function (err, result) {
           if (err) throw err;
           res.json(result);
@@ -69,7 +69,7 @@ TitleRoutes.route("/tfilters").get(function (req, res) {
       db_connect
         .collection("titles")
         .find({ tongue: tquery, century: cqueryInt })
-        .sort({ title: 1 })
+        .sort({ incipit: 1 })
         .toArray(function (err, result) {
           if (err) throw err;
           res.json(result);
@@ -78,7 +78,7 @@ TitleRoutes.route("/tfilters").get(function (req, res) {
       db_connect
         .collection("titles")
         .find({ century: cqueryInt })
-        .sort({ title: 1 })
+        .sort({ incipit: 1 })
         .toArray(function (err, result) {
           if (err) throw err;
           res.json(result);
@@ -88,7 +88,7 @@ TitleRoutes.route("/tfilters").get(function (req, res) {
     db_connect
       .collection("titles")
       .find({ tongue: { $in: tquery } })
-      .sort({ title: 1 })
+      .sort({ incipit: 1 })
       .toArray(function (err, result) {
         if (err) throw err;
         res.json(result);
@@ -97,7 +97,7 @@ TitleRoutes.route("/tfilters").get(function (req, res) {
     db_connect
       .collection("titles")
       .find({ tongue: tquery })
-      .sort({ title: 1 })
+      .sort({ incipit: 1 })
       .toArray(function (err, result) {
         if (err) throw err;
         res.json(result);
@@ -109,7 +109,7 @@ TitleRoutes.route("/tfilters").get(function (req, res) {
     db_connect
       .collection("titles")
       .find({ author: ObjectId(aqueryid) })
-      .sort({title: 1})
+      .sort({ incipit: 1 })
       .toArray(function (err, result) {
         if (err) throw err;
         res.json(result);

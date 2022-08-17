@@ -27114,6 +27114,8 @@ var _landing = require("./components/landing");
 var _landingDefault = parcelHelpers.interopDefault(_landing);
 var _titleList = require("./components/titleList");
 var _titleListDefault = parcelHelpers.interopDefault(_titleList);
+var _incList = require("./components/incList");
+var _incListDefault = parcelHelpers.interopDefault(_incList);
 const App = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Routes), {
@@ -27123,7 +27125,7 @@ const App = ()=>{
                     element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _landingDefault.default), {}, void 0, false, void 0, void 0)
                 }, void 0, false, {
                     fileName: "src/App.js",
-                    lineNumber: 15,
+                    lineNumber: 16,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
@@ -27131,7 +27133,7 @@ const App = ()=>{
                     element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _titleListDefault.default), {}, void 0, false, void 0, void 0)
                 }, void 0, false, {
                     fileName: "src/App.js",
-                    lineNumber: 16,
+                    lineNumber: 17,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
@@ -27139,18 +27141,34 @@ const App = ()=>{
                     element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _titleListDefault.default), {}, void 0, false, void 0, void 0)
                 }, void 0, false, {
                     fileName: "src/App.js",
-                    lineNumber: 17,
+                    lineNumber: 18,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
+                    path: "/incipits",
+                    element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _incListDefault.default), {}, void 0, false, void 0, void 0)
+                }, void 0, false, {
+                    fileName: "src/App.js",
+                    lineNumber: 19,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
+                    path: "/incfilters",
+                    element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _incListDefault.default), {}, void 0, false, void 0, void 0)
+                }, void 0, false, {
+                    fileName: "src/App.js",
+                    lineNumber: 20,
                     columnNumber: 9
                 }, undefined)
             ]
         }, void 0, true, {
             fileName: "src/App.js",
-            lineNumber: 14,
+            lineNumber: 15,
             columnNumber: 7
         }, undefined)
     }, void 0, false, {
         fileName: "src/App.js",
-        lineNumber: 13,
+        lineNumber: 14,
         columnNumber: 5
     }, undefined);
 };
@@ -27164,7 +27182,7 @@ $RefreshReg$(_c, "App");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"fdOAw","./components/landing":"fQFy1","./components/titleList":"58V10","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"fdOAw":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"fdOAw","./components/landing":"fQFy1","./components/titleList":"58V10","./components/incList":"hzWIN","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"fdOAw":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "MemoryRouter", ()=>(0, _reactRouter.MemoryRouter));
@@ -29263,7 +29281,7 @@ $RefreshReg$(_c, "Landing");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../Pyth.jpg":"lx4TH","../Bells.jpg":"ezdRV","../Hucbald.jpg":"9ULvo","../scriptorium.jpg":"istOd","react-router-dom":"fdOAw","./navbar.js":"dtZi7","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../css/style.css":"6ZQyu","../css/icon-font.css":"iVzCz","../css/iu-framework.min.css":"aa9CO","../css/brand.min.css":"8Xz4f","../css/search.min.css":"01SHi","../css/site.css":"hT9aR","../css/modernizr.min.js":"8pm95"}],"lx4TH":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../Pyth.jpg":"lx4TH","../Bells.jpg":"ezdRV","../Hucbald.jpg":"9ULvo","../scriptorium.jpg":"istOd","react-router-dom":"fdOAw","./navbar.js":"dtZi7","../css/style.css":"6ZQyu","../css/icon-font.css":"iVzCz","../css/iu-framework.min.css":"aa9CO","../css/brand.min.css":"8Xz4f","../css/search.min.css":"01SHi","../css/site.css":"hT9aR","../css/modernizr.min.js":"8pm95","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"lx4TH":[function(require,module,exports) {
 module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "Pyth.b6bd8960.jpg" + "?" + Date.now();
 
 },{"./helpers/bundle-url":"lgJ39"}],"lgJ39":[function(require,module,exports) {
@@ -30718,7 +30736,7 @@ $RefreshReg$(_c1, "TitleList");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./navbar.js":"dtZi7","./browsebar.js":"iry4m","../css/browse-style.css":"ck0Hv","./filtercol.js":"evHix"}],"iry4m":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./navbar.js":"dtZi7","./browsebar.js":"iry4m","./filtercol.js":"evHix","../css/browse-style.css":"ck0Hv","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"iry4m":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$1b63 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -30767,7 +30785,7 @@ const Browsebar = ()=>{
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                        to: "/browse",
+                        to: "/incipits",
                         children: "Incipits"
                     }, void 0, false, {
                         fileName: "src/components/browsebar.js",
@@ -30844,7 +30862,7 @@ $RefreshReg$(_c, "Browsebar");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"fdOAw","../css/site.css":"hT9aR","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"hT9aR":[function() {},{}],"ck0Hv":[function() {},{}],"evHix":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"fdOAw","../css/site.css":"hT9aR","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"hT9aR":[function() {},{}],"evHix":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$215b = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -31082,6 +31100,226 @@ $RefreshReg$(_c, "FilterCol");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["1xC6H","ShInH","8lqZg"], "8lqZg", "parcelRequire94c2")
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"ck0Hv":[function() {},{}],"hzWIN":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$af48 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$af48.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _navbarJs = require("./navbar.js");
+var _navbarJsDefault = parcelHelpers.interopDefault(_navbarJs);
+var _browsebarJs = require("./browsebar.js");
+var _browsebarJsDefault = parcelHelpers.interopDefault(_browsebarJs);
+var _filtercolJs = require("./filtercol.js");
+var _filtercolJsDefault = parcelHelpers.interopDefault(_filtercolJs);
+var _browseStyleCss = require("../css/browse-style.css");
+var _s = $RefreshSig$();
+const Title = (props)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("tr", {
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
+            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                href: props.title.url,
+                children: props.title.incipit
+            }, void 0, false, {
+                fileName: "src/components/incList.js",
+                lineNumber: 10,
+                columnNumber: 7
+            }, undefined)
+        }, void 0, false, {
+            fileName: "src/components/incList.js",
+            lineNumber: 9,
+            columnNumber: 5
+        }, undefined)
+    }, void 0, false, {
+        fileName: "src/components/incList.js",
+        lineNumber: 8,
+        columnNumber: 3
+    }, undefined);
+_c = Title;
+function TitleList() {
+    _s();
+    const [titles1, setTitles] = (0, _react.useState)([]);
+    (0, _react.useEffect)(()=>{
+        getTitles();
+        return;
+    }, []); // eslint-disable-line react-hooks/exhaustive-deps
+    async function getTitles() {
+        const response = await fetch(`http://localhost:5000/incipits/`);
+        const titles = await response.json();
+        setTitles(titles);
+        const cblist = document.getElementsByClassName("cb");
+        for (const el of cblist)el.checked = false;
+    }
+    async function submission() {
+        var markedCheckbox = document.querySelectorAll('input[type="checkbox"]:checked');
+        var empty = [].filter.call(markedCheckbox, function(el) {
+            return !el.checked;
+        });
+        if (markedCheckbox.length == empty.length) {
+            const response = await fetch(`http://localhost:5000/incipits/`);
+            const titles = await response.json();
+            setTitles(titles);
+        }
+        var cbsum = [];
+        for (var checkbox of markedCheckbox){
+            cbsum.push(checkbox.name + "=" + checkbox.value);
+            var cbsum1 = cbsum.toString();
+            var cbsumWoC = cbsum1.replace(/,/g, "&");
+        }
+        const res = await fetch(`http://localhost:5000/incfilters?${cbsumWoC}`);
+        const titles = await res.json();
+        setTitles(titles);
+    }
+    // This method will map out the records on the table
+    function titleList() {
+        return titles1.map((title)=>{
+            return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Title, {
+                title: title
+            }, title._id, false, {
+                fileName: "src/components/incList.js",
+                lineNumber: 59,
+                columnNumber: 14
+            }, this);
+        });
+    }
+    // This following section will display the table with the records of individuals.
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _navbarJsDefault.default), {}, void 0, false, {
+                fileName: "src/components/incList.js",
+                lineNumber: 66,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _browsebarJsDefault.default), {}, void 0, false, {
+                fileName: "src/components/incList.js",
+                lineNumber: 67,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "filterNresults",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "filterbar",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                                children: "Filter by:"
+                            }, void 0, false, {
+                                fileName: "src/components/incList.js",
+                                lineNumber: 70,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("form", {
+                                id: "filterMenu",
+                                onChange: submission,
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _filtercolJsDefault.default), {}, void 0, false, {
+                                    fileName: "src/components/incList.js",
+                                    lineNumber: 72,
+                                    columnNumber: 13
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "src/components/incList.js",
+                                lineNumber: 71,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                className: "button",
+                                id: "reset",
+                                onClick: getTitles,
+                                children: "Reset"
+                            }, void 0, false, {
+                                fileName: "src/components/incList.js",
+                                lineNumber: 74,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/components/incList.js",
+                        lineNumber: 69,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "results",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                                id: "result"
+                            }, void 0, false, {
+                                fileName: "src/components/incList.js",
+                                lineNumber: 79,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("table", {
+                                className: "table table-striped",
+                                style: {
+                                    marginTop: 20
+                                },
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("thead", {
+                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("tr", {
+                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
+                                                children: "Results"
+                                            }, void 0, false, {
+                                                fileName: "src/components/incList.js",
+                                                lineNumber: 83,
+                                                columnNumber: 17
+                                            }, this)
+                                        }, void 0, false, {
+                                            fileName: "src/components/incList.js",
+                                            lineNumber: 82,
+                                            columnNumber: 15
+                                        }, this)
+                                    }, void 0, false, {
+                                        fileName: "src/components/incList.js",
+                                        lineNumber: 81,
+                                        columnNumber: 13
+                                    }, this),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("tbody", {
+                                        children: titleList()
+                                    }, void 0, false, {
+                                        fileName: "src/components/incList.js",
+                                        lineNumber: 86,
+                                        columnNumber: 13
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/components/incList.js",
+                                lineNumber: 80,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/components/incList.js",
+                        lineNumber: 78,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "src/components/incList.js",
+                lineNumber: 68,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "src/components/incList.js",
+        lineNumber: 65,
+        columnNumber: 5
+    }, this);
+}
+exports.default = TitleList;
+_s(TitleList, "Bd3zm9HgMFhT6qecl6C5XUZJrlI=");
+_c1 = TitleList;
+var _c, _c1;
+$RefreshReg$(_c, "Title");
+$RefreshReg$(_c1, "TitleList");
+
+  $parcel$ReactRefreshHelpers$af48.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./navbar.js":"dtZi7","./browsebar.js":"iry4m","./filtercol.js":"evHix","../css/browse-style.css":"ck0Hv","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"ck0Hv":[function() {},{}]},["1xC6H","ShInH","8lqZg"], "8lqZg", "parcelRequire94c2")
 
 //# sourceMappingURL=index.975ef6c8.js.map

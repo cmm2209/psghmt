@@ -7,6 +7,7 @@ import { Route, Routes } from "react-router-dom";
 // import Navbar from "./components/navbar"; (include <Navbar /> above <Routes>)
 import Landing from "./components/landing";
 import TitleList from "./components/titleList";
+import IncipitList from "./components/incList";
 
 const App = () => {
   return (
@@ -15,6 +16,8 @@ const App = () => {
         <Route path="/" element={<Landing />} />
         <Route path="/browse" element={<TitleList />} />
         <Route path="/tfilters" element={<TitleList />} />
+        <Route path="/incipits" element={<IncipitList />} />
+        <Route path="/incfilters" element={<IncipitList />} />
       </Routes>
     </div>
   );

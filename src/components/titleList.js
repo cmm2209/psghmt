@@ -80,7 +80,7 @@ export default function TitleList() {
           <table className="table table-striped" style={{ marginTop: 20 }}>
             <thead>
               <tr>
-                <th>Results</th>
+                <th>Treatises</th>
               </tr>
             </thead>
             <tbody>{titleList()}</tbody>

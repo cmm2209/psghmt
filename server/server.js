@@ -9,6 +9,8 @@ app.use(require("./routes/browse"));
 app.use(require("./routes/tfilters"));
 app.use(require("./routes/incipits"));
 app.use(require("./routes/incfilters"));
+app.use(require("./routes/contributors"));
+app.use(require("./routes/contfilters"));
 // get driver connection
 const dbo = require("./db/conn");
 

@@ -42,6 +42,24 @@ const FilterCol = () => {
       <h4>Century</h4>
       <input
         type="checkbox"
+        id="fifthc"
+        name="century"
+        className="cb"
+        value="4"
+      />
+      <label htmlFor="fifthc">400-499</label>
+      <br />
+      <input
+        type="checkbox"
+        id="sixthc"
+        name="century"
+        className="cb"
+        value="5"
+      />
+      <label htmlFor="fifteenthc">500-599</label>
+      <br />
+      <input
+        type="checkbox"
         id="fifteenthc"
         name="century"
         className="cb"

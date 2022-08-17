@@ -8,6 +8,7 @@ import { Route, Routes } from "react-router-dom";
 import Landing from "./components/landing";
 import TitleList from "./components/titleList";
 import IncipitList from "./components/incList";
+import ContributorList from "./components/contributorList";
 
 const App = () => {
   return (
@@ -18,6 +19,8 @@ const App = () => {
         <Route path="/tfilters" element={<TitleList />} />
         <Route path="/incipits" element={<IncipitList />} />
         <Route path="/incfilters" element={<IncipitList />} />
+        <Route path="/contributors" element={<ContributorList />} />
+        <Route path="/contfilters" element={<ContributorList />} />
       </Routes>
     </div>
   );

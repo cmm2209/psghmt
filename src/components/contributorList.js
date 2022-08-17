@@ -6,13 +6,12 @@ import "../css/browse-style.css";
 
 const Title = (props) => (
   <tr>
-    <td>
-      <a href={props.title.url}>{props.title.incipit}</a>
-    </td>
+    <td>{props.title._id}</td>
+    <td>{props.title.titles}</td>
   </tr>
 );
 
-export default function IncipitList() {
+export default function ContributorList() {
   const [titles, setTitles] = useState([]);
 
   useEffect(() => {
@@ -21,7 +20,7 @@ export default function IncipitList() {
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   async function getTitles() {
-    const response = await fetch(`http://localhost:5000/incipits/`);
+    const response = await fetch(`http://localhost:5000/contributors/`);
     const titles = await response.json();
     setTitles(titles);
     const cblist = document.getElementsByClassName("cb");
@@ -38,7 +37,7 @@ export default function IncipitList() {
       return !el.checked;
     });
     if (markedCheckbox.length == empty.length) {
-      const response = await fetch(`http://localhost:5000/incipits/`);
+      const response = await fetch(`http://localhost:5000/contributors/`);
       const titles = await response.json();
       setTitles(titles);
     }
@@ -48,7 +47,7 @@ export default function IncipitList() {
       var cbsum1 = cbsum.toString();
       var cbsumWoC = cbsum1.replace(/,/g, "&");
     }
-    const res = await fetch(`http://localhost:5000/incfilters?${cbsumWoC}`);
+    const res = await fetch(`http://localhost:5000/contfilters?${cbsumWoC}`);
     const titles = await res.json();
     setTitles(titles);
   }
@@ -56,6 +55,7 @@ export default function IncipitList() {
   // This method will map out the records on the table
   function titleList() {
     return titles.map((title) => {
+      console.log({ title });
       return <Title title={title} key={title._id} />;
     });
   }
@@ -80,7 +80,8 @@ export default function IncipitList() {
           <table className="table table-striped" style={{ marginTop: 20 }}>
             <thead>
               <tr>
-                <th>Incipits</th>
+                <th>Contributors</th>
+                <th>Treatises</th>
               </tr>
             </thead>
             <tbody>{titleList()}</tbody>

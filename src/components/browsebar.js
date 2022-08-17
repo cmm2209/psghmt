@@ -18,10 +18,10 @@ const Browsebar = () => {
           <Link to="/incipits">Incipits</Link>
         </li>
         <li>
-          <Link to="/browse">Contributors</Link>
+          <Link to="/contributors">Contributors</Link>
         </li>
         <li>
-          <Link to="/browse">Concordances</Link>
+          <a href="https://chmtl.indiana.edu/tml/concordances">Concordances</a>
         </li>
         <li>
           <a href="https://chmtl.indiana.edu/tml/quaero" itemProp="url">

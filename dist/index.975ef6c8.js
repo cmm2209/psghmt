@@ -27116,6 +27116,8 @@ var _titleList = require("./components/titleList");
 var _titleListDefault = parcelHelpers.interopDefault(_titleList);
 var _incList = require("./components/incList");
 var _incListDefault = parcelHelpers.interopDefault(_incList);
+var _contributorList = require("./components/contributorList");
+var _contributorListDefault = parcelHelpers.interopDefault(_contributorList);
 const App = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Routes), {
@@ -27125,7 +27127,7 @@ const App = ()=>{
                     element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _landingDefault.default), {}, void 0, false, void 0, void 0)
                 }, void 0, false, {
                     fileName: "src/App.js",
-                    lineNumber: 16,
+                    lineNumber: 17,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
@@ -27133,7 +27135,7 @@ const App = ()=>{
                     element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _titleListDefault.default), {}, void 0, false, void 0, void 0)
                 }, void 0, false, {
                     fileName: "src/App.js",
-                    lineNumber: 17,
+                    lineNumber: 18,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
@@ -27141,7 +27143,7 @@ const App = ()=>{
                     element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _titleListDefault.default), {}, void 0, false, void 0, void 0)
                 }, void 0, false, {
                     fileName: "src/App.js",
-                    lineNumber: 18,
+                    lineNumber: 19,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
@@ -27149,7 +27151,7 @@ const App = ()=>{
                     element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _incListDefault.default), {}, void 0, false, void 0, void 0)
                 }, void 0, false, {
                     fileName: "src/App.js",
-                    lineNumber: 19,
+                    lineNumber: 20,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
@@ -27157,18 +27159,34 @@ const App = ()=>{
                     element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _incListDefault.default), {}, void 0, false, void 0, void 0)
                 }, void 0, false, {
                     fileName: "src/App.js",
-                    lineNumber: 20,
+                    lineNumber: 21,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
+                    path: "/contributors",
+                    element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _contributorListDefault.default), {}, void 0, false, void 0, void 0)
+                }, void 0, false, {
+                    fileName: "src/App.js",
+                    lineNumber: 22,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
+                    path: "/contfilters",
+                    element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _contributorListDefault.default), {}, void 0, false, void 0, void 0)
+                }, void 0, false, {
+                    fileName: "src/App.js",
+                    lineNumber: 23,
                     columnNumber: 9
                 }, undefined)
             ]
         }, void 0, true, {
             fileName: "src/App.js",
-            lineNumber: 15,
+            lineNumber: 16,
             columnNumber: 7
         }, undefined)
     }, void 0, false, {
         fileName: "src/App.js",
-        lineNumber: 14,
+        lineNumber: 15,
         columnNumber: 5
     }, undefined);
 };
@@ -27182,7 +27200,7 @@ $RefreshReg$(_c, "App");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"fdOAw","./components/landing":"fQFy1","./components/titleList":"58V10","./components/incList":"hzWIN","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"fdOAw":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"fdOAw","./components/landing":"fQFy1","./components/titleList":"58V10","./components/incList":"hzWIN","./components/contributorList":"476Ls","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"fdOAw":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "MemoryRouter", ()=>(0, _reactRouter.MemoryRouter));
@@ -30676,7 +30694,7 @@ function TitleList() {
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("thead", {
                                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("tr", {
                                             children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
-                                                children: "Results"
+                                                children: "Treatises"
                                             }, void 0, false, {
                                                 fileName: "src/components/titleList.js",
                                                 lineNumber: 83,
@@ -30799,7 +30817,7 @@ const Browsebar = ()=>{
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                        to: "/browse",
+                        to: "/contributors",
                         children: "Contributors"
                     }, void 0, false, {
                         fileName: "src/components/browsebar.js",
@@ -30812,8 +30830,8 @@ const Browsebar = ()=>{
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                        to: "/browse",
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                        href: "https://chmtl.indiana.edu/tml/concordances",
                         children: "Concordances"
                     }, void 0, false, {
                         fileName: "src/components/browsebar.js",
@@ -30984,18 +31002,18 @@ const FilterCol = ()=>{
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
                 type: "checkbox",
-                id: "fifteenthc",
+                id: "fifthc",
                 name: "century",
                 className: "cb",
-                value: "14"
+                value: "4"
             }, void 0, false, {
                 fileName: "src/components/filtercol.js",
                 lineNumber: 43,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
-                htmlFor: "fifteenthc",
-                children: "1400-1499"
+                htmlFor: "fifthc",
+                children: "400-499"
             }, void 0, false, {
                 fileName: "src/components/filtercol.js",
                 lineNumber: 50,
@@ -31008,18 +31026,18 @@ const FilterCol = ()=>{
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
                 type: "checkbox",
-                id: "sixteenthc",
+                id: "sixthc",
                 name: "century",
                 className: "cb",
-                value: "15"
+                value: "5"
             }, void 0, false, {
                 fileName: "src/components/filtercol.js",
                 lineNumber: 52,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
-                htmlFor: "sixteenthc",
-                children: "1500-1599"
+                htmlFor: "fifteenthc",
+                children: "500-599"
             }, void 0, false, {
                 fileName: "src/components/filtercol.js",
                 lineNumber: 59,
@@ -31032,18 +31050,18 @@ const FilterCol = ()=>{
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
                 type: "checkbox",
-                id: "seventeenthc",
+                id: "fifteenthc",
                 name: "century",
                 className: "cb",
-                value: "16"
+                value: "14"
             }, void 0, false, {
                 fileName: "src/components/filtercol.js",
                 lineNumber: 61,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
-                htmlFor: "seventeenthc",
-                children: "1600-1699"
+                htmlFor: "fifteenthc",
+                children: "1400-1499"
             }, void 0, false, {
                 fileName: "src/components/filtercol.js",
                 lineNumber: 68,
@@ -31056,18 +31074,18 @@ const FilterCol = ()=>{
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
                 type: "checkbox",
-                id: "eighteenthc",
+                id: "sixteenthc",
                 name: "century",
                 className: "cb",
-                value: "17"
+                value: "15"
             }, void 0, false, {
                 fileName: "src/components/filtercol.js",
                 lineNumber: 70,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
-                htmlFor: "eighteenthc",
-                children: "1700-1799"
+                htmlFor: "sixteenthc",
+                children: "1500-1599"
             }, void 0, false, {
                 fileName: "src/components/filtercol.js",
                 lineNumber: 77,
@@ -31078,9 +31096,57 @@ const FilterCol = ()=>{
                 lineNumber: 78,
                 columnNumber: 7
             }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                type: "checkbox",
+                id: "seventeenthc",
+                name: "century",
+                className: "cb",
+                value: "16"
+            }, void 0, false, {
                 fileName: "src/components/filtercol.js",
                 lineNumber: 79,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                htmlFor: "seventeenthc",
+                children: "1600-1699"
+            }, void 0, false, {
+                fileName: "src/components/filtercol.js",
+                lineNumber: 86,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                fileName: "src/components/filtercol.js",
+                lineNumber: 87,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                type: "checkbox",
+                id: "eighteenthc",
+                name: "century",
+                className: "cb",
+                value: "17"
+            }, void 0, false, {
+                fileName: "src/components/filtercol.js",
+                lineNumber: 88,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                htmlFor: "eighteenthc",
+                children: "1700-1799"
+            }, void 0, false, {
+                fileName: "src/components/filtercol.js",
+                lineNumber: 95,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                fileName: "src/components/filtercol.js",
+                lineNumber: 96,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                fileName: "src/components/filtercol.js",
+                lineNumber: 97,
                 columnNumber: 7
             }, undefined)
         ]
@@ -31140,7 +31206,7 @@ const Title = (props)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("tr", {
         columnNumber: 3
     }, undefined);
 _c = Title;
-function TitleList() {
+function IncipitList() {
     _s();
     const [titles1, setTitles] = (0, _react.useState)([]);
     (0, _react.useEffect)(()=>{
@@ -31260,7 +31326,7 @@ function TitleList() {
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("thead", {
                                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("tr", {
                                             children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
-                                                children: "Results"
+                                                children: "Incipits"
                                             }, void 0, false, {
                                                 fileName: "src/components/incList.js",
                                                 lineNumber: 83,
@@ -31308,14 +31374,248 @@ function TitleList() {
         columnNumber: 5
     }, this);
 }
-exports.default = TitleList;
-_s(TitleList, "Bd3zm9HgMFhT6qecl6C5XUZJrlI=");
-_c1 = TitleList;
+exports.default = IncipitList;
+_s(IncipitList, "Bd3zm9HgMFhT6qecl6C5XUZJrlI=");
+_c1 = IncipitList;
 var _c, _c1;
 $RefreshReg$(_c, "Title");
-$RefreshReg$(_c1, "TitleList");
+$RefreshReg$(_c1, "IncipitList");
 
   $parcel$ReactRefreshHelpers$af48.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./navbar.js":"dtZi7","./browsebar.js":"iry4m","./filtercol.js":"evHix","../css/browse-style.css":"ck0Hv","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"ck0Hv":[function() {},{}],"476Ls":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$ea42 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$ea42.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _navbarJs = require("./navbar.js");
+var _navbarJsDefault = parcelHelpers.interopDefault(_navbarJs);
+var _browsebarJs = require("./browsebar.js");
+var _browsebarJsDefault = parcelHelpers.interopDefault(_browsebarJs);
+var _filtercolJs = require("./filtercol.js");
+var _filtercolJsDefault = parcelHelpers.interopDefault(_filtercolJs);
+var _browseStyleCss = require("../css/browse-style.css");
+var _s = $RefreshSig$();
+const Title = (props)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("tr", {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
+                children: props.title._id
+            }, void 0, false, {
+                fileName: "src/components/contributorList.js",
+                lineNumber: 9,
+                columnNumber: 5
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
+                children: props.title.titles
+            }, void 0, false, {
+                fileName: "src/components/contributorList.js",
+                lineNumber: 10,
+                columnNumber: 5
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/components/contributorList.js",
+        lineNumber: 8,
+        columnNumber: 3
+    }, undefined);
+_c = Title;
+function ContributorList() {
+    _s();
+    const [titles1, setTitles] = (0, _react.useState)([]);
+    (0, _react.useEffect)(()=>{
+        getTitles();
+        return;
+    }, []); // eslint-disable-line react-hooks/exhaustive-deps
+    async function getTitles() {
+        const response = await fetch(`http://localhost:5000/contributors/`);
+        const titles = await response.json();
+        setTitles(titles);
+        const cblist = document.getElementsByClassName("cb");
+        for (const el of cblist)el.checked = false;
+    }
+    async function submission() {
+        var markedCheckbox = document.querySelectorAll('input[type="checkbox"]:checked');
+        var empty = [].filter.call(markedCheckbox, function(el) {
+            return !el.checked;
+        });
+        if (markedCheckbox.length == empty.length) {
+            const response = await fetch(`http://localhost:5000/contributors/`);
+            const titles = await response.json();
+            setTitles(titles);
+        }
+        var cbsum = [];
+        for (var checkbox of markedCheckbox){
+            cbsum.push(checkbox.name + "=" + checkbox.value);
+            var cbsum1 = cbsum.toString();
+            var cbsumWoC = cbsum1.replace(/,/g, "&");
+        }
+        const res = await fetch(`http://localhost:5000/contfilters?${cbsumWoC}`);
+        const titles = await res.json();
+        setTitles(titles);
+    }
+    // This method will map out the records on the table
+    function titleList() {
+        return titles1.map((title)=>{
+            console.log({
+                title
+            });
+            return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Title, {
+                title: title
+            }, title._id, false, {
+                fileName: "src/components/contributorList.js",
+                lineNumber: 59,
+                columnNumber: 14
+            }, this);
+        });
+    }
+    // This following section will display the table with the records of individuals.
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _navbarJsDefault.default), {}, void 0, false, {
+                fileName: "src/components/contributorList.js",
+                lineNumber: 66,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _browsebarJsDefault.default), {}, void 0, false, {
+                fileName: "src/components/contributorList.js",
+                lineNumber: 67,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "filterNresults",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "filterbar",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                                children: "Filter by:"
+                            }, void 0, false, {
+                                fileName: "src/components/contributorList.js",
+                                lineNumber: 70,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("form", {
+                                id: "filterMenu",
+                                onChange: submission,
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _filtercolJsDefault.default), {}, void 0, false, {
+                                    fileName: "src/components/contributorList.js",
+                                    lineNumber: 72,
+                                    columnNumber: 13
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "src/components/contributorList.js",
+                                lineNumber: 71,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                className: "button",
+                                id: "reset",
+                                onClick: getTitles,
+                                children: "Reset"
+                            }, void 0, false, {
+                                fileName: "src/components/contributorList.js",
+                                lineNumber: 74,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/components/contributorList.js",
+                        lineNumber: 69,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "results",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                                id: "result"
+                            }, void 0, false, {
+                                fileName: "src/components/contributorList.js",
+                                lineNumber: 79,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("table", {
+                                className: "table table-striped",
+                                style: {
+                                    marginTop: 20
+                                },
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("thead", {
+                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("tr", {
+                                            children: [
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
+                                                    children: "Contributors"
+                                                }, void 0, false, {
+                                                    fileName: "src/components/contributorList.js",
+                                                    lineNumber: 83,
+                                                    columnNumber: 17
+                                                }, this),
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
+                                                    children: "Treatises"
+                                                }, void 0, false, {
+                                                    fileName: "src/components/contributorList.js",
+                                                    lineNumber: 84,
+                                                    columnNumber: 17
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "src/components/contributorList.js",
+                                            lineNumber: 82,
+                                            columnNumber: 15
+                                        }, this)
+                                    }, void 0, false, {
+                                        fileName: "src/components/contributorList.js",
+                                        lineNumber: 81,
+                                        columnNumber: 13
+                                    }, this),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("tbody", {
+                                        children: titleList()
+                                    }, void 0, false, {
+                                        fileName: "src/components/contributorList.js",
+                                        lineNumber: 87,
+                                        columnNumber: 13
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/components/contributorList.js",
+                                lineNumber: 80,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/components/contributorList.js",
+                        lineNumber: 78,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "src/components/contributorList.js",
+                lineNumber: 68,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "src/components/contributorList.js",
+        lineNumber: 65,
+        columnNumber: 5
+    }, this);
+}
+exports.default = ContributorList;
+_s(ContributorList, "Bd3zm9HgMFhT6qecl6C5XUZJrlI=");
+_c1 = ContributorList;
+var _c, _c1;
+$RefreshReg$(_c, "Title");
+$RefreshReg$(_c1, "ContributorList");
+
+  $parcel$ReactRefreshHelpers$ea42.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;

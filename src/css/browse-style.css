@@ -1,0 +1,51 @@
+/* Browse page formatting */
+.browsebar {
+  padding: 1rem;
+}
+.browsebar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: left;
+  gap: 5rem;
+}
+.browsebar a {
+  font-size: 90%;
+  color: #4c5a69;
+  display: block;
+}
+
+/* Filter bar formatting*/
+.filterbar {
+  padding: 1rem;
+  margin: 1rem;
+}
+.filterbar h3 {
+  font-size: 1rem;
+  font-weight: bolder;
+  margin-bottom: 0.5rem;
+}
+.filterbar h4 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+}
+.filterbar input {
+  margin: 0;
+  padding: 0;
+}
+
+/* Results formatting */
+.results a {
+  text-decoration: none;
+}
+
+/* column layout */
+@media (min-width: 550px) {
+  .filterNresults {
+    display: grid;
+    grid-template-columns: 180px auto;
+  }
+}

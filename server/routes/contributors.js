@@ -62,6 +62,8 @@ var pipeline = [
   {
     $set: {
       contributors: ["$entered", "$checked", "$approved"],
+      titles: "$title",
+      treatises: ["$url", "$title"],
     },
   },
   {
@@ -72,8 +74,9 @@ var pipeline = [
   {
     $group: {
       _id: "$contributors",
-      titles: {
-        $push: "$title",
+      titles: { $push: "$titles" },
+      treatises: {
+        $push: "$treatises",
       },
     },
   },
@@ -82,6 +85,9 @@ var pipeline = [
       _id: 1,
       titles: {
         $setUnion: ["$titles", []],
+      },
+      treatises: {
+        $setUnion: ["$treatises", []],
       },
     },
   },

@@ -1,12 +1,14 @@
-import { React, useEffect, useState } from "react";
+import { React, useEffect, useState, Fragment } from "react";
 import Navbar from "./navbar.js";
 import Browsebar from "./browsebar.js";
 import FilterCol from "./filtercol.js";
 import "../css/browse-style.css";
 
-const Title = (props) => {
+const Contributor = (props) => {
+  var temp = props.contributor.treatises;
+  // console.log({ temp });
   var titlesArr = [];
-  for (var titles of props.title.treatises) {
+  for (var titles of props.contributor.treatises) {
     titlesArr.push(titles);
     var titlesArr1 = titlesArr.toString();
     //  var titlesArr2 = titlesArr1.replace(/,/g, ", ");
@@ -14,10 +16,17 @@ const Title = (props) => {
     var titlesArr3 = titlesArr2.replace(/,/g, "'>");
     var titlesArr4 = titlesArr3.replace(/^https/, "<a href='http");
     var titlesArr5 = titlesArr4.replace(/$/, "</a>");
+    /** 
+    var frag = document.createRange().createContextualFragment(titlesArr5);
+    console.log(frag);
+      */
   }
+  // const titlesArr6 = {
+  //   testOne: <Fragment>{titlesArr5}</Fragment>};
+
   return (
     <tr>
-      <td>{props.title._id}</td>
+      <td>{props.contributor._id}</td>
       <td
         className="Container"
         dangerouslySetInnerHTML={{ __html: titlesArr5 }}
@@ -27,50 +36,23 @@ const Title = (props) => {
 };
 
 export default function ContributorList() {
-  const [titles, setTitles] = useState([]);
+  const [contributors, setContributors] = useState([]);
 
   useEffect(() => {
-    getTitles();
+    getContributors();
     return;
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
-  async function getTitles() {
+  async function getContributors() {
     const response = await fetch(`http://localhost:5000/contributors/`);
-    const titles = await response.json();
-    setTitles(titles);
-    const cblist = document.getElementsByClassName("cb");
-    for (const el of cblist) {
-      el.checked = false;
-    }
-  }
-
-  async function submission() {
-    var markedCheckbox = document.querySelectorAll(
-      'input[type="checkbox"]:checked'
-    );
-    var empty = [].filter.call(markedCheckbox, function (el) {
-      return !el.checked;
-    });
-    if (markedCheckbox.length == empty.length) {
-      const response = await fetch(`http://localhost:5000/contributors/`);
-      const titles = await response.json();
-      setTitles(titles);
-    }
-    var cbsum = [];
-    for (var checkbox of markedCheckbox) {
-      cbsum.push(checkbox.name + "=" + checkbox.value);
-      var cbsum1 = cbsum.toString();
-      var cbsumWoC = cbsum1.replace(/,/g, "&");
-    }
-    const res = await fetch(`http://localhost:5000/contfilters?${cbsumWoC}`);
-    const titles = await res.json();
-    setTitles(titles);
+    const contributors = await response.json();
+    setContributors(contributors);
   }
 
   // This method will map out the records on the table
-  function titleList() {
-    return titles.map((title) => {
-      return <Title title={title} key={title._id} />;
+  function contributorList() {
+    return contributors.map((contributor) => {
+      return <Contributor contributor={contributor} key={contributor._id} />;
     });
   }
 
@@ -82,10 +64,7 @@ export default function ContributorList() {
       <div className="filterNresults">
         <div className="filterbar">
           <h3>Filter by:</h3>
-          <form id="filterMenu" onChange={submission}>
-            <FilterCol />
-          </form>
-          <button className="button" id="reset" onClick={getTitles}>
+          <button className="button" id="reset" onClick={getContributors}>
             Reset
           </button>
         </div>
@@ -94,11 +73,10 @@ export default function ContributorList() {
           <table className="table table-striped" style={{ marginTop: 20 }}>
             <thead>
               <tr>
-                <th>Contributors</th>
                 <th>Treatises</th>
               </tr>
             </thead>
-            <tbody>{titleList()}</tbody>
+            <tbody>{contributorList()}</tbody>
           </table>
         </div>
       </div>

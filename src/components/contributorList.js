@@ -6,22 +6,17 @@ import "../css/browse-style.css";
 
 const Title = (props) => {
   var titlesArr = [];
-  for (var titles of props.title.treatises) {
-    titlesArr.push(titles);
-    var titlesArr1 = titlesArr.toString();
-    //  var titlesArr2 = titlesArr1.replace(/,/g, ", ");
-    var titlesArr2 = titlesArr1.replace(/,https/g, "</a><br /> <a href='https");
-    var titlesArr3 = titlesArr2.replace(/,/g, "'>");
-    var titlesArr4 = titlesArr3.replace(/^https/, "<a href='http");
-    var titlesArr5 = titlesArr4.replace(/$/, "</a>");
+  for (var i = 0; i < props.title.treatises.length; i++) {
+    titlesArr.push(
+      <p>
+        <a href={props.title.treatises[i][0]}>{props.title.treatises[i][1]}</a>
+      </p>
+    );
   }
   return (
     <tr>
       <td>{props.title._id}</td>
-      <td
-        className="Container"
-        dangerouslySetInnerHTML={{ __html: titlesArr5 }}
-      ></td>
+      <td>{titlesArr}</td>
     </tr>
   );
 };

@@ -80,6 +80,8 @@ contfiltRoutes.route("/contfilters").get(function (req, res) {
         {
           $set: {
             contributors: ["$entered", "$checked", "$approved"],
+            titles: "$title",
+            treatises: ["$url", "$title"],
           },
         },
         {
@@ -90,16 +92,17 @@ contfiltRoutes.route("/contfilters").get(function (req, res) {
         {
           $group: {
             _id: "$contributors",
-            titles: {
-              $push: "$title",
+            titles: { $push: "$titles" },
+            treatises: {
+              $push: "$treatises",
             },
           },
         },
         {
           $project: {
             _id: 1,
-            titles: {
-              $setUnion: ["$titles", []],
+            treatises: {
+              $setUnion: ["$treatises", []],
             },
           },
         },
@@ -162,6 +165,8 @@ contfiltRoutes.route("/contfilters").get(function (req, res) {
         {
           $set: {
             contributors: ["$entered", "$checked", "$approved"],
+            titles: "$title",
+            treatises: ["$url", "$title"],
           },
         },
         {
@@ -172,16 +177,17 @@ contfiltRoutes.route("/contfilters").get(function (req, res) {
         {
           $group: {
             _id: "$contributors",
-            titles: {
-              $push: "$title",
+            titles: { $push: "$titles" },
+            treatises: {
+              $push: "$treatises",
             },
           },
         },
         {
           $project: {
             _id: 1,
-            titles: {
-              $setUnion: ["$titles", []],
+            treatises: {
+              $setUnion: ["$treatises", []],
             },
           },
         },
@@ -244,6 +250,8 @@ contfiltRoutes.route("/contfilters").get(function (req, res) {
         {
           $set: {
             contributors: ["$entered", "$checked", "$approved"],
+            titles: "$title",
+            treatises: ["$url", "$title"],
           },
         },
         {
@@ -254,16 +262,17 @@ contfiltRoutes.route("/contfilters").get(function (req, res) {
         {
           $group: {
             _id: "$contributors",
-            titles: {
-              $push: "$title",
+            titles: { $push: "$titles" },
+            treatises: {
+              $push: "$treatises",
             },
           },
         },
         {
           $project: {
             _id: 1,
-            titles: {
-              $setUnion: ["$titles", []],
+            treatises: {
+              $setUnion: ["$treatises", []],
             },
           },
         },
@@ -329,6 +338,8 @@ contfiltRoutes.route("/contfilters").get(function (req, res) {
         {
           $set: {
             contributors: ["$entered", "$checked", "$approved"],
+            titles: "$title",
+            treatises: ["$url", "$title"],
           },
         },
         {
@@ -339,16 +350,17 @@ contfiltRoutes.route("/contfilters").get(function (req, res) {
         {
           $group: {
             _id: "$contributors",
-            titles: {
-              $push: "$title",
+            titles: { $push: "$titles" },
+            treatises: {
+              $push: "$treatises",
             },
           },
         },
         {
           $project: {
             _id: 1,
-            titles: {
-              $setUnion: ["$titles", []],
+            treatises: {
+              $setUnion: ["$treatises", []],
             },
           },
         },
@@ -411,6 +423,8 @@ contfiltRoutes.route("/contfilters").get(function (req, res) {
         {
           $set: {
             contributors: ["$entered", "$checked", "$approved"],
+            titles: "$title",
+            treatises: ["$url", "$title"],
           },
         },
         {
@@ -421,16 +435,17 @@ contfiltRoutes.route("/contfilters").get(function (req, res) {
         {
           $group: {
             _id: "$contributors",
-            titles: {
-              $push: "$title",
+            titles: { $push: "$titles" },
+            treatises: {
+              $push: "$treatises",
             },
           },
         },
         {
           $project: {
             _id: 1,
-            titles: {
-              $setUnion: ["$titles", []],
+            treatises: {
+              $setUnion: ["$treatises", []],
             },
           },
         },
@@ -493,6 +508,8 @@ contfiltRoutes.route("/contfilters").get(function (req, res) {
         {
           $set: {
             contributors: ["$entered", "$checked", "$approved"],
+            titles: "$title",
+            treatises: ["$url", "$title"],
           },
         },
         {
@@ -503,16 +520,17 @@ contfiltRoutes.route("/contfilters").get(function (req, res) {
         {
           $group: {
             _id: "$contributors",
-            titles: {
-              $push: "$title",
+            titles: { $push: "$titles" },
+            treatises: {
+              $push: "$treatises",
             },
           },
         },
         {
           $project: {
             _id: 1,
-            titles: {
-              $setUnion: ["$titles", []],
+            treatises: {
+              $setUnion: ["$treatises", []],
             },
           },
         },
@@ -576,6 +594,8 @@ contfiltRoutes.route("/contfilters").get(function (req, res) {
       {
         $set: {
           contributors: ["$entered", "$checked", "$approved"],
+          titles: "$title",
+          treatises: ["$url", "$title"],
         },
       },
       {
@@ -586,16 +606,17 @@ contfiltRoutes.route("/contfilters").get(function (req, res) {
       {
         $group: {
           _id: "$contributors",
-          titles: {
-            $push: "$title",
+          titles: { $push: "$titles" },
+          treatises: {
+            $push: "$treatises",
           },
         },
       },
       {
         $project: {
           _id: 1,
-          titles: {
-            $setUnion: ["$titles", []],
+          treatises: {
+            $setUnion: ["$treatises", []],
           },
         },
       },
@@ -658,6 +679,8 @@ contfiltRoutes.route("/contfilters").get(function (req, res) {
       {
         $set: {
           contributors: ["$entered", "$checked", "$approved"],
+          titles: "$title",
+          treatises: ["$url", "$title"],
         },
       },
       {
@@ -668,16 +691,17 @@ contfiltRoutes.route("/contfilters").get(function (req, res) {
       {
         $group: {
           _id: "$contributors",
-          titles: {
-            $push: "$title",
+          titles: { $push: "$titles" },
+          treatises: {
+            $push: "$treatises",
           },
         },
       },
       {
         $project: {
           _id: 1,
-          titles: {
-            $setUnion: ["$titles", []],
+          treatises: {
+            $setUnion: ["$treatises", []],
           },
         },
       },

@@ -31407,19 +31407,19 @@ var _browseStyleCss = require("../css/browse-style.css");
 var _s = $RefreshSig$();
 const Title = (props)=>{
     var titlesArr = [];
-    for(var i = 0; i < props.title.treatises.length; i++)titlesArr.push(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+    if (props.title.treatises) for(var i = 0; i < props.title.treatises.length; i++)titlesArr.push(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
             href: props.title.treatises[i][0],
             children: props.title.treatises[i][1]
         }, void 0, false, {
             fileName: "src/components/contributorList.js",
-            lineNumber: 12,
-            columnNumber: 9
+            lineNumber: 13,
+            columnNumber: 11
         }, undefined)
     }, void 0, false, {
         fileName: "src/components/contributorList.js",
-        lineNumber: 11,
-        columnNumber: 7
+        lineNumber: 12,
+        columnNumber: 9
     }, undefined));
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("tr", {
         children: [
@@ -31427,20 +31427,20 @@ const Title = (props)=>{
                 children: props.title._id
             }, void 0, false, {
                 fileName: "src/components/contributorList.js",
-                lineNumber: 18,
+                lineNumber: 22,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
                 children: titlesArr
             }, void 0, false, {
                 fileName: "src/components/contributorList.js",
-                lineNumber: 19,
+                lineNumber: 23,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/contributorList.js",
-        lineNumber: 17,
+        lineNumber: 21,
         columnNumber: 5
     }, undefined);
 };
@@ -31486,7 +31486,7 @@ function ContributorList() {
                 title: title
             }, title._id, false, {
                 fileName: "src/components/contributorList.js",
-                lineNumber: 68,
+                lineNumber: 72,
                 columnNumber: 14
             }, this);
         });
@@ -31496,12 +31496,12 @@ function ContributorList() {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _navbarJsDefault.default), {}, void 0, false, {
                 fileName: "src/components/contributorList.js",
-                lineNumber: 75,
+                lineNumber: 79,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _browsebarJsDefault.default), {}, void 0, false, {
                 fileName: "src/components/contributorList.js",
-                lineNumber: 76,
+                lineNumber: 80,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -31514,7 +31514,7 @@ function ContributorList() {
                                 children: "Filter by:"
                             }, void 0, false, {
                                 fileName: "src/components/contributorList.js",
-                                lineNumber: 79,
+                                lineNumber: 83,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("form", {
@@ -31522,12 +31522,12 @@ function ContributorList() {
                                 onChange: submission,
                                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _filtercolJsDefault.default), {}, void 0, false, {
                                     fileName: "src/components/contributorList.js",
-                                    lineNumber: 81,
+                                    lineNumber: 85,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "src/components/contributorList.js",
-                                lineNumber: 80,
+                                lineNumber: 84,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -31537,13 +31537,13 @@ function ContributorList() {
                                 children: "Reset"
                             }, void 0, false, {
                                 fileName: "src/components/contributorList.js",
-                                lineNumber: 83,
+                                lineNumber: 87,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "src/components/contributorList.js",
-                        lineNumber: 78,
+                        lineNumber: 82,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -31553,7 +31553,7 @@ function ContributorList() {
                                 id: "result"
                             }, void 0, false, {
                                 fileName: "src/components/contributorList.js",
-                                lineNumber: 88,
+                                lineNumber: 92,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("table", {
@@ -31569,56 +31569,56 @@ function ContributorList() {
                                                     children: "Contributors"
                                                 }, void 0, false, {
                                                     fileName: "src/components/contributorList.js",
-                                                    lineNumber: 92,
+                                                    lineNumber: 96,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
                                                     children: "Treatises"
                                                 }, void 0, false, {
                                                     fileName: "src/components/contributorList.js",
-                                                    lineNumber: 93,
+                                                    lineNumber: 97,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/components/contributorList.js",
-                                            lineNumber: 91,
+                                            lineNumber: 95,
                                             columnNumber: 15
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "src/components/contributorList.js",
-                                        lineNumber: 90,
+                                        lineNumber: 94,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("tbody", {
                                         children: titleList()
                                     }, void 0, false, {
                                         fileName: "src/components/contributorList.js",
-                                        lineNumber: 96,
+                                        lineNumber: 100,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/components/contributorList.js",
-                                lineNumber: 89,
+                                lineNumber: 93,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "src/components/contributorList.js",
-                        lineNumber: 87,
+                        lineNumber: 91,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "src/components/contributorList.js",
-                lineNumber: 77,
+                lineNumber: 81,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "src/components/contributorList.js",
-        lineNumber: 74,
+        lineNumber: 78,
         columnNumber: 5
     }, this);
 }

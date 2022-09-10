@@ -6,12 +6,16 @@ import "../css/browse-style.css";
 
 const Title = (props) => {
   var titlesArr = [];
-  for (var i = 0; i < props.title.treatises.length; i++) {
-    titlesArr.push(
-      <p>
-        <a href={props.title.treatises[i][0]}>{props.title.treatises[i][1]}</a>
-      </p>
-    );
+  if (props.title.treatises) {
+    for (var i = 0; i < props.title.treatises.length; i++) {
+      titlesArr.push(
+        <p>
+          <a href={props.title.treatises[i][0]}>
+            {props.title.treatises[i][1]}
+          </a>
+        </p>
+      );
+    }
   }
   return (
     <tr>

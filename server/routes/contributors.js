@@ -83,9 +83,6 @@ var pipeline = [
   {
     $project: {
       _id: 1,
-      titles: {
-        $setUnion: ["$titles", []],
-      },
       treatises: {
         $setUnion: ["$treatises", []],
       },

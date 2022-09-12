@@ -136,7 +136,7 @@ contfiltRoutes.route("/contfilters").get(function (req, res) {
         res.json(result);
       });
     } else if (tquery && cquery) {
-      const coll = db_connect.collection("titles").find();
+      const coll = db_connect.collection("titles");
       const cursor = coll.aggregate([
         { $match: { tongue: tquery, century: { $in: cqueryIntArr } } },
         {

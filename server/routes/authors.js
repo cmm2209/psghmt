@@ -39,6 +39,11 @@ var pipeline = [
     },
   },
   {
+    $sort: {
+      authorname: 1,
+    },
+  },
+  {
     $project: {
       _id: 0,
       treatises: 1,

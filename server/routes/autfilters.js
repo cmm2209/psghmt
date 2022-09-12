@@ -57,6 +57,11 @@ contfiltRoutes.route("/autfilters").get(function (req, res) {
           },
         },
         {
+          $sort: {
+            authorname: 1,
+          },
+        },
+        {
           $project: {
             _id: 0,
             treatises: 1,
@@ -99,6 +104,11 @@ contfiltRoutes.route("/autfilters").get(function (req, res) {
           },
         },
         {
+          $sort: {
+            authorname: 1,
+          },
+        },
+        {
           $project: {
             _id: 0,
             treatises: 1,
@@ -138,6 +148,11 @@ contfiltRoutes.route("/autfilters").get(function (req, res) {
         {
           $set: {
             authorname: "$authordeets.authorSt",
+          },
+        },
+        {
+          $sort: {
+            authorname: 1,
           },
         },
         {
@@ -186,6 +201,11 @@ contfiltRoutes.route("/autfilters").get(function (req, res) {
           },
         },
         {
+          $sort: {
+            authorname: 1,
+          },
+        },
+        {
           $project: {
             _id: 0,
             treatises: 1,
@@ -228,6 +248,11 @@ contfiltRoutes.route("/autfilters").get(function (req, res) {
           },
         },
         {
+          $sort: {
+            authorname: 1,
+          },
+        },
+        {
           $project: {
             _id: 0,
             treatises: 1,
@@ -267,6 +292,11 @@ contfiltRoutes.route("/autfilters").get(function (req, res) {
         {
           $set: {
             authorname: "$authordeets.authorSt",
+          },
+        },
+        {
+          $sort: {
+            authorname: 1,
           },
         },
         {
@@ -313,6 +343,11 @@ contfiltRoutes.route("/autfilters").get(function (req, res) {
         },
       },
       {
+        $sort: {
+          authorname: 1,
+        },
+      },
+      {
         $project: {
           _id: 0,
           treatises: 1,
@@ -352,6 +387,11 @@ contfiltRoutes.route("/autfilters").get(function (req, res) {
       {
         $set: {
           authorname: "$authordeets.authorSt",
+        },
+      },
+      {
+        $sort: {
+          authorname: 1,
         },
       },
       {

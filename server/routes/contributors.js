@@ -16,27 +16,12 @@ var pipeline = [
     $match: {
       $or: [
         {
-          checked: {
+          entered: {
             $exists: true,
           },
         },
         {
           version1: {
-            $exists: true,
-          },
-        },
-        {
-          version2: {
-            $exists: true,
-          },
-        },
-        {
-          version3: {
-            $exists: true,
-          },
-        },
-        {
-          version4: {
             $exists: true,
           },
         },
@@ -62,8 +47,25 @@ var pipeline = [
   {
     $set: {
       contributors: ["$entered", "$checked", "$approved"],
-      titles: "$title",
-      treatises: ["$url", "$title"],
+    },
+  },
+  {
+    $unwind: {
+      path: "$contributors",
+    },
+  },
+  {
+    $group: {
+      _id: "$_id",
+      contributors: {
+        $addToSet: "$contributors",
+      },
+      title: {
+        $first: "$title",
+      },
+      url: {
+        $first: "$url",
+      },
     },
   },
   {
@@ -74,18 +76,40 @@ var pipeline = [
   {
     $group: {
       _id: "$contributors",
-      titles: { $push: "$titles" },
+      treatises: {
+        $push: {
+          url: "$url",
+          title: "$title",
+        },
+      },
+    },
+  },
+  {
+    $sort: {
+      _id: 1,
+    },
+  },
+  {
+    $unwind: {
+      path: "$treatises",
+    },
+  },
+  {
+    $sort: {
+      "treatises.title": 1,
+    },
+  },
+  {
+    $group: {
+      _id: "$_id",
       treatises: {
         $push: "$treatises",
       },
     },
   },
   {
-    $project: {
+    $sort: {
       _id: 1,
-      treatises: {
-        $setUnion: ["$treatises", []],
-      },
     },
   },
 ];
@@ -95,7 +119,7 @@ contRoutes.route("/contributors").get(function (req, res) {
   let db_connect = dbo.getDb("mtl_db");
   const coll = db_connect.collection("titles");
   const cursor = coll.aggregate(pipeline);
-  cursor.sort({ _id: 1 }).toArray(function (err, result) {
+  cursor.toArray(function (err, result) {
     if (err) throw err;
     res.json(result);
   });

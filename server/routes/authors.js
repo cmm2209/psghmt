@@ -13,15 +13,10 @@ const dbo = require("../db/conn");
 
 var pipeline = [
   {
-    $set: {
-      treatises: ["$url", "$title"],
-    },
-  },
-  {
     $group: {
       _id: "$author",
       treatises: {
-        $push: "$treatises",
+        $push: { url: "$url", title: "$title" },
       },
     },
   },
@@ -44,10 +39,27 @@ var pipeline = [
     },
   },
   {
+    $unwind: {
+      path: "$treatises",
+    },
+  },
+  {
+    $sort: {
+      "treatises.title": 1,
+    },
+  },
+  {
+    $group: {
+      _id: "$authorname",
+      treatises: {
+        $push: "$treatises",
+      },
+    },
+  },
+  {
     $project: {
-      _id: 0,
+      _id: 1,
       treatises: 1,
-      authorname: 1,
     },
   },
 ];

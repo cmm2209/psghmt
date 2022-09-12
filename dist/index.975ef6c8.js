@@ -31427,8 +31427,8 @@ const Title = (props)=>{
     var titlesArr = [];
     if (props.title.treatises) for(var i = 0; i < props.title.treatises.length; i++)titlesArr.push(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-            href: props.title.treatises[i][0],
-            children: props.title.treatises[i][1]
+            href: props.title.treatises[i].url,
+            children: props.title.treatises[i].title
         }, void 0, false, {
             fileName: "src/components/contributorList.js",
             lineNumber: 13,
@@ -31675,8 +31675,8 @@ const Title = (props)=>{
     var titlesArr = [];
     if (props.title.treatises) for(var i = 0; i < props.title.treatises.length; i++)titlesArr.push(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-            href: props.title.treatises[i][0],
-            children: props.title.treatises[i][1]
+            href: props.title.treatises[i].url,
+            children: props.title.treatises[i].title
         }, void 0, false, {
             fileName: "src/components/authorList.js",
             lineNumber: 13,
@@ -31690,7 +31690,7 @@ const Title = (props)=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("tr", {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
-                children: props.title.authorname
+                children: props.title._id
             }, void 0, false, {
                 fileName: "src/components/authorList.js",
                 lineNumber: 22,

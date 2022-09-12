@@ -10,8 +10,8 @@ const Title = (props) => {
     for (var i = 0; i < props.title.treatises.length; i++) {
       titlesArr.push(
         <p>
-          <a href={props.title.treatises[i][0]}>
-            {props.title.treatises[i][1]}
+          <a href={props.title.treatises[i].url}>
+            {props.title.treatises[i].title}
           </a>
         </p>
       );
@@ -19,7 +19,7 @@ const Title = (props) => {
   }
   return (
     <tr>
-      <td>{props.title.authorname}</td>
+      <td>{props.title._id}</td>
       <td>{titlesArr}</td>
     </tr>
   );

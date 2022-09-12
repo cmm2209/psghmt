@@ -34,27 +34,12 @@ contfiltRoutes.route("/contfilters").get(function (req, res) {
           $match: {
             $or: [
               {
-                checked: {
+                entered: {
                   $exists: true,
                 },
               },
               {
                 version1: {
-                  $exists: true,
-                },
-              },
-              {
-                version2: {
-                  $exists: true,
-                },
-              },
-              {
-                version3: {
-                  $exists: true,
-                },
-              },
-              {
-                version4: {
                   $exists: true,
                 },
               },
@@ -80,8 +65,25 @@ contfiltRoutes.route("/contfilters").get(function (req, res) {
         {
           $set: {
             contributors: ["$entered", "$checked", "$approved"],
-            titles: "$title",
-            treatises: ["$url", "$title"],
+          },
+        },
+        {
+          $unwind: {
+            path: "$contributors",
+          },
+        },
+        {
+          $group: {
+            _id: "$_id",
+            contributors: {
+              $addToSet: "$contributors",
+            },
+            title: {
+              $first: "$title",
+            },
+            url: {
+              $first: "$url",
+            },
           },
         },
         {
@@ -92,22 +94,44 @@ contfiltRoutes.route("/contfilters").get(function (req, res) {
         {
           $group: {
             _id: "$contributors",
-            titles: { $push: "$titles" },
+            treatises: {
+              $push: {
+                url: "$url",
+                title: "$title",
+              },
+            },
+          },
+        },
+        {
+          $sort: {
+            _id: 1,
+          },
+        },
+        {
+          $unwind: {
+            path: "$treatises",
+          },
+        },
+        {
+          $sort: {
+            "treatises.title": 1,
+          },
+        },
+        {
+          $group: {
+            _id: "$_id",
             treatises: {
               $push: "$treatises",
             },
           },
         },
         {
-          $project: {
+          $sort: {
             _id: 1,
-            treatises: {
-              $setUnion: ["$treatises", []],
-            },
           },
         },
       ]);
-      cursor.sort({ _id: 1 }).toArray(function (err, result) {
+      cursor.toArray(function (err, result) {
         if (err) throw err;
         res.json(result);
       });
@@ -119,27 +143,12 @@ contfiltRoutes.route("/contfilters").get(function (req, res) {
           $match: {
             $or: [
               {
-                checked: {
+                entered: {
                   $exists: true,
                 },
               },
               {
                 version1: {
-                  $exists: true,
-                },
-              },
-              {
-                version2: {
-                  $exists: true,
-                },
-              },
-              {
-                version3: {
-                  $exists: true,
-                },
-              },
-              {
-                version4: {
                   $exists: true,
                 },
               },
@@ -165,8 +174,25 @@ contfiltRoutes.route("/contfilters").get(function (req, res) {
         {
           $set: {
             contributors: ["$entered", "$checked", "$approved"],
-            titles: "$title",
-            treatises: ["$url", "$title"],
+          },
+        },
+        {
+          $unwind: {
+            path: "$contributors",
+          },
+        },
+        {
+          $group: {
+            _id: "$_id",
+            contributors: {
+              $addToSet: "$contributors",
+            },
+            title: {
+              $first: "$title",
+            },
+            url: {
+              $first: "$url",
+            },
           },
         },
         {
@@ -177,22 +203,44 @@ contfiltRoutes.route("/contfilters").get(function (req, res) {
         {
           $group: {
             _id: "$contributors",
-            titles: { $push: "$titles" },
+            treatises: {
+              $push: {
+                url: "$url",
+                title: "$title",
+              },
+            },
+          },
+        },
+        {
+          $sort: {
+            _id: 1,
+          },
+        },
+        {
+          $unwind: {
+            path: "$treatises",
+          },
+        },
+        {
+          $sort: {
+            "treatises.title": 1,
+          },
+        },
+        {
+          $group: {
+            _id: "$_id",
             treatises: {
               $push: "$treatises",
             },
           },
         },
         {
-          $project: {
+          $sort: {
             _id: 1,
-            treatises: {
-              $setUnion: ["$treatises", []],
-            },
           },
         },
       ]);
-      cursor.sort({ _id: 1 }).toArray(function (err, result) {
+      cursor.toArray(function (err, result) {
         if (err) throw err;
         res.json(result);
       });
@@ -204,27 +252,12 @@ contfiltRoutes.route("/contfilters").get(function (req, res) {
           $match: {
             $or: [
               {
-                checked: {
+                entered: {
                   $exists: true,
                 },
               },
               {
                 version1: {
-                  $exists: true,
-                },
-              },
-              {
-                version2: {
-                  $exists: true,
-                },
-              },
-              {
-                version3: {
-                  $exists: true,
-                },
-              },
-              {
-                version4: {
                   $exists: true,
                 },
               },
@@ -250,8 +283,25 @@ contfiltRoutes.route("/contfilters").get(function (req, res) {
         {
           $set: {
             contributors: ["$entered", "$checked", "$approved"],
-            titles: "$title",
-            treatises: ["$url", "$title"],
+          },
+        },
+        {
+          $unwind: {
+            path: "$contributors",
+          },
+        },
+        {
+          $group: {
+            _id: "$_id",
+            contributors: {
+              $addToSet: "$contributors",
+            },
+            title: {
+              $first: "$title",
+            },
+            url: {
+              $first: "$url",
+            },
           },
         },
         {
@@ -262,22 +312,44 @@ contfiltRoutes.route("/contfilters").get(function (req, res) {
         {
           $group: {
             _id: "$contributors",
-            titles: { $push: "$titles" },
+            treatises: {
+              $push: {
+                url: "$url",
+                title: "$title",
+              },
+            },
+          },
+        },
+        {
+          $sort: {
+            _id: 1,
+          },
+        },
+        {
+          $unwind: {
+            path: "$treatises",
+          },
+        },
+        {
+          $sort: {
+            "treatises.title": 1,
+          },
+        },
+        {
+          $group: {
+            _id: "$_id",
             treatises: {
               $push: "$treatises",
             },
           },
         },
         {
-          $project: {
+          $sort: {
             _id: 1,
-            treatises: {
-              $setUnion: ["$treatises", []],
-            },
           },
         },
       ]);
-      cursor.sort({ _id: 1 }).toArray(function (err, result) {
+      cursor.toArray(function (err, result) {
         if (err) throw err;
         res.json(result);
       });
@@ -292,27 +364,12 @@ contfiltRoutes.route("/contfilters").get(function (req, res) {
           $match: {
             $or: [
               {
-                checked: {
+                entered: {
                   $exists: true,
                 },
               },
               {
                 version1: {
-                  $exists: true,
-                },
-              },
-              {
-                version2: {
-                  $exists: true,
-                },
-              },
-              {
-                version3: {
-                  $exists: true,
-                },
-              },
-              {
-                version4: {
                   $exists: true,
                 },
               },
@@ -338,8 +395,25 @@ contfiltRoutes.route("/contfilters").get(function (req, res) {
         {
           $set: {
             contributors: ["$entered", "$checked", "$approved"],
-            titles: "$title",
-            treatises: ["$url", "$title"],
+          },
+        },
+        {
+          $unwind: {
+            path: "$contributors",
+          },
+        },
+        {
+          $group: {
+            _id: "$_id",
+            contributors: {
+              $addToSet: "$contributors",
+            },
+            title: {
+              $first: "$title",
+            },
+            url: {
+              $first: "$url",
+            },
           },
         },
         {
@@ -350,22 +424,44 @@ contfiltRoutes.route("/contfilters").get(function (req, res) {
         {
           $group: {
             _id: "$contributors",
-            titles: { $push: "$titles" },
+            treatises: {
+              $push: {
+                url: "$url",
+                title: "$title",
+              },
+            },
+          },
+        },
+        {
+          $sort: {
+            _id: 1,
+          },
+        },
+        {
+          $unwind: {
+            path: "$treatises",
+          },
+        },
+        {
+          $sort: {
+            "treatises.title": 1,
+          },
+        },
+        {
+          $group: {
+            _id: "$_id",
             treatises: {
               $push: "$treatises",
             },
           },
         },
         {
-          $project: {
+          $sort: {
             _id: 1,
-            treatises: {
-              $setUnion: ["$treatises", []],
-            },
           },
         },
       ]);
-      cursor.sort({ _id: 1 }).toArray(function (err, result) {
+      cursor.toArray(function (err, result) {
         if (err) throw err;
         res.json(result);
       });
@@ -377,27 +473,12 @@ contfiltRoutes.route("/contfilters").get(function (req, res) {
           $match: {
             $or: [
               {
-                checked: {
+                entered: {
                   $exists: true,
                 },
               },
               {
                 version1: {
-                  $exists: true,
-                },
-              },
-              {
-                version2: {
-                  $exists: true,
-                },
-              },
-              {
-                version3: {
-                  $exists: true,
-                },
-              },
-              {
-                version4: {
                   $exists: true,
                 },
               },
@@ -423,8 +504,25 @@ contfiltRoutes.route("/contfilters").get(function (req, res) {
         {
           $set: {
             contributors: ["$entered", "$checked", "$approved"],
-            titles: "$title",
-            treatises: ["$url", "$title"],
+          },
+        },
+        {
+          $unwind: {
+            path: "$contributors",
+          },
+        },
+        {
+          $group: {
+            _id: "$_id",
+            contributors: {
+              $addToSet: "$contributors",
+            },
+            title: {
+              $first: "$title",
+            },
+            url: {
+              $first: "$url",
+            },
           },
         },
         {
@@ -435,22 +533,44 @@ contfiltRoutes.route("/contfilters").get(function (req, res) {
         {
           $group: {
             _id: "$contributors",
-            titles: { $push: "$titles" },
+            treatises: {
+              $push: {
+                url: "$url",
+                title: "$title",
+              },
+            },
+          },
+        },
+        {
+          $sort: {
+            _id: 1,
+          },
+        },
+        {
+          $unwind: {
+            path: "$treatises",
+          },
+        },
+        {
+          $sort: {
+            "treatises.title": 1,
+          },
+        },
+        {
+          $group: {
+            _id: "$_id",
             treatises: {
               $push: "$treatises",
             },
           },
         },
         {
-          $project: {
+          $sort: {
             _id: 1,
-            treatises: {
-              $setUnion: ["$treatises", []],
-            },
           },
         },
       ]);
-      cursor.sort({ _id: 1 }).toArray(function (err, result) {
+      cursor.toArray(function (err, result) {
         if (err) throw err;
         res.json(result);
       });
@@ -462,27 +582,12 @@ contfiltRoutes.route("/contfilters").get(function (req, res) {
           $match: {
             $or: [
               {
-                checked: {
+                entered: {
                   $exists: true,
                 },
               },
               {
                 version1: {
-                  $exists: true,
-                },
-              },
-              {
-                version2: {
-                  $exists: true,
-                },
-              },
-              {
-                version3: {
-                  $exists: true,
-                },
-              },
-              {
-                version4: {
                   $exists: true,
                 },
               },
@@ -508,8 +613,25 @@ contfiltRoutes.route("/contfilters").get(function (req, res) {
         {
           $set: {
             contributors: ["$entered", "$checked", "$approved"],
-            titles: "$title",
-            treatises: ["$url", "$title"],
+          },
+        },
+        {
+          $unwind: {
+            path: "$contributors",
+          },
+        },
+        {
+          $group: {
+            _id: "$_id",
+            contributors: {
+              $addToSet: "$contributors",
+            },
+            title: {
+              $first: "$title",
+            },
+            url: {
+              $first: "$url",
+            },
           },
         },
         {
@@ -520,22 +642,44 @@ contfiltRoutes.route("/contfilters").get(function (req, res) {
         {
           $group: {
             _id: "$contributors",
-            titles: { $push: "$titles" },
+            treatises: {
+              $push: {
+                url: "$url",
+                title: "$title",
+              },
+            },
+          },
+        },
+        {
+          $sort: {
+            _id: 1,
+          },
+        },
+        {
+          $unwind: {
+            path: "$treatises",
+          },
+        },
+        {
+          $sort: {
+            "treatises.title": 1,
+          },
+        },
+        {
+          $group: {
+            _id: "$_id",
             treatises: {
               $push: "$treatises",
             },
           },
         },
         {
-          $project: {
+          $sort: {
             _id: 1,
-            treatises: {
-              $setUnion: ["$treatises", []],
-            },
           },
         },
       ]);
-      cursor.sort({ _id: 1 }).toArray(function (err, result) {
+      cursor.toArray(function (err, result) {
         if (err) throw err;
         res.json(result);
       });
@@ -548,27 +692,12 @@ contfiltRoutes.route("/contfilters").get(function (req, res) {
         $match: {
           $or: [
             {
-              checked: {
+              entered: {
                 $exists: true,
               },
             },
             {
               version1: {
-                $exists: true,
-              },
-            },
-            {
-              version2: {
-                $exists: true,
-              },
-            },
-            {
-              version3: {
-                $exists: true,
-              },
-            },
-            {
-              version4: {
                 $exists: true,
               },
             },
@@ -594,8 +723,25 @@ contfiltRoutes.route("/contfilters").get(function (req, res) {
       {
         $set: {
           contributors: ["$entered", "$checked", "$approved"],
-          titles: "$title",
-          treatises: ["$url", "$title"],
+        },
+      },
+      {
+        $unwind: {
+          path: "$contributors",
+        },
+      },
+      {
+        $group: {
+          _id: "$_id",
+          contributors: {
+            $addToSet: "$contributors",
+          },
+          title: {
+            $first: "$title",
+          },
+          url: {
+            $first: "$url",
+          },
         },
       },
       {
@@ -606,22 +752,44 @@ contfiltRoutes.route("/contfilters").get(function (req, res) {
       {
         $group: {
           _id: "$contributors",
-          titles: { $push: "$titles" },
+          treatises: {
+            $push: {
+              url: "$url",
+              title: "$title",
+            },
+          },
+        },
+      },
+      {
+        $sort: {
+          _id: 1,
+        },
+      },
+      {
+        $unwind: {
+          path: "$treatises",
+        },
+      },
+      {
+        $sort: {
+          "treatises.title": 1,
+        },
+      },
+      {
+        $group: {
+          _id: "$_id",
           treatises: {
             $push: "$treatises",
           },
         },
       },
       {
-        $project: {
+        $sort: {
           _id: 1,
-          treatises: {
-            $setUnion: ["$treatises", []],
-          },
         },
       },
     ]);
-    cursor.sort({ _id: 1 }).toArray(function (err, result) {
+    cursor.toArray(function (err, result) {
       if (err) throw err;
       res.json(result);
     });
@@ -633,27 +801,12 @@ contfiltRoutes.route("/contfilters").get(function (req, res) {
         $match: {
           $or: [
             {
-              checked: {
+              entered: {
                 $exists: true,
               },
             },
             {
               version1: {
-                $exists: true,
-              },
-            },
-            {
-              version2: {
-                $exists: true,
-              },
-            },
-            {
-              version3: {
-                $exists: true,
-              },
-            },
-            {
-              version4: {
                 $exists: true,
               },
             },
@@ -679,8 +832,25 @@ contfiltRoutes.route("/contfilters").get(function (req, res) {
       {
         $set: {
           contributors: ["$entered", "$checked", "$approved"],
-          titles: "$title",
-          treatises: ["$url", "$title"],
+        },
+      },
+      {
+        $unwind: {
+          path: "$contributors",
+        },
+      },
+      {
+        $group: {
+          _id: "$_id",
+          contributors: {
+            $addToSet: "$contributors",
+          },
+          title: {
+            $first: "$title",
+          },
+          url: {
+            $first: "$url",
+          },
         },
       },
       {
@@ -691,39 +861,48 @@ contfiltRoutes.route("/contfilters").get(function (req, res) {
       {
         $group: {
           _id: "$contributors",
-          titles: { $push: "$titles" },
+          treatises: {
+            $push: {
+              url: "$url",
+              title: "$title",
+            },
+          },
+        },
+      },
+      {
+        $sort: {
+          _id: 1,
+        },
+      },
+      {
+        $unwind: {
+          path: "$treatises",
+        },
+      },
+      {
+        $sort: {
+          "treatises.title": 1,
+        },
+      },
+      {
+        $group: {
+          _id: "$_id",
           treatises: {
             $push: "$treatises",
           },
         },
       },
       {
-        $project: {
+        $sort: {
           _id: 1,
-          treatises: {
-            $setUnion: ["$treatises", []],
-          },
         },
       },
     ]);
-    cursor.sort({ _id: 1 }).toArray(function (err, result) {
+    cursor.toArray(function (err, result) {
       if (err) throw err;
       res.json(result);
     });
   }
-  /**
-  else if (req.query.author) {
-    let aqueryid = req.query.author;
-    db_connect
-      .collection("titles")
-      .find({ author: ObjectId(aqueryid) })
-      .sort({title: 1})
-      .toArray(function (err, result) {
-        if (err) throw err;
-        res.json(result);
-      });
-  }
-     */
 });
 
 module.exports = contfiltRoutes;

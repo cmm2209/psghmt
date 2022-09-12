@@ -31,15 +31,10 @@ contfiltRoutes.route("/autfilters").get(function (req, res) {
       const cursor = coll.aggregate([
         { $match: { tongue: { $in: tquery }, century: { $in: cqueryIntArr } } },
         {
-          $set: {
-            treatises: ["$url", "$title"],
-          },
-        },
-        {
           $group: {
             _id: "$author",
             treatises: {
-              $push: "$treatises",
+              $push: { url: "$url", title: "$title" },
             },
           },
         },
@@ -62,10 +57,27 @@ contfiltRoutes.route("/autfilters").get(function (req, res) {
           },
         },
         {
+          $unwind: {
+            path: "$treatises",
+          },
+        },
+        {
+          $sort: {
+            "treatises.title": 1,
+          },
+        },
+        {
+          $group: {
+            _id: "$authorname",
+            treatises: {
+              $push: "$treatises",
+            },
+          },
+        },
+        {
           $project: {
-            _id: 0,
+            _id: 1,
             treatises: 1,
-            authorname: 1,
           },
         },
       ]);
@@ -78,15 +90,10 @@ contfiltRoutes.route("/autfilters").get(function (req, res) {
       const cursor = coll.aggregate([
         { $match: { tongue: tquery, century: { $in: cqueryIntArr } } },
         {
-          $set: {
-            treatises: ["$url", "$title"],
-          },
-        },
-        {
           $group: {
             _id: "$author",
             treatises: {
-              $push: "$treatises",
+              $push: { url: "$url", title: "$title" },
             },
           },
         },
@@ -109,10 +116,27 @@ contfiltRoutes.route("/autfilters").get(function (req, res) {
           },
         },
         {
+          $unwind: {
+            path: "$treatises",
+          },
+        },
+        {
+          $sort: {
+            "treatises.title": 1,
+          },
+        },
+        {
+          $group: {
+            _id: "$authorname",
+            treatises: {
+              $push: "$treatises",
+            },
+          },
+        },
+        {
           $project: {
-            _id: 0,
+            _id: 1,
             treatises: 1,
-            authorname: 1,
           },
         },
       ]);
@@ -125,15 +149,10 @@ contfiltRoutes.route("/autfilters").get(function (req, res) {
       const cursor = coll.aggregate([
         { $match: { century: { $in: cqueryIntArr } } },
         {
-          $set: {
-            treatises: ["$url", "$title"],
-          },
-        },
-        {
           $group: {
             _id: "$author",
             treatises: {
-              $push: "$treatises",
+              $push: { url: "$url", title: "$title" },
             },
           },
         },
@@ -156,10 +175,27 @@ contfiltRoutes.route("/autfilters").get(function (req, res) {
           },
         },
         {
+          $unwind: {
+            path: "$treatises",
+          },
+        },
+        {
+          $sort: {
+            "treatises.title": 1,
+          },
+        },
+        {
+          $group: {
+            _id: "$authorname",
+            treatises: {
+              $push: "$treatises",
+            },
+          },
+        },
+        {
           $project: {
-            _id: 0,
+            _id: 1,
             treatises: 1,
-            authorname: 1,
           },
         },
       ]);
@@ -175,15 +211,10 @@ contfiltRoutes.route("/autfilters").get(function (req, res) {
       const cursor = coll.aggregate([
         { $match: { tongue: { $in: tquery }, century: cqueryInt } },
         {
-          $set: {
-            treatises: ["$url", "$title"],
-          },
-        },
-        {
           $group: {
             _id: "$author",
             treatises: {
-              $push: "$treatises",
+              $push: { url: "$url", title: "$title" },
             },
           },
         },
@@ -206,10 +237,27 @@ contfiltRoutes.route("/autfilters").get(function (req, res) {
           },
         },
         {
+          $unwind: {
+            path: "$treatises",
+          },
+        },
+        {
+          $sort: {
+            "treatises.title": 1,
+          },
+        },
+        {
+          $group: {
+            _id: "$authorname",
+            treatises: {
+              $push: "$treatises",
+            },
+          },
+        },
+        {
           $project: {
-            _id: 0,
+            _id: 1,
             treatises: 1,
-            authorname: 1,
           },
         },
       ]);
@@ -222,15 +270,10 @@ contfiltRoutes.route("/autfilters").get(function (req, res) {
       const cursor = coll.aggregate([
         { $match: { tongue: tquery, century: cqueryInt } },
         {
-          $set: {
-            treatises: ["$url", "$title"],
-          },
-        },
-        {
           $group: {
             _id: "$author",
             treatises: {
-              $push: "$treatises",
+              $push: { url: "$url", title: "$title" },
             },
           },
         },
@@ -253,10 +296,27 @@ contfiltRoutes.route("/autfilters").get(function (req, res) {
           },
         },
         {
+          $unwind: {
+            path: "$treatises",
+          },
+        },
+        {
+          $sort: {
+            "treatises.title": 1,
+          },
+        },
+        {
+          $group: {
+            _id: "$authorname",
+            treatises: {
+              $push: "$treatises",
+            },
+          },
+        },
+        {
           $project: {
-            _id: 0,
+            _id: 1,
             treatises: 1,
-            authorname: 1,
           },
         },
       ]);
@@ -269,15 +329,10 @@ contfiltRoutes.route("/autfilters").get(function (req, res) {
       const cursor = coll.aggregate([
         { $match: { century: cqueryInt } },
         {
-          $set: {
-            treatises: ["$url", "$title"],
-          },
-        },
-        {
           $group: {
             _id: "$author",
             treatises: {
-              $push: "$treatises",
+              $push: { url: "$url", title: "$title" },
             },
           },
         },
@@ -300,10 +355,27 @@ contfiltRoutes.route("/autfilters").get(function (req, res) {
           },
         },
         {
+          $unwind: {
+            path: "$treatises",
+          },
+        },
+        {
+          $sort: {
+            "treatises.title": 1,
+          },
+        },
+        {
+          $group: {
+            _id: "$authorname",
+            treatises: {
+              $push: "$treatises",
+            },
+          },
+        },
+        {
           $project: {
-            _id: 0,
+            _id: 1,
             treatises: 1,
-            authorname: 1,
           },
         },
       ]);
@@ -317,15 +389,10 @@ contfiltRoutes.route("/autfilters").get(function (req, res) {
     const cursor = coll.aggregate([
       { $match: { tongue: { $in: tquery } } },
       {
-        $set: {
-          treatises: ["$url", "$title"],
-        },
-      },
-      {
         $group: {
           _id: "$author",
           treatises: {
-            $push: "$treatises",
+            $push: { url: "$url", title: "$title" },
           },
         },
       },
@@ -348,10 +415,27 @@ contfiltRoutes.route("/autfilters").get(function (req, res) {
         },
       },
       {
+        $unwind: {
+          path: "$treatises",
+        },
+      },
+      {
+        $sort: {
+          "treatises.title": 1,
+        },
+      },
+      {
+        $group: {
+          _id: "$authorname",
+          treatises: {
+            $push: "$treatises",
+          },
+        },
+      },
+      {
         $project: {
-          _id: 0,
+          _id: 1,
           treatises: 1,
-          authorname: 1,
         },
       },
     ]);
@@ -364,15 +448,10 @@ contfiltRoutes.route("/autfilters").get(function (req, res) {
     const cursor = coll.aggregate([
       { $match: { tongue: tquery } },
       {
-        $set: {
-          treatises: ["$url", "$title"],
-        },
-      },
-      {
         $group: {
           _id: "$author",
           treatises: {
-            $push: "$treatises",
+            $push: { url: "$url", title: "$title" },
           },
         },
       },
@@ -395,10 +474,27 @@ contfiltRoutes.route("/autfilters").get(function (req, res) {
         },
       },
       {
+        $unwind: {
+          path: "$treatises",
+        },
+      },
+      {
+        $sort: {
+          "treatises.title": 1,
+        },
+      },
+      {
+        $group: {
+          _id: "$authorname",
+          treatises: {
+            $push: "$treatises",
+          },
+        },
+      },
+      {
         $project: {
-          _id: 0,
+          _id: 1,
           treatises: 1,
-          authorname: 1,
         },
       },
     ]);
@@ -407,19 +503,6 @@ contfiltRoutes.route("/autfilters").get(function (req, res) {
       res.json(result);
     });
   }
-  /**
-  else if (req.query.author) {
-    let aqueryid = req.query.author;
-    db_connect
-      .collection("titles")
-      .find({ author: ObjectId(aqueryid) })
-      .sort({title: 1})
-      .toArray(function (err, result) {
-        if (err) throw err;
-        res.json(result);
-      });
-  }
-     */
 });
 
 module.exports = contfiltRoutes;

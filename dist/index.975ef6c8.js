@@ -27114,6 +27114,8 @@ var _landing = require("./components/landing");
 var _landingDefault = parcelHelpers.interopDefault(_landing);
 var _titleList = require("./components/titleList");
 var _titleListDefault = parcelHelpers.interopDefault(_titleList);
+var _authorList = require("./components/authorList");
+var _authorListDefault = parcelHelpers.interopDefault(_authorList);
 var _incList = require("./components/incList");
 var _incListDefault = parcelHelpers.interopDefault(_incList);
 var _contributorList = require("./components/contributorList");
@@ -27127,7 +27129,7 @@ const App = ()=>{
                     element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _landingDefault.default), {}, void 0, false, void 0, void 0)
                 }, void 0, false, {
                     fileName: "src/App.js",
-                    lineNumber: 17,
+                    lineNumber: 18,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
@@ -27135,7 +27137,7 @@ const App = ()=>{
                     element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _titleListDefault.default), {}, void 0, false, void 0, void 0)
                 }, void 0, false, {
                     fileName: "src/App.js",
-                    lineNumber: 18,
+                    lineNumber: 19,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
@@ -27143,7 +27145,23 @@ const App = ()=>{
                     element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _titleListDefault.default), {}, void 0, false, void 0, void 0)
                 }, void 0, false, {
                     fileName: "src/App.js",
-                    lineNumber: 19,
+                    lineNumber: 20,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
+                    path: "/authors",
+                    element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _authorListDefault.default), {}, void 0, false, void 0, void 0)
+                }, void 0, false, {
+                    fileName: "src/App.js",
+                    lineNumber: 21,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
+                    path: "/autfilters",
+                    element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _authorListDefault.default), {}, void 0, false, void 0, void 0)
+                }, void 0, false, {
+                    fileName: "src/App.js",
+                    lineNumber: 22,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
@@ -27151,7 +27169,7 @@ const App = ()=>{
                     element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _incListDefault.default), {}, void 0, false, void 0, void 0)
                 }, void 0, false, {
                     fileName: "src/App.js",
-                    lineNumber: 20,
+                    lineNumber: 23,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
@@ -27159,7 +27177,7 @@ const App = ()=>{
                     element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _incListDefault.default), {}, void 0, false, void 0, void 0)
                 }, void 0, false, {
                     fileName: "src/App.js",
-                    lineNumber: 21,
+                    lineNumber: 24,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
@@ -27167,7 +27185,7 @@ const App = ()=>{
                     element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _contributorListDefault.default), {}, void 0, false, void 0, void 0)
                 }, void 0, false, {
                     fileName: "src/App.js",
-                    lineNumber: 22,
+                    lineNumber: 25,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
@@ -27175,18 +27193,18 @@ const App = ()=>{
                     element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _contributorListDefault.default), {}, void 0, false, void 0, void 0)
                 }, void 0, false, {
                     fileName: "src/App.js",
-                    lineNumber: 23,
+                    lineNumber: 26,
                     columnNumber: 9
                 }, undefined)
             ]
         }, void 0, true, {
             fileName: "src/App.js",
-            lineNumber: 16,
+            lineNumber: 17,
             columnNumber: 7
         }, undefined)
     }, void 0, false, {
         fileName: "src/App.js",
-        lineNumber: 15,
+        lineNumber: 16,
         columnNumber: 5
     }, undefined);
 };
@@ -27200,7 +27218,7 @@ $RefreshReg$(_c, "App");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"fdOAw","./components/landing":"fQFy1","./components/titleList":"58V10","./components/incList":"hzWIN","./components/contributorList":"476Ls","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"fdOAw":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"fdOAw","./components/landing":"fQFy1","./components/titleList":"58V10","./components/incList":"hzWIN","./components/contributorList":"476Ls","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./components/authorList":"h5wcj"}],"fdOAw":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "MemoryRouter", ()=>(0, _reactRouter.MemoryRouter));
@@ -30789,7 +30807,7 @@ const Browsebar = ()=>{
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                        to: "/browse",
+                        to: "/authors",
                         children: "Authors"
                     }, void 0, false, {
                         fileName: "src/components/browsebar.js",
@@ -31630,6 +31648,254 @@ $RefreshReg$(_c, "Title");
 $RefreshReg$(_c1, "ContributorList");
 
   $parcel$ReactRefreshHelpers$ea42.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./navbar.js":"dtZi7","./browsebar.js":"iry4m","./filtercol.js":"evHix","../css/browse-style.css":"ck0Hv","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"ck0Hv":[function() {},{}],"h5wcj":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$4fd5 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$4fd5.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _navbarJs = require("./navbar.js");
+var _navbarJsDefault = parcelHelpers.interopDefault(_navbarJs);
+var _browsebarJs = require("./browsebar.js");
+var _browsebarJsDefault = parcelHelpers.interopDefault(_browsebarJs);
+var _filtercolJs = require("./filtercol.js");
+var _filtercolJsDefault = parcelHelpers.interopDefault(_filtercolJs);
+var _browseStyleCss = require("../css/browse-style.css");
+var _s = $RefreshSig$();
+const Title = (props)=>{
+    var titlesArr = [];
+    if (props.title.treatises) for(var i = 0; i < props.title.treatises.length; i++)titlesArr.push(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+            href: props.title.treatises[i][0],
+            children: props.title.treatises[i][1]
+        }, void 0, false, {
+            fileName: "src/components/authorList.js",
+            lineNumber: 13,
+            columnNumber: 11
+        }, undefined)
+    }, void 0, false, {
+        fileName: "src/components/authorList.js",
+        lineNumber: 12,
+        columnNumber: 9
+    }, undefined));
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("tr", {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
+                children: props.title.authorname
+            }, void 0, false, {
+                fileName: "src/components/authorList.js",
+                lineNumber: 22,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
+                children: titlesArr
+            }, void 0, false, {
+                fileName: "src/components/authorList.js",
+                lineNumber: 23,
+                columnNumber: 7
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/components/authorList.js",
+        lineNumber: 21,
+        columnNumber: 5
+    }, undefined);
+};
+_c = Title;
+function AuthorList() {
+    _s();
+    const [titles1, setTitles] = (0, _react.useState)([]);
+    (0, _react.useEffect)(()=>{
+        getTitles();
+        return;
+    }, []); // eslint-disable-line react-hooks/exhaustive-deps
+    async function getTitles() {
+        const response = await fetch(`http://localhost:5000/authors/`);
+        const titles = await response.json();
+        setTitles(titles);
+        const cblist = document.getElementsByClassName("cb");
+        for (const el of cblist)el.checked = false;
+    }
+    async function submission() {
+        var markedCheckbox = document.querySelectorAll('input[type="checkbox"]:checked');
+        var empty = [].filter.call(markedCheckbox, function(el) {
+            return !el.checked;
+        });
+        if (markedCheckbox.length == empty.length) {
+            const response = await fetch(`http://localhost:5000/authors/`);
+            const titles = await response.json();
+            setTitles(titles);
+        }
+        var cbsum = [];
+        for (var checkbox of markedCheckbox){
+            cbsum.push(checkbox.name + "=" + checkbox.value);
+            var cbsum1 = cbsum.toString();
+            var cbsumWoC = cbsum1.replace(/,/g, "&");
+        }
+        const res = await fetch(`http://localhost:5000/autfilters?${cbsumWoC}`);
+        const titles = await res.json();
+        setTitles(titles);
+    }
+    // This method will map out the records on the table
+    function titleList() {
+        return titles1.map((title)=>{
+            return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Title, {
+                title: title
+            }, title._id, false, {
+                fileName: "src/components/authorList.js",
+                lineNumber: 72,
+                columnNumber: 14
+            }, this);
+        });
+    }
+    // This following section will display the table with the records of individuals.
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _navbarJsDefault.default), {}, void 0, false, {
+                fileName: "src/components/authorList.js",
+                lineNumber: 79,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _browsebarJsDefault.default), {}, void 0, false, {
+                fileName: "src/components/authorList.js",
+                lineNumber: 80,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "filterNresults",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "filterbar",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                                children: "Filter by:"
+                            }, void 0, false, {
+                                fileName: "src/components/authorList.js",
+                                lineNumber: 83,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("form", {
+                                id: "filterMenu",
+                                onChange: submission,
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _filtercolJsDefault.default), {}, void 0, false, {
+                                    fileName: "src/components/authorList.js",
+                                    lineNumber: 85,
+                                    columnNumber: 13
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "src/components/authorList.js",
+                                lineNumber: 84,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                className: "button",
+                                id: "reset",
+                                onClick: getTitles,
+                                children: "Reset"
+                            }, void 0, false, {
+                                fileName: "src/components/authorList.js",
+                                lineNumber: 87,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/components/authorList.js",
+                        lineNumber: 82,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "results",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                                id: "result"
+                            }, void 0, false, {
+                                fileName: "src/components/authorList.js",
+                                lineNumber: 92,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("table", {
+                                className: "table table-striped",
+                                style: {
+                                    marginTop: 20
+                                },
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("thead", {
+                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("tr", {
+                                            children: [
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
+                                                    children: "Authors"
+                                                }, void 0, false, {
+                                                    fileName: "src/components/authorList.js",
+                                                    lineNumber: 96,
+                                                    columnNumber: 17
+                                                }, this),
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
+                                                    children: "Treatises"
+                                                }, void 0, false, {
+                                                    fileName: "src/components/authorList.js",
+                                                    lineNumber: 97,
+                                                    columnNumber: 17
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "src/components/authorList.js",
+                                            lineNumber: 95,
+                                            columnNumber: 15
+                                        }, this)
+                                    }, void 0, false, {
+                                        fileName: "src/components/authorList.js",
+                                        lineNumber: 94,
+                                        columnNumber: 13
+                                    }, this),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("tbody", {
+                                        children: titleList()
+                                    }, void 0, false, {
+                                        fileName: "src/components/authorList.js",
+                                        lineNumber: 100,
+                                        columnNumber: 13
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/components/authorList.js",
+                                lineNumber: 93,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/components/authorList.js",
+                        lineNumber: 91,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "src/components/authorList.js",
+                lineNumber: 81,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "src/components/authorList.js",
+        lineNumber: 78,
+        columnNumber: 5
+    }, this);
+}
+exports.default = AuthorList;
+_s(AuthorList, "Bd3zm9HgMFhT6qecl6C5XUZJrlI=");
+_c1 = AuthorList;
+var _c, _c1;
+$RefreshReg$(_c, "Title");
+$RefreshReg$(_c1, "AuthorList");
+
+  $parcel$ReactRefreshHelpers$4fd5.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;

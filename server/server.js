@@ -7,6 +7,8 @@ app.use(cors());
 app.use(express.json());
 app.use(require("./routes/browse"));
 app.use(require("./routes/tfilters"));
+app.use(require("./routes/authors"));
+app.use(require("./routes/autfilters"));
 app.use(require("./routes/incipits"));
 app.use(require("./routes/incfilters"));
 app.use(require("./routes/contributors"));

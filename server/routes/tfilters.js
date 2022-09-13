@@ -13,10 +13,25 @@ const dbo = require("../db/conn");
 
 TitleRoutes.route("/tfilters").get(function (req, res) {
   let db_connect = dbo.getDb();
-  var tquery = req.query.tongue;
-  var cquery = req.query.century;
 
-  if (Array.isArray(cquery)) {
+  //Convert tongue query to array
+  if (
+    typeof req.query.tongue === "string" ||
+    req.query.tongue instanceof String
+  ) {
+    var tquery = [];
+    tquery.push(req.query.tongue);
+  } else if (Array.isArray(req.query.tongue)) {
+    var tquery = req.query.tongue;
+  }
+
+  // Convert century query to array
+  if (
+    typeof req.query.century === "string" ||
+    req.query.century instanceof String
+  ) {
+    var cquery = [];
+    cquery.push(req.query.century);
     var cqueryIntArr = [],
       obj,
       temp = cquery,
@@ -26,68 +41,33 @@ TitleRoutes.route("/tfilters").get(function (req, res) {
       obj = parseInt(temp[i]);
       cqueryIntArr.push(obj);
     }
-    if (Array.isArray(tquery) && cquery) {
-      db_connect
-        .collection("titles")
-        .find({ tongue: { $in: tquery }, century: { $in: cqueryIntArr } })
-        .sort({ title: 1 })
-        .toArray(function (err, result) {
-          if (err) throw err;
-          res.json(result);
-        });
-    } else if (tquery && cquery) {
-      db_connect
-        .collection("titles")
-        .find({ tongue: tquery, century: { $in: cqueryIntArr } })
-        .sort({ title: 1 })
-        .toArray(function (err, result) {
-          if (err) throw err;
-          res.json(result);
-        });
-    } else {
-      db_connect
-        .collection("titles")
-        .find({ century: { $in: cqueryIntArr } })
-        .sort({ title: 1 })
-        .toArray(function (err, result) {
-          if (err) throw err;
-          res.json(result);
-        });
+  } else if (Array.isArray(req.query.century)) {
+    var cquery = req.query.century;
+    var cqueryIntArr = [],
+      obj,
+      temp = cquery,
+      i;
+    for (i = 0; i < temp.length; i++) {
+      obj = {};
+      obj = parseInt(temp[i]);
+      cqueryIntArr.push(obj);
     }
-  } else if (cquery) {
-    var cqueryInt = parseInt(cquery);
-    if (Array.isArray(tquery) && cquery) {
-      db_connect
-        .collection("titles")
-        .find({ tongue: { $in: tquery }, century: cqueryInt })
-        .sort({ title: 1 })
-        .toArray(function (err, result) {
-          if (err) throw err;
-          res.json(result);
-        });
-    } else if (tquery && cquery) {
-      db_connect
-        .collection("titles")
-        .find({ tongue: tquery, century: cqueryInt })
-        .sort({ title: 1 })
-        .toArray(function (err, result) {
-          if (err) throw err;
-          res.json(result);
-        });
-    } else {
-      db_connect
-        .collection("titles")
-        .find({ century: cqueryInt })
-        .sort({ title: 1 })
-        .toArray(function (err, result) {
-          if (err) throw err;
-          res.json(result);
-        });
-    }
-  } else if (Array.isArray(tquery)) {
+  }
+
+  // Filtering
+  if (tquery && cquery) {
     db_connect
       .collection("titles")
-      .find({ tongue: { $in: tquery } })
+      .find({ tongue: { $in: tquery }, century: { $in: cqueryIntArr } })
+      .sort({ title: 1 })
+      .toArray(function (err, result) {
+        if (err) throw err;
+        res.json(result);
+      });
+  } else if (cquery) {
+    db_connect
+      .collection("titles")
+      .find({ century: { $in: cqueryIntArr } })
       .sort({ title: 1 })
       .toArray(function (err, result) {
         if (err) throw err;
@@ -96,26 +76,13 @@ TitleRoutes.route("/tfilters").get(function (req, res) {
   } else if (tquery) {
     db_connect
       .collection("titles")
-      .find({ tongue: tquery })
+      .find({ tongue: { $in: tquery } })
       .sort({ title: 1 })
       .toArray(function (err, result) {
         if (err) throw err;
         res.json(result);
       });
   }
-  /**
-  else if (req.query.author) {
-    let aqueryid = req.query.author;
-    db_connect
-      .collection("titles")
-      .find({ author: ObjectId(aqueryid) })
-      .sort({title: 1})
-      .toArray(function (err, result) {
-        if (err) throw err;
-        res.json(result);
-      });
-  }
-     */
 });
 
 module.exports = TitleRoutes;

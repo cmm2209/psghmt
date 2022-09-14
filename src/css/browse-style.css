@@ -19,8 +19,14 @@
 
 /* Hover card formatting */
 .has-hover-card {
-  display: inline-block;
+  display: block;
   position: relative;
+  text-rendering: optimizelegibility;
+  border-collapse: collapse;
+  line-height: inherit;
+  border-spacing: 0;
+  -webkit-border-horizontal-spacing: 0px;
+  -webkit-border-vertical-spacing: 0px;
 }
 
 .hover-card {
@@ -32,6 +38,14 @@
   top: 0px;
   left: 20px;
   border-radius: 5px;
+  text-rendering: optimizelegibility;
+  border-collapse: collapse;
+  vertical-align: top;
+}
+
+.hover-card .source {
+  padding-left: 20px;
+  font-size: 0.9em;
   white-space: wrap;
 }
 

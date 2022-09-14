@@ -47,335 +47,208 @@ contfiltRoutes.route("/contfilters").get(function (req, res) {
     }
   }
 
-  // Filtering
+  // Pipeline
+  const innerpipe = [
+    {
+      $match: {
+        $or: [
+          {
+            entered: {
+              $exists: true,
+            },
+          },
+          {
+            version1: {
+              $exists: true,
+            },
+          },
+        ],
+      },
+    },
+    {
+      $lookup: {
+        from: "authors",
+        localField: "author",
+        foreignField: "_id",
+        as: "authordeets",
+      },
+    },
+    {
+      $set: {
+        authorname: { $first: "$authordeets.authorSt" },
+      },
+    },
+    {
+      $unset: "authordeets",
+    },
+    {
+      $unwind: {
+        path: "$checked",
+        preserveNullAndEmptyArrays: false,
+      },
+    },
+    {
+      $unwind: {
+        path: "$entered",
+      },
+    },
+    {
+      $unwind: {
+        path: "$approved",
+      },
+    },
+    {
+      $set: {
+        contributors: ["$entered", "$checked", "$approved"],
+      },
+    },
+    {
+      $unwind: {
+        path: "$contributors",
+      },
+    },
+    {
+      $group: {
+        _id: "$_id",
+        contributors: {
+          $addToSet: "$contributors",
+        },
+        title: {
+          $first: "$title",
+        },
+        url: {
+          $first: "$url",
+        },
+        source: {
+          $first: "$source",
+        },
+        authorname: {
+          $first: "$authorname",
+        },
+      },
+    },
+    {
+      $unwind: {
+        path: "$contributors",
+      },
+    },
+    {
+      $group: {
+        _id: "$contributors",
+        treatises: {
+          $push: {
+            url: "$url",
+            title: "$title",
+            source: "$source",
+            authorname: "$authorname",
+          },
+        },
+      },
+    },
+    {
+      $sort: {
+        _id: 1,
+      },
+    },
+    {
+      $unwind: {
+        path: "$treatises",
+      },
+    },
+    {
+      $sort: {
+        "treatises.title": 1,
+      },
+    },
+    {
+      $group: {
+        _id: "$_id",
+        treatises: {
+          $push: "$treatises",
+        },
+      },
+    },
+    {
+      $sort: {
+        _id: 1,
+      },
+    },
+  ];
+
+  const pipeline = [];
   if (tquery && cquery) {
-    const coll = db_connect.collection("titles");
-    const cursor = coll.aggregate([
-      { $match: { tongue: { $in: tquery }, century: { $in: cqueryIntArr } } },
-      {
-        $match: {
-          $or: [
-            {
-              entered: {
-                $exists: true,
-              },
-            },
-            {
-              version1: {
-                $exists: true,
-              },
-            },
-          ],
-        },
-      },
-      {
-        $unwind: {
-          path: "$checked",
-          preserveNullAndEmptyArrays: false,
-        },
-      },
-      {
-        $unwind: {
-          path: "$entered",
-        },
-      },
-      {
-        $unwind: {
-          path: "$approved",
-        },
-      },
-      {
-        $set: {
-          contributors: ["$entered", "$checked", "$approved"],
-        },
-      },
-      {
-        $unwind: {
-          path: "$contributors",
-        },
-      },
-      {
-        $group: {
-          _id: "$_id",
-          contributors: {
-            $addToSet: "$contributors",
-          },
-          title: {
-            $first: "$title",
-          },
-          url: {
-            $first: "$url",
-          },
-        },
-      },
-      {
-        $unwind: {
-          path: "$contributors",
-        },
-      },
-      {
-        $group: {
-          _id: "$contributors",
-          treatises: {
-            $push: {
-              url: "$url",
-              title: "$title",
-            },
-          },
-        },
-      },
-      {
-        $sort: {
-          _id: 1,
-        },
-      },
-      {
-        $unwind: {
-          path: "$treatises",
-        },
-      },
-      {
-        $sort: {
-          "treatises.title": 1,
-        },
-      },
-      {
-        $group: {
-          _id: "$_id",
-          treatises: {
-            $push: "$treatises",
-          },
-        },
-      },
-      {
-        $sort: {
-          _id: 1,
-        },
-      },
-    ]);
-    cursor.toArray(function (err, result) {
-      if (err) throw err;
-      res.json(result);
-    });
-  } else if (cquery) {
-    const coll = db_connect.collection("titles");
-    const cursor = coll.aggregate([
-      { $match: { century: { $in: cqueryIntArr } } },
-      {
-        $match: {
-          $or: [
-            {
-              entered: {
-                $exists: true,
-              },
-            },
-            {
-              version1: {
-                $exists: true,
-              },
-            },
-          ],
-        },
-      },
-      {
-        $unwind: {
-          path: "$checked",
-          preserveNullAndEmptyArrays: false,
-        },
-      },
-      {
-        $unwind: {
-          path: "$entered",
-        },
-      },
-      {
-        $unwind: {
-          path: "$approved",
-        },
-      },
-      {
-        $set: {
-          contributors: ["$entered", "$checked", "$approved"],
-        },
-      },
-      {
-        $unwind: {
-          path: "$contributors",
-        },
-      },
-      {
-        $group: {
-          _id: "$_id",
-          contributors: {
-            $addToSet: "$contributors",
-          },
-          title: {
-            $first: "$title",
-          },
-          url: {
-            $first: "$url",
-          },
-        },
-      },
-      {
-        $unwind: {
-          path: "$contributors",
-        },
-      },
-      {
-        $group: {
-          _id: "$contributors",
-          treatises: {
-            $push: {
-              url: "$url",
-              title: "$title",
-            },
-          },
-        },
-      },
-      {
-        $sort: {
-          _id: 1,
-        },
-      },
-      {
-        $unwind: {
-          path: "$treatises",
-        },
-      },
-      {
-        $sort: {
-          "treatises.title": 1,
-        },
-      },
-      {
-        $group: {
-          _id: "$_id",
-          treatises: {
-            $push: "$treatises",
-          },
-        },
-      },
-      {
-        $sort: {
-          _id: 1,
-        },
-      },
-    ]);
-    cursor.toArray(function (err, result) {
-      if (err) throw err;
-      res.json(result);
-    });
-  } else if (tquery) {
-    const coll = db_connect.collection("titles");
-    const cursor = coll.aggregate([
+    pipeline.push(
       { $match: { tongue: { $in: tquery } } },
-      {
-        $match: {
-          $or: [
-            {
-              entered: {
-                $exists: true,
-              },
-            },
-            {
-              version1: {
-                $exists: true,
-              },
-            },
-          ],
-        },
-      },
-      {
-        $unwind: {
-          path: "$checked",
-          preserveNullAndEmptyArrays: false,
-        },
-      },
-      {
-        $unwind: {
-          path: "$entered",
-        },
-      },
-      {
-        $unwind: {
-          path: "$approved",
-        },
-      },
-      {
-        $set: {
-          contributors: ["$entered", "$checked", "$approved"],
-        },
-      },
-      {
-        $unwind: {
-          path: "$contributors",
-        },
-      },
-      {
-        $group: {
-          _id: "$_id",
-          contributors: {
-            $addToSet: "$contributors",
-          },
-          title: {
-            $first: "$title",
-          },
-          url: {
-            $first: "$url",
-          },
-        },
-      },
-      {
-        $unwind: {
-          path: "$contributors",
-        },
-      },
-      {
-        $group: {
-          _id: "$contributors",
-          treatises: {
-            $push: {
-              url: "$url",
-              title: "$title",
-            },
-          },
-        },
-      },
-      {
-        $sort: {
-          _id: 1,
-        },
-      },
-      {
-        $unwind: {
-          path: "$treatises",
-        },
-      },
-      {
-        $sort: {
-          "treatises.title": 1,
-        },
-      },
-      {
-        $group: {
-          _id: "$_id",
-          treatises: {
-            $push: "$treatises",
-          },
-        },
-      },
-      {
-        $sort: {
-          _id: 1,
-        },
-      },
-    ]);
-    cursor.toArray(function (err, result) {
-      if (err) throw err;
-      res.json(result);
-    });
+      { $match: { century: { $in: cqueryIntArr } } },
+      innerpipe[0],
+      innerpipe[1],
+      innerpipe[2],
+      innerpipe[3],
+      innerpipe[4],
+      innerpipe[5],
+      innerpipe[6],
+      innerpipe[7],
+      innerpipe[8],
+      innerpipe[9],
+      innerpipe[10],
+      innerpipe[11],
+      innerpipe[12],
+      innerpipe[13],
+      innerpipe[14],
+      innerpipe[15],
+      innerpipe[16]
+    );
+  } else if (tquery) {
+    pipeline.push(
+      { $match: { tongue: { $in: tquery } } },
+      innerpipe[0],
+      innerpipe[1],
+      innerpipe[2],
+      innerpipe[3],
+      innerpipe[4],
+      innerpipe[5],
+      innerpipe[6],
+      innerpipe[7],
+      innerpipe[8],
+      innerpipe[9],
+      innerpipe[10],
+      innerpipe[11],
+      innerpipe[12],
+      innerpipe[13],
+      innerpipe[14],
+      innerpipe[15],
+      innerpipe[16]
+    );
+  } else if (cquery) {
+    pipeline.push(
+      { $match: { century: { $in: cqueryIntArr } } },
+      innerpipe[0],
+      innerpipe[1],
+      innerpipe[2],
+      innerpipe[3],
+      innerpipe[4],
+      innerpipe[5],
+      innerpipe[6],
+      innerpipe[7],
+      innerpipe[8],
+      innerpipe[9],
+      innerpipe[10],
+      innerpipe[11],
+      innerpipe[12],
+      innerpipe[13],
+      innerpipe[14],
+      innerpipe[15],
+      innerpipe[16]
+    );
   }
+
+  // Filtering
+  const coll = db_connect.collection("titles");
+  const cursor = coll.aggregate(pipeline);
+  cursor.toArray(function (err, result) {
+    if (err) throw err;
+    res.json(result);
+  });
 });
 
 module.exports = contfiltRoutes;

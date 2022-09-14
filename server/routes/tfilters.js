@@ -47,35 +47,77 @@ TitleRoutes.route("/tfilters").get(function (req, res) {
     }
   }
 
-  // Filtering
+  // Pipeline
+  const innerpipe = [
+    {
+      $lookup: {
+        from: "authors",
+        localField: "author",
+        foreignField: "_id",
+        as: "authordeets",
+      },
+    },
+    {
+      $set: {
+        authorname: "$authordeets.authorSt",
+      },
+    },
+    {
+      $sort: {
+        title: 1,
+      },
+    },
+    {
+      $project: {
+        _id: 1,
+        title: 1,
+        source: 1,
+        version1: 1,
+        version2: 1,
+        version3: 1,
+        version4: 1,
+        url: 1,
+        tongue: 1,
+        authorname: 1,
+      },
+    },
+  ];
+
+  const pipeline = [];
   if (tquery && cquery) {
-    db_connect
-      .collection("titles")
-      .find({ tongue: { $in: tquery }, century: { $in: cqueryIntArr } })
-      .sort({ title: 1 })
-      .toArray(function (err, result) {
-        if (err) throw err;
-        res.json(result);
-      });
-  } else if (cquery) {
-    db_connect
-      .collection("titles")
-      .find({ century: { $in: cqueryIntArr } })
-      .sort({ title: 1 })
-      .toArray(function (err, result) {
-        if (err) throw err;
-        res.json(result);
-      });
+    pipeline.push(
+      { $match: { tongue: { $in: tquery } } },
+      { $match: { century: { $in: cqueryIntArr } } },
+      innerpipe[0],
+      innerpipe[1],
+      innerpipe[2],
+      innerpipe[3]
+    );
   } else if (tquery) {
-    db_connect
-      .collection("titles")
-      .find({ tongue: { $in: tquery } })
-      .sort({ title: 1 })
-      .toArray(function (err, result) {
-        if (err) throw err;
-        res.json(result);
-      });
+    pipeline.push(
+      { $match: { tongue: { $in: tquery } } },
+      innerpipe[0],
+      innerpipe[1],
+      innerpipe[2],
+      innerpipe[3]
+    );
+  } else if (cquery) {
+    pipeline.push(
+      { $match: { century: { $in: cqueryIntArr } } },
+      innerpipe[0],
+      innerpipe[1],
+      innerpipe[2],
+      innerpipe[3]
+    );
   }
+
+  // Filtering
+  const coll = db_connect.collection("titles");
+  const cursor = coll.aggregate(pipeline);
+  cursor.toArray(function (err, result) {
+    if (err) throw err;
+    res.json(result);
+  });
 });
 
 module.exports = TitleRoutes;

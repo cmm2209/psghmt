@@ -23,6 +23,22 @@ var pipeline = [
     },
   },
   {
+    $lookup: {
+      from: "authors",
+      localField: "author",
+      foreignField: "_id",
+      as: "authordeets",
+    },
+  },
+  {
+    $set: {
+      authorname: { $first: "$authordeets.authorSt" },
+    },
+  },
+  {
+    $unset: "authordeets",
+  },
+  {
     $unwind: {
       path: "$checked",
       preserveNullAndEmptyArrays: false,
@@ -60,6 +76,12 @@ var pipeline = [
       url: {
         $first: "$url",
       },
+      source: {
+        $first: "$source",
+      },
+      authorname: {
+        $first: "$authorname",
+      },
     },
   },
   {
@@ -74,6 +96,8 @@ var pipeline = [
         $push: {
           url: "$url",
           title: "$title",
+          source: "$source",
+          authorname: "$authorname",
         },
       },
     },

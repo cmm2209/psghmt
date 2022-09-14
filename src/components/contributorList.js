@@ -9,11 +9,17 @@ const Title = (props) => {
   if (props.title.treatises) {
     for (var i = 0; i < props.title.treatises.length; i++) {
       titlesArr.push(
-        <p>
-          <a href={props.title.treatises[i].url}>
-            {props.title.treatises[i].title}
-          </a>
-        </p>
+        <span className="has-hover-card">
+          <p>
+            <a href={props.title.treatises[i].url}>
+              {props.title.treatises[i].title}
+            </a>
+          </p>
+          <span className="hover-card">
+            {props.title.treatises[i].authorname} <br />
+            <span className="source">{props.title.treatises[i].source}</span>
+          </span>
+        </span>
       );
     }
   }
@@ -25,6 +31,9 @@ const Title = (props) => {
   );
 };
 
+/** 
+
+     */
 export default function ContributorList() {
   const [titles, setTitles] = useState([]);
 

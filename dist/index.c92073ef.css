@@ -10172,13 +10172,21 @@ body > table.gssb_c {
 }
 
 .has-hover-card {
-  display: inline-block;
+  text-rendering: optimizelegibility;
+  border-collapse: collapse;
+  line-height: inherit;
+  border-spacing: 0;
+  -webkit-border-horizontal-spacing: 0px;
+  -webkit-border-vertical-spacing: 0px;
+  display: block;
   position: relative;
 }
 
 .hover-card {
   padding: none;
-  white-space: wrap;
+  text-rendering: optimizelegibility;
+  border-collapse: collapse;
+  vertical-align: top;
   background: none;
   border: none;
   border-radius: 5px;
@@ -10186,6 +10194,12 @@ body > table.gssb_c {
   position: relative;
   top: 0;
   left: 20px;
+}
+
+.hover-card .source {
+  white-space: wrap;
+  padding-left: 20px;
+  font-size: .9em;
 }
 
 .has-hover-card:hover .hover-card {

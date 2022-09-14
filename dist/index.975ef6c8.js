@@ -31283,15 +31283,95 @@ var _browseStyleCss = require("../css/browse-style.css");
 var _s = $RefreshSig$();
 const Title = (props)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("tr", {
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
-            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                href: props.title.url,
-                children: props.title.incipit
-            }, void 0, false, {
-                fileName: "src/components/incList.js",
-                lineNumber: 10,
-                columnNumber: 7
-            }, undefined)
-        }, void 0, false, {
+            className: "has-hover-card",
+            children: [
+                props.title.url !== undefined && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                    href: props.title.url,
+                    children: props.title.incipit
+                }, props.title._id, false, {
+                    fileName: "src/components/incList.js",
+                    lineNumber: 11,
+                    columnNumber: 9
+                }, undefined),
+                props.title.version1 !== undefined && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                    children: props.title.incipit
+                }, props.title._id, false, {
+                    fileName: "src/components/incList.js",
+                    lineNumber: 16,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                    className: "hover-card",
+                    children: [
+                        props.title.authorname,
+                        ", ",
+                        props.title.title,
+                        " ",
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                            fileName: "src/components/incList.js",
+                            lineNumber: 20,
+                            columnNumber: 55
+                        }, undefined),
+                        props.title.version1 !== undefined && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                    href: props.title.version1.url,
+                                    className: "source",
+                                    children: props.title.version1.source
+                                }, void 0, false, {
+                                    fileName: "src/components/incList.js",
+                                    lineNumber: 23,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                    fileName: "src/components/incList.js",
+                                    lineNumber: 26,
+                                    columnNumber: 13
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/components/incList.js",
+                            lineNumber: 22,
+                            columnNumber: 11
+                        }, undefined),
+                        props.title.version2 !== undefined && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                    href: props.title.version2.url,
+                                    className: "source",
+                                    children: props.title.version2.source
+                                }, void 0, false, {
+                                    fileName: "src/components/incList.js",
+                                    lineNumber: 31,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                    fileName: "src/components/incList.js",
+                                    lineNumber: 34,
+                                    columnNumber: 13
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/components/incList.js",
+                            lineNumber: 30,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                            className: "source",
+                            children: props.title.source
+                        }, void 0, false, {
+                            fileName: "src/components/incList.js",
+                            lineNumber: 37,
+                            columnNumber: 9
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/components/incList.js",
+                    lineNumber: 19,
+                    columnNumber: 7
+                }, undefined)
+            ]
+        }, void 0, true, {
             fileName: "src/components/incList.js",
             lineNumber: 9,
             columnNumber: 5
@@ -31343,7 +31423,7 @@ function IncipitList() {
                 title: title
             }, title._id, false, {
                 fileName: "src/components/incList.js",
-                lineNumber: 59,
+                lineNumber: 87,
                 columnNumber: 14
             }, this);
         });
@@ -31353,12 +31433,12 @@ function IncipitList() {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _navbarJsDefault.default), {}, void 0, false, {
                 fileName: "src/components/incList.js",
-                lineNumber: 66,
+                lineNumber: 94,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _browsebarJsDefault.default), {}, void 0, false, {
                 fileName: "src/components/incList.js",
-                lineNumber: 67,
+                lineNumber: 95,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -31371,7 +31451,7 @@ function IncipitList() {
                                 children: "Filter by:"
                             }, void 0, false, {
                                 fileName: "src/components/incList.js",
-                                lineNumber: 70,
+                                lineNumber: 98,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("form", {
@@ -31379,12 +31459,12 @@ function IncipitList() {
                                 onChange: submission,
                                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _filtercolJsDefault.default), {}, void 0, false, {
                                     fileName: "src/components/incList.js",
-                                    lineNumber: 72,
+                                    lineNumber: 100,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "src/components/incList.js",
-                                lineNumber: 71,
+                                lineNumber: 99,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -31394,13 +31474,13 @@ function IncipitList() {
                                 children: "Reset"
                             }, void 0, false, {
                                 fileName: "src/components/incList.js",
-                                lineNumber: 74,
+                                lineNumber: 102,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "src/components/incList.js",
-                        lineNumber: 69,
+                        lineNumber: 97,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -31410,7 +31490,7 @@ function IncipitList() {
                                 id: "result"
                             }, void 0, false, {
                                 fileName: "src/components/incList.js",
-                                lineNumber: 79,
+                                lineNumber: 107,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("table", {
@@ -31425,48 +31505,48 @@ function IncipitList() {
                                                 children: "Incipits"
                                             }, void 0, false, {
                                                 fileName: "src/components/incList.js",
-                                                lineNumber: 83,
+                                                lineNumber: 111,
                                                 columnNumber: 17
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "src/components/incList.js",
-                                            lineNumber: 82,
+                                            lineNumber: 110,
                                             columnNumber: 15
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "src/components/incList.js",
-                                        lineNumber: 81,
+                                        lineNumber: 109,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("tbody", {
                                         children: titleList()
                                     }, void 0, false, {
                                         fileName: "src/components/incList.js",
-                                        lineNumber: 86,
+                                        lineNumber: 114,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/components/incList.js",
-                                lineNumber: 80,
+                                lineNumber: 108,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "src/components/incList.js",
-                        lineNumber: 78,
+                        lineNumber: 106,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "src/components/incList.js",
-                lineNumber: 68,
+                lineNumber: 96,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "src/components/incList.js",
-        lineNumber: 65,
+        lineNumber: 93,
         columnNumber: 5
     }, this);
 }

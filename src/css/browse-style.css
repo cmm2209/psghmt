@@ -17,7 +17,29 @@
   display: block;
 }
 
-/* Filter bar formatting*/
+/* Hover card formatting */
+.has-hover-card {
+  display: inline-block;
+  position: relative;
+}
+
+.hover-card {
+  display: none;
+  background: none;
+  border: none;
+  padding: none;
+  position: relative;
+  top: 0px;
+  left: 20px;
+  border-radius: 5px;
+  white-space: wrap;
+}
+
+.has-hover-card:hover .hover-card {
+  display: inline-block;
+}
+
+/* Filter bar formatting */
 .filterbar {
   padding: 1rem;
   margin: 1rem;

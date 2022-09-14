@@ -10171,6 +10171,27 @@ body > table.gssb_c {
   display: block;
 }
 
+.has-hover-card {
+  display: inline-block;
+  position: relative;
+}
+
+.hover-card {
+  padding: none;
+  white-space: wrap;
+  background: none;
+  border: none;
+  border-radius: 5px;
+  display: none;
+  position: relative;
+  top: 0;
+  left: 20px;
+}
+
+.has-hover-card:hover .hover-card {
+  display: inline-block;
+}
+
 .filterbar {
   margin: 1rem;
   padding: 1rem;

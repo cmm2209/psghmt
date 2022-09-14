@@ -62,7 +62,7 @@ contRoutes.route("/authors").get(function (req, res) {
   let db_connect = dbo.getDb("mtl_db");
   const coll = db_connect.collection("titles");
   const cursor = coll.aggregate(pipeline);
-  cursor.sort({ _id: 1 }).toArray(function (err, result) {
+  cursor.toArray(function (err, result) {
     if (err) throw err;
     res.json(result);
   });

@@ -6,8 +6,32 @@ import "../css/browse-style.css";
 
 const Title = (props) => (
   <tr>
-    <td>
-      <a href={props.title.url}>{props.title.title}</a>
+    <td className="has-hover-card">
+      {props.title.url !== undefined && (
+        <a href={props.title.url} key={props.title._id}>
+          {props.title.title}
+        </a>
+      )}
+      {props.title.version1 !== undefined && (
+        <span key={props.title._id}>{props.title.title}</span>
+      )}
+
+      <span className="hover-card">
+        {props.title.authorname} <br />
+        {props.title.version1 !== undefined && (
+          <span>
+            <a href={props.title.version1.url}>{props.title.version1.source}</a>{" "}
+            <br />
+          </span>
+        )}
+        {props.title.version2 !== undefined && (
+          <span>
+            <a href={props.title.version2.url}>{props.title.version2.source}</a>{" "}
+            <br />
+          </span>
+        )}
+        {props.title.source}
+      </span>
     </td>
   </tr>
 );

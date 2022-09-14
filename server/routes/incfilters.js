@@ -110,6 +110,8 @@ incfiltRoutes.route("/incfilters").get(function (req, res) {
       innerpipe[2],
       innerpipe[3]
     );
+  } else {
+    pipeline.push(innerpipe[0], innerpipe[1], innerpipe[2], innerpipe[3]);
   }
 
   // Filtering

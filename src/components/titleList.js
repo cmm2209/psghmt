@@ -34,6 +34,22 @@ const Title = (props) => (
             <br />
           </span>
         )}
+        {props.title.version3 !== undefined && (
+          <span>
+            <a href={props.title.version3.url} className="source">
+              {props.title.version3.source}
+            </a>
+            <br />
+          </span>
+        )}
+        {props.title.version4 !== undefined && (
+          <span>
+            <a href={props.title.version4.url} className="source">
+              {props.title.version4.source}
+            </a>
+            <br />
+          </span>
+        )}
         <span className="source">{props.title.source}</span>
       </span>
     </td>

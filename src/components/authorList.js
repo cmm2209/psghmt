@@ -9,11 +9,67 @@ const Title = (props) => {
   if (props.title.treatises) {
     for (var i = 0; i < props.title.treatises.length; i++) {
       titlesArr.push(
-        <p>
-          <a href={props.title.treatises[i].url}>
-            {props.title.treatises[i].title}
-          </a>
-        </p>
+        <span className="has-hover-card">
+          <p>
+            {props.title.treatises[i].version === undefined && (
+              <a
+                href={props.title.treatises[i].url}
+                key={props.title.treatises[i].url}
+              >
+                {props.title.treatises[i].title}
+              </a>
+            )}
+          </p>
+          <span className="hover-card">
+            {props.title.treatises[i].version1 === undefined && (
+              <span className="source">{props.title.treatises[i].source}</span>
+            )}
+            {props.title.treatises[i].version1 !== undefined && (
+              <span>
+                <a
+                  href={props.title.treatises[i].version1.url}
+                  className="source"
+                >
+                  {props.title.treatises[i].version1.source}
+                </a>
+                <br />
+              </span>
+            )}
+            {props.title.treatises[i].version2 !== undefined && (
+              <span>
+                <a
+                  href={props.title.treatises[i].version2.url}
+                  className="source"
+                >
+                  {props.title.treatises[i].version2.source}
+                </a>
+                <br />
+              </span>
+            )}
+            {props.title.treatises[i].version3 !== undefined && (
+              <span>
+                <a
+                  href={props.title.treatises[i].version3.url}
+                  className="source"
+                >
+                  {props.title.treatises[i].version3.source}
+                </a>
+                <br />
+              </span>
+            )}
+            {props.title.treatises[i].version4 !== undefined && (
+              <span>
+                <a
+                  href={props.title.treatises[i].version4.url}
+                  className="source"
+                >
+                  {props.title.treatises[i].version4.source}
+                </a>
+                <br />
+              </span>
+            )}
+          </span>
+        </span>
       );
     }
   }
@@ -24,6 +80,14 @@ const Title = (props) => {
     </tr>
   );
 };
+
+/**
+  {props.title.treatises[i].version1 !== undefined && (
+              <span key={props.title.treatises[i].title}>
+                {props.title.treatises[i].title}
+              </span>
+            )}
+ */
 
 export default function AuthorList() {
   const [titles, setTitles] = useState([]);

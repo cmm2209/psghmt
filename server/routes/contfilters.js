@@ -240,6 +240,26 @@ contfiltRoutes.route("/contfilters").get(function (req, res) {
       innerpipe[15],
       innerpipe[16]
     );
+  } else {
+    pipeline.push(
+      innerpipe[0],
+      innerpipe[1],
+      innerpipe[2],
+      innerpipe[3],
+      innerpipe[4],
+      innerpipe[5],
+      innerpipe[6],
+      innerpipe[7],
+      innerpipe[8],
+      innerpipe[9],
+      innerpipe[10],
+      innerpipe[11],
+      innerpipe[12],
+      innerpipe[13],
+      innerpipe[14],
+      innerpipe[15],
+      innerpipe[16]
+    );
   }
 
   // Filtering

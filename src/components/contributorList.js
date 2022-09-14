@@ -31,9 +31,6 @@ const Title = (props) => {
   );
 };
 
-/** 
-
-     */
 export default function ContributorList() {
   const [titles, setTitles] = useState([]);
 

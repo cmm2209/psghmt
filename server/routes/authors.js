@@ -10,7 +10,7 @@ var pipeline = [
     $group: {
       _id: "$author",
       treatises: {
-        $push: { url: "$url", title: "$title" },
+        $push: "$$ROOT",
       },
     },
   },
@@ -51,9 +51,8 @@ var pipeline = [
     },
   },
   {
-    $project: {
+    $sort: {
       _id: 1,
-      treatises: 1,
     },
   },
 ];

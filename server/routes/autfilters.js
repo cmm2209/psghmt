@@ -47,185 +47,117 @@ autfiltRoutes.route("/autfilters").get(function (req, res) {
     }
   }
 
-  // Filtering
+  // Pipeline
+  const innerpipe = [
+    {
+      $group: {
+        _id: "$author",
+        treatises: {
+          $push: "$$ROOT",
+        },
+      },
+    },
+    {
+      $lookup: {
+        from: "authors",
+        localField: "_id",
+        foreignField: "_id",
+        as: "authordeets",
+      },
+    },
+    {
+      $set: {
+        authorname: "$authordeets.authorSt",
+      },
+    },
+    {
+      $sort: {
+        authorname: 1,
+      },
+    },
+    {
+      $unwind: {
+        path: "$treatises",
+      },
+    },
+    {
+      $sort: {
+        "treatises.title": 1,
+      },
+    },
+    {
+      $group: {
+        _id: "$authorname",
+        treatises: {
+          $push: "$treatises",
+        },
+      },
+    },
+    {
+      $sort: {
+        _id: 1,
+      },
+    },
+  ];
+
+  const pipeline = [];
   if (tquery && cquery) {
-    const coll = db_connect.collection("titles");
-    const cursor = coll.aggregate([
-      { $match: { tongue: { $in: tquery }, century: { $in: cqueryIntArr } } },
-      {
-        $group: {
-          _id: "$author",
-          treatises: {
-            $push: { url: "$url", title: "$title" },
-          },
-        },
-      },
-      {
-        $lookup: {
-          from: "authors",
-          localField: "_id",
-          foreignField: "_id",
-          as: "authordeets",
-        },
-      },
-      {
-        $set: {
-          authorname: "$authordeets.authorSt",
-        },
-      },
-      {
-        $sort: {
-          authorname: 1,
-        },
-      },
-      {
-        $unwind: {
-          path: "$treatises",
-        },
-      },
-      {
-        $sort: {
-          "treatises.title": 1,
-        },
-      },
-      {
-        $group: {
-          _id: "$authorname",
-          treatises: {
-            $push: "$treatises",
-          },
-        },
-      },
-      {
-        $project: {
-          _id: 1,
-          treatises: 1,
-        },
-      },
-    ]);
-    cursor.toArray(function (err, result) {
-      if (err) throw err;
-      res.json(result);
-    });
-  } else if (cquery) {
-    const coll = db_connect.collection("titles");
-    const cursor = coll.aggregate([
-      { $match: { century: { $in: cqueryIntArr } } },
-      {
-        $group: {
-          _id: "$author",
-          treatises: {
-            $push: { url: "$url", title: "$title" },
-          },
-        },
-      },
-      {
-        $lookup: {
-          from: "authors",
-          localField: "_id",
-          foreignField: "_id",
-          as: "authordeets",
-        },
-      },
-      {
-        $set: {
-          authorname: "$authordeets.authorSt",
-        },
-      },
-      {
-        $sort: {
-          authorname: 1,
-        },
-      },
-      {
-        $unwind: {
-          path: "$treatises",
-        },
-      },
-      {
-        $sort: {
-          "treatises.title": 1,
-        },
-      },
-      {
-        $group: {
-          _id: "$authorname",
-          treatises: {
-            $push: "$treatises",
-          },
-        },
-      },
-      {
-        $project: {
-          _id: 1,
-          treatises: 1,
-        },
-      },
-    ]);
-    cursor.toArray(function (err, result) {
-      if (err) throw err;
-      res.json(result);
-    });
-  } else if (tquery) {
-    const coll = db_connect.collection("titles");
-    const cursor = coll.aggregate([
+    pipeline.push(
       { $match: { tongue: { $in: tquery } } },
-      {
-        $group: {
-          _id: "$author",
-          treatises: {
-            $push: { url: "$url", title: "$title" },
-          },
-        },
-      },
-      {
-        $lookup: {
-          from: "authors",
-          localField: "_id",
-          foreignField: "_id",
-          as: "authordeets",
-        },
-      },
-      {
-        $set: {
-          authorname: "$authordeets.authorSt",
-        },
-      },
-      {
-        $sort: {
-          authorname: 1,
-        },
-      },
-      {
-        $unwind: {
-          path: "$treatises",
-        },
-      },
-      {
-        $sort: {
-          "treatises.title": 1,
-        },
-      },
-      {
-        $group: {
-          _id: "$authorname",
-          treatises: {
-            $push: "$treatises",
-          },
-        },
-      },
-      {
-        $project: {
-          _id: 1,
-          treatises: 1,
-        },
-      },
-    ]);
-    cursor.toArray(function (err, result) {
-      if (err) throw err;
-      res.json(result);
-    });
+      { $match: { century: { $in: cqueryIntArr } } },
+      innerpipe[0],
+      innerpipe[1],
+      innerpipe[2],
+      innerpipe[3],
+      innerpipe[4],
+      innerpipe[5],
+      innerpipe[6],
+      innerpipe[7]
+    );
+  } else if (tquery) {
+    pipeline.push(
+      { $match: { tongue: { $in: tquery } } },
+      innerpipe[0],
+      innerpipe[1],
+      innerpipe[2],
+      innerpipe[3],
+      innerpipe[4],
+      innerpipe[5],
+      innerpipe[6],
+      innerpipe[7]
+    );
+  } else if (cquery) {
+    pipeline.push(
+      { $match: { century: { $in: cqueryIntArr } } },
+      innerpipe[0],
+      innerpipe[1],
+      innerpipe[2],
+      innerpipe[3],
+      innerpipe[4],
+      innerpipe[5],
+      innerpipe[6],
+      innerpipe[7]
+    );
+  } else {
+    pipeline.push(
+      innerpipe[0],
+      innerpipe[1],
+      innerpipe[2],
+      innerpipe[3],
+      innerpipe[4],
+      innerpipe[5],
+      innerpipe[6],
+      innerpipe[7]
+    );
   }
+
+  // Filtering
+  const coll = db_connect.collection("titles");
+  const cursor = coll.aggregate(pipeline);
+  cursor.toArray(function (err, result) {
+    if (err) throw err;
+    res.json(result);
+  });
 });
 
 module.exports = autfiltRoutes;

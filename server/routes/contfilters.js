@@ -50,22 +50,6 @@ contfiltRoutes.route("/contfilters").get(function (req, res) {
   // Pipeline
   const innerpipe = [
     {
-      $match: {
-        $or: [
-          {
-            entered: {
-              $exists: true,
-            },
-          },
-          {
-            version1: {
-              $exists: true,
-            },
-          },
-        ],
-      },
-    },
-    {
       $lookup: {
         from: "authors",
         localField: "author",
@@ -75,72 +59,97 @@ contfiltRoutes.route("/contfilters").get(function (req, res) {
     },
     {
       $set: {
-        authorname: { $first: "$authordeets.authorSt" },
+        authorname: {
+          $first: "$authordeets.authorSt",
+        },
       },
     },
     {
-      $unset: "authordeets",
-    },
-    {
       $unwind: {
-        path: "$checked",
+        path: "$versions",
         preserveNullAndEmptyArrays: false,
       },
     },
     {
-      $unwind: {
-        path: "$entered",
+      $addFields: {
+        "versions.checkedArr": {
+          $cond: {
+            if: {
+              $isArray: "$versions.checked",
+            },
+            then: "$versions.checked",
+            else: ["$versions.checked"],
+          },
+        },
+        "versions.enteredArr": {
+          $cond: {
+            if: {
+              $isArray: "$versions.entered",
+            },
+            then: "$versions.entered",
+            else: ["$versions.entered"],
+          },
+        },
+        "versions.approvedArr": {
+          $cond: {
+            if: {
+              $isArray: "$versions.approved",
+            },
+            then: "$versions.approved",
+            else: ["$versions.approved"],
+          },
+        },
       },
     },
     {
       $unwind: {
-        path: "$approved",
+        path: "$versions.checked",
+      },
+    },
+    {
+      $unwind: {
+        path: "$versions.entered",
+      },
+    },
+    {
+      $unwind: {
+        path: "$versions.approved",
+      },
+    },
+    {
+      $addFields: {
+        "versions.contributors": [
+          "$versions.entered",
+          "$versions.checked",
+          "$versions.approved",
+        ],
+      },
+    },
+    {
+      $unwind: {
+        path: "$versions.contributors",
+      },
+    },
+    {
+      $addFields: {
+        versionsArr: ["$versions"],
       },
     },
     {
       $set: {
-        contributors: ["$entered", "$checked", "$approved"],
-      },
-    },
-    {
-      $unwind: {
-        path: "$contributors",
+        versions: "$versionsArr",
       },
     },
     {
       $group: {
-        _id: "$_id",
-        contributors: {
-          $addToSet: "$contributors",
+        _id: {
+          $first: "$versions.contributors",
         },
-        title: {
-          $first: "$title",
-        },
-        url: {
-          $first: "$url",
-        },
-        source: {
-          $first: "$source",
-        },
-        authorname: {
-          $first: "$authorname",
-        },
-      },
-    },
-    {
-      $unwind: {
-        path: "$contributors",
-      },
-    },
-    {
-      $group: {
-        _id: "$contributors",
         treatises: {
-          $push: {
-            url: "$url",
+          $addToSet: {
             title: "$title",
-            source: "$source",
             authorname: "$authorname",
+            versions: "$versions",
           },
         },
       },
@@ -161,16 +170,103 @@ contfiltRoutes.route("/contfilters").get(function (req, res) {
       },
     },
     {
+      $unset: [
+        "treatises.versions.entered",
+        "treatises.versions.checked",
+        "treatises.versions.approved",
+      ],
+    },
+    {
       $group: {
         _id: "$_id",
         treatises: {
-          $push: "$treatises",
+          $addToSet: "$treatises",
         },
       },
     },
     {
       $sort: {
         _id: 1,
+      },
+    },
+    {
+      $addFields: {
+        "treatises.versions.contType": {
+          $switch: {
+            branches: [
+              {
+                case: {
+                  $anyElementTrue: {
+                    $map: {
+                      input: "$treatises",
+                      in: {
+                        $anyElementTrue: {
+                          $map: {
+                            input: "$$this.versions",
+                            in: {
+                              $in: ["$_id", "$$this.checkedArr"],
+                            },
+                          },
+                        },
+                      },
+                    },
+                  },
+                },
+                then: "checked",
+              },
+              {
+                case: {
+                  $anyElementTrue: {
+                    $map: {
+                      input: "$treatises",
+                      in: {
+                        $anyElementTrue: {
+                          $map: {
+                            input: "$$this.versions",
+                            in: {
+                              $in: ["$_id", "$$this.enteredArr"],
+                            },
+                          },
+                        },
+                      },
+                    },
+                  },
+                },
+                then: "entered",
+              },
+              {
+                case: {
+                  $anyElementTrue: {
+                    $map: {
+                      input: "$treatises",
+                      in: {
+                        $anyElementTrue: {
+                          $map: {
+                            input: "$$this.versions",
+                            in: {
+                              $in: ["$_id", "$$this.approvedArr"],
+                            },
+                          },
+                        },
+                      },
+                    },
+                  },
+                },
+                then: "approved",
+              },
+            ],
+            default: "error",
+          },
+        },
+      },
+    },
+    {
+      $project: {
+        "treatises.title": 1,
+        "treatises.authorname": 1,
+        "treatises.versions.source": 1,
+        "treatises.versions.url": 1,
+        "treatises.versions.contType": 1,
       },
     },
   ];
@@ -196,7 +292,10 @@ contfiltRoutes.route("/contfilters").get(function (req, res) {
       innerpipe[13],
       innerpipe[14],
       innerpipe[15],
-      innerpipe[16]
+      innerpipe[16],
+      innerpipe[17],
+      innerpipe[18],
+      innerpipe[19]
     );
   } else if (tquery) {
     pipeline.push(
@@ -217,7 +316,10 @@ contfiltRoutes.route("/contfilters").get(function (req, res) {
       innerpipe[13],
       innerpipe[14],
       innerpipe[15],
-      innerpipe[16]
+      innerpipe[16],
+      innerpipe[17],
+      innerpipe[18],
+      innerpipe[19]
     );
   } else if (cquery) {
     pipeline.push(
@@ -238,7 +340,10 @@ contfiltRoutes.route("/contfilters").get(function (req, res) {
       innerpipe[13],
       innerpipe[14],
       innerpipe[15],
-      innerpipe[16]
+      innerpipe[16],
+      innerpipe[17],
+      innerpipe[18],
+      innerpipe[19]
     );
   } else {
     pipeline.push(
@@ -258,7 +363,10 @@ contfiltRoutes.route("/contfilters").get(function (req, res) {
       innerpipe[13],
       innerpipe[14],
       innerpipe[15],
-      innerpipe[16]
+      innerpipe[16],
+      innerpipe[17],
+      innerpipe[18],
+      innerpipe[19]
     );
   }
 

@@ -6,22 +6,60 @@ import "../css/browse-style.css";
 
 const Title = (props) => {
   var titlesArr = [];
-  if (props.title.treatises) {
-    for (var i = 0; i < props.title.treatises.length; i++) {
-      titlesArr.push(
-        <span className="has-hover-card">
-          <p>
-            <a href={props.title.treatises[i].url}>
-              {props.title.treatises[i].title}
-            </a>
-          </p>
-          <span className="hover-card">
-            {props.title.treatises[i].authorname} <br />
-            <span className="source">{props.title.treatises[i].source}</span>
-          </span>
+  for (var i = 0; i < props.title.treatises.length; i++) {
+    titlesArr.push(
+      <span className="has-hover-card">
+        <p>{props.title.treatises[i].title}</p>
+        <span className="hover-card">
+          {props.title.treatises[i].authorname},{" "}
+          {props.title.treatises[i].title} <br />
+          {props.title.treatises[i].versions[0] !== undefined && (
+            <span>
+              <a
+                href={props.title.treatises[i].versions[0].url}
+                className="source"
+              >
+                {props.title.treatises[i].versions[0].source}
+              </a>
+              <br />
+            </span>
+          )}
+          {props.title.treatises[i].versions[1] !== undefined && (
+            <span>
+              <a
+                href={props.title.treatises[i].versions[1].url}
+                className="source"
+              >
+                {props.title.treatises[i].versions[1].source}
+              </a>
+              <br />
+            </span>
+          )}
+          {props.title.treatises[i].versions[2] !== undefined && (
+            <span>
+              <a
+                href={props.title.treatises[i].versions[2].url}
+                className="source"
+              >
+                {props.title.treatises[i].versions[2].source}
+              </a>
+              <br />
+            </span>
+          )}
+          {props.title.treatises[i].versions[3] !== undefined && (
+            <span>
+              <a
+                href={props.title.treatises[i].versions[3].url}
+                className="source"
+              >
+                {props.title.treatises[i].versions[3].source}
+              </a>
+              <br />
+            </span>
+          )}
         </span>
-      );
-    }
+      </span>
+    );
   }
   return (
     <tr>

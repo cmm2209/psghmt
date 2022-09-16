@@ -23,76 +23,90 @@ var pipeline = [
   },
   {
     $unwind: {
-      path: "$checked",
+      path: "$versions",
       preserveNullAndEmptyArrays: false,
     },
   },
   {
-    $unwind: {
-      path: "$entered",
+    $addFields: {
+      "versions.checkedArr": {
+        $cond: {
+          if: {
+            $isArray: "$versions.checked",
+          },
+          then: "$versions.checked",
+          else: ["$versions.checked"],
+        },
+      },
+      "versions.enteredArr": {
+        $cond: {
+          if: {
+            $isArray: "$versions.entered",
+          },
+          then: "$versions.entered",
+          else: ["$versions.entered"],
+        },
+      },
+      "versions.approvedArr": {
+        $cond: {
+          if: {
+            $isArray: "$versions.approved",
+          },
+          then: "$versions.approved",
+          else: ["$versions.approved"],
+        },
+      },
     },
   },
   {
     $unwind: {
-      path: "$approved",
+      path: "$versions.checked",
+    },
+  },
+  {
+    $unwind: {
+      path: "$versions.entered",
+    },
+  },
+  {
+    $unwind: {
+      path: "$versions.approved",
+    },
+  },
+  {
+    $addFields: {
+      "versions.contributors": [
+        "$versions.entered",
+        "$versions.checked",
+        "$versions.approved",
+      ],
+    },
+  },
+  {
+    $unwind: {
+      path: "$versions.contributors",
+    },
+  },
+  {
+    $addFields: {
+      versionsArr: ["$versions"],
     },
   },
   {
     $set: {
-      contributors: ["$entered", "$checked", "$approved"],
-    },
-  },
-  {
-    $unwind: {
-      path: "$contributors",
+      versions: "$versionsArr",
     },
   },
   {
     $group: {
-      _id: "$_id",
-      contributors: {
-        $addToSet: "$contributors",
+      _id: {
+        $first: "$versions.contributors",
       },
-      title: {
-        $first: "$title",
-      },
-      url: {
-        $first: "$url",
-      },
-      source: {
-        $first: "$source",
-      },
-      authorname: {
-        $first: "$authorname",
-      },
-      checked: {
-        $addToSet: "$checked",
-      },
-      entered: {
-        $addToSet: "$entered",
-      },
-      approved: {
-        $addToSet: "$approved",
-      },
-    },
-  },
-  {
-    $unwind: {
-      path: "$contributors",
-    },
-  },
-  {
-    $group: {
-      _id: "$contributors",
       treatises: {
-        $push: {
-          url: "$url",
+        $addToSet: {
           title: "$title",
-          source: "$source",
           authorname: "$authorname",
-          checked: "$checked",
-          entered: "$entered",
-          approved: "$approved",
+          versions: "$versions",
         },
       },
     },
@@ -113,10 +127,17 @@ var pipeline = [
     },
   },
   {
+    $unset: [
+      "treatises.versions.entered",
+      "treatises.versions.checked",
+      "treatises.versions.approved",
+    ],
+  },
+  {
     $group: {
       _id: "$_id",
       treatises: {
-        $push: "$treatises",
+        $addToSet: "$treatises",
       },
     },
   },
@@ -127,7 +148,7 @@ var pipeline = [
   },
   {
     $addFields: {
-      "treatises.contType": {
+      "treatises.versions.contType": {
         $switch: {
           branches: [
             {
@@ -136,7 +157,14 @@ var pipeline = [
                   $map: {
                     input: "$treatises",
                     in: {
-                      $in: ["$_id", "$$this.checked"],
+                      $anyElementTrue: {
+                        $map: {
+                          input: "$$this.versions",
+                          in: {
+                            $in: ["$_id", "$$this.checkedArr"],
+                          },
+                        },
+                      },
                     },
                   },
                 },
@@ -149,7 +177,14 @@ var pipeline = [
                   $map: {
                     input: "$treatises",
                     in: {
-                      $in: ["$_id", "$$this.entered"],
+                      $anyElementTrue: {
+                        $map: {
+                          input: "$$this.versions",
+                          in: {
+                            $in: ["$_id", "$$this.enteredArr"],
+                          },
+                        },
+                      },
                     },
                   },
                 },
@@ -162,7 +197,14 @@ var pipeline = [
                   $map: {
                     input: "$treatises",
                     in: {
-                      $in: ["$_id", "$$this.approved"],
+                      $anyElementTrue: {
+                        $map: {
+                          input: "$$this.versions",
+                          in: {
+                            $in: ["$_id", "$$this.approvedArr"],
+                          },
+                        },
+                      },
                     },
                   },
                 },
@@ -170,8 +212,18 @@ var pipeline = [
               then: "approved",
             },
           ],
+          default: "error",
         },
       },
+    },
+  },
+  {
+    $project: {
+      "treatises.title": 1,
+      "treatises.authorname": 1,
+      "treatises.versions.source": 1,
+      "treatises.versions.url": 1,
+      "treatises.versions.contType": 1,
     },
   },
 ];

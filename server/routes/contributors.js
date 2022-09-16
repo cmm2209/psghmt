@@ -7,22 +7,6 @@ const contRoutes = express.Router();
 
 var pipeline = [
   {
-    $match: {
-      $or: [
-        {
-          entered: {
-            $exists: true,
-          },
-        },
-        {
-          version1: {
-            $exists: true,
-          },
-        },
-      ],
-    },
-  },
-  {
     $lookup: {
       from: "authors",
       localField: "author",
@@ -32,11 +16,10 @@ var pipeline = [
   },
   {
     $set: {
-      authorname: { $first: "$authordeets.authorSt" },
+      authorname: {
+        $first: "$authordeets.authorSt",
+      },
     },
-  },
-  {
-    $unset: "authordeets",
   },
   {
     $unwind: {
@@ -82,6 +65,15 @@ var pipeline = [
       authorname: {
         $first: "$authorname",
       },
+      checked: {
+        $addToSet: "$checked",
+      },
+      entered: {
+        $addToSet: "$entered",
+      },
+      approved: {
+        $addToSet: "$approved",
+      },
     },
   },
   {
@@ -98,6 +90,9 @@ var pipeline = [
           title: "$title",
           source: "$source",
           authorname: "$authorname",
+          checked: "$checked",
+          entered: "$entered",
+          approved: "$approved",
         },
       },
     },
@@ -128,6 +123,55 @@ var pipeline = [
   {
     $sort: {
       _id: 1,
+    },
+  },
+  {
+    $addFields: {
+      "treatises.contType": {
+        $switch: {
+          branches: [
+            {
+              case: {
+                $anyElementTrue: {
+                  $map: {
+                    input: "$treatises",
+                    in: {
+                      $in: ["$_id", "$$this.checked"],
+                    },
+                  },
+                },
+              },
+              then: "checked",
+            },
+            {
+              case: {
+                $anyElementTrue: {
+                  $map: {
+                    input: "$treatises",
+                    in: {
+                      $in: ["$_id", "$$this.entered"],
+                    },
+                  },
+                },
+              },
+              then: "entered",
+            },
+            {
+              case: {
+                $anyElementTrue: {
+                  $map: {
+                    input: "$treatises",
+                    in: {
+                      $in: ["$_id", "$$this.approved"],
+                    },
+                  },
+                },
+              },
+              then: "approved",
+            },
+          ],
+        },
+      },
     },
   },
 ];

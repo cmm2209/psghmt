@@ -24,20 +24,6 @@ var pipeline = [
       title: 1,
     },
   },
-  {
-    $project: {
-      _id: 1,
-      title: 1,
-      source: 1,
-      version1: 1,
-      version2: 1,
-      version3: 1,
-      version4: 1,
-      url: 1,
-      tongue: 1,
-      authorname: 1,
-    },
-  },
 ];
 
 browseRoutes.route("/browse").get(function (req, res) {

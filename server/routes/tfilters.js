@@ -67,20 +67,6 @@ TitleRoutes.route("/tfilters").get(function (req, res) {
         title: 1,
       },
     },
-    {
-      $project: {
-        _id: 1,
-        title: 1,
-        source: 1,
-        version1: 1,
-        version2: 1,
-        version3: 1,
-        version4: 1,
-        url: 1,
-        tongue: 1,
-        authorname: 1,
-      },
-    },
   ];
 
   const pipeline = [];
@@ -90,27 +76,24 @@ TitleRoutes.route("/tfilters").get(function (req, res) {
       { $match: { century: { $in: cqueryIntArr } } },
       innerpipe[0],
       innerpipe[1],
-      innerpipe[2],
-      innerpipe[3]
+      innerpipe[2]
     );
   } else if (tquery) {
     pipeline.push(
       { $match: { tongue: { $in: tquery } } },
       innerpipe[0],
       innerpipe[1],
-      innerpipe[2],
-      innerpipe[3]
+      innerpipe[2]
     );
   } else if (cquery) {
     pipeline.push(
       { $match: { century: { $in: cqueryIntArr } } },
       innerpipe[0],
       innerpipe[1],
-      innerpipe[2],
-      innerpipe[3]
+      innerpipe[2]
     );
   } else {
-    pipeline.push(innerpipe[0], innerpipe[1], innerpipe[2], innerpipe[3]);
+    pipeline.push(innerpipe[0], innerpipe[1], innerpipe[2]);
   }
 
   // Filtering

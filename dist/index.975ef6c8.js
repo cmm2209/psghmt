@@ -31309,106 +31309,78 @@ var _filtercolJs = require("./filtercol.js");
 var _filtercolJsDefault = parcelHelpers.interopDefault(_filtercolJs);
 var _browseStyleCss = require("../css/browse-style.css");
 var _s = $RefreshSig$();
-const Title = (props)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("tr", {
+const Title = (props)=>{
+    var incArr = [];
+    for(var i = 0; i < props.title.versions.length; i++)incArr.push(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+        className: "has-hover-card",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                children: props.title.versions[i].incipit
+            }, void 0, false, {
+                fileName: "src/components/incList.js",
+                lineNumber: 12,
+                columnNumber: 9
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                className: "hover-card",
+                children: [
+                    props.title.authorname,
+                    ", ",
+                    props.title.title,
+                    " ",
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                        fileName: "src/components/incList.js",
+                        lineNumber: 14,
+                        columnNumber: 57
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                href: props.title.versions[i].url,
+                                className: "source",
+                                children: props.title.versions[i].source
+                            }, void 0, false, {
+                                fileName: "src/components/incList.js",
+                                lineNumber: 16,
+                                columnNumber: 13
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                fileName: "src/components/incList.js",
+                                lineNumber: 19,
+                                columnNumber: 13
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/components/incList.js",
+                        lineNumber: 15,
+                        columnNumber: 11
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/components/incList.js",
+                lineNumber: 13,
+                columnNumber: 9
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/components/incList.js",
+        lineNumber: 11,
+        columnNumber: 7
+    }, undefined));
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("tr", {
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
-            className: "has-hover-card",
-            children: [
-                props.title.url !== undefined && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                    href: props.title.url,
-                    children: props.title.incipit
-                }, props.title._id, false, {
-                    fileName: "src/components/incList.js",
-                    lineNumber: 11,
-                    columnNumber: 9
-                }, undefined),
-                props.title.version1 !== undefined && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                    children: props.title.incipit
-                }, props.title._id, false, {
-                    fileName: "src/components/incList.js",
-                    lineNumber: 16,
-                    columnNumber: 9
-                }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                    className: "hover-card",
-                    children: [
-                        props.title.authorname,
-                        ", ",
-                        props.title.title,
-                        " ",
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
-                            fileName: "src/components/incList.js",
-                            lineNumber: 20,
-                            columnNumber: 55
-                        }, undefined),
-                        props.title.version1 !== undefined && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                            children: [
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                    href: props.title.version1.url,
-                                    className: "source",
-                                    children: props.title.version1.source
-                                }, void 0, false, {
-                                    fileName: "src/components/incList.js",
-                                    lineNumber: 23,
-                                    columnNumber: 13
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
-                                    fileName: "src/components/incList.js",
-                                    lineNumber: 26,
-                                    columnNumber: 13
-                                }, undefined)
-                            ]
-                        }, void 0, true, {
-                            fileName: "src/components/incList.js",
-                            lineNumber: 22,
-                            columnNumber: 11
-                        }, undefined),
-                        props.title.version2 !== undefined && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                            children: [
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                    href: props.title.version2.url,
-                                    className: "source",
-                                    children: props.title.version2.source
-                                }, void 0, false, {
-                                    fileName: "src/components/incList.js",
-                                    lineNumber: 31,
-                                    columnNumber: 13
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
-                                    fileName: "src/components/incList.js",
-                                    lineNumber: 34,
-                                    columnNumber: 13
-                                }, undefined)
-                            ]
-                        }, void 0, true, {
-                            fileName: "src/components/incList.js",
-                            lineNumber: 30,
-                            columnNumber: 11
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                            className: "source",
-                            children: props.title.source
-                        }, void 0, false, {
-                            fileName: "src/components/incList.js",
-                            lineNumber: 37,
-                            columnNumber: 9
-                        }, undefined)
-                    ]
-                }, void 0, true, {
-                    fileName: "src/components/incList.js",
-                    lineNumber: 19,
-                    columnNumber: 7
-                }, undefined)
-            ]
-        }, void 0, true, {
+            children: incArr
+        }, void 0, false, {
             fileName: "src/components/incList.js",
-            lineNumber: 9,
-            columnNumber: 5
+            lineNumber: 28,
+            columnNumber: 7
         }, undefined)
     }, void 0, false, {
         fileName: "src/components/incList.js",
-        lineNumber: 8,
-        columnNumber: 3
+        lineNumber: 27,
+        columnNumber: 5
     }, undefined);
+};
 _c = Title;
 function IncipitList() {
     _s();
@@ -31451,7 +31423,7 @@ function IncipitList() {
                 title: title
             }, title._id, false, {
                 fileName: "src/components/incList.js",
-                lineNumber: 87,
+                lineNumber: 121,
                 columnNumber: 14
             }, this);
         });
@@ -31461,12 +31433,12 @@ function IncipitList() {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _navbarJsDefault.default), {}, void 0, false, {
                 fileName: "src/components/incList.js",
-                lineNumber: 94,
+                lineNumber: 128,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _browsebarJsDefault.default), {}, void 0, false, {
                 fileName: "src/components/incList.js",
-                lineNumber: 95,
+                lineNumber: 129,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -31479,7 +31451,7 @@ function IncipitList() {
                                 children: "Filter by:"
                             }, void 0, false, {
                                 fileName: "src/components/incList.js",
-                                lineNumber: 98,
+                                lineNumber: 132,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("form", {
@@ -31487,12 +31459,12 @@ function IncipitList() {
                                 onChange: submission,
                                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _filtercolJsDefault.default), {}, void 0, false, {
                                     fileName: "src/components/incList.js",
-                                    lineNumber: 100,
+                                    lineNumber: 134,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "src/components/incList.js",
-                                lineNumber: 99,
+                                lineNumber: 133,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -31502,13 +31474,13 @@ function IncipitList() {
                                 children: "Reset"
                             }, void 0, false, {
                                 fileName: "src/components/incList.js",
-                                lineNumber: 102,
+                                lineNumber: 136,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "src/components/incList.js",
-                        lineNumber: 97,
+                        lineNumber: 131,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -31518,7 +31490,7 @@ function IncipitList() {
                                 id: "result"
                             }, void 0, false, {
                                 fileName: "src/components/incList.js",
-                                lineNumber: 107,
+                                lineNumber: 141,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("table", {
@@ -31533,48 +31505,48 @@ function IncipitList() {
                                                 children: "Incipits"
                                             }, void 0, false, {
                                                 fileName: "src/components/incList.js",
-                                                lineNumber: 111,
+                                                lineNumber: 145,
                                                 columnNumber: 17
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "src/components/incList.js",
-                                            lineNumber: 110,
+                                            lineNumber: 144,
                                             columnNumber: 15
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "src/components/incList.js",
-                                        lineNumber: 109,
+                                        lineNumber: 143,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("tbody", {
                                         children: titleList()
                                     }, void 0, false, {
                                         fileName: "src/components/incList.js",
-                                        lineNumber: 114,
+                                        lineNumber: 148,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/components/incList.js",
-                                lineNumber: 108,
+                                lineNumber: 142,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "src/components/incList.js",
-                        lineNumber: 106,
+                        lineNumber: 140,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "src/components/incList.js",
-                lineNumber: 96,
+                lineNumber: 130,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "src/components/incList.js",
-        lineNumber: 93,
+        lineNumber: 127,
         columnNumber: 5
     }, this);
 }
@@ -31892,133 +31864,118 @@ var _browseStyleCss = require("../css/browse-style.css");
 var _s = $RefreshSig$();
 const Title = (props)=>{
     var titlesArr = [];
-    if (props.title.treatises) for(var i = 0; i < props.title.treatises.length; i++)titlesArr.push(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+    for(var i = 0; i < props.title.treatises.length; i++)titlesArr.push(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
         className: "has-hover-card",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                children: props.title.treatises[i].version === undefined && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                    href: props.title.treatises[i].url,
-                    children: props.title.treatises[i].title
-                }, props.title.treatises[i].url, false, {
-                    fileName: "src/components/authorList.js",
-                    lineNumber: 15,
-                    columnNumber: 15
-                }, undefined)
+                children: props.title.treatises[i].title
             }, void 0, false, {
                 fileName: "src/components/authorList.js",
-                lineNumber: 13,
-                columnNumber: 11
+                lineNumber: 12,
+                columnNumber: 9
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                 className: "hover-card",
                 children: [
-                    props.title.treatises[i].version1 === undefined && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                        className: "source",
-                        children: props.title.treatises[i].source
-                    }, void 0, false, {
-                        fileName: "src/components/authorList.js",
-                        lineNumber: 25,
-                        columnNumber: 15
-                    }, undefined),
-                    props.title.treatises[i].version1 !== undefined && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                    props.title.treatises[i].versions[0] !== undefined && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                         children: [
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                href: props.title.treatises[i].version1.url,
+                                href: props.title.treatises[i].versions[0].url,
                                 className: "source",
-                                children: props.title.treatises[i].version1.source
+                                children: props.title.treatises[i].versions[0].source
                             }, void 0, false, {
                                 fileName: "src/components/authorList.js",
-                                lineNumber: 29,
-                                columnNumber: 17
+                                lineNumber: 16,
+                                columnNumber: 15
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
                                 fileName: "src/components/authorList.js",
-                                lineNumber: 35,
-                                columnNumber: 17
+                                lineNumber: 22,
+                                columnNumber: 15
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/components/authorList.js",
-                        lineNumber: 28,
-                        columnNumber: 15
+                        lineNumber: 15,
+                        columnNumber: 13
                     }, undefined),
-                    props.title.treatises[i].version2 !== undefined && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                    props.title.treatises[i].versions[1] !== undefined && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                         children: [
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                href: props.title.treatises[i].version2.url,
+                                href: props.title.treatises[i].versions[1].url,
                                 className: "source",
-                                children: props.title.treatises[i].version2.source
+                                children: props.title.treatises[i].versions[1].source
                             }, void 0, false, {
                                 fileName: "src/components/authorList.js",
-                                lineNumber: 40,
-                                columnNumber: 17
+                                lineNumber: 27,
+                                columnNumber: 15
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
                                 fileName: "src/components/authorList.js",
-                                lineNumber: 46,
-                                columnNumber: 17
+                                lineNumber: 33,
+                                columnNumber: 15
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/components/authorList.js",
-                        lineNumber: 39,
-                        columnNumber: 15
+                        lineNumber: 26,
+                        columnNumber: 13
                     }, undefined),
-                    props.title.treatises[i].version3 !== undefined && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                    props.title.treatises[i].versions[2] !== undefined && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                         children: [
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                href: props.title.treatises[i].version3.url,
+                                href: props.title.treatises[i].versions[2].url,
                                 className: "source",
-                                children: props.title.treatises[i].version3.source
+                                children: props.title.treatises[i].versions[2].source
                             }, void 0, false, {
                                 fileName: "src/components/authorList.js",
-                                lineNumber: 51,
-                                columnNumber: 17
+                                lineNumber: 38,
+                                columnNumber: 15
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
                                 fileName: "src/components/authorList.js",
-                                lineNumber: 57,
-                                columnNumber: 17
+                                lineNumber: 44,
+                                columnNumber: 15
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/components/authorList.js",
-                        lineNumber: 50,
-                        columnNumber: 15
+                        lineNumber: 37,
+                        columnNumber: 13
                     }, undefined),
-                    props.title.treatises[i].version4 !== undefined && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                    props.title.treatises[i].versions[3] !== undefined && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                         children: [
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                href: props.title.treatises[i].version4.url,
+                                href: props.title.treatises[i].versions[3].url,
                                 className: "source",
-                                children: props.title.treatises[i].version4.source
+                                children: props.title.treatises[i].versions[3].source
                             }, void 0, false, {
                                 fileName: "src/components/authorList.js",
-                                lineNumber: 62,
-                                columnNumber: 17
+                                lineNumber: 49,
+                                columnNumber: 15
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
                                 fileName: "src/components/authorList.js",
-                                lineNumber: 68,
-                                columnNumber: 17
+                                lineNumber: 55,
+                                columnNumber: 15
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/components/authorList.js",
-                        lineNumber: 61,
-                        columnNumber: 15
+                        lineNumber: 48,
+                        columnNumber: 13
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/authorList.js",
-                lineNumber: 23,
-                columnNumber: 11
+                lineNumber: 13,
+                columnNumber: 9
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/authorList.js",
-        lineNumber: 12,
-        columnNumber: 9
+        lineNumber: 11,
+        columnNumber: 7
     }, undefined));
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("tr", {
         children: [
@@ -32026,20 +31983,20 @@ const Title = (props)=>{
                 children: props.title._id
             }, void 0, false, {
                 fileName: "src/components/authorList.js",
-                lineNumber: 78,
+                lineNumber: 65,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
                 children: titlesArr
             }, void 0, false, {
                 fileName: "src/components/authorList.js",
-                lineNumber: 79,
+                lineNumber: 66,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/authorList.js",
-        lineNumber: 77,
+        lineNumber: 64,
         columnNumber: 5
     }, undefined);
 };
@@ -32085,7 +32042,7 @@ function AuthorList() {
                 title: title
             }, title._id, false, {
                 fileName: "src/components/authorList.js",
-                lineNumber: 136,
+                lineNumber: 123,
                 columnNumber: 14
             }, this);
         });
@@ -32095,12 +32052,12 @@ function AuthorList() {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _navbarJsDefault.default), {}, void 0, false, {
                 fileName: "src/components/authorList.js",
-                lineNumber: 143,
+                lineNumber: 130,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _browsebarJsDefault.default), {}, void 0, false, {
                 fileName: "src/components/authorList.js",
-                lineNumber: 144,
+                lineNumber: 131,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -32113,7 +32070,7 @@ function AuthorList() {
                                 children: "Filter by:"
                             }, void 0, false, {
                                 fileName: "src/components/authorList.js",
-                                lineNumber: 147,
+                                lineNumber: 134,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("form", {
@@ -32121,12 +32078,12 @@ function AuthorList() {
                                 onChange: submission,
                                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _filtercolJsDefault.default), {}, void 0, false, {
                                     fileName: "src/components/authorList.js",
-                                    lineNumber: 149,
+                                    lineNumber: 136,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "src/components/authorList.js",
-                                lineNumber: 148,
+                                lineNumber: 135,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -32136,13 +32093,13 @@ function AuthorList() {
                                 children: "Reset"
                             }, void 0, false, {
                                 fileName: "src/components/authorList.js",
-                                lineNumber: 151,
+                                lineNumber: 138,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "src/components/authorList.js",
-                        lineNumber: 146,
+                        lineNumber: 133,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -32152,7 +32109,7 @@ function AuthorList() {
                                 id: "result"
                             }, void 0, false, {
                                 fileName: "src/components/authorList.js",
-                                lineNumber: 156,
+                                lineNumber: 143,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("table", {
@@ -32168,56 +32125,56 @@ function AuthorList() {
                                                     children: "Authors"
                                                 }, void 0, false, {
                                                     fileName: "src/components/authorList.js",
-                                                    lineNumber: 160,
+                                                    lineNumber: 147,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
                                                     children: "Treatises"
                                                 }, void 0, false, {
                                                     fileName: "src/components/authorList.js",
-                                                    lineNumber: 161,
+                                                    lineNumber: 148,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/components/authorList.js",
-                                            lineNumber: 159,
+                                            lineNumber: 146,
                                             columnNumber: 15
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "src/components/authorList.js",
-                                        lineNumber: 158,
+                                        lineNumber: 145,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("tbody", {
                                         children: titleList()
                                     }, void 0, false, {
                                         fileName: "src/components/authorList.js",
-                                        lineNumber: 164,
+                                        lineNumber: 151,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/components/authorList.js",
-                                lineNumber: 157,
+                                lineNumber: 144,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "src/components/authorList.js",
-                        lineNumber: 155,
+                        lineNumber: 142,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "src/components/authorList.js",
-                lineNumber: 145,
+                lineNumber: 132,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "src/components/authorList.js",
-        lineNumber: 142,
+        lineNumber: 129,
         columnNumber: 5
     }, this);
 }

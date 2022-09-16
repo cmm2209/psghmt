@@ -6,73 +6,60 @@ import "../css/browse-style.css";
 
 const Title = (props) => {
   var titlesArr = [];
-  if (props.title.treatises) {
-    for (var i = 0; i < props.title.treatises.length; i++) {
-      titlesArr.push(
-        <span className="has-hover-card">
-          <p>
-            {props.title.treatises[i].version === undefined && (
+  for (var i = 0; i < props.title.treatises.length; i++) {
+    titlesArr.push(
+      <span className="has-hover-card">
+        <p>{props.title.treatises[i].title}</p>
+        <span className="hover-card">
+          {props.title.treatises[i].versions[0] !== undefined && (
+            <span>
               <a
-                href={props.title.treatises[i].url}
-                key={props.title.treatises[i].url}
+                href={props.title.treatises[i].versions[0].url}
+                className="source"
               >
-                {props.title.treatises[i].title}
+                {props.title.treatises[i].versions[0].source}
               </a>
-            )}
-          </p>
-          <span className="hover-card">
-            {props.title.treatises[i].version1 === undefined && (
-              <span className="source">{props.title.treatises[i].source}</span>
-            )}
-            {props.title.treatises[i].version1 !== undefined && (
-              <span>
-                <a
-                  href={props.title.treatises[i].version1.url}
-                  className="source"
-                >
-                  {props.title.treatises[i].version1.source}
-                </a>
-                <br />
-              </span>
-            )}
-            {props.title.treatises[i].version2 !== undefined && (
-              <span>
-                <a
-                  href={props.title.treatises[i].version2.url}
-                  className="source"
-                >
-                  {props.title.treatises[i].version2.source}
-                </a>
-                <br />
-              </span>
-            )}
-            {props.title.treatises[i].version3 !== undefined && (
-              <span>
-                <a
-                  href={props.title.treatises[i].version3.url}
-                  className="source"
-                >
-                  {props.title.treatises[i].version3.source}
-                </a>
-                <br />
-              </span>
-            )}
-            {props.title.treatises[i].version4 !== undefined && (
-              <span>
-                <a
-                  href={props.title.treatises[i].version4.url}
-                  className="source"
-                >
-                  {props.title.treatises[i].version4.source}
-                </a>
-                <br />
-              </span>
-            )}
-          </span>
+              <br />
+            </span>
+          )}
+          {props.title.treatises[i].versions[1] !== undefined && (
+            <span>
+              <a
+                href={props.title.treatises[i].versions[1].url}
+                className="source"
+              >
+                {props.title.treatises[i].versions[1].source}
+              </a>
+              <br />
+            </span>
+          )}
+          {props.title.treatises[i].versions[2] !== undefined && (
+            <span>
+              <a
+                href={props.title.treatises[i].versions[2].url}
+                className="source"
+              >
+                {props.title.treatises[i].versions[2].source}
+              </a>
+              <br />
+            </span>
+          )}
+          {props.title.treatises[i].versions[3] !== undefined && (
+            <span>
+              <a
+                href={props.title.treatises[i].versions[3].url}
+                className="source"
+              >
+                {props.title.treatises[i].versions[3].source}
+              </a>
+              <br />
+            </span>
+          )}
         </span>
-      );
-    }
+      </span>
+    );
   }
+
   return (
     <tr>
       <td>{props.title._id}</td>

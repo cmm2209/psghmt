@@ -4,41 +4,75 @@ import Browsebar from "./browsebar.js";
 import FilterCol from "./filtercol.js";
 import "../css/browse-style.css";
 
-const Title = (props) => (
-  <tr>
+const Title = (props) => {
+  var incArr = [];
+  for (var i = 0; i < props.title.versions.length; i++) {
+    incArr.push(
+      <span className="has-hover-card">
+        <p>{props.title.versions[i].incipit}</p>
+        <span className="hover-card">
+          {props.title.authorname}, {props.title.title} <br />
+          <span>
+            <a href={props.title.versions[i].url} className="source">
+              {props.title.versions[i].source}
+            </a>
+            <br />
+          </span>
+        </span>
+      </span>
+    );
+  }
+
+  return (
+    <tr>
+      <td>{incArr}</td>
+    </tr>
+  );
+};
+/**
+  (<tr>
     <td className="has-hover-card">
-      {props.title.url !== undefined && (
-        <a href={props.title.url} key={props.title._id}>
-          {props.title.incipit}
-        </a>
-      )}
-      {props.title.version1 !== undefined && (
-        <span key={props.title._id}>{props.title.incipit}</span>
-      )}
+      <span key={props.title._id}>{props.title.versions[0].incipit}</span>
 
       <span className="hover-card">
         {props.title.authorname}, {props.title.title} <br />
-        {props.title.version1 !== undefined && (
+        {props.title.versions[0] !== undefined && (
           <span>
-            <a href={props.title.version1.url} className="source">
-              {props.title.version1.source}
+            <a href={props.title.versions[0].url} className="source">
+              {props.title.versions[0].source}
             </a>
             <br />
           </span>
         )}
-        {props.title.version2 !== undefined && (
+        {props.title.versions[1] !== undefined && (
           <span>
-            <a href={props.title.version2.url} className="source">
-              {props.title.version2.source}
+            <a href={props.title.versions[1].url} className="source">
+              {props.title.versions[1].source}
             </a>
             <br />
           </span>
         )}
-        <span className="source">{props.title.source}</span>
+        {props.title.versions[2] !== undefined && (
+          <span>
+            <a href={props.title.versions[2].url} className="source">
+              {props.title.versions[2].source}
+            </a>
+            <br />
+          </span>
+        )}
+        {props.title.versions[3] !== undefined && (
+          <span>
+            <a href={props.title.versions[3].url} className="source">
+              {props.title.versions[3].source}
+            </a>
+            <br />
+          </span>
+        )}
       </span>
     </td>
   </tr>
-);
+  )
+   */
 
 export default function IncipitList() {
   const [titles, setTitles] = useState([]);

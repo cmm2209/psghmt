@@ -15,6 +15,21 @@ const Title = (props) => {
           {props.title.treatises[i].title} <br />
           {props.title.treatises[i].versions[0] !== undefined && (
             <span>
+              {props.title.treatises[i].versions[0].contType === "checked" && (
+                <span className={props.title.treatises[i].versions[0].contType}>
+                  C
+                </span>
+              )}
+              {props.title.treatises[i].versions[0].contType === "approved" && (
+                <span className={props.title.treatises[i].versions[0].contType}>
+                  A
+                </span>
+              )}
+              {props.title.treatises[i].versions[0].contType === "entered" && (
+                <span className={props.title.treatises[i].versions[0].contType}>
+                  E
+                </span>
+              )}
               <a
                 href={props.title.treatises[i].versions[0].url}
                 className="source"
@@ -26,6 +41,9 @@ const Title = (props) => {
           )}
           {props.title.treatises[i].versions[1] !== undefined && (
             <span>
+              <span
+                className={props.title.treatises[i].versions[1].contType}
+              ></span>
               <a
                 href={props.title.treatises[i].versions[1].url}
                 className="source"
@@ -37,6 +55,9 @@ const Title = (props) => {
           )}
           {props.title.treatises[i].versions[2] !== undefined && (
             <span>
+              <span
+                className={props.title.treatises[i].versions[2].contType}
+              ></span>
               <a
                 href={props.title.treatises[i].versions[2].url}
                 className="source"
@@ -48,6 +69,9 @@ const Title = (props) => {
           )}
           {props.title.treatises[i].versions[3] !== undefined && (
             <span>
+              <span
+                className={props.title.treatises[i].versions[3].contType}
+              ></span>
               <a
                 href={props.title.treatises[i].versions[3].url}
                 className="source"

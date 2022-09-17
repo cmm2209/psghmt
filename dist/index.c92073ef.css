@@ -10198,8 +10198,32 @@ body > table.gssb_c {
 
 .hover-card .source {
   white-space: wrap;
-  padding-left: 20px;
+  padding-left: 5px;
   font-size: .9em;
+}
+
+.hover-card .checked {
+  vertical-align: super;
+  background-color: #d8bfd8;
+  padding-left: .2em;
+  padding-right: .2em;
+  font-size: 65%;
+}
+
+.hover-card .entered {
+  vertical-align: super;
+  background-color: #add8e6;
+  padding-left: .2em;
+  padding-right: .2em;
+  font-size: 65%;
+}
+
+.hover-card .approved {
+  vertical-align: super;
+  background-color: #b0c4de;
+  padding-left: .2em;
+  padding-right: .2em;
+  font-size: 65%;
 }
 
 .has-hover-card:hover .hover-card {

@@ -6756,10 +6756,6 @@ figcaption a:not(.button) {
   color: #dbd9d6;
 }
 .breakout .full-width .figcaption,
-.breakout .full-width figcaption {
-  margin-left: grid-calc(3, 12);
-  padding-left: 8px;
-}
 img.float-left,
 img.left {
   margin: 0.5rem 1.5rem 0.5rem 0;

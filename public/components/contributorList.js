@@ -11,8 +11,25 @@ const Title = (props) => {
       <span className="has-hover-card">
         <p>{props.title.treatises[i].title}</p>
         <span className="hover-card">
+          {props.title.treatises[i].authorname},{" "}
+          {props.title.treatises[i].title} <br />
           {props.title.treatises[i].versions[0] !== undefined && (
             <span>
+              {props.title.treatises[i].versions[0].contType === "checked" && (
+                <span className={props.title.treatises[i].versions[0].contType}>
+                  C
+                </span>
+              )}
+              {props.title.treatises[i].versions[0].contType === "approved" && (
+                <span className={props.title.treatises[i].versions[0].contType}>
+                  A
+                </span>
+              )}
+              {props.title.treatises[i].versions[0].contType === "entered" && (
+                <span className={props.title.treatises[i].versions[0].contType}>
+                  E
+                </span>
+              )}
               <a
                 href={props.title.treatises[i].versions[0].url}
                 className="source"
@@ -24,6 +41,9 @@ const Title = (props) => {
           )}
           {props.title.treatises[i].versions[1] !== undefined && (
             <span>
+              <span
+                className={props.title.treatises[i].versions[1].contType}
+              ></span>
               <a
                 href={props.title.treatises[i].versions[1].url}
                 className="source"
@@ -35,6 +55,9 @@ const Title = (props) => {
           )}
           {props.title.treatises[i].versions[2] !== undefined && (
             <span>
+              <span
+                className={props.title.treatises[i].versions[2].contType}
+              ></span>
               <a
                 href={props.title.treatises[i].versions[2].url}
                 className="source"
@@ -46,6 +69,9 @@ const Title = (props) => {
           )}
           {props.title.treatises[i].versions[3] !== undefined && (
             <span>
+              <span
+                className={props.title.treatises[i].versions[3].contType}
+              ></span>
               <a
                 href={props.title.treatises[i].versions[3].url}
                 className="source"
@@ -59,7 +85,6 @@ const Title = (props) => {
       </span>
     );
   }
-
   return (
     <tr>
       <td>{props.title._id}</td>
@@ -68,15 +93,7 @@ const Title = (props) => {
   );
 };
 
-/**
-  {props.title.treatises[i].version1 !== undefined && (
-              <span key={props.title.treatises[i].title}>
-                {props.title.treatises[i].title}
-              </span>
-            )}
- */
-
-export default function AuthorList() {
+export default function ContributorList() {
   const [titles, setTitles] = useState([]);
 
   useEffect(() => {
@@ -85,7 +102,7 @@ export default function AuthorList() {
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   async function getTitles() {
-    const response = await fetch(`https://psghmt.herokuapp.com/authors/`);
+    const response = await fetch(`https://psghmt.herokuapp.com/contributors/`);
     const titles = await response.json();
     setTitles(titles);
     const cblist = document.getElementsByClassName("cb");
@@ -102,7 +119,7 @@ export default function AuthorList() {
       return !el.checked;
     });
     if (markedCheckbox.length == empty.length) {
-      const response = await fetch(`https://psghmt.herokuapp.com/authors/`);
+      const response = await fetch(`https://psghmt.herokuapp.com/contributors/`);
       const titles = await response.json();
       setTitles(titles);
     }
@@ -112,9 +129,7 @@ export default function AuthorList() {
       var cbsum1 = cbsum.toString();
       var cbsumWoC = cbsum1.replace(/,/g, "&");
     }
-    const res = await fetch(
-      `https://psghmt.herokuapp.com/autfilters?${cbsumWoC}`
-    );
+    const res = await fetch(`https://psghmt.herokuapp.com/contfilters?${cbsumWoC}`);
     const titles = await res.json();
     setTitles(titles);
   }
@@ -142,10 +157,11 @@ export default function AuthorList() {
           </button>
         </div>
         <div className="results">
+          <h3 id="result"></h3>
           <table className="table table-striped" style={{ marginTop: 20 }}>
             <thead>
               <tr>
-                <th>Authors</th>
+                <th>Contributors</th>
                 <th>Treatises</th>
               </tr>
             </thead>

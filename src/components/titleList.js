@@ -83,7 +83,9 @@ export default function TitleList() {
       var cbsum1 = cbsum.toString();
       var cbsumWoC = cbsum1.replace(/,/g, "&");
     }
-    const res = await fetch(`https://psghmt.herokuapp.com/tfilters?${cbsumWoC}`);
+    const res = await fetch(
+      `https://psghmt.herokuapp.com/tfilters?${cbsumWoC}`
+    );
     const titles = await res.json();
     setTitles(titles);
   }
@@ -111,7 +113,6 @@ export default function TitleList() {
           </button>
         </div>
         <div className="results">
-          <h3 id="result"></h3>
           <table className="table table-striped" style={{ marginTop: 20 }}>
             <thead>
               <tr>

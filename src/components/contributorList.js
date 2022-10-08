@@ -119,7 +119,9 @@ export default function ContributorList() {
       return !el.checked;
     });
     if (markedCheckbox.length == empty.length) {
-      const response = await fetch(`https://psghmt.herokuapp.com/contributors/`);
+      const response = await fetch(
+        `https://psghmt.herokuapp.com/contributors/`
+      );
       const titles = await response.json();
       setTitles(titles);
     }
@@ -129,7 +131,9 @@ export default function ContributorList() {
       var cbsum1 = cbsum.toString();
       var cbsumWoC = cbsum1.replace(/,/g, "&");
     }
-    const res = await fetch(`https://psghmt.herokuapp.com/contfilters?${cbsumWoC}`);
+    const res = await fetch(
+      `https://psghmt.herokuapp.com/contfilters?${cbsumWoC}`
+    );
     const titles = await res.json();
     setTitles(titles);
   }
@@ -157,7 +161,6 @@ export default function ContributorList() {
           </button>
         </div>
         <div className="results">
-          <h3 id="result"></h3>
           <table className="table table-striped" style={{ marginTop: 20 }}>
             <thead>
               <tr>

@@ -2503,14 +2503,14 @@ process.umask = function() {
     return 0;
 };
 
-},{}],"ShInH":[function(require,module,exports) {
+},{}],"37eO2":[function(require,module,exports) {
 "use strict";
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
 var HMR_SECURE = false;
 var HMR_ENV_HASH = "d6ea1d42532a7575";
-module.bundle.HMR_BUNDLE_ID = "890e741a975ef6c8";
+module.bundle.HMR_BUNDLE_ID = "c767fc22f18de3a7";
 /* global HMR_HOST, HMR_PORT, HMR_ENV_HASH, HMR_SECURE, chrome, browser, globalThis, __parcel__import__, __parcel__importScripts__, ServiceWorkerGlobalScope */ /*::
 import type {
   HMRAsset,
@@ -2892,11 +2892,11 @@ function hmrAcceptRun(bundle, id) {
     acceptedAssets[id] = true;
 }
 
-},{}],"8lqZg":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$20e5 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+},{}],"7SwCM":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$ca7c = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$20e5.prelude(module);
+$parcel$ReactRefreshHelpers$ca7c.prelude(module);
 
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
@@ -2911,17 +2911,17 @@ const Index = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactDefault.default).StrictMode, {
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.BrowserRouter), {
             children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _appDefault.default), {}, void 0, false, {
-                fileName: "src/index.js",
+                fileName: "public/index.js",
                 lineNumber: 10,
                 columnNumber: 7
             }, undefined)
         }, void 0, false, {
-            fileName: "src/index.js",
+            fileName: "public/index.js",
             lineNumber: 9,
             columnNumber: 5
         }, undefined)
     }, void 0, false, {
-        fileName: "src/index.js",
+        fileName: "public/index.js",
         lineNumber: 8,
         columnNumber: 3
     }, undefined);
@@ -2929,19 +2929,19 @@ const Index = ()=>{
 _c = Index;
 const root = (0, _client.createRoot)(document.getElementById("root"));
 root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Index, {}, void 0, false, {
-    fileName: "src/index.js",
+    fileName: "public/index.js",
     lineNumber: 17,
     columnNumber: 13
 }, undefined));
 var _c;
 $RefreshReg$(_c, "Index");
 
-  $parcel$ReactRefreshHelpers$20e5.postlude(module);
+  $parcel$ReactRefreshHelpers$ca7c.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","./App":"2kQhy","react-router-dom":"fdOAw","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"iTorj":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","./App":"iZmyJ","react-router-dom":"fdOAw","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"iTorj":[function(require,module,exports) {
 "use strict";
 module.exports = require("./cjs/react-jsx-dev-runtime.development.js");
 
@@ -27094,11 +27094,11 @@ module.exports = require("./cjs/scheduler.development.js");
     /* global __REACT_DEVTOOLS_GLOBAL_HOOK__ */ if (typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ !== "undefined" && typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop === "function") __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop(new Error());
 })();
 
-},{}],"2kQhy":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$f00f = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+},{}],"iZmyJ":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$9aab = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$f00f.prelude(module);
+$parcel$ReactRefreshHelpers$9aab.prelude(module);
 
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
@@ -27128,7 +27128,7 @@ const App = ()=>{
                     path: "/",
                     element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _landingDefault.default), {}, void 0, false, void 0, void 0)
                 }, void 0, false, {
-                    fileName: "src/App.js",
+                    fileName: "public/App.js",
                     lineNumber: 18,
                     columnNumber: 9
                 }, undefined),
@@ -27136,7 +27136,7 @@ const App = ()=>{
                     path: "/browse",
                     element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _titleListDefault.default), {}, void 0, false, void 0, void 0)
                 }, void 0, false, {
-                    fileName: "src/App.js",
+                    fileName: "public/App.js",
                     lineNumber: 19,
                     columnNumber: 9
                 }, undefined),
@@ -27144,7 +27144,7 @@ const App = ()=>{
                     path: "/tfilters",
                     element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _titleListDefault.default), {}, void 0, false, void 0, void 0)
                 }, void 0, false, {
-                    fileName: "src/App.js",
+                    fileName: "public/App.js",
                     lineNumber: 20,
                     columnNumber: 9
                 }, undefined),
@@ -27152,7 +27152,7 @@ const App = ()=>{
                     path: "/authors",
                     element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _authorListDefault.default), {}, void 0, false, void 0, void 0)
                 }, void 0, false, {
-                    fileName: "src/App.js",
+                    fileName: "public/App.js",
                     lineNumber: 21,
                     columnNumber: 9
                 }, undefined),
@@ -27160,7 +27160,7 @@ const App = ()=>{
                     path: "/autfilters",
                     element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _authorListDefault.default), {}, void 0, false, void 0, void 0)
                 }, void 0, false, {
-                    fileName: "src/App.js",
+                    fileName: "public/App.js",
                     lineNumber: 22,
                     columnNumber: 9
                 }, undefined),
@@ -27168,7 +27168,7 @@ const App = ()=>{
                     path: "/incipits",
                     element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _incListDefault.default), {}, void 0, false, void 0, void 0)
                 }, void 0, false, {
-                    fileName: "src/App.js",
+                    fileName: "public/App.js",
                     lineNumber: 23,
                     columnNumber: 9
                 }, undefined),
@@ -27176,7 +27176,7 @@ const App = ()=>{
                     path: "/incfilters",
                     element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _incListDefault.default), {}, void 0, false, void 0, void 0)
                 }, void 0, false, {
-                    fileName: "src/App.js",
+                    fileName: "public/App.js",
                     lineNumber: 24,
                     columnNumber: 9
                 }, undefined),
@@ -27184,7 +27184,7 @@ const App = ()=>{
                     path: "/contributors",
                     element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _contributorListDefault.default), {}, void 0, false, void 0, void 0)
                 }, void 0, false, {
-                    fileName: "src/App.js",
+                    fileName: "public/App.js",
                     lineNumber: 25,
                     columnNumber: 9
                 }, undefined),
@@ -27192,18 +27192,18 @@ const App = ()=>{
                     path: "/contfilters",
                     element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _contributorListDefault.default), {}, void 0, false, void 0, void 0)
                 }, void 0, false, {
-                    fileName: "src/App.js",
+                    fileName: "public/App.js",
                     lineNumber: 26,
                     columnNumber: 9
                 }, undefined)
             ]
         }, void 0, true, {
-            fileName: "src/App.js",
+            fileName: "public/App.js",
             lineNumber: 17,
             columnNumber: 7
         }, undefined)
     }, void 0, false, {
-        fileName: "src/App.js",
+        fileName: "public/App.js",
         lineNumber: 16,
         columnNumber: 5
     }, undefined);
@@ -27213,12 +27213,12 @@ exports.default = App;
 var _c;
 $RefreshReg$(_c, "App");
 
-  $parcel$ReactRefreshHelpers$f00f.postlude(module);
+  $parcel$ReactRefreshHelpers$9aab.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"fdOAw","./components/landing":"fQFy1","./components/titleList":"58V10","./components/incList":"hzWIN","./components/contributorList":"476Ls","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./components/authorList":"h5wcj"}],"fdOAw":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"fdOAw","./components/landing":"73m3x","./components/titleList":"9y64j","./components/authorList":"iN23B","./components/incList":"lkXky","./components/contributorList":"gutUM","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"fdOAw":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "MemoryRouter", ()=>(0, _reactRouter.MemoryRouter));
@@ -28945,11 +28945,11 @@ function _renderMatches(matches, parentMatches) {
     return _renderMatches(matches);
 }
 
-},{"history":"iE5Zp","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"fQFy1":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$d3cf = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+},{"history":"iE5Zp","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"73m3x":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$1f46 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$d3cf.prelude(module);
+$parcel$ReactRefreshHelpers$1f46.prelude(module);
 
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
@@ -28985,7 +28985,7 @@ const Landing = ()=>{
             className: "landing",
             children: [
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _navbarJsDefault.default), {}, void 0, false, {
-                    fileName: "src/components/landing.js",
+                    fileName: "public/components/landing.js",
                     lineNumber: 27,
                     columnNumber: 9
                 }, undefined),
@@ -29004,7 +29004,7 @@ const Landing = ()=>{
                                             backgroundImage: `url(${(0, _scriptoriumJpgDefault.default)})`
                                         }
                                     }, void 0, false, {
-                                        fileName: "src/components/landing.js",
+                                        fileName: "public/components/landing.js",
                                         lineNumber: 32,
                                         columnNumber: 15
                                     }, undefined),
@@ -29018,7 +29018,7 @@ const Landing = ()=>{
                                                 },
                                                 children: "Learn about the Center"
                                             }, void 0, false, {
-                                                fileName: "src/components/landing.js",
+                                                fileName: "public/components/landing.js",
                                                 lineNumber: 39,
                                                 columnNumber: 17
                                             }, undefined),
@@ -29027,19 +29027,19 @@ const Landing = ()=>{
                                                 href: "https://chmtl.indiana.edu/about/index.html",
                                                 children: "About us"
                                             }, void 0, false, {
-                                                fileName: "src/components/landing.js",
+                                                fileName: "public/components/landing.js",
                                                 lineNumber: 42,
                                                 columnNumber: 17
                                             }, undefined)
                                         ]
                                     }, void 0, true, {
-                                        fileName: "src/components/landing.js",
+                                        fileName: "public/components/landing.js",
                                         lineNumber: 38,
                                         columnNumber: 15
                                     }, undefined)
                                 ]
                             }, void 0, true, {
-                                fileName: "src/components/landing.js",
+                                fileName: "public/components/landing.js",
                                 lineNumber: 31,
                                 columnNumber: 13
                             }, undefined),
@@ -29052,7 +29052,7 @@ const Landing = ()=>{
                                             backgroundImage: `url(${(0, _pythJpgDefault.default)})`
                                         }
                                     }, void 0, false, {
-                                        fileName: "src/components/landing.js",
+                                        fileName: "public/components/landing.js",
                                         lineNumber: 51,
                                         columnNumber: 15
                                     }, undefined),
@@ -29066,7 +29066,7 @@ const Landing = ()=>{
                                                 },
                                                 children: "Music theory treatises"
                                             }, void 0, false, {
-                                                fileName: "src/components/landing.js",
+                                                fileName: "public/components/landing.js",
                                                 lineNumber: 58,
                                                 columnNumber: 17
                                             }, undefined),
@@ -29075,30 +29075,30 @@ const Landing = ()=>{
                                                 to: "/browse",
                                                 children: "Browse the database"
                                             }, void 0, false, {
-                                                fileName: "src/components/landing.js",
+                                                fileName: "public/components/landing.js",
                                                 lineNumber: 61,
                                                 columnNumber: 17
                                             }, undefined)
                                         ]
                                     }, void 0, true, {
-                                        fileName: "src/components/landing.js",
+                                        fileName: "public/components/landing.js",
                                         lineNumber: 57,
                                         columnNumber: 15
                                     }, undefined)
                                 ]
                             }, void 0, true, {
-                                fileName: "src/components/landing.js",
+                                fileName: "public/components/landing.js",
                                 lineNumber: 50,
                                 columnNumber: 13
                             }, undefined)
                         ]
                     }, void 0, true, {
-                        fileName: "src/components/landing.js",
+                        fileName: "public/components/landing.js",
                         lineNumber: 30,
                         columnNumber: 11
                     }, undefined)
                 }, void 0, false, {
-                    fileName: "src/components/landing.js",
+                    fileName: "public/components/landing.js",
                     lineNumber: 29,
                     columnNumber: 9
                 }, undefined),
@@ -29108,7 +29108,7 @@ const Landing = ()=>{
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                             className: "content-top"
                         }, void 0, false, {
-                            fileName: "src/components/landing.js",
+                            fileName: "public/components/landing.js",
                             lineNumber: 70,
                             columnNumber: 11
                         }, undefined),
@@ -29132,22 +29132,22 @@ const Landing = ()=>{
                                                             children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                                                                 children: "The Center for the History of Music Theory and Literature (CHMTL) supports researchers and students studying the history of music theory and historical musicology."
                                                             }, void 0, false, {
-                                                                fileName: "src/components/landing.js",
+                                                                fileName: "public/components/landing.js",
                                                                 lineNumber: 78,
                                                                 columnNumber: 25
                                                             }, undefined)
                                                         }, void 0, false, {
-                                                            fileName: "src/components/landing.js",
+                                                            fileName: "public/components/landing.js",
                                                             lineNumber: 77,
                                                             columnNumber: 23
                                                         }, undefined)
                                                     }, void 0, false, {
-                                                        fileName: "src/components/landing.js",
+                                                        fileName: "public/components/landing.js",
                                                         lineNumber: 76,
                                                         columnNumber: 21
                                                     }, undefined)
                                                 }, void 0, false, {
-                                                    fileName: "src/components/landing.js",
+                                                    fileName: "public/components/landing.js",
                                                     lineNumber: 75,
                                                     columnNumber: 19
                                                 }, undefined),
@@ -29160,33 +29160,33 @@ const Landing = ()=>{
                                                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
                                                             src: (0, _bellsJpgDefault.default)
                                                         }, void 0, false, {
-                                                            fileName: "src/components/landing.js",
+                                                            fileName: "public/components/landing.js",
                                                             lineNumber: 93,
                                                             columnNumber: 23
                                                         }, undefined)
                                                     }, void 0, false, {
-                                                        fileName: "src/components/landing.js",
+                                                        fileName: "public/components/landing.js",
                                                         lineNumber: 88,
                                                         columnNumber: 21
                                                     }, undefined)
                                                 }, void 0, false, {
-                                                    fileName: "src/components/landing.js",
+                                                    fileName: "public/components/landing.js",
                                                     lineNumber: 87,
                                                     columnNumber: 19
                                                 }, undefined)
                                             ]
                                         }, void 0, true, {
-                                            fileName: "src/components/landing.js",
+                                            fileName: "public/components/landing.js",
                                             lineNumber: 74,
                                             columnNumber: 17
                                         }, undefined)
                                     }, void 0, false, {
-                                        fileName: "src/components/landing.js",
+                                        fileName: "public/components/landing.js",
                                         lineNumber: 73,
                                         columnNumber: 15
                                     }, undefined)
                                 }, void 0, false, {
-                                    fileName: "src/components/landing.js",
+                                    fileName: "public/components/landing.js",
                                     lineNumber: 72,
                                     columnNumber: 13
                                 }, undefined),
@@ -29210,37 +29210,37 @@ const Landing = ()=>{
                                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                                                                     children: "Since its foundation in 1998, the Center has focused on gathering and disseminating historical materials in digital format, for scholarly and pedagogical purposes."
                                                                 }, void 0, false, {
-                                                                    fileName: "src/components/landing.js",
+                                                                    fileName: "public/components/landing.js",
                                                                     lineNumber: 105,
                                                                     columnNumber: 25
                                                                 }, undefined),
                                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                                                                     children: "Our earliest projects made pioneering use of technology by making music treatises in Latin freely available and searchable, as well as doctoral dissertations in musicology and writings exploring the practice of borrowing in music."
                                                                 }, void 0, false, {
-                                                                    fileName: "src/components/landing.js",
+                                                                    fileName: "public/components/landing.js",
                                                                     lineNumber: 111,
                                                                     columnNumber: 25
                                                                 }, undefined),
                                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                                                                     children: "In the twenty-first century, the Center continues to support research on historical documents concerning music."
                                                                 }, void 0, false, {
-                                                                    fileName: "src/components/landing.js",
+                                                                    fileName: "public/components/landing.js",
                                                                     lineNumber: 118,
                                                                     columnNumber: 25
                                                                 }, undefined)
                                                             ]
                                                         }, void 0, true, {
-                                                            fileName: "src/components/landing.js",
+                                                            fileName: "public/components/landing.js",
                                                             lineNumber: 104,
                                                             columnNumber: 23
                                                         }, undefined)
                                                     }, void 0, false, {
-                                                        fileName: "src/components/landing.js",
+                                                        fileName: "public/components/landing.js",
                                                         lineNumber: 103,
                                                         columnNumber: 21
                                                     }, undefined)
                                                 }, void 0, false, {
-                                                    fileName: "src/components/landing.js",
+                                                    fileName: "public/components/landing.js",
                                                     lineNumber: 102,
                                                     columnNumber: 19
                                                 }, undefined),
@@ -29253,56 +29253,56 @@ const Landing = ()=>{
                                                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
                                                             src: (0, _hucbaldJpgDefault.default)
                                                         }, void 0, false, {
-                                                            fileName: "src/components/landing.js",
+                                                            fileName: "public/components/landing.js",
                                                             lineNumber: 133,
                                                             columnNumber: 23
                                                         }, undefined)
                                                     }, void 0, false, {
-                                                        fileName: "src/components/landing.js",
+                                                        fileName: "public/components/landing.js",
                                                         lineNumber: 128,
                                                         columnNumber: 21
                                                     }, undefined)
                                                 }, void 0, false, {
-                                                    fileName: "src/components/landing.js",
+                                                    fileName: "public/components/landing.js",
                                                     lineNumber: 127,
                                                     columnNumber: 19
                                                 }, undefined)
                                             ]
                                         }, void 0, true, {
-                                            fileName: "src/components/landing.js",
+                                            fileName: "public/components/landing.js",
                                             lineNumber: 101,
                                             columnNumber: 17
                                         }, undefined)
                                     }, void 0, false, {
-                                        fileName: "src/components/landing.js",
+                                        fileName: "public/components/landing.js",
                                         lineNumber: 100,
                                         columnNumber: 15
                                     }, undefined)
                                 }, void 0, false, {
-                                    fileName: "src/components/landing.js",
+                                    fileName: "public/components/landing.js",
                                     lineNumber: 99,
                                     columnNumber: 13
                                 }, undefined)
                             ]
                         }, void 0, true, {
-                            fileName: "src/components/landing.js",
+                            fileName: "public/components/landing.js",
                             lineNumber: 71,
                             columnNumber: 11
                         }, undefined)
                     ]
                 }, void 0, true, {
-                    fileName: "src/components/landing.js",
+                    fileName: "public/components/landing.js",
                     lineNumber: 69,
                     columnNumber: 9
                 }, undefined)
             ]
         }, void 0, true, {
-            fileName: "src/components/landing.js",
+            fileName: "public/components/landing.js",
             lineNumber: 26,
             columnNumber: 7
         }, undefined)
     }, void 0, false, {
-        fileName: "src/components/landing.js",
+        fileName: "public/components/landing.js",
         lineNumber: 25,
         columnNumber: 5
     }, undefined);
@@ -29312,13 +29312,13 @@ exports.default = Landing;
 var _c;
 $RefreshReg$(_c, "Landing");
 
-  $parcel$ReactRefreshHelpers$d3cf.postlude(module);
+  $parcel$ReactRefreshHelpers$1f46.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../Pyth.jpg":"lx4TH","../Bells.jpg":"ezdRV","../Hucbald.jpg":"9ULvo","../scriptorium.jpg":"istOd","react-router-dom":"fdOAw","./navbar.js":"dtZi7","../css/style.css":"6ZQyu","../css/icon-font.css":"iVzCz","../css/iu-framework.min.css":"aa9CO","../css/brand.min.css":"8Xz4f","../css/search.min.css":"01SHi","../css/site.css":"hT9aR","../css/modernizr.min.js":"8pm95","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"lx4TH":[function(require,module,exports) {
-module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "Pyth.b6bd8960.jpg" + "?" + Date.now();
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../Pyth.jpg":"aAw0l","../Bells.jpg":"Eotbf","../Hucbald.jpg":"5Yexw","../scriptorium.jpg":"7iA7C","react-router-dom":"fdOAw","./navbar.js":"fgZOy","../css/style.css":"8tzWc","../css/icon-font.css":"6Y28T","../css/iu-framework.min.css":"50Fgx","../css/brand.min.css":"csAi9","../css/search.min.css":"8eCM9","../css/site.css":"j1YGJ","../css/modernizr.min.js":"kJI0l","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"aAw0l":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("h7qW7") + "Pyth.04a08901.jpg" + "?" + Date.now();
 
 },{"./helpers/bundle-url":"lgJ39"}],"lgJ39":[function(require,module,exports) {
 "use strict";
@@ -29354,20 +29354,20 @@ exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
 exports.getOrigin = getOrigin;
 
-},{}],"ezdRV":[function(require,module,exports) {
-module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "Bells.b7bde3a5.jpg" + "?" + Date.now();
+},{}],"Eotbf":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("h7qW7") + "Bells.5e1ed23e.jpg" + "?" + Date.now();
 
-},{"./helpers/bundle-url":"lgJ39"}],"9ULvo":[function(require,module,exports) {
-module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "Hucbald.5f809b86.jpg" + "?" + Date.now();
+},{"./helpers/bundle-url":"lgJ39"}],"5Yexw":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("h7qW7") + "Hucbald.80edda5c.jpg" + "?" + Date.now();
 
-},{"./helpers/bundle-url":"lgJ39"}],"istOd":[function(require,module,exports) {
-module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "scriptorium.9fee37ab.jpg" + "?" + Date.now();
+},{"./helpers/bundle-url":"lgJ39"}],"7iA7C":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("h7qW7") + "scriptorium.2b7dbcd3.jpg" + "?" + Date.now();
 
-},{"./helpers/bundle-url":"lgJ39"}],"dtZi7":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$af4a = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+},{"./helpers/bundle-url":"lgJ39"}],"fgZOy":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$39dc = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$af4a.prelude(module);
+$parcel$ReactRefreshHelpers$39dc.prelude(module);
 
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
@@ -29390,12 +29390,12 @@ const Navbar = ()=>{
                                     href: "#content",
                                     children: "Skip to Content"
                                 }, void 0, false, {
-                                    fileName: "src/components/navbar.js",
+                                    fileName: "public/components/navbar.js",
                                     lineNumber: 11,
                                     columnNumber: 13
                                 }, undefined)
                             }, void 0, false, {
-                                fileName: "src/components/navbar.js",
+                                fileName: "public/components/navbar.js",
                                 lineNumber: 10,
                                 columnNumber: 11
                             }, undefined),
@@ -29404,29 +29404,29 @@ const Navbar = ()=>{
                                     href: "#nav-main",
                                     children: "Skip to Main Navigation"
                                 }, void 0, false, {
-                                    fileName: "src/components/navbar.js",
+                                    fileName: "public/components/navbar.js",
                                     lineNumber: 14,
                                     columnNumber: 13
                                 }, undefined)
                             }, void 0, false, {
-                                fileName: "src/components/navbar.js",
+                                fileName: "public/components/navbar.js",
                                 lineNumber: 13,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
-                        fileName: "src/components/navbar.js",
+                        fileName: "public/components/navbar.js",
                         lineNumber: 9,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("hr", {}, void 0, false, {
-                        fileName: "src/components/navbar.js",
+                        fileName: "public/components/navbar.js",
                         lineNumber: 17,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
-                fileName: "src/components/navbar.js",
+                fileName: "public/components/navbar.js",
                 lineNumber: 8,
                 columnNumber: 7
             }, undefined),
@@ -29441,7 +29441,7 @@ const Navbar = ()=>{
                         "data-toggle": "iu-menu",
                         children: "Menu"
                     }, void 0, false, {
-                        fileName: "src/components/navbar.js",
+                        fileName: "public/components/navbar.js",
                         lineNumber: 25,
                         columnNumber: 9
                     }, undefined),
@@ -29466,12 +29466,12 @@ const Navbar = ()=>{
                                                     itemProp: "name",
                                                     children: "About"
                                                 }, void 0, false, {
-                                                    fileName: "src/components/navbar.js",
+                                                    fileName: "public/components/navbar.js",
                                                     lineNumber: 48,
                                                     columnNumber: 19
                                                 }, undefined)
                                             }, void 0, false, {
-                                                fileName: "src/components/navbar.js",
+                                                fileName: "public/components/navbar.js",
                                                 lineNumber: 44,
                                                 columnNumber: 17
                                             }, undefined),
@@ -29486,17 +29486,17 @@ const Navbar = ()=>{
                                                                 itemProp: "name",
                                                                 children: "Mission"
                                                             }, void 0, false, {
-                                                                fileName: "src/components/navbar.js",
+                                                                fileName: "public/components/navbar.js",
                                                                 lineNumber: 56,
                                                                 columnNumber: 23
                                                             }, undefined)
                                                         }, void 0, false, {
-                                                            fileName: "src/components/navbar.js",
+                                                            fileName: "public/components/navbar.js",
                                                             lineNumber: 52,
                                                             columnNumber: 21
                                                         }, undefined)
                                                     }, void 0, false, {
-                                                        fileName: "src/components/navbar.js",
+                                                        fileName: "public/components/navbar.js",
                                                         lineNumber: 51,
                                                         columnNumber: 19
                                                     }, undefined),
@@ -29508,29 +29508,29 @@ const Navbar = ()=>{
                                                                 itemProp: "name",
                                                                 children: "History"
                                                             }, void 0, false, {
-                                                                fileName: "src/components/navbar.js",
+                                                                fileName: "public/components/navbar.js",
                                                                 lineNumber: 64,
                                                                 columnNumber: 23
                                                             }, undefined)
                                                         }, void 0, false, {
-                                                            fileName: "src/components/navbar.js",
+                                                            fileName: "public/components/navbar.js",
                                                             lineNumber: 60,
                                                             columnNumber: 21
                                                         }, undefined)
                                                     }, void 0, false, {
-                                                        fileName: "src/components/navbar.js",
+                                                        fileName: "public/components/navbar.js",
                                                         lineNumber: 59,
                                                         columnNumber: 19
                                                     }, undefined)
                                                 ]
                                             }, void 0, true, {
-                                                fileName: "src/components/navbar.js",
+                                                fileName: "public/components/navbar.js",
                                                 lineNumber: 50,
                                                 columnNumber: 17
                                             }, undefined)
                                         ]
                                     }, void 0, true, {
-                                        fileName: "src/components/navbar.js",
+                                        fileName: "public/components/navbar.js",
                                         lineNumber: 43,
                                         columnNumber: 15
                                     }, undefined),
@@ -29541,17 +29541,17 @@ const Navbar = ()=>{
                                                 itemProp: "name",
                                                 children: "The Database"
                                             }, void 0, false, {
-                                                fileName: "src/components/navbar.js",
+                                                fileName: "public/components/navbar.js",
                                                 lineNumber: 71,
                                                 columnNumber: 19
                                             }, undefined)
                                         }, void 0, false, {
-                                            fileName: "src/components/navbar.js",
+                                            fileName: "public/components/navbar.js",
                                             lineNumber: 70,
                                             columnNumber: 17
                                         }, undefined)
                                     }, void 0, false, {
-                                        fileName: "src/components/navbar.js",
+                                        fileName: "public/components/navbar.js",
                                         lineNumber: 69,
                                         columnNumber: 15
                                     }, undefined),
@@ -29565,12 +29565,12 @@ const Navbar = ()=>{
                                                     itemProp: "name",
                                                     children: "Other projects and resources"
                                                 }, void 0, false, {
-                                                    fileName: "src/components/navbar.js",
+                                                    fileName: "public/components/navbar.js",
                                                     lineNumber: 79,
                                                     columnNumber: 19
                                                 }, undefined)
                                             }, void 0, false, {
-                                                fileName: "src/components/navbar.js",
+                                                fileName: "public/components/navbar.js",
                                                 lineNumber: 75,
                                                 columnNumber: 17
                                             }, undefined),
@@ -29585,17 +29585,17 @@ const Navbar = ()=>{
                                                                 itemProp: "name",
                                                                 children: "Musical Borrowing"
                                                             }, void 0, false, {
-                                                                fileName: "src/components/navbar.js",
+                                                                fileName: "public/components/navbar.js",
                                                                 lineNumber: 87,
                                                                 columnNumber: 23
                                                             }, undefined)
                                                         }, void 0, false, {
-                                                            fileName: "src/components/navbar.js",
+                                                            fileName: "public/components/navbar.js",
                                                             lineNumber: 83,
                                                             columnNumber: 21
                                                         }, undefined)
                                                     }, void 0, false, {
-                                                        fileName: "src/components/navbar.js",
+                                                        fileName: "public/components/navbar.js",
                                                         lineNumber: 82,
                                                         columnNumber: 19
                                                     }, undefined),
@@ -29607,29 +29607,29 @@ const Navbar = ()=>{
                                                                 itemProp: "name",
                                                                 children: "Choralis Constantinus II"
                                                             }, void 0, false, {
-                                                                fileName: "src/components/navbar.js",
+                                                                fileName: "public/components/navbar.js",
                                                                 lineNumber: 95,
                                                                 columnNumber: 23
                                                             }, undefined)
                                                         }, void 0, false, {
-                                                            fileName: "src/components/navbar.js",
+                                                            fileName: "public/components/navbar.js",
                                                             lineNumber: 91,
                                                             columnNumber: 21
                                                         }, undefined)
                                                     }, void 0, false, {
-                                                        fileName: "src/components/navbar.js",
+                                                        fileName: "public/components/navbar.js",
                                                         lineNumber: 90,
                                                         columnNumber: 19
                                                     }, undefined)
                                                 ]
                                             }, void 0, true, {
-                                                fileName: "src/components/navbar.js",
+                                                fileName: "public/components/navbar.js",
                                                 lineNumber: 81,
                                                 columnNumber: 17
                                             }, undefined)
                                         ]
                                     }, void 0, true, {
-                                        fileName: "src/components/navbar.js",
+                                        fileName: "public/components/navbar.js",
                                         lineNumber: 74,
                                         columnNumber: 15
                                     }, undefined),
@@ -29643,12 +29643,12 @@ const Navbar = ()=>{
                                                     itemProp: "name",
                                                     children: "Archives"
                                                 }, void 0, false, {
-                                                    fileName: "src/components/navbar.js",
+                                                    fileName: "public/components/navbar.js",
                                                     lineNumber: 105,
                                                     columnNumber: 19
                                                 }, undefined)
                                             }, void 0, false, {
-                                                fileName: "src/components/navbar.js",
+                                                fileName: "public/components/navbar.js",
                                                 lineNumber: 101,
                                                 columnNumber: 17
                                             }, undefined),
@@ -29663,17 +29663,17 @@ const Navbar = ()=>{
                                                                 itemProp: "name",
                                                                 children: "Past Publications"
                                                             }, void 0, false, {
-                                                                fileName: "src/components/navbar.js",
+                                                                fileName: "public/components/navbar.js",
                                                                 lineNumber: 113,
                                                                 columnNumber: 23
                                                             }, undefined)
                                                         }, void 0, false, {
-                                                            fileName: "src/components/navbar.js",
+                                                            fileName: "public/components/navbar.js",
                                                             lineNumber: 109,
                                                             columnNumber: 21
                                                         }, undefined)
                                                     }, void 0, false, {
-                                                        fileName: "src/components/navbar.js",
+                                                        fileName: "public/components/navbar.js",
                                                         lineNumber: 108,
                                                         columnNumber: 19
                                                     }, undefined),
@@ -29685,17 +29685,17 @@ const Navbar = ()=>{
                                                                 itemProp: "name",
                                                                 children: "DDM-Online"
                                                             }, void 0, false, {
-                                                                fileName: "src/components/navbar.js",
+                                                                fileName: "public/components/navbar.js",
                                                                 lineNumber: 121,
                                                                 columnNumber: 23
                                                             }, undefined)
                                                         }, void 0, false, {
-                                                            fileName: "src/components/navbar.js",
+                                                            fileName: "public/components/navbar.js",
                                                             lineNumber: 117,
                                                             columnNumber: 21
                                                         }, undefined)
                                                     }, void 0, false, {
-                                                        fileName: "src/components/navbar.js",
+                                                        fileName: "public/components/navbar.js",
                                                         lineNumber: 116,
                                                         columnNumber: 19
                                                     }, undefined),
@@ -29707,51 +29707,51 @@ const Navbar = ()=>{
                                                                 itemProp: "name",
                                                                 children: "Music Collectorship"
                                                             }, void 0, false, {
-                                                                fileName: "src/components/navbar.js",
+                                                                fileName: "public/components/navbar.js",
                                                                 lineNumber: 129,
                                                                 columnNumber: 23
                                                             }, undefined)
                                                         }, void 0, false, {
-                                                            fileName: "src/components/navbar.js",
+                                                            fileName: "public/components/navbar.js",
                                                             lineNumber: 125,
                                                             columnNumber: 21
                                                         }, undefined)
                                                     }, void 0, false, {
-                                                        fileName: "src/components/navbar.js",
+                                                        fileName: "public/components/navbar.js",
                                                         lineNumber: 124,
                                                         columnNumber: 19
                                                     }, undefined)
                                                 ]
                                             }, void 0, true, {
-                                                fileName: "src/components/navbar.js",
+                                                fileName: "public/components/navbar.js",
                                                 lineNumber: 107,
                                                 columnNumber: 17
                                             }, undefined)
                                         ]
                                     }, void 0, true, {
-                                        fileName: "src/components/navbar.js",
+                                        fileName: "public/components/navbar.js",
                                         lineNumber: 100,
                                         columnNumber: 15
                                     }, undefined)
                                 ]
                             }, void 0, true, {
-                                fileName: "src/components/navbar.js",
+                                fileName: "public/components/navbar.js",
                                 lineNumber: 42,
                                 columnNumber: 13
                             }, undefined)
                         }, void 0, false, {
-                            fileName: "src/components/navbar.js",
+                            fileName: "public/components/navbar.js",
                             lineNumber: 37,
                             columnNumber: 11
                         }, undefined)
                     }, void 0, false, {
-                        fileName: "src/components/navbar.js",
+                        fileName: "public/components/navbar.js",
                         lineNumber: 31,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
-                fileName: "src/components/navbar.js",
+                fileName: "public/components/navbar.js",
                 lineNumber: 19,
                 columnNumber: 7
             }, undefined),
@@ -29775,28 +29775,28 @@ const Navbar = ()=>{
                                     },
                                     children: "of Music Theory and Literature"
                                 }, void 0, false, {
-                                    fileName: "src/components/navbar.js",
+                                    fileName: "public/components/navbar.js",
                                     lineNumber: 148,
                                     columnNumber: 15
                                 }, undefined)
                             ]
                         }, void 0, true, {
-                            fileName: "src/components/navbar.js",
+                            fileName: "public/components/navbar.js",
                             lineNumber: 146,
                             columnNumber: 13
                         }, undefined)
                     }, void 0, false, {
-                        fileName: "src/components/navbar.js",
+                        fileName: "public/components/navbar.js",
                         lineNumber: 145,
                         columnNumber: 11
                     }, undefined)
                 }, void 0, false, {
-                    fileName: "src/components/navbar.js",
+                    fileName: "public/components/navbar.js",
                     lineNumber: 144,
                     columnNumber: 9
                 }, undefined)
             }, void 0, false, {
-                fileName: "src/components/navbar.js",
+                fileName: "public/components/navbar.js",
                 lineNumber: 139,
                 columnNumber: 7
             }, undefined),
@@ -29826,12 +29826,12 @@ const Navbar = ()=>{
                                             itemProp: "name",
                                             children: "About"
                                         }, void 0, false, {
-                                            fileName: "src/components/navbar.js",
+                                            fileName: "public/components/navbar.js",
                                             lineNumber: 174,
                                             columnNumber: 17
                                         }, undefined)
                                     }, void 0, false, {
-                                        fileName: "src/components/navbar.js",
+                                        fileName: "public/components/navbar.js",
                                         lineNumber: 170,
                                         columnNumber: 15
                                     }, undefined),
@@ -29846,17 +29846,17 @@ const Navbar = ()=>{
                                                         itemProp: "name",
                                                         children: "Mission"
                                                     }, void 0, false, {
-                                                        fileName: "src/components/navbar.js",
+                                                        fileName: "public/components/navbar.js",
                                                         lineNumber: 182,
                                                         columnNumber: 21
                                                     }, undefined)
                                                 }, void 0, false, {
-                                                    fileName: "src/components/navbar.js",
+                                                    fileName: "public/components/navbar.js",
                                                     lineNumber: 178,
                                                     columnNumber: 19
                                                 }, undefined)
                                             }, void 0, false, {
-                                                fileName: "src/components/navbar.js",
+                                                fileName: "public/components/navbar.js",
                                                 lineNumber: 177,
                                                 columnNumber: 17
                                             }, undefined),
@@ -29868,29 +29868,29 @@ const Navbar = ()=>{
                                                         itemProp: "name",
                                                         children: "History"
                                                     }, void 0, false, {
-                                                        fileName: "src/components/navbar.js",
+                                                        fileName: "public/components/navbar.js",
                                                         lineNumber: 190,
                                                         columnNumber: 21
                                                     }, undefined)
                                                 }, void 0, false, {
-                                                    fileName: "src/components/navbar.js",
+                                                    fileName: "public/components/navbar.js",
                                                     lineNumber: 186,
                                                     columnNumber: 19
                                                 }, undefined)
                                             }, void 0, false, {
-                                                fileName: "src/components/navbar.js",
+                                                fileName: "public/components/navbar.js",
                                                 lineNumber: 185,
                                                 columnNumber: 17
                                             }, undefined)
                                         ]
                                     }, void 0, true, {
-                                        fileName: "src/components/navbar.js",
+                                        fileName: "public/components/navbar.js",
                                         lineNumber: 176,
                                         columnNumber: 15
                                     }, undefined)
                                 ]
                             }, void 0, true, {
-                                fileName: "src/components/navbar.js",
+                                fileName: "public/components/navbar.js",
                                 lineNumber: 169,
                                 columnNumber: 13
                             }, undefined),
@@ -29901,17 +29901,17 @@ const Navbar = ()=>{
                                         itemProp: "name",
                                         children: "The Database"
                                     }, void 0, false, {
-                                        fileName: "src/components/navbar.js",
+                                        fileName: "public/components/navbar.js",
                                         lineNumber: 197,
                                         columnNumber: 17
                                     }, undefined)
                                 }, void 0, false, {
-                                    fileName: "src/components/navbar.js",
+                                    fileName: "public/components/navbar.js",
                                     lineNumber: 196,
                                     columnNumber: 15
                                 }, undefined)
                             }, void 0, false, {
-                                fileName: "src/components/navbar.js",
+                                fileName: "public/components/navbar.js",
                                 lineNumber: 195,
                                 columnNumber: 13
                             }, undefined),
@@ -29924,12 +29924,12 @@ const Navbar = ()=>{
                                             itemProp: "name",
                                             children: "Other projects and resources"
                                         }, void 0, false, {
-                                            fileName: "src/components/navbar.js",
+                                            fileName: "public/components/navbar.js",
                                             lineNumber: 205,
                                             columnNumber: 17
                                         }, undefined)
                                     }, void 0, false, {
-                                        fileName: "src/components/navbar.js",
+                                        fileName: "public/components/navbar.js",
                                         lineNumber: 201,
                                         columnNumber: 15
                                     }, undefined),
@@ -29944,17 +29944,17 @@ const Navbar = ()=>{
                                                         itemProp: "name",
                                                         children: "Musical Borrowing"
                                                     }, void 0, false, {
-                                                        fileName: "src/components/navbar.js",
+                                                        fileName: "public/components/navbar.js",
                                                         lineNumber: 213,
                                                         columnNumber: 21
                                                     }, undefined)
                                                 }, void 0, false, {
-                                                    fileName: "src/components/navbar.js",
+                                                    fileName: "public/components/navbar.js",
                                                     lineNumber: 209,
                                                     columnNumber: 19
                                                 }, undefined)
                                             }, void 0, false, {
-                                                fileName: "src/components/navbar.js",
+                                                fileName: "public/components/navbar.js",
                                                 lineNumber: 208,
                                                 columnNumber: 17
                                             }, undefined),
@@ -29966,29 +29966,29 @@ const Navbar = ()=>{
                                                         itemProp: "name",
                                                         children: "Choralis Constantinus II"
                                                     }, void 0, false, {
-                                                        fileName: "src/components/navbar.js",
+                                                        fileName: "public/components/navbar.js",
                                                         lineNumber: 221,
                                                         columnNumber: 21
                                                     }, undefined)
                                                 }, void 0, false, {
-                                                    fileName: "src/components/navbar.js",
+                                                    fileName: "public/components/navbar.js",
                                                     lineNumber: 217,
                                                     columnNumber: 19
                                                 }, undefined)
                                             }, void 0, false, {
-                                                fileName: "src/components/navbar.js",
+                                                fileName: "public/components/navbar.js",
                                                 lineNumber: 216,
                                                 columnNumber: 17
                                             }, undefined)
                                         ]
                                     }, void 0, true, {
-                                        fileName: "src/components/navbar.js",
+                                        fileName: "public/components/navbar.js",
                                         lineNumber: 207,
                                         columnNumber: 15
                                     }, undefined)
                                 ]
                             }, void 0, true, {
-                                fileName: "src/components/navbar.js",
+                                fileName: "public/components/navbar.js",
                                 lineNumber: 200,
                                 columnNumber: 13
                             }, undefined),
@@ -30001,12 +30001,12 @@ const Navbar = ()=>{
                                             itemProp: "name",
                                             children: "Archives"
                                         }, void 0, false, {
-                                            fileName: "src/components/navbar.js",
+                                            fileName: "public/components/navbar.js",
                                             lineNumber: 231,
                                             columnNumber: 17
                                         }, undefined)
                                     }, void 0, false, {
-                                        fileName: "src/components/navbar.js",
+                                        fileName: "public/components/navbar.js",
                                         lineNumber: 227,
                                         columnNumber: 15
                                     }, undefined),
@@ -30021,17 +30021,17 @@ const Navbar = ()=>{
                                                         itemProp: "name",
                                                         children: "Past Publications"
                                                     }, void 0, false, {
-                                                        fileName: "src/components/navbar.js",
+                                                        fileName: "public/components/navbar.js",
                                                         lineNumber: 239,
                                                         columnNumber: 21
                                                     }, undefined)
                                                 }, void 0, false, {
-                                                    fileName: "src/components/navbar.js",
+                                                    fileName: "public/components/navbar.js",
                                                     lineNumber: 235,
                                                     columnNumber: 19
                                                 }, undefined)
                                             }, void 0, false, {
-                                                fileName: "src/components/navbar.js",
+                                                fileName: "public/components/navbar.js",
                                                 lineNumber: 234,
                                                 columnNumber: 17
                                             }, undefined),
@@ -30043,17 +30043,17 @@ const Navbar = ()=>{
                                                         itemProp: "name",
                                                         children: "DDM-Online"
                                                     }, void 0, false, {
-                                                        fileName: "src/components/navbar.js",
+                                                        fileName: "public/components/navbar.js",
                                                         lineNumber: 247,
                                                         columnNumber: 21
                                                     }, undefined)
                                                 }, void 0, false, {
-                                                    fileName: "src/components/navbar.js",
+                                                    fileName: "public/components/navbar.js",
                                                     lineNumber: 243,
                                                     columnNumber: 19
                                                 }, undefined)
                                             }, void 0, false, {
-                                                fileName: "src/components/navbar.js",
+                                                fileName: "public/components/navbar.js",
                                                 lineNumber: 242,
                                                 columnNumber: 17
                                             }, undefined),
@@ -30065,51 +30065,51 @@ const Navbar = ()=>{
                                                         itemProp: "name",
                                                         children: "Music Collectorship"
                                                     }, void 0, false, {
-                                                        fileName: "src/components/navbar.js",
+                                                        fileName: "public/components/navbar.js",
                                                         lineNumber: 255,
                                                         columnNumber: 21
                                                     }, undefined)
                                                 }, void 0, false, {
-                                                    fileName: "src/components/navbar.js",
+                                                    fileName: "public/components/navbar.js",
                                                     lineNumber: 251,
                                                     columnNumber: 19
                                                 }, undefined)
                                             }, void 0, false, {
-                                                fileName: "src/components/navbar.js",
+                                                fileName: "public/components/navbar.js",
                                                 lineNumber: 250,
                                                 columnNumber: 17
                                             }, undefined)
                                         ]
                                     }, void 0, true, {
-                                        fileName: "src/components/navbar.js",
+                                        fileName: "public/components/navbar.js",
                                         lineNumber: 233,
                                         columnNumber: 15
                                     }, undefined)
                                 ]
                             }, void 0, true, {
-                                fileName: "src/components/navbar.js",
+                                fileName: "public/components/navbar.js",
                                 lineNumber: 226,
                                 columnNumber: 13
                             }, undefined)
                         ]
                     }, void 0, true, {
-                        fileName: "src/components/navbar.js",
+                        fileName: "public/components/navbar.js",
                         lineNumber: 168,
                         columnNumber: 11
                     }, undefined)
                 }, void 0, false, {
-                    fileName: "src/components/navbar.js",
+                    fileName: "public/components/navbar.js",
                     lineNumber: 160,
                     columnNumber: 9
                 }, undefined)
             }, void 0, false, {
-                fileName: "src/components/navbar.js",
+                fileName: "public/components/navbar.js",
                 lineNumber: 155,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
-        fileName: "src/components/navbar.js",
+        fileName: "public/components/navbar.js",
         lineNumber: 7,
         columnNumber: 5
     }, undefined);
@@ -30119,7 +30119,7 @@ exports.default = Navbar;
 var _c;
 $RefreshReg$(_c, "Navbar");
 
-  $parcel$ReactRefreshHelpers$af4a.postlude(module);
+  $parcel$ReactRefreshHelpers$39dc.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
@@ -30244,7 +30244,7 @@ function registerExportsForReactRefresh(module) {
     }
 }
 
-},{"react-refresh/runtime":"786KC"}],"6ZQyu":[function() {},{}],"iVzCz":[function() {},{}],"aa9CO":[function() {},{}],"8Xz4f":[function() {},{}],"01SHi":[function() {},{}],"hT9aR":[function() {},{}],"8pm95":[function(require,module,exports) {
+},{"react-refresh/runtime":"786KC"}],"8tzWc":[function() {},{}],"6Y28T":[function() {},{}],"50Fgx":[function() {},{}],"csAi9":[function() {},{}],"8eCM9":[function() {},{}],"j1YGJ":[function() {},{}],"kJI0l":[function(require,module,exports) {
 /*! modernizr 3.6.0 (Custom Build) | MIT *
  * https://modernizr.com/download/?-flexbox-flexboxlegacy-webp-domprefixes-prefixes-setclasses-shiv-testallprops-testprop-teststyles !*/ !function(e1, t1, n1) {
     function r1(e, t) {
@@ -30552,11 +30552,11 @@ function registerExportsForReactRefresh(module) {
     e1.Modernizr = Modernizr;
 }(window, document);
 
-},{}],"58V10":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$d93b = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+},{}],"9y64j":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$cd0a = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$d93b.prelude(module);
+$parcel$ReactRefreshHelpers$cd0a.prelude(module);
 
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
@@ -30578,7 +30578,7 @@ const Title = (props)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("tr", {
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                     children: props.title.title
                 }, props.title._id, false, {
-                    fileName: "src/components/titleList.js",
+                    fileName: "public/components/titleList.js",
                     lineNumber: 10,
                     columnNumber: 7
                 }, undefined),
@@ -30588,7 +30588,7 @@ const Title = (props)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("tr", {
                         props.title.authorname,
                         " ",
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
-                            fileName: "src/components/titleList.js",
+                            fileName: "public/components/titleList.js",
                             lineNumber: 12,
                             columnNumber: 34
                         }, undefined),
@@ -30599,18 +30599,18 @@ const Title = (props)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("tr", {
                                     className: "source",
                                     children: props.title.versions[0].source
                                 }, void 0, false, {
-                                    fileName: "src/components/titleList.js",
+                                    fileName: "public/components/titleList.js",
                                     lineNumber: 15,
                                     columnNumber: 13
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
-                                    fileName: "src/components/titleList.js",
+                                    fileName: "public/components/titleList.js",
                                     lineNumber: 18,
                                     columnNumber: 13
                                 }, undefined)
                             ]
                         }, void 0, true, {
-                            fileName: "src/components/titleList.js",
+                            fileName: "public/components/titleList.js",
                             lineNumber: 14,
                             columnNumber: 11
                         }, undefined),
@@ -30621,18 +30621,18 @@ const Title = (props)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("tr", {
                                     className: "source",
                                     children: props.title.versions[1].source
                                 }, void 0, false, {
-                                    fileName: "src/components/titleList.js",
+                                    fileName: "public/components/titleList.js",
                                     lineNumber: 23,
                                     columnNumber: 13
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
-                                    fileName: "src/components/titleList.js",
+                                    fileName: "public/components/titleList.js",
                                     lineNumber: 26,
                                     columnNumber: 13
                                 }, undefined)
                             ]
                         }, void 0, true, {
-                            fileName: "src/components/titleList.js",
+                            fileName: "public/components/titleList.js",
                             lineNumber: 22,
                             columnNumber: 11
                         }, undefined),
@@ -30643,18 +30643,18 @@ const Title = (props)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("tr", {
                                     className: "source",
                                     children: props.title.versions[2].source
                                 }, void 0, false, {
-                                    fileName: "src/components/titleList.js",
+                                    fileName: "public/components/titleList.js",
                                     lineNumber: 31,
                                     columnNumber: 13
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
-                                    fileName: "src/components/titleList.js",
+                                    fileName: "public/components/titleList.js",
                                     lineNumber: 34,
                                     columnNumber: 13
                                 }, undefined)
                             ]
                         }, void 0, true, {
-                            fileName: "src/components/titleList.js",
+                            fileName: "public/components/titleList.js",
                             lineNumber: 30,
                             columnNumber: 11
                         }, undefined),
@@ -30665,35 +30665,35 @@ const Title = (props)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("tr", {
                                     className: "source",
                                     children: props.title.versions[3].source
                                 }, void 0, false, {
-                                    fileName: "src/components/titleList.js",
+                                    fileName: "public/components/titleList.js",
                                     lineNumber: 39,
                                     columnNumber: 13
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
-                                    fileName: "src/components/titleList.js",
+                                    fileName: "public/components/titleList.js",
                                     lineNumber: 42,
                                     columnNumber: 13
                                 }, undefined)
                             ]
                         }, void 0, true, {
-                            fileName: "src/components/titleList.js",
+                            fileName: "public/components/titleList.js",
                             lineNumber: 38,
                             columnNumber: 11
                         }, undefined)
                     ]
                 }, void 0, true, {
-                    fileName: "src/components/titleList.js",
+                    fileName: "public/components/titleList.js",
                     lineNumber: 11,
                     columnNumber: 7
                 }, undefined)
             ]
         }, void 0, true, {
-            fileName: "src/components/titleList.js",
+            fileName: "public/components/titleList.js",
             lineNumber: 9,
             columnNumber: 5
         }, undefined)
     }, void 0, false, {
-        fileName: "src/components/titleList.js",
+        fileName: "public/components/titleList.js",
         lineNumber: 8,
         columnNumber: 3
     }, undefined);
@@ -30706,7 +30706,7 @@ function TitleList() {
         return;
     }, []); // eslint-disable-line react-hooks/exhaustive-deps
     async function getTitles() {
-        const response = await fetch(`http://localhost:5000/browse/`);
+        const response = await fetch(`https://psghmt.herokuapp.com/browse/`);
         const titles = await response.json();
         setTitles(titles);
         const cblist = document.getElementsByClassName("cb");
@@ -30718,7 +30718,7 @@ function TitleList() {
             return !el.checked;
         });
         if (markedCheckbox.length == empty.length) {
-            const response = await fetch(`http://localhost:5000/browse/`);
+            const response = await fetch(`https://psghmt.herokuapp.com/browse/`);
             const titles = await response.json();
             setTitles(titles);
         }
@@ -30728,7 +30728,7 @@ function TitleList() {
             var cbsum1 = cbsum.toString();
             var cbsumWoC = cbsum1.replace(/,/g, "&");
         }
-        const res = await fetch(`http://localhost:5000/tfilters?${cbsumWoC}`);
+        const res = await fetch(`https://psghmt.herokuapp.com/tfilters?${cbsumWoC}`);
         const titles = await res.json();
         setTitles(titles);
     }
@@ -30738,7 +30738,7 @@ function TitleList() {
             return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Title, {
                 title: title
             }, title._id, false, {
-                fileName: "src/components/titleList.js",
+                fileName: "public/components/titleList.js",
                 lineNumber: 94,
                 columnNumber: 14
             }, this);
@@ -30748,12 +30748,12 @@ function TitleList() {
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _navbarJsDefault.default), {}, void 0, false, {
-                fileName: "src/components/titleList.js",
+                fileName: "public/components/titleList.js",
                 lineNumber: 101,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _browsebarJsDefault.default), {}, void 0, false, {
-                fileName: "src/components/titleList.js",
+                fileName: "public/components/titleList.js",
                 lineNumber: 102,
                 columnNumber: 7
             }, this),
@@ -30766,7 +30766,7 @@ function TitleList() {
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
                                 children: "Filter by:"
                             }, void 0, false, {
-                                fileName: "src/components/titleList.js",
+                                fileName: "public/components/titleList.js",
                                 lineNumber: 105,
                                 columnNumber: 11
                             }, this),
@@ -30774,12 +30774,12 @@ function TitleList() {
                                 id: "filterMenu",
                                 onChange: submission,
                                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _filtercolJsDefault.default), {}, void 0, false, {
-                                    fileName: "src/components/titleList.js",
+                                    fileName: "public/components/titleList.js",
                                     lineNumber: 107,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
-                                fileName: "src/components/titleList.js",
+                                fileName: "public/components/titleList.js",
                                 lineNumber: 106,
                                 columnNumber: 11
                             }, this),
@@ -30789,13 +30789,13 @@ function TitleList() {
                                 onClick: getTitles,
                                 children: "Reset"
                             }, void 0, false, {
-                                fileName: "src/components/titleList.js",
+                                fileName: "public/components/titleList.js",
                                 lineNumber: 109,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
-                        fileName: "src/components/titleList.js",
+                        fileName: "public/components/titleList.js",
                         lineNumber: 104,
                         columnNumber: 9
                     }, this),
@@ -30805,7 +30805,7 @@ function TitleList() {
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
                                 id: "result"
                             }, void 0, false, {
-                                fileName: "src/components/titleList.js",
+                                fileName: "public/components/titleList.js",
                                 lineNumber: 114,
                                 columnNumber: 11
                             }, this),
@@ -30820,48 +30820,48 @@ function TitleList() {
                                             children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
                                                 children: "Treatises"
                                             }, void 0, false, {
-                                                fileName: "src/components/titleList.js",
+                                                fileName: "public/components/titleList.js",
                                                 lineNumber: 118,
                                                 columnNumber: 17
                                             }, this)
                                         }, void 0, false, {
-                                            fileName: "src/components/titleList.js",
+                                            fileName: "public/components/titleList.js",
                                             lineNumber: 117,
                                             columnNumber: 15
                                         }, this)
                                     }, void 0, false, {
-                                        fileName: "src/components/titleList.js",
+                                        fileName: "public/components/titleList.js",
                                         lineNumber: 116,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("tbody", {
                                         children: titleList()
                                     }, void 0, false, {
-                                        fileName: "src/components/titleList.js",
+                                        fileName: "public/components/titleList.js",
                                         lineNumber: 121,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
-                                fileName: "src/components/titleList.js",
+                                fileName: "public/components/titleList.js",
                                 lineNumber: 115,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
-                        fileName: "src/components/titleList.js",
+                        fileName: "public/components/titleList.js",
                         lineNumber: 113,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
-                fileName: "src/components/titleList.js",
+                fileName: "public/components/titleList.js",
                 lineNumber: 103,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
-        fileName: "src/components/titleList.js",
+        fileName: "public/components/titleList.js",
         lineNumber: 100,
         columnNumber: 5
     }, this);
@@ -30873,16 +30873,16 @@ var _c, _c1;
 $RefreshReg$(_c, "Title");
 $RefreshReg$(_c1, "TitleList");
 
-  $parcel$ReactRefreshHelpers$d93b.postlude(module);
+  $parcel$ReactRefreshHelpers$cd0a.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./navbar.js":"dtZi7","./browsebar.js":"iry4m","./filtercol.js":"evHix","../css/browse-style.css":"ck0Hv","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"iry4m":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$1b63 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./navbar.js":"fgZOy","./browsebar.js":"7z9X3","./filtercol.js":"k9VeR","../css/browse-style.css":"eBEt0","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"7z9X3":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$f162 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$1b63.prelude(module);
+$parcel$ReactRefreshHelpers$f162.prelude(module);
 
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
@@ -30902,12 +30902,12 @@ const Browsebar = ()=>{
                         to: "/browse",
                         children: "Treatises"
                     }, void 0, false, {
-                        fileName: "src/components/browsebar.js",
+                        fileName: "public/components/browsebar.js",
                         lineNumber: 12,
                         columnNumber: 11
                     }, undefined)
                 }, void 0, false, {
-                    fileName: "src/components/browsebar.js",
+                    fileName: "public/components/browsebar.js",
                     lineNumber: 11,
                     columnNumber: 9
                 }, undefined),
@@ -30916,12 +30916,12 @@ const Browsebar = ()=>{
                         to: "/authors",
                         children: "Authors"
                     }, void 0, false, {
-                        fileName: "src/components/browsebar.js",
+                        fileName: "public/components/browsebar.js",
                         lineNumber: 15,
                         columnNumber: 11
                     }, undefined)
                 }, void 0, false, {
-                    fileName: "src/components/browsebar.js",
+                    fileName: "public/components/browsebar.js",
                     lineNumber: 14,
                     columnNumber: 9
                 }, undefined),
@@ -30930,12 +30930,12 @@ const Browsebar = ()=>{
                         to: "/incipits",
                         children: "Incipits"
                     }, void 0, false, {
-                        fileName: "src/components/browsebar.js",
+                        fileName: "public/components/browsebar.js",
                         lineNumber: 18,
                         columnNumber: 11
                     }, undefined)
                 }, void 0, false, {
-                    fileName: "src/components/browsebar.js",
+                    fileName: "public/components/browsebar.js",
                     lineNumber: 17,
                     columnNumber: 9
                 }, undefined),
@@ -30944,12 +30944,12 @@ const Browsebar = ()=>{
                         to: "/contributors",
                         children: "Contributors"
                     }, void 0, false, {
-                        fileName: "src/components/browsebar.js",
+                        fileName: "public/components/browsebar.js",
                         lineNumber: 21,
                         columnNumber: 11
                     }, undefined)
                 }, void 0, false, {
-                    fileName: "src/components/browsebar.js",
+                    fileName: "public/components/browsebar.js",
                     lineNumber: 20,
                     columnNumber: 9
                 }, undefined),
@@ -30958,12 +30958,12 @@ const Browsebar = ()=>{
                         href: "https://chmtl.indiana.edu/tml/concordances",
                         children: "Concordances"
                     }, void 0, false, {
-                        fileName: "src/components/browsebar.js",
+                        fileName: "public/components/browsebar.js",
                         lineNumber: 24,
                         columnNumber: 11
                     }, undefined)
                 }, void 0, false, {
-                    fileName: "src/components/browsebar.js",
+                    fileName: "public/components/browsebar.js",
                     lineNumber: 23,
                     columnNumber: 9
                 }, undefined),
@@ -30973,23 +30973,23 @@ const Browsebar = ()=>{
                         itemProp: "url",
                         children: "Search"
                     }, void 0, false, {
-                        fileName: "src/components/browsebar.js",
+                        fileName: "public/components/browsebar.js",
                         lineNumber: 27,
                         columnNumber: 11
                     }, undefined)
                 }, void 0, false, {
-                    fileName: "src/components/browsebar.js",
+                    fileName: "public/components/browsebar.js",
                     lineNumber: 26,
                     columnNumber: 9
                 }, undefined)
             ]
         }, void 0, true, {
-            fileName: "src/components/browsebar.js",
+            fileName: "public/components/browsebar.js",
             lineNumber: 10,
             columnNumber: 7
         }, undefined)
     }, void 0, false, {
-        fileName: "src/components/browsebar.js",
+        fileName: "public/components/browsebar.js",
         lineNumber: 9,
         columnNumber: 5
     }, undefined);
@@ -30999,16 +30999,16 @@ exports.default = Browsebar;
 var _c;
 $RefreshReg$(_c, "Browsebar");
 
-  $parcel$ReactRefreshHelpers$1b63.postlude(module);
+  $parcel$ReactRefreshHelpers$f162.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"fdOAw","../css/site.css":"hT9aR","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"hT9aR":[function() {},{}],"evHix":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$215b = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"fdOAw","../css/site.css":"j1YGJ","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"j1YGJ":[function() {},{}],"k9VeR":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$922d = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$215b.prelude(module);
+$parcel$ReactRefreshHelpers$922d.prelude(module);
 
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
@@ -31022,7 +31022,7 @@ const FilterCol = ()=>{
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
                 children: "Language"
             }, void 0, false, {
-                fileName: "src/components/filtercol.js",
+                fileName: "public/components/filtercol.js",
                 lineNumber: 6,
                 columnNumber: 7
             }, undefined),
@@ -31033,7 +31033,7 @@ const FilterCol = ()=>{
                 className: "cb",
                 value: "Latin"
             }, void 0, false, {
-                fileName: "src/components/filtercol.js",
+                fileName: "public/components/filtercol.js",
                 lineNumber: 7,
                 columnNumber: 7
             }, undefined),
@@ -31041,12 +31041,12 @@ const FilterCol = ()=>{
                 htmlFor: "Latin",
                 children: "Latin"
             }, void 0, false, {
-                fileName: "src/components/filtercol.js",
+                fileName: "public/components/filtercol.js",
                 lineNumber: 14,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
-                fileName: "src/components/filtercol.js",
+                fileName: "public/components/filtercol.js",
                 lineNumber: 15,
                 columnNumber: 7
             }, undefined),
@@ -31057,7 +31057,7 @@ const FilterCol = ()=>{
                 className: "cb",
                 value: "Italian"
             }, void 0, false, {
-                fileName: "src/components/filtercol.js",
+                fileName: "public/components/filtercol.js",
                 lineNumber: 16,
                 columnNumber: 7
             }, undefined),
@@ -31065,12 +31065,12 @@ const FilterCol = ()=>{
                 htmlFor: "Italian",
                 children: "Italian"
             }, void 0, false, {
-                fileName: "src/components/filtercol.js",
+                fileName: "public/components/filtercol.js",
                 lineNumber: 23,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
-                fileName: "src/components/filtercol.js",
+                fileName: "public/components/filtercol.js",
                 lineNumber: 24,
                 columnNumber: 7
             }, undefined),
@@ -31081,7 +31081,7 @@ const FilterCol = ()=>{
                 className: "cb",
                 value: "French"
             }, void 0, false, {
-                fileName: "src/components/filtercol.js",
+                fileName: "public/components/filtercol.js",
                 lineNumber: 25,
                 columnNumber: 7
             }, undefined),
@@ -31089,12 +31089,12 @@ const FilterCol = ()=>{
                 htmlFor: "French",
                 children: "French"
             }, void 0, false, {
-                fileName: "src/components/filtercol.js",
+                fileName: "public/components/filtercol.js",
                 lineNumber: 32,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
-                fileName: "src/components/filtercol.js",
+                fileName: "public/components/filtercol.js",
                 lineNumber: 33,
                 columnNumber: 7
             }, undefined),
@@ -31105,7 +31105,7 @@ const FilterCol = ()=>{
                 className: "cb",
                 value: "English"
             }, void 0, false, {
-                fileName: "src/components/filtercol.js",
+                fileName: "public/components/filtercol.js",
                 lineNumber: 34,
                 columnNumber: 7
             }, undefined),
@@ -31113,14 +31113,14 @@ const FilterCol = ()=>{
                 htmlFor: "English",
                 children: "English"
             }, void 0, false, {
-                fileName: "src/components/filtercol.js",
+                fileName: "public/components/filtercol.js",
                 lineNumber: 41,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
                 children: "Century"
             }, void 0, false, {
-                fileName: "src/components/filtercol.js",
+                fileName: "public/components/filtercol.js",
                 lineNumber: 42,
                 columnNumber: 7
             }, undefined),
@@ -31131,7 +31131,7 @@ const FilterCol = ()=>{
                 className: "cb",
                 value: "4"
             }, void 0, false, {
-                fileName: "src/components/filtercol.js",
+                fileName: "public/components/filtercol.js",
                 lineNumber: 43,
                 columnNumber: 7
             }, undefined),
@@ -31139,12 +31139,12 @@ const FilterCol = ()=>{
                 htmlFor: "fifthc",
                 children: "400-499"
             }, void 0, false, {
-                fileName: "src/components/filtercol.js",
+                fileName: "public/components/filtercol.js",
                 lineNumber: 50,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
-                fileName: "src/components/filtercol.js",
+                fileName: "public/components/filtercol.js",
                 lineNumber: 51,
                 columnNumber: 7
             }, undefined),
@@ -31155,7 +31155,7 @@ const FilterCol = ()=>{
                 className: "cb",
                 value: "5"
             }, void 0, false, {
-                fileName: "src/components/filtercol.js",
+                fileName: "public/components/filtercol.js",
                 lineNumber: 52,
                 columnNumber: 7
             }, undefined),
@@ -31163,12 +31163,12 @@ const FilterCol = ()=>{
                 htmlFor: "fifteenthc",
                 children: "500-599"
             }, void 0, false, {
-                fileName: "src/components/filtercol.js",
+                fileName: "public/components/filtercol.js",
                 lineNumber: 59,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
-                fileName: "src/components/filtercol.js",
+                fileName: "public/components/filtercol.js",
                 lineNumber: 60,
                 columnNumber: 7
             }, undefined),
@@ -31179,7 +31179,7 @@ const FilterCol = ()=>{
                 className: "cb",
                 value: "14"
             }, void 0, false, {
-                fileName: "src/components/filtercol.js",
+                fileName: "public/components/filtercol.js",
                 lineNumber: 61,
                 columnNumber: 7
             }, undefined),
@@ -31187,12 +31187,12 @@ const FilterCol = ()=>{
                 htmlFor: "fifteenthc",
                 children: "1400-1499"
             }, void 0, false, {
-                fileName: "src/components/filtercol.js",
+                fileName: "public/components/filtercol.js",
                 lineNumber: 68,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
-                fileName: "src/components/filtercol.js",
+                fileName: "public/components/filtercol.js",
                 lineNumber: 69,
                 columnNumber: 7
             }, undefined),
@@ -31203,7 +31203,7 @@ const FilterCol = ()=>{
                 className: "cb",
                 value: "15"
             }, void 0, false, {
-                fileName: "src/components/filtercol.js",
+                fileName: "public/components/filtercol.js",
                 lineNumber: 70,
                 columnNumber: 7
             }, undefined),
@@ -31211,12 +31211,12 @@ const FilterCol = ()=>{
                 htmlFor: "sixteenthc",
                 children: "1500-1599"
             }, void 0, false, {
-                fileName: "src/components/filtercol.js",
+                fileName: "public/components/filtercol.js",
                 lineNumber: 77,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
-                fileName: "src/components/filtercol.js",
+                fileName: "public/components/filtercol.js",
                 lineNumber: 78,
                 columnNumber: 7
             }, undefined),
@@ -31227,7 +31227,7 @@ const FilterCol = ()=>{
                 className: "cb",
                 value: "16"
             }, void 0, false, {
-                fileName: "src/components/filtercol.js",
+                fileName: "public/components/filtercol.js",
                 lineNumber: 79,
                 columnNumber: 7
             }, undefined),
@@ -31235,12 +31235,12 @@ const FilterCol = ()=>{
                 htmlFor: "seventeenthc",
                 children: "1600-1699"
             }, void 0, false, {
-                fileName: "src/components/filtercol.js",
+                fileName: "public/components/filtercol.js",
                 lineNumber: 86,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
-                fileName: "src/components/filtercol.js",
+                fileName: "public/components/filtercol.js",
                 lineNumber: 87,
                 columnNumber: 7
             }, undefined),
@@ -31251,7 +31251,7 @@ const FilterCol = ()=>{
                 className: "cb",
                 value: "17"
             }, void 0, false, {
-                fileName: "src/components/filtercol.js",
+                fileName: "public/components/filtercol.js",
                 lineNumber: 88,
                 columnNumber: 7
             }, undefined),
@@ -31259,23 +31259,23 @@ const FilterCol = ()=>{
                 htmlFor: "eighteenthc",
                 children: "1700-1799"
             }, void 0, false, {
-                fileName: "src/components/filtercol.js",
+                fileName: "public/components/filtercol.js",
                 lineNumber: 95,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
-                fileName: "src/components/filtercol.js",
+                fileName: "public/components/filtercol.js",
                 lineNumber: 96,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
-                fileName: "src/components/filtercol.js",
+                fileName: "public/components/filtercol.js",
                 lineNumber: 97,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
-        fileName: "src/components/filtercol.js",
+        fileName: "public/components/filtercol.js",
         lineNumber: 5,
         columnNumber: 5
     }, undefined);
@@ -31285,16 +31285,363 @@ exports.default = FilterCol;
 var _c;
 $RefreshReg$(_c, "FilterCol");
 
-  $parcel$ReactRefreshHelpers$215b.postlude(module);
+  $parcel$ReactRefreshHelpers$922d.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"ck0Hv":[function() {},{}],"hzWIN":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$af48 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"eBEt0":[function() {},{}],"iN23B":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$b8d0 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$af48.prelude(module);
+$parcel$ReactRefreshHelpers$b8d0.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _navbarJs = require("./navbar.js");
+var _navbarJsDefault = parcelHelpers.interopDefault(_navbarJs);
+var _browsebarJs = require("./browsebar.js");
+var _browsebarJsDefault = parcelHelpers.interopDefault(_browsebarJs);
+var _filtercolJs = require("./filtercol.js");
+var _filtercolJsDefault = parcelHelpers.interopDefault(_filtercolJs);
+var _browseStyleCss = require("../css/browse-style.css");
+var _s = $RefreshSig$();
+const Title = (props)=>{
+    var titlesArr = [];
+    for(var i = 0; i < props.title.treatises.length; i++)titlesArr.push(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+        className: "has-hover-card",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                children: props.title.treatises[i].title
+            }, void 0, false, {
+                fileName: "public/components/authorList.js",
+                lineNumber: 12,
+                columnNumber: 9
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                className: "hover-card",
+                children: [
+                    props.title.treatises[i].versions[0] !== undefined && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                href: props.title.treatises[i].versions[0].url,
+                                className: "source",
+                                children: props.title.treatises[i].versions[0].source
+                            }, void 0, false, {
+                                fileName: "public/components/authorList.js",
+                                lineNumber: 16,
+                                columnNumber: 15
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                fileName: "public/components/authorList.js",
+                                lineNumber: 22,
+                                columnNumber: 15
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "public/components/authorList.js",
+                        lineNumber: 15,
+                        columnNumber: 13
+                    }, undefined),
+                    props.title.treatises[i].versions[1] !== undefined && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                href: props.title.treatises[i].versions[1].url,
+                                className: "source",
+                                children: props.title.treatises[i].versions[1].source
+                            }, void 0, false, {
+                                fileName: "public/components/authorList.js",
+                                lineNumber: 27,
+                                columnNumber: 15
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                fileName: "public/components/authorList.js",
+                                lineNumber: 33,
+                                columnNumber: 15
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "public/components/authorList.js",
+                        lineNumber: 26,
+                        columnNumber: 13
+                    }, undefined),
+                    props.title.treatises[i].versions[2] !== undefined && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                href: props.title.treatises[i].versions[2].url,
+                                className: "source",
+                                children: props.title.treatises[i].versions[2].source
+                            }, void 0, false, {
+                                fileName: "public/components/authorList.js",
+                                lineNumber: 38,
+                                columnNumber: 15
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                fileName: "public/components/authorList.js",
+                                lineNumber: 44,
+                                columnNumber: 15
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "public/components/authorList.js",
+                        lineNumber: 37,
+                        columnNumber: 13
+                    }, undefined),
+                    props.title.treatises[i].versions[3] !== undefined && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                href: props.title.treatises[i].versions[3].url,
+                                className: "source",
+                                children: props.title.treatises[i].versions[3].source
+                            }, void 0, false, {
+                                fileName: "public/components/authorList.js",
+                                lineNumber: 49,
+                                columnNumber: 15
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                fileName: "public/components/authorList.js",
+                                lineNumber: 55,
+                                columnNumber: 15
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "public/components/authorList.js",
+                        lineNumber: 48,
+                        columnNumber: 13
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "public/components/authorList.js",
+                lineNumber: 13,
+                columnNumber: 9
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "public/components/authorList.js",
+        lineNumber: 11,
+        columnNumber: 7
+    }, undefined));
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("tr", {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
+                children: props.title._id
+            }, void 0, false, {
+                fileName: "public/components/authorList.js",
+                lineNumber: 65,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
+                children: titlesArr
+            }, void 0, false, {
+                fileName: "public/components/authorList.js",
+                lineNumber: 66,
+                columnNumber: 7
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "public/components/authorList.js",
+        lineNumber: 64,
+        columnNumber: 5
+    }, undefined);
+};
+_c = Title;
+function AuthorList() {
+    _s();
+    const [titles1, setTitles] = (0, _react.useState)([]);
+    (0, _react.useEffect)(()=>{
+        getTitles();
+        return;
+    }, []); // eslint-disable-line react-hooks/exhaustive-deps
+    async function getTitles() {
+        const response = await fetch(`https://psghmt.herokuapp.com/authors/`);
+        const titles = await response.json();
+        setTitles(titles);
+        const cblist = document.getElementsByClassName("cb");
+        for (const el of cblist)el.checked = false;
+    }
+    async function submission() {
+        var markedCheckbox = document.querySelectorAll('input[type="checkbox"]:checked');
+        var empty = [].filter.call(markedCheckbox, function(el) {
+            return !el.checked;
+        });
+        if (markedCheckbox.length == empty.length) {
+            const response = await fetch(`https://psghmt.herokuapp.com/authors/`);
+            const titles = await response.json();
+            setTitles(titles);
+        }
+        var cbsum = [];
+        for (var checkbox of markedCheckbox){
+            cbsum.push(checkbox.name + "=" + checkbox.value);
+            var cbsum1 = cbsum.toString();
+            var cbsumWoC = cbsum1.replace(/,/g, "&");
+        }
+        const res = await fetch(`https://psghmt.herokuapp.com/autfilters?${cbsumWoC}`);
+        const titles = await res.json();
+        setTitles(titles);
+    }
+    // This method will map out the records on the table
+    function titleList() {
+        return titles1.map((title)=>{
+            return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Title, {
+                title: title
+            }, title._id, false, {
+                fileName: "public/components/authorList.js",
+                lineNumber: 123,
+                columnNumber: 14
+            }, this);
+        });
+    }
+    // This following section will display the table with the records of individuals.
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _navbarJsDefault.default), {}, void 0, false, {
+                fileName: "public/components/authorList.js",
+                lineNumber: 130,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _browsebarJsDefault.default), {}, void 0, false, {
+                fileName: "public/components/authorList.js",
+                lineNumber: 131,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "filterNresults",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "filterbar",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                                children: "Filter by:"
+                            }, void 0, false, {
+                                fileName: "public/components/authorList.js",
+                                lineNumber: 134,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("form", {
+                                id: "filterMenu",
+                                onChange: submission,
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _filtercolJsDefault.default), {}, void 0, false, {
+                                    fileName: "public/components/authorList.js",
+                                    lineNumber: 136,
+                                    columnNumber: 13
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "public/components/authorList.js",
+                                lineNumber: 135,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                className: "button",
+                                id: "reset",
+                                onClick: getTitles,
+                                children: "Reset"
+                            }, void 0, false, {
+                                fileName: "public/components/authorList.js",
+                                lineNumber: 138,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "public/components/authorList.js",
+                        lineNumber: 133,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "results",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                                id: "result"
+                            }, void 0, false, {
+                                fileName: "public/components/authorList.js",
+                                lineNumber: 143,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("table", {
+                                className: "table table-striped",
+                                style: {
+                                    marginTop: 20
+                                },
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("thead", {
+                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("tr", {
+                                            children: [
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
+                                                    children: "Authors"
+                                                }, void 0, false, {
+                                                    fileName: "public/components/authorList.js",
+                                                    lineNumber: 147,
+                                                    columnNumber: 17
+                                                }, this),
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
+                                                    children: "Treatises"
+                                                }, void 0, false, {
+                                                    fileName: "public/components/authorList.js",
+                                                    lineNumber: 148,
+                                                    columnNumber: 17
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "public/components/authorList.js",
+                                            lineNumber: 146,
+                                            columnNumber: 15
+                                        }, this)
+                                    }, void 0, false, {
+                                        fileName: "public/components/authorList.js",
+                                        lineNumber: 145,
+                                        columnNumber: 13
+                                    }, this),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("tbody", {
+                                        children: titleList()
+                                    }, void 0, false, {
+                                        fileName: "public/components/authorList.js",
+                                        lineNumber: 151,
+                                        columnNumber: 13
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "public/components/authorList.js",
+                                lineNumber: 144,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "public/components/authorList.js",
+                        lineNumber: 142,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "public/components/authorList.js",
+                lineNumber: 132,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "public/components/authorList.js",
+        lineNumber: 129,
+        columnNumber: 5
+    }, this);
+}
+exports.default = AuthorList;
+_s(AuthorList, "Bd3zm9HgMFhT6qecl6C5XUZJrlI=");
+_c1 = AuthorList;
+var _c, _c1;
+$RefreshReg$(_c, "Title");
+$RefreshReg$(_c1, "AuthorList");
+
+  $parcel$ReactRefreshHelpers$b8d0.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./navbar.js":"fgZOy","./browsebar.js":"7z9X3","./filtercol.js":"k9VeR","../css/browse-style.css":"eBEt0","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"eBEt0":[function() {},{}],"lkXky":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$f660 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$f660.prelude(module);
 
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
@@ -31317,7 +31664,7 @@ const Title = (props)=>{
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                 children: props.title.versions[i].incipit
             }, void 0, false, {
-                fileName: "src/components/incList.js",
+                fileName: "public/components/incList.js",
                 lineNumber: 12,
                 columnNumber: 9
             }, undefined),
@@ -31329,7 +31676,7 @@ const Title = (props)=>{
                     props.title.title,
                     " ",
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
-                        fileName: "src/components/incList.js",
+                        fileName: "public/components/incList.js",
                         lineNumber: 14,
                         columnNumber: 57
                     }, undefined),
@@ -31340,30 +31687,30 @@ const Title = (props)=>{
                                 className: "source",
                                 children: props.title.versions[i].source
                             }, void 0, false, {
-                                fileName: "src/components/incList.js",
+                                fileName: "public/components/incList.js",
                                 lineNumber: 16,
                                 columnNumber: 13
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
-                                fileName: "src/components/incList.js",
+                                fileName: "public/components/incList.js",
                                 lineNumber: 19,
                                 columnNumber: 13
                             }, undefined)
                         ]
                     }, void 0, true, {
-                        fileName: "src/components/incList.js",
+                        fileName: "public/components/incList.js",
                         lineNumber: 15,
                         columnNumber: 11
                     }, undefined)
                 ]
             }, void 0, true, {
-                fileName: "src/components/incList.js",
+                fileName: "public/components/incList.js",
                 lineNumber: 13,
                 columnNumber: 9
             }, undefined)
         ]
     }, void 0, true, {
-        fileName: "src/components/incList.js",
+        fileName: "public/components/incList.js",
         lineNumber: 11,
         columnNumber: 7
     }, undefined));
@@ -31371,12 +31718,12 @@ const Title = (props)=>{
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
             children: incArr
         }, void 0, false, {
-            fileName: "src/components/incList.js",
+            fileName: "public/components/incList.js",
             lineNumber: 28,
             columnNumber: 7
         }, undefined)
     }, void 0, false, {
-        fileName: "src/components/incList.js",
+        fileName: "public/components/incList.js",
         lineNumber: 27,
         columnNumber: 5
     }, undefined);
@@ -31390,7 +31737,7 @@ function IncipitList() {
         return;
     }, []); // eslint-disable-line react-hooks/exhaustive-deps
     async function getTitles() {
-        const response = await fetch(`http://localhost:5000/incipits/`);
+        const response = await fetch(`https://psghmt.herokuapp.com/incipits/`);
         const titles = await response.json();
         setTitles(titles);
         const cblist = document.getElementsByClassName("cb");
@@ -31402,7 +31749,7 @@ function IncipitList() {
             return !el.checked;
         });
         if (markedCheckbox.length == empty.length) {
-            const response = await fetch(`http://localhost:5000/incipits/`);
+            const response = await fetch(`https://psghmt.herokuapp.com/incipits/`);
             const titles = await response.json();
             setTitles(titles);
         }
@@ -31412,7 +31759,7 @@ function IncipitList() {
             var cbsum1 = cbsum.toString();
             var cbsumWoC = cbsum1.replace(/,/g, "&");
         }
-        const res = await fetch(`http://localhost:5000/incfilters?${cbsumWoC}`);
+        const res = await fetch(`https://psghmt.herokuapp.com/incfilters?${cbsumWoC}`);
         const titles = await res.json();
         setTitles(titles);
     }
@@ -31422,8 +31769,8 @@ function IncipitList() {
             return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Title, {
                 title: title
             }, title._id, false, {
-                fileName: "src/components/incList.js",
-                lineNumber: 121,
+                fileName: "public/components/incList.js",
+                lineNumber: 77,
                 columnNumber: 14
             }, this);
         });
@@ -31432,13 +31779,13 @@ function IncipitList() {
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _navbarJsDefault.default), {}, void 0, false, {
-                fileName: "src/components/incList.js",
-                lineNumber: 128,
+                fileName: "public/components/incList.js",
+                lineNumber: 84,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _browsebarJsDefault.default), {}, void 0, false, {
-                fileName: "src/components/incList.js",
-                lineNumber: 129,
+                fileName: "public/components/incList.js",
+                lineNumber: 85,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -31450,21 +31797,21 @@ function IncipitList() {
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
                                 children: "Filter by:"
                             }, void 0, false, {
-                                fileName: "src/components/incList.js",
-                                lineNumber: 132,
+                                fileName: "public/components/incList.js",
+                                lineNumber: 88,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("form", {
                                 id: "filterMenu",
                                 onChange: submission,
                                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _filtercolJsDefault.default), {}, void 0, false, {
-                                    fileName: "src/components/incList.js",
-                                    lineNumber: 134,
+                                    fileName: "public/components/incList.js",
+                                    lineNumber: 90,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
-                                fileName: "src/components/incList.js",
-                                lineNumber: 133,
+                                fileName: "public/components/incList.js",
+                                lineNumber: 89,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -31473,14 +31820,14 @@ function IncipitList() {
                                 onClick: getTitles,
                                 children: "Reset"
                             }, void 0, false, {
-                                fileName: "src/components/incList.js",
-                                lineNumber: 136,
+                                fileName: "public/components/incList.js",
+                                lineNumber: 92,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
-                        fileName: "src/components/incList.js",
-                        lineNumber: 131,
+                        fileName: "public/components/incList.js",
+                        lineNumber: 87,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -31489,8 +31836,8 @@ function IncipitList() {
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
                                 id: "result"
                             }, void 0, false, {
-                                fileName: "src/components/incList.js",
-                                lineNumber: 141,
+                                fileName: "public/components/incList.js",
+                                lineNumber: 97,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("table", {
@@ -31504,49 +31851,49 @@ function IncipitList() {
                                             children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
                                                 children: "Incipits"
                                             }, void 0, false, {
-                                                fileName: "src/components/incList.js",
-                                                lineNumber: 145,
+                                                fileName: "public/components/incList.js",
+                                                lineNumber: 101,
                                                 columnNumber: 17
                                             }, this)
                                         }, void 0, false, {
-                                            fileName: "src/components/incList.js",
-                                            lineNumber: 144,
+                                            fileName: "public/components/incList.js",
+                                            lineNumber: 100,
                                             columnNumber: 15
                                         }, this)
                                     }, void 0, false, {
-                                        fileName: "src/components/incList.js",
-                                        lineNumber: 143,
+                                        fileName: "public/components/incList.js",
+                                        lineNumber: 99,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("tbody", {
                                         children: titleList()
                                     }, void 0, false, {
-                                        fileName: "src/components/incList.js",
-                                        lineNumber: 148,
+                                        fileName: "public/components/incList.js",
+                                        lineNumber: 104,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
-                                fileName: "src/components/incList.js",
-                                lineNumber: 142,
+                                fileName: "public/components/incList.js",
+                                lineNumber: 98,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
-                        fileName: "src/components/incList.js",
-                        lineNumber: 140,
+                        fileName: "public/components/incList.js",
+                        lineNumber: 96,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
-                fileName: "src/components/incList.js",
-                lineNumber: 130,
+                fileName: "public/components/incList.js",
+                lineNumber: 86,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
-        fileName: "src/components/incList.js",
-        lineNumber: 127,
+        fileName: "public/components/incList.js",
+        lineNumber: 83,
         columnNumber: 5
     }, this);
 }
@@ -31557,16 +31904,16 @@ var _c, _c1;
 $RefreshReg$(_c, "Title");
 $RefreshReg$(_c1, "IncipitList");
 
-  $parcel$ReactRefreshHelpers$af48.postlude(module);
+  $parcel$ReactRefreshHelpers$f660.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./navbar.js":"dtZi7","./browsebar.js":"iry4m","./filtercol.js":"evHix","../css/browse-style.css":"ck0Hv","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"ck0Hv":[function() {},{}],"476Ls":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$ea42 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./navbar.js":"fgZOy","./browsebar.js":"7z9X3","./filtercol.js":"k9VeR","../css/browse-style.css":"eBEt0","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"eBEt0":[function() {},{}],"gutUM":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$5201 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$ea42.prelude(module);
+$parcel$ReactRefreshHelpers$5201.prelude(module);
 
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
@@ -31589,7 +31936,7 @@ const Title = (props)=>{
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                 children: props.title.treatises[i].title
             }, void 0, false, {
-                fileName: "src/components/contributorList.js",
+                fileName: "public/components/contributorList.js",
                 lineNumber: 12,
                 columnNumber: 9
             }, undefined),
@@ -31602,7 +31949,7 @@ const Title = (props)=>{
                     props.title.treatises[i].title,
                     " ",
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
-                        fileName: "src/components/contributorList.js",
+                        fileName: "public/components/contributorList.js",
                         lineNumber: 15,
                         columnNumber: 44
                     }, undefined),
@@ -31612,7 +31959,7 @@ const Title = (props)=>{
                                 className: props.title.treatises[i].versions[0].contType,
                                 children: "C"
                             }, void 0, false, {
-                                fileName: "src/components/contributorList.js",
+                                fileName: "public/components/contributorList.js",
                                 lineNumber: 19,
                                 columnNumber: 17
                             }, undefined),
@@ -31620,7 +31967,7 @@ const Title = (props)=>{
                                 className: props.title.treatises[i].versions[0].contType,
                                 children: "A"
                             }, void 0, false, {
-                                fileName: "src/components/contributorList.js",
+                                fileName: "public/components/contributorList.js",
                                 lineNumber: 24,
                                 columnNumber: 17
                             }, undefined),
@@ -31628,7 +31975,7 @@ const Title = (props)=>{
                                 className: props.title.treatises[i].versions[0].contType,
                                 children: "E"
                             }, void 0, false, {
-                                fileName: "src/components/contributorList.js",
+                                fileName: "public/components/contributorList.js",
                                 lineNumber: 29,
                                 columnNumber: 17
                             }, undefined),
@@ -31637,18 +31984,18 @@ const Title = (props)=>{
                                 className: "source",
                                 children: props.title.treatises[i].versions[0].source
                             }, void 0, false, {
-                                fileName: "src/components/contributorList.js",
+                                fileName: "public/components/contributorList.js",
                                 lineNumber: 33,
                                 columnNumber: 15
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
-                                fileName: "src/components/contributorList.js",
+                                fileName: "public/components/contributorList.js",
                                 lineNumber: 39,
                                 columnNumber: 15
                             }, undefined)
                         ]
                     }, void 0, true, {
-                        fileName: "src/components/contributorList.js",
+                        fileName: "public/components/contributorList.js",
                         lineNumber: 17,
                         columnNumber: 13
                     }, undefined),
@@ -31657,7 +32004,7 @@ const Title = (props)=>{
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                                 className: props.title.treatises[i].versions[1].contType
                             }, void 0, false, {
-                                fileName: "src/components/contributorList.js",
+                                fileName: "public/components/contributorList.js",
                                 lineNumber: 44,
                                 columnNumber: 15
                             }, undefined),
@@ -31666,18 +32013,18 @@ const Title = (props)=>{
                                 className: "source",
                                 children: props.title.treatises[i].versions[1].source
                             }, void 0, false, {
-                                fileName: "src/components/contributorList.js",
+                                fileName: "public/components/contributorList.js",
                                 lineNumber: 47,
                                 columnNumber: 15
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
-                                fileName: "src/components/contributorList.js",
+                                fileName: "public/components/contributorList.js",
                                 lineNumber: 53,
                                 columnNumber: 15
                             }, undefined)
                         ]
                     }, void 0, true, {
-                        fileName: "src/components/contributorList.js",
+                        fileName: "public/components/contributorList.js",
                         lineNumber: 43,
                         columnNumber: 13
                     }, undefined),
@@ -31686,7 +32033,7 @@ const Title = (props)=>{
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                                 className: props.title.treatises[i].versions[2].contType
                             }, void 0, false, {
-                                fileName: "src/components/contributorList.js",
+                                fileName: "public/components/contributorList.js",
                                 lineNumber: 58,
                                 columnNumber: 15
                             }, undefined),
@@ -31695,18 +32042,18 @@ const Title = (props)=>{
                                 className: "source",
                                 children: props.title.treatises[i].versions[2].source
                             }, void 0, false, {
-                                fileName: "src/components/contributorList.js",
+                                fileName: "public/components/contributorList.js",
                                 lineNumber: 61,
                                 columnNumber: 15
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
-                                fileName: "src/components/contributorList.js",
+                                fileName: "public/components/contributorList.js",
                                 lineNumber: 67,
                                 columnNumber: 15
                             }, undefined)
                         ]
                     }, void 0, true, {
-                        fileName: "src/components/contributorList.js",
+                        fileName: "public/components/contributorList.js",
                         lineNumber: 57,
                         columnNumber: 13
                     }, undefined),
@@ -31715,7 +32062,7 @@ const Title = (props)=>{
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                                 className: props.title.treatises[i].versions[3].contType
                             }, void 0, false, {
-                                fileName: "src/components/contributorList.js",
+                                fileName: "public/components/contributorList.js",
                                 lineNumber: 72,
                                 columnNumber: 15
                             }, undefined),
@@ -31724,30 +32071,30 @@ const Title = (props)=>{
                                 className: "source",
                                 children: props.title.treatises[i].versions[3].source
                             }, void 0, false, {
-                                fileName: "src/components/contributorList.js",
+                                fileName: "public/components/contributorList.js",
                                 lineNumber: 75,
                                 columnNumber: 15
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
-                                fileName: "src/components/contributorList.js",
+                                fileName: "public/components/contributorList.js",
                                 lineNumber: 81,
                                 columnNumber: 15
                             }, undefined)
                         ]
                     }, void 0, true, {
-                        fileName: "src/components/contributorList.js",
+                        fileName: "public/components/contributorList.js",
                         lineNumber: 71,
                         columnNumber: 13
                     }, undefined)
                 ]
             }, void 0, true, {
-                fileName: "src/components/contributorList.js",
+                fileName: "public/components/contributorList.js",
                 lineNumber: 13,
                 columnNumber: 9
             }, undefined)
         ]
     }, void 0, true, {
-        fileName: "src/components/contributorList.js",
+        fileName: "public/components/contributorList.js",
         lineNumber: 11,
         columnNumber: 7
     }, undefined));
@@ -31756,20 +32103,20 @@ const Title = (props)=>{
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
                 children: props.title._id
             }, void 0, false, {
-                fileName: "src/components/contributorList.js",
+                fileName: "public/components/contributorList.js",
                 lineNumber: 90,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
                 children: titlesArr
             }, void 0, false, {
-                fileName: "src/components/contributorList.js",
+                fileName: "public/components/contributorList.js",
                 lineNumber: 91,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
-        fileName: "src/components/contributorList.js",
+        fileName: "public/components/contributorList.js",
         lineNumber: 89,
         columnNumber: 5
     }, undefined);
@@ -31783,7 +32130,7 @@ function ContributorList() {
         return;
     }, []); // eslint-disable-line react-hooks/exhaustive-deps
     async function getTitles() {
-        const response = await fetch(`http://localhost:5000/contributors/`);
+        const response = await fetch(`https://psghmt.herokuapp.com/contributors/`);
         const titles = await response.json();
         setTitles(titles);
         const cblist = document.getElementsByClassName("cb");
@@ -31795,7 +32142,7 @@ function ContributorList() {
             return !el.checked;
         });
         if (markedCheckbox.length == empty.length) {
-            const response = await fetch(`http://localhost:5000/contributors/`);
+            const response = await fetch(`https://psghmt.herokuapp.com/contributors/`);
             const titles = await response.json();
             setTitles(titles);
         }
@@ -31805,7 +32152,7 @@ function ContributorList() {
             var cbsum1 = cbsum.toString();
             var cbsumWoC = cbsum1.replace(/,/g, "&");
         }
-        const res = await fetch(`http://localhost:5000/contfilters?${cbsumWoC}`);
+        const res = await fetch(`https://psghmt.herokuapp.com/contfilters?${cbsumWoC}`);
         const titles = await res.json();
         setTitles(titles);
     }
@@ -31815,7 +32162,7 @@ function ContributorList() {
             return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Title, {
                 title: title
             }, title._id, false, {
-                fileName: "src/components/contributorList.js",
+                fileName: "public/components/contributorList.js",
                 lineNumber: 140,
                 columnNumber: 14
             }, this);
@@ -31825,12 +32172,12 @@ function ContributorList() {
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _navbarJsDefault.default), {}, void 0, false, {
-                fileName: "src/components/contributorList.js",
+                fileName: "public/components/contributorList.js",
                 lineNumber: 147,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _browsebarJsDefault.default), {}, void 0, false, {
-                fileName: "src/components/contributorList.js",
+                fileName: "public/components/contributorList.js",
                 lineNumber: 148,
                 columnNumber: 7
             }, this),
@@ -31843,7 +32190,7 @@ function ContributorList() {
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
                                 children: "Filter by:"
                             }, void 0, false, {
-                                fileName: "src/components/contributorList.js",
+                                fileName: "public/components/contributorList.js",
                                 lineNumber: 151,
                                 columnNumber: 11
                             }, this),
@@ -31851,12 +32198,12 @@ function ContributorList() {
                                 id: "filterMenu",
                                 onChange: submission,
                                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _filtercolJsDefault.default), {}, void 0, false, {
-                                    fileName: "src/components/contributorList.js",
+                                    fileName: "public/components/contributorList.js",
                                     lineNumber: 153,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
-                                fileName: "src/components/contributorList.js",
+                                fileName: "public/components/contributorList.js",
                                 lineNumber: 152,
                                 columnNumber: 11
                             }, this),
@@ -31866,13 +32213,13 @@ function ContributorList() {
                                 onClick: getTitles,
                                 children: "Reset"
                             }, void 0, false, {
-                                fileName: "src/components/contributorList.js",
+                                fileName: "public/components/contributorList.js",
                                 lineNumber: 155,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
-                        fileName: "src/components/contributorList.js",
+                        fileName: "public/components/contributorList.js",
                         lineNumber: 150,
                         columnNumber: 9
                     }, this),
@@ -31882,7 +32229,7 @@ function ContributorList() {
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
                                 id: "result"
                             }, void 0, false, {
-                                fileName: "src/components/contributorList.js",
+                                fileName: "public/components/contributorList.js",
                                 lineNumber: 160,
                                 columnNumber: 11
                             }, this),
@@ -31898,56 +32245,56 @@ function ContributorList() {
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
                                                     children: "Contributors"
                                                 }, void 0, false, {
-                                                    fileName: "src/components/contributorList.js",
+                                                    fileName: "public/components/contributorList.js",
                                                     lineNumber: 164,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
                                                     children: "Treatises"
                                                 }, void 0, false, {
-                                                    fileName: "src/components/contributorList.js",
+                                                    fileName: "public/components/contributorList.js",
                                                     lineNumber: 165,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
-                                            fileName: "src/components/contributorList.js",
+                                            fileName: "public/components/contributorList.js",
                                             lineNumber: 163,
                                             columnNumber: 15
                                         }, this)
                                     }, void 0, false, {
-                                        fileName: "src/components/contributorList.js",
+                                        fileName: "public/components/contributorList.js",
                                         lineNumber: 162,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("tbody", {
                                         children: titleList()
                                     }, void 0, false, {
-                                        fileName: "src/components/contributorList.js",
+                                        fileName: "public/components/contributorList.js",
                                         lineNumber: 168,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
-                                fileName: "src/components/contributorList.js",
+                                fileName: "public/components/contributorList.js",
                                 lineNumber: 161,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
-                        fileName: "src/components/contributorList.js",
+                        fileName: "public/components/contributorList.js",
                         lineNumber: 159,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
-                fileName: "src/components/contributorList.js",
+                fileName: "public/components/contributorList.js",
                 lineNumber: 149,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
-        fileName: "src/components/contributorList.js",
+        fileName: "public/components/contributorList.js",
         lineNumber: 146,
         columnNumber: 5
     }, this);
@@ -31959,358 +32306,11 @@ var _c, _c1;
 $RefreshReg$(_c, "Title");
 $RefreshReg$(_c1, "ContributorList");
 
-  $parcel$ReactRefreshHelpers$ea42.postlude(module);
+  $parcel$ReactRefreshHelpers$5201.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./navbar.js":"dtZi7","./browsebar.js":"iry4m","./filtercol.js":"evHix","../css/browse-style.css":"ck0Hv","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"ck0Hv":[function() {},{}],"h5wcj":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$4fd5 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$4fd5.prelude(module);
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./navbar.js":"fgZOy","./browsebar.js":"7z9X3","./filtercol.js":"k9VeR","../css/browse-style.css":"eBEt0","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"eBEt0":[function() {},{}]},["1xC6H","37eO2","7SwCM"], "7SwCM", "parcelRequire94c2")
 
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _navbarJs = require("./navbar.js");
-var _navbarJsDefault = parcelHelpers.interopDefault(_navbarJs);
-var _browsebarJs = require("./browsebar.js");
-var _browsebarJsDefault = parcelHelpers.interopDefault(_browsebarJs);
-var _filtercolJs = require("./filtercol.js");
-var _filtercolJsDefault = parcelHelpers.interopDefault(_filtercolJs);
-var _browseStyleCss = require("../css/browse-style.css");
-var _s = $RefreshSig$();
-const Title = (props)=>{
-    var titlesArr = [];
-    for(var i = 0; i < props.title.treatises.length; i++)titlesArr.push(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-        className: "has-hover-card",
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                children: props.title.treatises[i].title
-            }, void 0, false, {
-                fileName: "src/components/authorList.js",
-                lineNumber: 12,
-                columnNumber: 9
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                className: "hover-card",
-                children: [
-                    props.title.treatises[i].versions[0] !== undefined && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                href: props.title.treatises[i].versions[0].url,
-                                className: "source",
-                                children: props.title.treatises[i].versions[0].source
-                            }, void 0, false, {
-                                fileName: "src/components/authorList.js",
-                                lineNumber: 16,
-                                columnNumber: 15
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
-                                fileName: "src/components/authorList.js",
-                                lineNumber: 22,
-                                columnNumber: 15
-                            }, undefined)
-                        ]
-                    }, void 0, true, {
-                        fileName: "src/components/authorList.js",
-                        lineNumber: 15,
-                        columnNumber: 13
-                    }, undefined),
-                    props.title.treatises[i].versions[1] !== undefined && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                href: props.title.treatises[i].versions[1].url,
-                                className: "source",
-                                children: props.title.treatises[i].versions[1].source
-                            }, void 0, false, {
-                                fileName: "src/components/authorList.js",
-                                lineNumber: 27,
-                                columnNumber: 15
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
-                                fileName: "src/components/authorList.js",
-                                lineNumber: 33,
-                                columnNumber: 15
-                            }, undefined)
-                        ]
-                    }, void 0, true, {
-                        fileName: "src/components/authorList.js",
-                        lineNumber: 26,
-                        columnNumber: 13
-                    }, undefined),
-                    props.title.treatises[i].versions[2] !== undefined && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                href: props.title.treatises[i].versions[2].url,
-                                className: "source",
-                                children: props.title.treatises[i].versions[2].source
-                            }, void 0, false, {
-                                fileName: "src/components/authorList.js",
-                                lineNumber: 38,
-                                columnNumber: 15
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
-                                fileName: "src/components/authorList.js",
-                                lineNumber: 44,
-                                columnNumber: 15
-                            }, undefined)
-                        ]
-                    }, void 0, true, {
-                        fileName: "src/components/authorList.js",
-                        lineNumber: 37,
-                        columnNumber: 13
-                    }, undefined),
-                    props.title.treatises[i].versions[3] !== undefined && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                href: props.title.treatises[i].versions[3].url,
-                                className: "source",
-                                children: props.title.treatises[i].versions[3].source
-                            }, void 0, false, {
-                                fileName: "src/components/authorList.js",
-                                lineNumber: 49,
-                                columnNumber: 15
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
-                                fileName: "src/components/authorList.js",
-                                lineNumber: 55,
-                                columnNumber: 15
-                            }, undefined)
-                        ]
-                    }, void 0, true, {
-                        fileName: "src/components/authorList.js",
-                        lineNumber: 48,
-                        columnNumber: 13
-                    }, undefined)
-                ]
-            }, void 0, true, {
-                fileName: "src/components/authorList.js",
-                lineNumber: 13,
-                columnNumber: 9
-            }, undefined)
-        ]
-    }, void 0, true, {
-        fileName: "src/components/authorList.js",
-        lineNumber: 11,
-        columnNumber: 7
-    }, undefined));
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("tr", {
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
-                children: props.title._id
-            }, void 0, false, {
-                fileName: "src/components/authorList.js",
-                lineNumber: 65,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
-                children: titlesArr
-            }, void 0, false, {
-                fileName: "src/components/authorList.js",
-                lineNumber: 66,
-                columnNumber: 7
-            }, undefined)
-        ]
-    }, void 0, true, {
-        fileName: "src/components/authorList.js",
-        lineNumber: 64,
-        columnNumber: 5
-    }, undefined);
-};
-_c = Title;
-function AuthorList() {
-    _s();
-    const [titles1, setTitles] = (0, _react.useState)([]);
-    (0, _react.useEffect)(()=>{
-        getTitles();
-        return;
-    }, []); // eslint-disable-line react-hooks/exhaustive-deps
-    async function getTitles() {
-        const response = await fetch(`http://localhost:5000/authors/`);
-        const titles = await response.json();
-        setTitles(titles);
-        const cblist = document.getElementsByClassName("cb");
-        for (const el of cblist)el.checked = false;
-    }
-    async function submission() {
-        var markedCheckbox = document.querySelectorAll('input[type="checkbox"]:checked');
-        var empty = [].filter.call(markedCheckbox, function(el) {
-            return !el.checked;
-        });
-        if (markedCheckbox.length == empty.length) {
-            const response = await fetch(`http://localhost:5000/authors/`);
-            const titles = await response.json();
-            setTitles(titles);
-        }
-        var cbsum = [];
-        for (var checkbox of markedCheckbox){
-            cbsum.push(checkbox.name + "=" + checkbox.value);
-            var cbsum1 = cbsum.toString();
-            var cbsumWoC = cbsum1.replace(/,/g, "&");
-        }
-        const res = await fetch(`http://localhost:5000/autfilters?${cbsumWoC}`);
-        const titles = await res.json();
-        setTitles(titles);
-    }
-    // This method will map out the records on the table
-    function titleList() {
-        return titles1.map((title)=>{
-            return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Title, {
-                title: title
-            }, title._id, false, {
-                fileName: "src/components/authorList.js",
-                lineNumber: 123,
-                columnNumber: 14
-            }, this);
-        });
-    }
-    // This following section will display the table with the records of individuals.
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _navbarJsDefault.default), {}, void 0, false, {
-                fileName: "src/components/authorList.js",
-                lineNumber: 130,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _browsebarJsDefault.default), {}, void 0, false, {
-                fileName: "src/components/authorList.js",
-                lineNumber: 131,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "filterNresults",
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "filterbar",
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                                children: "Filter by:"
-                            }, void 0, false, {
-                                fileName: "src/components/authorList.js",
-                                lineNumber: 134,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("form", {
-                                id: "filterMenu",
-                                onChange: submission,
-                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _filtercolJsDefault.default), {}, void 0, false, {
-                                    fileName: "src/components/authorList.js",
-                                    lineNumber: 136,
-                                    columnNumber: 13
-                                }, this)
-                            }, void 0, false, {
-                                fileName: "src/components/authorList.js",
-                                lineNumber: 135,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                                className: "button",
-                                id: "reset",
-                                onClick: getTitles,
-                                children: "Reset"
-                            }, void 0, false, {
-                                fileName: "src/components/authorList.js",
-                                lineNumber: 138,
-                                columnNumber: 11
-                            }, this)
-                        ]
-                    }, void 0, true, {
-                        fileName: "src/components/authorList.js",
-                        lineNumber: 133,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "results",
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                                id: "result"
-                            }, void 0, false, {
-                                fileName: "src/components/authorList.js",
-                                lineNumber: 143,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("table", {
-                                className: "table table-striped",
-                                style: {
-                                    marginTop: 20
-                                },
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("thead", {
-                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("tr", {
-                                            children: [
-                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
-                                                    children: "Authors"
-                                                }, void 0, false, {
-                                                    fileName: "src/components/authorList.js",
-                                                    lineNumber: 147,
-                                                    columnNumber: 17
-                                                }, this),
-                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
-                                                    children: "Treatises"
-                                                }, void 0, false, {
-                                                    fileName: "src/components/authorList.js",
-                                                    lineNumber: 148,
-                                                    columnNumber: 17
-                                                }, this)
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "src/components/authorList.js",
-                                            lineNumber: 146,
-                                            columnNumber: 15
-                                        }, this)
-                                    }, void 0, false, {
-                                        fileName: "src/components/authorList.js",
-                                        lineNumber: 145,
-                                        columnNumber: 13
-                                    }, this),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("tbody", {
-                                        children: titleList()
-                                    }, void 0, false, {
-                                        fileName: "src/components/authorList.js",
-                                        lineNumber: 151,
-                                        columnNumber: 13
-                                    }, this)
-                                ]
-                            }, void 0, true, {
-                                fileName: "src/components/authorList.js",
-                                lineNumber: 144,
-                                columnNumber: 11
-                            }, this)
-                        ]
-                    }, void 0, true, {
-                        fileName: "src/components/authorList.js",
-                        lineNumber: 142,
-                        columnNumber: 9
-                    }, this)
-                ]
-            }, void 0, true, {
-                fileName: "src/components/authorList.js",
-                lineNumber: 132,
-                columnNumber: 7
-            }, this)
-        ]
-    }, void 0, true, {
-        fileName: "src/components/authorList.js",
-        lineNumber: 129,
-        columnNumber: 5
-    }, this);
-}
-exports.default = AuthorList;
-_s(AuthorList, "Bd3zm9HgMFhT6qecl6C5XUZJrlI=");
-_c1 = AuthorList;
-var _c, _c1;
-$RefreshReg$(_c, "Title");
-$RefreshReg$(_c1, "AuthorList");
-
-  $parcel$ReactRefreshHelpers$4fd5.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./navbar.js":"dtZi7","./browsebar.js":"iry4m","./filtercol.js":"evHix","../css/browse-style.css":"ck0Hv","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"ck0Hv":[function() {},{}]},["1xC6H","ShInH","8lqZg"], "8lqZg", "parcelRequire94c2")
-
-//# sourceMappingURL=index.975ef6c8.js.map
+//# sourceMappingURL=index.f18de3a7.js.map

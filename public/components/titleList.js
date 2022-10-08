@@ -4,33 +4,50 @@ import Browsebar from "./browsebar.js";
 import FilterCol from "./filtercol.js";
 import "../css/browse-style.css";
 
-const Title = (props) => {
-  var incArr = [];
-  for (var i = 0; i < props.title.versions.length; i++) {
-    incArr.push(
-      <span className="has-hover-card">
-        <p>{props.title.versions[i].incipit}</p>
-        <span className="hover-card">
-          {props.title.authorname}, {props.title.title} <br />
+const Title = (props) => (
+  <tr>
+    <td className="has-hover-card">
+      <span key={props.title._id}>{props.title.title}</span>
+      <span className="hover-card">
+        {props.title.authorname} <br />
+        {props.title.versions[0] !== undefined && (
           <span>
-            <a href={props.title.versions[i].url} className="source">
-              {props.title.versions[i].source}
+            <a href={props.title.versions[0].url} className="source">
+              {props.title.versions[0].source}
             </a>
             <br />
           </span>
-        </span>
+        )}
+        {props.title.versions[1] !== undefined && (
+          <span>
+            <a href={props.title.versions[1].url} className="source">
+              {props.title.versions[1].source}
+            </a>
+            <br />
+          </span>
+        )}
+        {props.title.versions[2] !== undefined && (
+          <span>
+            <a href={props.title.versions[2].url} className="source">
+              {props.title.versions[2].source}
+            </a>
+            <br />
+          </span>
+        )}
+        {props.title.versions[3] !== undefined && (
+          <span>
+            <a href={props.title.versions[3].url} className="source">
+              {props.title.versions[3].source}
+            </a>
+            <br />
+          </span>
+        )}
       </span>
-    );
-  }
+    </td>
+  </tr>
+);
 
-  return (
-    <tr>
-      <td>{incArr}</td>
-    </tr>
-  );
-};
-
-export default function IncipitList() {
+export default function TitleList() {
   const [titles, setTitles] = useState([]);
 
   useEffect(() => {
@@ -39,7 +56,7 @@ export default function IncipitList() {
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   async function getTitles() {
-    const response = await fetch(`https://psghmt.herokuapp.com/incipits/`);
+    const response = await fetch(`https://psghmt.herokuapp.com/browse/`);
     const titles = await response.json();
     setTitles(titles);
     const cblist = document.getElementsByClassName("cb");
@@ -56,7 +73,7 @@ export default function IncipitList() {
       return !el.checked;
     });
     if (markedCheckbox.length == empty.length) {
-      const response = await fetch(`https://psghmt.herokuapp.com/incipits/`);
+      const response = await fetch(`https://psghmt.herokuapp.com/browse/`);
       const titles = await response.json();
       setTitles(titles);
     }
@@ -66,9 +83,7 @@ export default function IncipitList() {
       var cbsum1 = cbsum.toString();
       var cbsumWoC = cbsum1.replace(/,/g, "&");
     }
-    const res = await fetch(
-      `https://psghmt.herokuapp.com/incfilters?${cbsumWoC}`
-    );
+    const res = await fetch(`https://psghmt.herokuapp.com/tfilters?${cbsumWoC}`);
     const titles = await res.json();
     setTitles(titles);
   }
@@ -96,10 +111,11 @@ export default function IncipitList() {
           </button>
         </div>
         <div className="results">
+          <h3 id="result"></h3>
           <table className="table table-striped" style={{ marginTop: 20 }}>
             <thead>
               <tr>
-                <th>Incipits</th>
+                <th>Treatises</th>
               </tr>
             </thead>
             <tbody>{titleList()}</tbody>

@@ -5,56 +5,19 @@ import FilterCol from "./filtercol.js";
 import "../css/browse-style.css";
 
 const Title = (props) => {
-  var titlesArr = [];
-  for (var i = 0; i < props.title.treatises.length; i++) {
-    titlesArr.push(
+  var incArr = [];
+  for (var i = 0; i < props.title.versions.length; i++) {
+    incArr.push(
       <span className="has-hover-card">
-        <p>{props.title.treatises[i].title}</p>
+        <p>{props.title.versions[i].incipit}</p>
         <span className="hover-card">
-          {props.title.treatises[i].versions[0] !== undefined && (
-            <span>
-              <a
-                href={props.title.treatises[i].versions[0].url}
-                className="source"
-              >
-                {props.title.treatises[i].versions[0].source}
-              </a>
-              <br />
-            </span>
-          )}
-          {props.title.treatises[i].versions[1] !== undefined && (
-            <span>
-              <a
-                href={props.title.treatises[i].versions[1].url}
-                className="source"
-              >
-                {props.title.treatises[i].versions[1].source}
-              </a>
-              <br />
-            </span>
-          )}
-          {props.title.treatises[i].versions[2] !== undefined && (
-            <span>
-              <a
-                href={props.title.treatises[i].versions[2].url}
-                className="source"
-              >
-                {props.title.treatises[i].versions[2].source}
-              </a>
-              <br />
-            </span>
-          )}
-          {props.title.treatises[i].versions[3] !== undefined && (
-            <span>
-              <a
-                href={props.title.treatises[i].versions[3].url}
-                className="source"
-              >
-                {props.title.treatises[i].versions[3].source}
-              </a>
-              <br />
-            </span>
-          )}
+          {props.title.authorname}, {props.title.title} <br />
+          <span>
+            <a href={props.title.versions[i].url} className="source">
+              {props.title.versions[i].source}
+            </a>
+            <br />
+          </span>
         </span>
       </span>
     );
@@ -62,21 +25,12 @@ const Title = (props) => {
 
   return (
     <tr>
-      <td>{props.title._id}</td>
-      <td>{titlesArr}</td>
+      <td>{incArr}</td>
     </tr>
   );
 };
 
-/**
-  {props.title.treatises[i].version1 !== undefined && (
-              <span key={props.title.treatises[i].title}>
-                {props.title.treatises[i].title}
-              </span>
-            )}
- */
-
-export default function AuthorList() {
+export default function IncipitList() {
   const [titles, setTitles] = useState([]);
 
   useEffect(() => {
@@ -85,7 +39,7 @@ export default function AuthorList() {
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   async function getTitles() {
-    const response = await fetch(`https://psghmt.herokuapp.com/authors/`);
+    const response = await fetch(`https://psghmt.herokuapp.com/incipits/`);
     const titles = await response.json();
     setTitles(titles);
     const cblist = document.getElementsByClassName("cb");
@@ -102,7 +56,7 @@ export default function AuthorList() {
       return !el.checked;
     });
     if (markedCheckbox.length == empty.length) {
-      const response = await fetch(`https://psghmt.herokuapp.com/authors/`);
+      const response = await fetch(`https://psghmt.herokuapp.com/incipits/`);
       const titles = await response.json();
       setTitles(titles);
     }
@@ -112,9 +66,7 @@ export default function AuthorList() {
       var cbsum1 = cbsum.toString();
       var cbsumWoC = cbsum1.replace(/,/g, "&");
     }
-    const res = await fetch(
-      `https://psghmt.herokuapp.com/autfilters?${cbsumWoC}`
-    );
+    const res = await fetch(`https://psghmt.herokuapp.com/incfilters?${cbsumWoC}`);
     const titles = await res.json();
     setTitles(titles);
   }
@@ -142,11 +94,11 @@ export default function AuthorList() {
           </button>
         </div>
         <div className="results">
+          <h3 id="result"></h3>
           <table className="table table-striped" style={{ marginTop: 20 }}>
             <thead>
               <tr>
-                <th>Authors</th>
-                <th>Treatises</th>
+                <th>Incipits</th>
               </tr>
             </thead>
             <tbody>{titleList()}</tbody>

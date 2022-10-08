@@ -90,7 +90,7 @@ const Landing = () => {
                       itemScope="itemScope"
                       itemType="http://schema.org/ImageObject"
                     >
-                      <img src={bells} alt="bells" />
+                      <img src={bells} />
                     </figure>
                   </div>
                 </div>
@@ -130,7 +130,7 @@ const Landing = () => {
                       itemScope="itemScope"
                       itemType="http://schema.org/ImageObject"
                     >
-                      <img src={hucbald} alt="hucbald" />
+                      <img src={hucbald} />
                     </figure>
                   </div>
                 </div>

@@ -102,7 +102,7 @@ export default function ContributorList() {
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   async function getTitles() {
-    const response = await fetch(`http://localhost:5000/contributors/`);
+    const response = await fetch(`https://psghmt.herokuapp.com/contributors/`);
     const titles = await response.json();
     setTitles(titles);
     const cblist = document.getElementsByClassName("cb");
@@ -119,7 +119,7 @@ export default function ContributorList() {
       return !el.checked;
     });
     if (markedCheckbox.length == empty.length) {
-      const response = await fetch(`http://localhost:5000/contributors/`);
+      const response = await fetch(`https://psghmt.herokuapp.com/contributors/`);
       const titles = await response.json();
       setTitles(titles);
     }
@@ -129,7 +129,7 @@ export default function ContributorList() {
       var cbsum1 = cbsum.toString();
       var cbsumWoC = cbsum1.replace(/,/g, "&");
     }
-    const res = await fetch(`http://localhost:5000/contfilters?${cbsumWoC}`);
+    const res = await fetch(`https://psghmt.herokuapp.com/contfilters?${cbsumWoC}`);
     const titles = await res.json();
     setTitles(titles);
   }

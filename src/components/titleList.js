@@ -56,7 +56,7 @@ export default function TitleList() {
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   async function getTitles() {
-    const response = await fetch(`http://localhost:5000/browse/`);
+    const response = await fetch(`https://psghmt.herokuapp.com/browse/`);
     const titles = await response.json();
     setTitles(titles);
     const cblist = document.getElementsByClassName("cb");
@@ -73,7 +73,7 @@ export default function TitleList() {
       return !el.checked;
     });
     if (markedCheckbox.length == empty.length) {
-      const response = await fetch(`http://localhost:5000/browse/`);
+      const response = await fetch(`https://psghmt.herokuapp.com/browse/`);
       const titles = await response.json();
       setTitles(titles);
     }
@@ -83,7 +83,7 @@ export default function TitleList() {
       var cbsum1 = cbsum.toString();
       var cbsumWoC = cbsum1.replace(/,/g, "&");
     }
-    const res = await fetch(`http://localhost:5000/tfilters?${cbsumWoC}`);
+    const res = await fetch(`https://psghmt.herokuapp.com/tfilters?${cbsumWoC}`);
     const titles = await res.json();
     setTitles(titles);
   }

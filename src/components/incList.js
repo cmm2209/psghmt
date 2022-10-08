@@ -29,50 +29,6 @@ const Title = (props) => {
     </tr>
   );
 };
-/**
-  (<tr>
-    <td className="has-hover-card">
-      <span key={props.title._id}>{props.title.versions[0].incipit}</span>
-
-      <span className="hover-card">
-        {props.title.authorname}, {props.title.title} <br />
-        {props.title.versions[0] !== undefined && (
-          <span>
-            <a href={props.title.versions[0].url} className="source">
-              {props.title.versions[0].source}
-            </a>
-            <br />
-          </span>
-        )}
-        {props.title.versions[1] !== undefined && (
-          <span>
-            <a href={props.title.versions[1].url} className="source">
-              {props.title.versions[1].source}
-            </a>
-            <br />
-          </span>
-        )}
-        {props.title.versions[2] !== undefined && (
-          <span>
-            <a href={props.title.versions[2].url} className="source">
-              {props.title.versions[2].source}
-            </a>
-            <br />
-          </span>
-        )}
-        {props.title.versions[3] !== undefined && (
-          <span>
-            <a href={props.title.versions[3].url} className="source">
-              {props.title.versions[3].source}
-            </a>
-            <br />
-          </span>
-        )}
-      </span>
-    </td>
-  </tr>
-  )
-   */
 
 export default function IncipitList() {
   const [titles, setTitles] = useState([]);
@@ -83,7 +39,7 @@ export default function IncipitList() {
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   async function getTitles() {
-    const response = await fetch(`http://localhost:5000/incipits/`);
+    const response = await fetch(`https://psghmt.herokuapp.com/incipits/`);
     const titles = await response.json();
     setTitles(titles);
     const cblist = document.getElementsByClassName("cb");
@@ -100,7 +56,7 @@ export default function IncipitList() {
       return !el.checked;
     });
     if (markedCheckbox.length == empty.length) {
-      const response = await fetch(`http://localhost:5000/incipits/`);
+      const response = await fetch(`https://psghmt.herokuapp.com/incipits/`);
       const titles = await response.json();
       setTitles(titles);
     }
@@ -110,7 +66,7 @@ export default function IncipitList() {
       var cbsum1 = cbsum.toString();
       var cbsumWoC = cbsum1.replace(/,/g, "&");
     }
-    const res = await fetch(`http://localhost:5000/incfilters?${cbsumWoC}`);
+    const res = await fetch(`https://psghmt.herokuapp.com/incfilters?${cbsumWoC}`);
     const titles = await res.json();
     setTitles(titles);
   }

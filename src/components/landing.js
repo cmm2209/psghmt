@@ -37,7 +37,7 @@ const Landing = () => {
               ></div>
               <div className="optometry-banner--content">
                 <h2 className="title" style={{ color: "#fff" }}>
-                  Learn about the Center
+                  Learn about the Project
                 </h2>
                 <a
                   className="button"
@@ -76,10 +76,9 @@ const Landing = () => {
                     <div className="text">
                       <div className="text">
                         <p>
-                          The Center for the History of Music Theory and
-                          Literature (CHMTL) supports researchers and students
-                          studying the history of music theory and historical
-                          musicology.
+                          Primary Sources in Global Histories of Music Theory
+                          supports researchers and students studying histories
+                          of music theory from around the world.
                         </p>
                       </div>
                     </div>
@@ -102,24 +101,9 @@ const Landing = () => {
                   <div className="float-right two-thirds">
                     <div className="text">
                       <div className="text" style={{ paddingLeft: "20px" }}>
-                        <p>
-                          Since its foundation in 1998, the Center has focused
-                          on gathering and disseminating historical materials in
-                          digital format, for scholarly and pedagogical
-                          purposes.
-                        </p>
-                        <p>
-                          Our earliest projects made pioneering use of
-                          technology by making music treatises in Latin freely
-                          available and searchable, as well as doctoral
-                          dissertations in musicology and writings exploring the
-                          practice of borrowing in music.
-                        </p>
-                        <p>
-                          In the twenty-first century, the Center continues to
-                          support research on historical documents concerning
-                          music.
-                        </p>
+                        <p>Information about the project.</p>
+                        <p>More information.</p>
+                        <p>And still more.</p>
                       </div>
                     </div>
                   </div>

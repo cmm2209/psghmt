@@ -423,7 +423,6 @@ button, select {
 }
 
 button, html input[type="button"], input[type="reset"], input[type="submit"] {
-  -webkit-appearance: button;
   cursor: pointer;
 }
 
@@ -450,12 +449,7 @@ input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-o
 }
 
 input[type="search"] {
-  -webkit-appearance: textfield;
   box-sizing: content-box;
-}
-
-input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none;
 }
 
 legend {
@@ -528,8 +522,6 @@ select {
 }
 
 button {
-  -webkit-appearance: none;
-  -moz-appearance: none;
   background: none;
   border: 0;
   border-radius: .25rem;
@@ -932,7 +924,6 @@ p + .stat {
 .button {
   text-align: center;
   cursor: pointer;
-  -webkit-appearance: none;
   vertical-align: middle;
   color: #fff;
   background-color: #900;
@@ -1172,8 +1163,6 @@ p + .stat {
   width: 100%;
   height: 2.4375rem;
   color: #191919;
-  -webkit-appearance: none;
-  -moz-appearance: none;
   background-color: #fefefe;
   border: 1px solid #a0abb4;
   border-radius: .25rem;
@@ -1225,8 +1214,6 @@ input:disabled, input[readonly], textarea:disabled, textarea[readonly] {
 }
 
 [type="button"], [type="submit"] {
-  -webkit-appearance: none;
-  -moz-appearance: none;
   border-radius: 20px;
 }
 
@@ -1366,8 +1353,6 @@ legend {
 select {
   height: 2.4375rem;
   color: #191919;
-  -webkit-appearance: none;
-  -moz-appearance: none;
   background-color: #fff;
   background-image: none;
   background-position: right -1rem center;
@@ -6930,12 +6915,7 @@ figure.media aside {
   color: #dbd9d6;
 }
 
-.breakout .full-width .figcaption, .breakout .full-width figcaption {
-  margin-left: grid-calc(3, 12);
-  padding-left: 8px;
-}
-
-img.float-left, img.left {
+.breakout .full-width .figcaption, img.float-left, img.left {
   margin: .5rem 1.5rem .5rem 0;
 }
 
@@ -6943,15 +6923,7 @@ img.float-right, img.right {
   margin: .5rem 0 .5rem 1.5rem;
 }
 
-.flex-video .mejs-layer, .flex-video .mejs-layers {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100% !important;
-  height: 100% !important;
-}
-
-.mejs__button > button {
+.flex-video .mejs-layer, .mejs__button > button {
   border-radius: 0 !important;
 }
 
@@ -10263,4 +10235,4 @@ body > table.gssb_c {
   }
 }
 
-/*# sourceMappingURL=index.c36f3da9.css.map */
+/*# sourceMappingURL=index.c92073ef.css.map */

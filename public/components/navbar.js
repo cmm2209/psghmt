@@ -144,9 +144,9 @@ const Navbar = () => {
         <div className="row pad">
           <h1>
             <Link to="/" className="title" itemProp="department">
-              The Center for the History{" "}
+              Primary Sources in Global{" "}
               <span style={{ display: "block" }}>
-                of Music Theory and Literature
+                Histories of Music Theory
               </span>
             </Link>
           </h1>

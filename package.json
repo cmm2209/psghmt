@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "dev": "parcel ./public/index.html",
+    "dev": "parcel ./src/index.html",
     "start": "node ./server/server.js",
     "build": "react-scripts build"
   },

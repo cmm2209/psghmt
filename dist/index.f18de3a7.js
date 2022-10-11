@@ -29767,13 +29767,13 @@ const Navbar = ()=>{
                             className: "title",
                             itemProp: "department",
                             children: [
-                                "The Center for the History",
+                                "Primary Sources in Global",
                                 " ",
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                                     style: {
                                         display: "block"
                                     },
-                                    children: "of Music Theory and Literature"
+                                    children: "Histories of Music Theory"
                                 }, void 0, false, {
                                     fileName: "public/components/navbar.js",
                                     lineNumber: 148,

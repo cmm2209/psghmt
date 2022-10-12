@@ -20,14 +20,6 @@ const Browsebar = () => {
         <li>
           <Link to="/contributors">Contributors</Link>
         </li>
-        <li>
-          <a href="https://chmtl.indiana.edu/tml/concordances">Concordances</a>
-        </li>
-        <li>
-          <a href="https://chmtl.indiana.edu/tml/quaero" itemProp="url">
-            Search
-          </a>
-        </li>
       </ul>
     </div>
   );

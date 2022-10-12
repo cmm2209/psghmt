@@ -1,62 +1,15 @@
-import React from "react";
-import { Link } from "react-router-dom";
-
+import { React } from "react";
 import Navbar from "./navbar.js";
-import "../css/style.css";
-import "../css/icon-font.css";
-import "../css/iu-framework.min.css";
-import "../css/brand.min.css";
-import "../css/search.min.css";
-import "../css/site.css";
-import "../css/modernizr.min.js";
+import "../css/browse-style.css";
 
-import pyth from "../Pyth.jpg";
 import bells from "../Bells.jpg";
 import hucbald from "../Hucbald.jpg";
-import scriptorium from "../scriptorium.jpg";
 
-const Landing = () => {
+const About = () => {
   return (
     <div itemScope="itemscope">
       <div className="landing">
         <Navbar />
-
-        <div className="section optometry-banner" id="banner">
-          <div className="row pad">
-            <div className="one-half">
-              <div
-                className="bg-image bleed-left"
-                style={{
-                  backgroundImage: `url(${scriptorium})`,
-                }}
-              ></div>
-              <div className="optometry-banner--content">
-                <h2 className="title" style={{ color: "#fff" }}>
-                  Learn about the Project
-                </h2>
-                <Link className="button" to="/about">
-                  About us
-                </Link>
-              </div>
-            </div>
-            <div className="one-half">
-              <div
-                className="bg-image bleed-right"
-                style={{
-                  backgroundImage: `url(${pyth})`,
-                }}
-              ></div>
-              <div className="optometry-banner--content">
-                <h2 className="title" style={{ color: "#fff" }}>
-                  Music theory treatises
-                </h2>
-                <Link className="button" to="/browse">
-                  Browse the database
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
 
         <main className="wide no-section-nav">
           <div className="content-top"></div>
@@ -119,4 +72,4 @@ const Landing = () => {
   );
 };
 
-export default Landing;
+export default About;

@@ -6,6 +6,7 @@ import { Route, Routes } from "react-router-dom";
 // We import all the components we need in our app
 // import Navbar from "./components/navbar"; (include <Navbar /> above <Routes>)
 import Landing from "./components/landing";
+import About from "./components/about";
 import TitleList from "./components/titleList";
 import AuthorList from "./components/authorList";
 import IncipitList from "./components/incList";
@@ -17,6 +18,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Landing />} />
         <Route path="/browse" element={<TitleList />} />
+        <Route path="/about" element={<About />} />
         <Route path="/tfilters" element={<TitleList />} />
         <Route path="/authors" element={<AuthorList />} />
         <Route path="/autfilters" element={<AuthorList />} />

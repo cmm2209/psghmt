@@ -85,7 +85,9 @@ export default function AuthorList() {
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   async function getTitles() {
-    const response = await fetch(`https://psghmt.herokuapp.com/authors/`);
+    const response = await fetch(
+      `https://gleaming-crab-trousers.cyclic.app/authors/`
+    );
     const titles = await response.json();
     setTitles(titles);
     const cblist = document.getElementsByClassName("cb");
@@ -102,7 +104,9 @@ export default function AuthorList() {
       return !el.checked;
     });
     if (markedCheckbox.length == empty.length) {
-      const response = await fetch(`https://psghmt.herokuapp.com/authors/`);
+      const response = await fetch(
+        `https://gleaming-crab-trousers.cyclic.app/authors/`
+      );
       const titles = await response.json();
       setTitles(titles);
     }
@@ -113,7 +117,7 @@ export default function AuthorList() {
       var cbsumWoC = cbsum1.replace(/,/g, "&");
     }
     const res = await fetch(
-      `https://psghmt.herokuapp.com/autfilters?${cbsumWoC}`
+      `https://gleaming-crab-trousers.cyclic.app/autfilters?${cbsumWoC}`
     );
     const titles = await res.json();
     setTitles(titles);

@@ -39,7 +39,9 @@ export default function IncipitList() {
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   async function getTitles() {
-    const response = await fetch(`https://psghmt.herokuapp.com/incipits/`);
+    const response = await fetch(
+      `https://gleaming-crab-trousers.cyclic.app/incipits/`
+    );
     const titles = await response.json();
     setTitles(titles);
     const cblist = document.getElementsByClassName("cb");
@@ -56,7 +58,9 @@ export default function IncipitList() {
       return !el.checked;
     });
     if (markedCheckbox.length == empty.length) {
-      const response = await fetch(`https://psghmt.herokuapp.com/incipits/`);
+      const response = await fetch(
+        `https://gleaming-crab-trousers.cyclic.app/incipits/`
+      );
       const titles = await response.json();
       setTitles(titles);
     }
@@ -67,7 +71,7 @@ export default function IncipitList() {
       var cbsumWoC = cbsum1.replace(/,/g, "&");
     }
     const res = await fetch(
-      `https://psghmt.herokuapp.com/incfilters?${cbsumWoC}`
+      `https://gleaming-crab-trousers.cyclic.app/incfilters?${cbsumWoC}`
     );
     const titles = await res.json();
     setTitles(titles);
